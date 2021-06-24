@@ -15,6 +15,7 @@
     border-left: 1px solid $Gallery;
     height: 100%;
     background: $white;
+    width: rem(107px);
   }
 
   &-main {
@@ -22,25 +23,22 @@
       margin: 0;
       padding: 0;
       list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
 
       li {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: rem(140px);
-        height: rem(140px);
+        flex-direction: column;
+        width: calc(100% - 36px);
+        height: rem(80px);
         border-bottom: 1px solid $Gallery;
 
-        @media screen and (max-width: 1440px) {
-          height: rem(120px);
-        }
-
-        @media screen and (max-width: 1280px) {
-          height: rem(90px);
-        }
-
-        @media screen and (max-height: 700px) {
-          height: rem(100px);
+        &:first-child {
+          height: rem(154px);
         }
 
         a {
@@ -63,58 +61,11 @@
         }
       }
     }
-
-    &__social {
-      margin: 0;
-      padding: 0;
-      list-style: none;
-      transform: rotate(-90deg);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 600;
-      position: fixed;
-      height: calc(100vh - 560px);
-      width: rem(140px);
-      font-size: rem(11px);
-      line-height: rem(16px);
-
-      @media screen and (max-width: 1440px) {
-        height: calc(100vh - 460px);
-      }
-
-      @media screen and (max-width: 1280px) {
-        height: calc(100vh - 320px);
-      }
-
-      @media screen and (max-height: 700px) {
-        font-size: rem(10px);
-        height: calc(100vh - 390px);
-      }
-
-      li {
-        &:nth-child(2) {
-          margin: 0 rem(40px);
-
-          @media screen and (max-height: 750px) {
-            margin: 0 rem(10px);
-          }
-        }
-
-        a {
-          color: $black;
-
-          &:hover {
-            color: $Green;
-          }
-        }
-      }
-    }
   }
 
-  &__product {
+  &__nav {
     position: absolute;
-    width: rem(570px);
+    width: rem(582px);
     height: 100vh;
     background: $white;
     top: 0;
@@ -226,7 +177,40 @@
     }
   }
 
-  &__nav {
+  &-nav {
+    &__bottom {
+      ul {
+        font-size: rem(18px);
+        letter-spacing: -0.45px;
+        font-weight: 400;
+        line-height: rem(30px);
+
+        a {
+          color: $black;
+          transition: all 0.5s ease;
+
+          &:hover {
+            color: $Green;
+          }
+        }
+      }
+
+      .m-social-media {
+        margin-top: rem(40px);
+        &__item {
+          justify-content: flex-start;
+        }
+
+        .a-btn-icon {
+          &:first-child {
+            margin-left: 0px !important;
+          }
+        }
+      }
+    }
+  }
+
+  &__product {
     position: absolute;
     width: rem(570px);
     height: 100vh;
@@ -279,46 +263,13 @@
     }
   }
 
-  &-nav {
-    &__bottom {
-      ul {
-        font-size: rem(18px);
-        letter-spacing: -0.45px;
-        font-weight: 400;
-        line-height: rem(30px);
-
-        a {
-          color: $black;
-          transition: all 0.5s ease;
-
-          &:hover {
-            color: $Green;
-          }
-        }
-      }
-
-      .m-social-media {
-        margin-top: rem(40px);
-        &__item {
-          justify-content: flex-start;
-        }
-
-        .a-btn-icon {
-          &:first-child {
-            margin-left: 0px !important;
-          }
-        }
-      }
-    }
-  }
-
   &--open {
     .o-sidebar {
-      &__product {
+      &__nav {
         transform: translateX(-100%);
         transition-delay: 0s;
       }
-      &__nav {
+      &__product {
         transition-delay: .2s;
         transform: translateX(0);
       }

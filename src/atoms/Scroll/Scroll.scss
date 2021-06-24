@@ -24,9 +24,6 @@
     width: rem(20px);
     height: rem(30px);
     position: relative;
-    border-radius: rem(10px);
-    border: 1px solid $Green;
-    position: relative;
     margin-top: rem(20px);
 
     &:before {
@@ -39,6 +36,18 @@
       top: rem(6px);
       left: rem(8px);
       animation: mainArrowAnim 2s infinite;
+      z-index: 2;
+    }
+    &:after {
+      position: absolute;
+      content: "";
+      display: block;
+      width: 2px;
+      height: rem(48px);
+      background: $Alabaster;
+      top: rem(6px);
+      left: rem(8px);
+      z-index: 1;
     }
   }
 }
@@ -48,7 +57,7 @@
     height: 0px;
   }
   50% {
-    height: 8px;
+    height: rem(48px);
   }
   100% {
     height: 0px;
