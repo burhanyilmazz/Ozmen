@@ -1,0 +1,48 @@
+$ {
+  var classes = ["a-radio"];
+  var attrs = {};
+  var _id = input.id || "";
+  var field = input.field || "";
+  var _required = input.required;
+  var _name = input.name;
+  var _value = input.value;
+  var elementClass = input.elementClass;
+
+  if ( input.checked ) {
+    classes.push("a-radio--checked");
+    attrs.checked = true;
+  }
+
+  if ( input.disabled ) {
+    classes.push("a-radio--disabled");
+    attrs.disabled = true;
+  }
+
+  if(_required) {
+    attrs.required = true;
+  }
+
+  if( input.id ) {
+    attrs.id = input.id;
+  } else {
+    const date = new Date();
+    attrs.id = `radio-${date.getTime()}`;
+  }
+
+  if ( input.name ) {
+    attrs.name = input.name;
+  } else {
+    const date = new Date();
+    attrs.name = `radio-${date.getTime()}`;
+  }
+
+  if(_value) {
+    attrs.value = _value;
+  }
+}
+
+<label class=classes for:scoped="radio">
+  <input type="radio" ...attrs class=elementClass id:scoped="radio" data-parsley-error-message="Lütfen en az birini seçiniz." />
+  <span>$!{field}</span>
+</label>
+

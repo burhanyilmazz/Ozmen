@@ -1,0 +1,19 @@
+{
+  "@class": "string",
+  "@id": "string",
+  "@options": "object",
+  "@prevButton <PrevButton>": {
+    "@class": "string"
+  },
+  "@nextButton <NextButton>": {
+    "@class": "string"
+  },
+  "@sliders <SliderItem>[]": {
+    "@background": "string",
+    "@target": "string",
+    "@href": "string",
+    "@delay": "number",
+    "@mask": "string",
+    "@class": "string"
+  }
+}

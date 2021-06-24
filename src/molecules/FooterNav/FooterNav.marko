@@ -1,0 +1,16 @@
+$ {
+    const items = input.items || ["Hikayemiz", "Üretim", "Blog", "E-Shop", "Kariyer", "İletişim"];
+    const classes = ["m-footer-nav"];
+
+    if (input.class) {
+        classes.push(input.class)
+    }
+}
+
+<div class=classes>
+    <ul>
+        <for(item in items)>
+            <li><a href="#">${item}</a></li>
+        </for>
+    </ul>
+</div>

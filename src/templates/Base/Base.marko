@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title><include(input.title)/></title>
+    <meta name="description" content="">
+
+    <style>
+      a { color: #000; }
+      .a-btn { color: #fff }
+      .o-sidebar__product, .o-sidebar__nav { display: none; }
+      @media (min-width: 1200px){
+        .col-xl-6 {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+      }
+    </style>
+
+    <link rel="stylesheet" type="text/css" media="all" href="../../assets/styles/vendors.css">
+    <link rel="stylesheet" type="text/css" media="all" href="../../assets/styles/app.css">
+    <include(input.head) />
+
+  </head>
+  <body>
+    <Header />
+    <Sidebar />
+    <SearchBar type="header" />
+    <div class="a-shadow"></div>
+
+    <include(input.body)/>
+
+    <Footer />
+
+    <include(input.afterFooter)/>
+
+    <Modal id="modal-preset-success" type="success">
+      <@Body>
+        <SvgImage src="../../assets/images/svg/check.svg" class="a-icon--modal" />
+        <h4><span>Tebrikler</span>Üyeliğiniz gerçekleşti.</h4>
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.</p>
+      </@Body>
+    </Modal>
+
+    <Modal id="modal-preset-error" type="error">
+      <@Body>
+        <SvgImage src="../../assets/images/svg/alert.svg" class="a-icon--modal" />
+        <h4><span>Üzgünüz</span>Bir sorun ile karşılaşıldı</h4>
+        <p>Yaşanılan hatanın sebebi ve nasıl çözüleceği.</p>
+      </@Body>
+    </Modal>
+
+    <Modal id="modal-privacy" type="user-agreement">
+      <@Title>
+          <h4>Gizlilik Politikası</h4>
+      </@Title>
+      <@Body>
+          <ScrollBox>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec erat tortor, faucibus et leo ut, accumsan scelerisque augue. Vestibulum volutpat rhoncus faucibus. Nunc sollicitudin neque eget orci malesuada, ac dictum justo imperdiet. In quis fringilla metus. Vestibulum condimentum arcu at lectus finibus sodales. Donec a elit consequat elit porttitor hendrerit id eu ante. Nulla facilisi. Maecenas nec ligula ac mauris tempus mollis. Maecenas quis lorem lacus. Pellentesque et vulputate lacus. Fusce fringilla egestas mauris vel varius.</p>
+              <p>Pellentesque quis lorem tortor. Fusce egestas augue nisl, ut volutpat velit porta eget. Quisque est sapien, tincidunt eget ullamcorper in, scelerisque eu diam. Curabitur sollicitudin nibh at turpis posuere molestie. Cras ac sollicitudin diam. Nam in pellentesque nunc. Nullam consectetur, orci at eleifend hendrerit, massa diam tempus nisl, eu pharetra quam risus vitae orci. Duis aliquam, nulla vitae vulputate vestibulum, nunc orci eleifend quam, quis pellentesque ex dui eget arcu. Morbi pretium velit est, pharetra efficitur ex pulvinar eget.</p>
+              <p>In fringilla turpis eget orci scelerisque tristique. Sed facilisis auctor quam, sed ultricies nunc. Nulla gravida augue felis, quis laoreet ligula imperdiet sed. Nunc eu lacus libero. Etiam eget urna ut elit consectetur mattis eget eu arcu. Praesent arcu justo, tincidunt quis varius vitae, semper nec tortor. Quisque pulvinar enim ex, ut viverra ligula ullamcorper sit amet. Phasellus iaculis sodales justo, id tincidunt sapien scelerisque ac. Nulla pulvinar feugiat est, nec maximus lacus faucibus in. Nulla nec lacus nec ligula mollis porta ac ut ante. Vivamus pellentesque suscipit tortor, a aliquet felis malesuada et.</p>
+          </ScrollBox>
+      </@Body>
+      <@Foot>
+        <Button attrs={'data-fancybox-close': true} icon="arrow-right">Tamam</Button>
+      </@Foot>
+    </Modal>
+
+    <Modal id="modal-cookies" type="user-agreement">
+      <@Title>
+          <h4>Çerezler</h4>
+      </@Title>
+      <@Body>
+          <ScrollBox>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec erat tortor, faucibus et leo ut, accumsan scelerisque augue. Vestibulum volutpat rhoncus faucibus. Nunc sollicitudin neque eget orci malesuada, ac dictum justo imperdiet. In quis fringilla metus. Vestibulum condimentum arcu at lectus finibus sodales. Donec a elit consequat elit porttitor hendrerit id eu ante. Nulla facilisi. Maecenas nec ligula ac mauris tempus mollis. Maecenas quis lorem lacus. Pellentesque et vulputate lacus. Fusce fringilla egestas mauris vel varius.</p>
+              <p>Pellentesque quis lorem tortor. Fusce egestas augue nisl, ut volutpat velit porta eget. Quisque est sapien, tincidunt eget ullamcorper in, scelerisque eu diam. Curabitur sollicitudin nibh at turpis posuere molestie. Cras ac sollicitudin diam. Nam in pellentesque nunc. Nullam consectetur, orci at eleifend hendrerit, massa diam tempus nisl, eu pharetra quam risus vitae orci. Duis aliquam, nulla vitae vulputate vestibulum, nunc orci eleifend quam, quis pellentesque ex dui eget arcu. Morbi pretium velit est, pharetra efficitur ex pulvinar eget.</p>
+              <p>In fringilla turpis eget orci scelerisque tristique. Sed facilisis auctor quam, sed ultricies nunc. Nulla gravida augue felis, quis laoreet ligula imperdiet sed. Nunc eu lacus libero. Etiam eget urna ut elit consectetur mattis eget eu arcu. Praesent arcu justo, tincidunt quis varius vitae, semper nec tortor. Quisque pulvinar enim ex, ut viverra ligula ullamcorper sit amet. Phasellus iaculis sodales justo, id tincidunt sapien scelerisque ac. Nulla pulvinar feugiat est, nec maximus lacus faucibus in. Nulla nec lacus nec ligula mollis porta ac ut ante. Vivamus pellentesque suscipit tortor, a aliquet felis malesuada et.</p>
+          </ScrollBox>
+      </@Body>
+      <@Foot>
+        <Button attrs={'data-fancybox-close': true} icon="arrow-right">Tamam</Button>
+      </@Foot>
+    </Modal>
+
+    <script defer src="../../assets/scripts/vendors.js" />
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNKq_xbp6KM9nQAOe3cTr8RnafKIBfQn4"></script>
+    <script defer src="../../assets/scripts/app.js" />
+
+  </body>
+</html>

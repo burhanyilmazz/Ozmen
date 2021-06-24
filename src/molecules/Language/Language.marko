@@ -1,0 +1,9 @@
+$ const items = input.items || [ {title: "TR", isActive: true}, {title: "EN"}];
+
+<div class="m-language">
+    <ul>
+        <for(item in items)>
+            <li><a href="#" class=(item.isActive ? "m-language--active": null)>${item.title}</a></li>
+        </for>
+    </ul>
+</div>

@@ -1,0 +1,30 @@
+{
+  "name": "Ozmen",
+  "description": "Ozmen Un Frontend",
+  "main": "index.js",
+  "license": "ISC",
+  "keywords": [
+    "frontend",
+    "master",
+    "component",
+    "based"
+  ],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "headroom": "^1.0.3",
+    "handlebars": "^4.0.12",
+    "fancybox": "^3.5.2",
+    "parsleyjs": "^2.8.1",
+    "swiper": "^4.5.0",
+    "lazysizes": "^4.1.4"
+  }
+}

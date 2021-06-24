@@ -1,0 +1,53 @@
+.m-card-product {
+  background: $white;
+  transition: all 0.5s ease;
+  border: 1px solid #eaeaea;
+  margin-left: -1px;
+  margin-top: -1px;
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (max-width: 1200px) {
+    margin-bottom: rem(20px);
+  }
+
+  &__head {
+    position: relative;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      z-index: 1;
+      transform: scale(1);
+      transition: all 1.5s ease;
+    }
+  }
+
+  &__body {
+    padding: rem(30px) rem(20px) rem(60px);
+    text-align: center;
+
+    h2 {
+      font-size: rem(19px);
+      font-weight: 500;
+      letter-spacing: 0px;
+      color: $black;
+      line-height: rem(25px);
+    }
+
+    h3 {
+      font-size: rem(14px);
+      font-weight: 500;
+      letter-spacing: 0px;
+      color: #b2b2b2;
+      line-height: rem(19px);
+    }
+  }
+
+  &:hover {
+    img {
+      transition: all 1.5s ease;
+      transform: scale(1.1);
+    }
+  }
+}

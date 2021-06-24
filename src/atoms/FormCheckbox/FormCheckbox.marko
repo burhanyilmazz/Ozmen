@@ -1,0 +1,53 @@
+$ {
+  var classes = ["a-checkbox"];
+  var attrs = input.attrs || {};
+  var _id = input.id || "";
+  var field = input.field || "";
+  var _required = input.required;
+  var _name = input.name;
+  var _value = input.value;
+  var elementClass = input.elementClass;
+  var dataUrl = input.dataUrl;
+
+  if ( input.class ) {
+    classes = classes.concat( input.class );
+  }
+
+  if ( input.checked ) {
+    classes.push("a-checkbox--checked");
+    attrs.checked = true;
+  }
+
+  if ( input.disabled ) {
+    classes.push("a-checkbox--disabled");
+    attrs.disabled = true;
+  }
+
+  if(_required) {
+    attrs.required = true;
+  }
+
+  if( input.id ) {
+    attrs.id = input.id;
+  } else {
+    const date = new Date();
+    attrs.id = `checkbox-${date.getTime()}`;
+  }
+
+  if ( input.name ) {
+    attrs.name = input.name;
+  } else {
+    const date = new Date();
+    attrs.name = `checkbox-${date.getTime()}`;
+  }
+
+  if(_value) {
+    attrs.value = _value;
+  }
+}
+
+<label class=classes for=attrs.id data-component="FormCheckbox" data-url=(dataUrl ? dataUrl : null)>
+  <input type="checkbox" ...attrs class=elementClass />
+  <span>$!{field}</span>
+</label>
+

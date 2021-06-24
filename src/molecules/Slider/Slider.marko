@@ -1,0 +1,63 @@
+$ {
+  const options = input.options || {};
+  options.type = "Slider";
+  var _id = input.id;
+
+  let classes = ["m-slider"];
+
+  const attrs = {};
+
+  if ( options.clipPath ) {
+    attrs.style = "clip-path: url("+options.clipPath+");"
+  }
+
+  if ( input.class ) {
+    classes = classes.concat( input.class );
+  }
+
+  if(_id) {
+    attrs.id = _id;
+  }
+}
+<div class=classes data-component=options ...attrs>
+  <div class="m-slider__swiper swiper-container">
+    <div class="swiper-wrapper">
+      <for(slider in input.sliders | status-var=loop)>
+      $ {
+          const _attrs = {};
+
+          _attrs.class = ["swiper-slide", "swiper-lazy"];
+
+          if ( slider.class ) {
+            _attrs.class.push( slider.class );
+          }
+
+          if ( slider.delay ) {
+            _attrs["data-swiper-autoplay"] = slider.delay;
+          }
+
+          if ( slider.href ) {
+            _attrs["data-location-href"] = slider.href;
+          }
+
+          if ( slider.mask ) {
+            _attrs.class.push(`m-carousel-gradient--${slider.mask}`);
+          }
+
+        }
+      <div data-target=slider.target data-background=slider.background ..._attrs if(slider.background)>
+        <include(slider.renderBody)/>
+      </div>
+      <div class="swiper-slide" data-target=slider.target ..._attrs else>
+        <include(slider.renderBody)/>
+      </div>
+      </for>
+    </div>
+  </div>
+
+  <div class="m-slider__prev" if(options.navigation)></div>
+  <div class="m-slider__next" if(options.navigation)></div>
+  <if(options.pagination)>
+    <div class="swiper-pagination"></div>
+  </if>
+</div>

@@ -1,0 +1,27 @@
+.m-form-group {
+  display: flex;
+  margin-bottom: rem(16px);
+  transition-property: height, opacity, z-index, transform;
+  transition: 150ms ease;
+
+  &__child {
+    flex: 1 1 auto;
+
+    &:nth-child(1) {
+      margin-left: 0;
+    }
+
+    &:nth-last-child(1) {
+      margin-right: 0;
+    }
+  }
+
+  &[data-hidden] {
+    opacity: 0;
+    z-index: -1;
+    height: 0;
+    transform: translateY(-5px);
+    position: absolute;
+    pointer-events: none;
+  }
+}

@@ -1,0 +1,25 @@
+$ {
+    let classes = ["m-card-blog"];
+    
+    if (input.class) {
+        classes.push(input.class);
+    }
+
+    if (input.type) {
+        classes.push(`m-card-blog--${input.type}`);
+    }
+
+    const image = input.image;
+    const title = input.title;
+    const date = input.date;
+}
+<a href="#" class=classes>
+    <div class="m-card-blog__head">
+        <Image src=image />
+    </div>
+
+    <div class="m-card-blog__body">
+        <h2>${title}</h2>
+        <h6>${date}</h6>
+    </div>
+</a>

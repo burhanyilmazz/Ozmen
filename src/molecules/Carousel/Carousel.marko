@@ -1,0 +1,35 @@
+$ {
+  const classes = ["m-carousel"];
+  const strokeWidth = input.strokeWidth || 6;
+  let {bulletsOptions, ...options} = input;
+
+  if (input.fullscreen) {
+    classes.push('m-carousel--fullscreen');
+  }
+}
+
+<section class=classes data-component="Carousel">
+  <Slider options={effect:"fade", navigation: true, pagination: true, autoplay: { delay: 4000 }}>
+    <@SliderItem>
+      <Mask type="mask2">
+        <Image class="a-mask__image" src="../../assets/images/dummy/blog1.jpg" />
+      </Mask>
+    </@SliderItem>
+    <@SliderItem>
+      <Mask type="mask2">
+        <Image class="a-mask__image" src="../../assets/images/dummy/blog2.jpg" />
+      </Mask>
+    </@SliderItem>
+    <@SliderItem>
+      <Mask type="mask2">
+        <Image class="a-mask__image" src="../../assets/images/dummy/blog3.jpg" />
+      </Mask>
+    </@SliderItem>
+  </Slider>
+
+  <ul class="m-carousel__thumbs">
+    <li><Image src="../../assets/images/dummy/blog1.jpg" /></li>
+    <li><Image src="../../assets/images/dummy/blog2.jpg" /></li>
+    <li><Image src="../../assets/images/dummy/blog3.jpg" /></li>
+  </ul>
+</section>

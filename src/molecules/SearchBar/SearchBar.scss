@@ -1,0 +1,144 @@
+.m-search-bar {
+  position: relative;
+  display: flex;
+  justify-content: start;
+
+  &__container {
+    position: relative;
+  }
+
+  .m-form {
+    width: 100%;
+    position: relative;
+  }
+
+  &__icon {
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: rem(18px);
+    color: #191919;
+
+    i {
+      &:before {
+        font-size: rem(22px);
+      }
+    }
+  }
+
+  .a-btn-icon {
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    top: rem(18px);
+    color: #191919;
+
+    i {
+      &:before {
+        font-size: rem(22px);
+      }
+    }
+  }
+
+  &__line {
+    position: absolute;
+    width: 0;
+    height: 1px;
+    background: #191919;
+    margin-top: -1px;
+    transition: all 0.5s ease;
+    z-index: 2;
+    top: rem(60px);
+
+    @media screen and (max-width: 768px) {
+      margin-top: 1px;
+    }
+  }
+
+  input {
+    border-bottom: 1px solid #191919;
+    font-weight: normal;
+    font-size: rem(24px);
+    color: #191919;
+    padding: rem(15px) rem(50px);
+    width: 100%;
+    border-radius: 0;
+    position: relative;
+    z-index: 1;
+
+    &::placeholder {
+      color: #191919;
+    }
+
+    &:focus,
+    &:valid {
+      &::placeholder {
+        opacity: 0;
+      }
+
+      & ~ .m-search-bar__line {
+        background: $Green;
+        width: 100%;
+      }
+    }
+  }
+
+  &--header {
+    position: fixed;
+    width: calc(100% - 140px);
+    top: -100%;
+    left: 0;
+    transform: translateY(-100%);
+    opacity: 0;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform 0.25s ease-in-out;
+    z-index: 9;
+    border-radius: 0;
+    padding-top: rem(250px);
+    padding-bottom: rem(177px);
+    background: $WildSand;
+    max-width: 100%;
+
+    h1 {
+      letter-spacing: -1.5px;
+      color: #000000;
+      font-size: rem(60px);
+      margin-bottom: rem(30px);
+      font-weight: 600;
+
+      @media screen and (max-width: 768px) {
+        font-size: rem(36px);
+        font-weight: 500;
+      }
+    }
+
+    .m-form {
+      width: 100%;
+      max-width: rem(950px);
+      margin: auto;
+
+      @media screen and (max-width: 1024px) {
+        max-width: rem(815px);
+      }
+    }
+  }
+
+  &--open {
+    transform: translateY(0);
+    top: 0;
+    opacity: 1;
+    transition: transform 0.25s ease-in-out;
+
+    @media screen and (max-width: 768px) {
+      padding: rem(50px) rem(30px);
+      box-shadow: none;
+      width: 100%;
+      top: rem(80px);
+    }
+
+    & + .a-shadow {
+      z-index: 8;
+      opacity: 1;
+    }
+  }
+}

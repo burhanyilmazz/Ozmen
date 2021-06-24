@@ -1,0 +1,92 @@
+.m-language {
+  font-weight: 600;
+  font-size: rem(14px);
+  line-height: rem(20px);
+
+  @media screen and (max-width: 990px) {
+    position: fixed;
+    top: 0;
+    right: rem(120px);
+  }
+
+  @media screen and (max-width: 330px) {
+    right: rem(110px);
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+
+    li {
+      &:last-child {
+        a {
+          border-left: 0px;
+        }
+      }
+    }
+  }
+
+  a {
+    color: $Silver;
+    display: flex;
+    padding: rem(38px) rem(20px);
+    border-left: 1px solid rgba($color: $Gray, $alpha: 0.2);
+    border-right: 1px solid rgba($color: $Gray, $alpha: 0.2);
+    position: relative;
+
+    @media screen and (max-width: 1200px) {
+      padding: rem(38px) rem(15px);
+    }
+
+    @media screen and (max-width: 990px) {
+      color: $Monza;
+      border-left: 1px solid rgba($color: $Gray, $alpha: 0.2) !important;
+      padding: rem(25px) rem(20px);
+    }
+
+    @media screen and (max-width: 330px) {
+      padding: rem(25px) rem(15px);
+    }
+
+    &:hover {
+      color: $Monza;
+
+      &:after {
+        content: "";
+        width: 0;
+        height: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-bottom: 5px solid $Monza;
+        position: absolute;
+        bottom: rem(22px);
+        left: 50%;
+        margin-left: rem(-4px);
+      }
+    }
+  }
+
+  &--active {
+    color: $Monza !important;
+
+    @media screen and (max-width: 990px) {
+      display: none !important;
+    }
+
+    &:after {
+      content: "";
+      width: 0;
+      height: 0;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-bottom: 5px solid $Monza;
+      position: absolute;
+      bottom: rem(22px);
+      left: 50%;
+      margin-left: rem(-4px);
+    }
+  }
+}

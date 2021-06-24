@@ -1,0 +1,281 @@
+.o-hero {
+  position: relative;
+  z-index: 1;
+  height: 100vh;
+  width: 100%;
+  background: $white;
+  overflow: hidden;
+
+  &__container {
+    display: inline-flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    position: absolute;
+    z-index: 2;
+    margin-left: 12.5%;
+
+    @media screen and (max-width: 1200px) {
+      margin-left: 0;
+    }
+
+    @media screen and (max-width: 990px) {
+      justify-content: flex-end;
+    }
+
+    h1 {
+      letter-spacing: -2.5px;
+      font-size: rem(100px);
+      font-weight: 600;
+      line-height: rem(106px);
+      color: $Green;
+
+      @media screen and (max-width: 1440px) {
+        font-size: rem(80px);
+        line-height: rem(90px);
+      }
+
+      @media screen and (max-width: 1366px) {
+        font-size: rem(70px);
+        line-height: rem(80px);
+      }
+
+      @media screen and (max-width: 990px) {
+        font-size: rem(42px);
+        line-height: rem(46px);
+      }
+    }
+
+    > span {
+      color: $Green;
+      font-size: rem(16px);
+      position: absolute;
+      bottom: rem(60px);
+
+      @media screen and (max-width: 990px) {
+        bottom: rem(30px);
+        font-weight: 600;
+      }
+    }
+
+    .a-btn {
+      display: inline-flex;
+      margin-top: rem(30px);
+      max-width: rem(240px);
+
+      @media screen and (max-width: 990px) {
+        margin-bottom: rem(100px);
+      }
+    }
+  }
+
+  &__product {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    height: 100vh;
+    width: 75%;
+
+    @media screen and (max-width: 1024px) {
+      width: 100%
+    }
+  }
+
+  &-product {
+    &__blup {
+      position: absolute;
+      right: rem(50px);
+      top: 50%;
+      transform: translate(0%, -50%);
+      width: 80%;
+      z-index: 1;
+
+      @media screen and (max-width: 1024px) {
+        width: calc(100% - 30px);
+        right: rem(15px);
+      }
+    }
+
+    &__brush {
+      position: absolute;
+      bottom: rem(0px);
+      right: rem(100px);
+      animation-duration: 1.5s;
+      animation-name: fadeInBottomRight;
+      z-index: 4;
+
+      @media screen and (max-width: 1680px) {
+        bottom: rem(-50px)
+      }
+
+      @media screen and (max-width: 1440px) {
+        right: rem(30px);
+        height: 100vh;
+      }
+
+      @media screen and (max-width: 1366px) {
+        right: 0;
+      }
+
+      @media all and (device-width: 1024px) and (orientation:portrait) {
+        right: rem(-100px);
+        height: 80vh;
+      }
+
+      @media all and (device-height: 1024px) and (orientation:portrait) {
+        right: rem(-100px);
+        height: 80vh;
+      }
+
+      @media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
+        right: 0;
+        height: 90vh;
+      }
+      
+      @media all and (device-height: 768px) and (orientation:landscape) {
+        right: rem(-50px);
+      }
+
+      @media screen and (max-width: 480px) {
+        bottom: auto;
+        right: 0;
+        top: rem(100px);
+        height: auto;
+        width: 100%;
+      }
+    }
+
+    &__pill {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      margin-top: rem(-300px);
+      width: 100%;
+      z-index: 2;
+    }
+
+    &__pill-2 {
+      position: absolute;
+      bottom: rem(50px);
+      right: 0;
+      z-index: 3;
+
+      @media screen and (max-width: 1440px) {
+        width: rem(150px);
+      }
+    }
+
+    &__bottle {
+      position: absolute;
+      top: rem(50px);
+      right: 0;
+      z-index: 3;
+
+      @media screen and (max-width: 1680px) {
+        width: rem(400px);
+      }
+
+      @media screen and (max-width: 1440px) {
+        width: rem(320px);
+        top: 0;
+      }
+
+      @media screen and (max-width: 1200px) {
+        width: rem(250px);
+        top: rem(20px);
+      }
+
+      @media screen and (max-width: 990px) {
+        top: rem(190px)
+      }
+
+      @media screen and (max-width: 480px) {
+        width: rem(150px);
+        top: rem(100px);
+      }
+    }
+  }
+
+  &__leaf {
+    position: absolute;
+    z-index: 3;
+
+    &--leaf-1 {
+      left: rem(-160px);
+      top: rem(100px);
+
+      @media screen and (max-width: 1366px) {
+        width: rem(300px);
+      }
+
+      @media screen and (max-width: 1200px) {
+        left: rem(-80px);
+        width: rem(200px);
+      }
+
+      @media screen and (max-width: 990px) {
+        display: none;
+      }
+    }
+    &--leaf-2 {
+      left: 40%;
+      bottom: rem(-80px);
+
+      @media screen and (max-width: 1680px) {
+        bottom: rem(-70px);
+        left: 35%;
+      }
+
+      @media screen and (max-width: 1366px) {
+        width: rem(400px);
+      }
+
+      @media screen and (max-width: 1200px) {
+        width: rem(300px);
+      }
+
+      @media screen and (max-width: 990px) {
+        display: none;
+      }
+    }
+    &--leaf-3 {
+      right: 0;
+      top: rem(-80px);
+
+      @media screen and (max-width: 990px) {
+        display: none;
+      }
+    }
+  }
+
+  .a-scroll {
+    @media screen and (max-width: 990px) {
+      display: none;
+    }
+  }
+}
+
+@keyframes "fadeInBottomRight" {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 100%, 0);
+    transform: translate3d(100%, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes "fadeInUpBig" {
+  0% {
+    opacity: 0;
+    transform: translateY(2000px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

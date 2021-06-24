@@ -1,0 +1,145 @@
+.m-card {
+  background: $white;
+  overflow: hidden;
+  border-radius: rem(21px);
+  margin-bottom: rem(30px);
+  transition: all 0.5s ease;
+
+  @media screen and (max-width: 990px) {
+    max-width: 100%;
+  }
+
+  @media screen and (max-width: 768px) {
+    border-radius: rem(15px);
+  }
+
+  &__head {
+    position: relative;
+
+    img {
+      width: 100%;
+      z-index: 1;
+    }
+  }
+
+  &__body {
+    padding: rem(30px);
+    font-weight: normal;
+    font-size: rem(16px);
+    line-height: 140%;
+    color: rgba($color: $Tundora, $alpha: 0.8);
+
+    h2 {
+      font-weight: 500;
+      font-size: rem(18px);
+      line-height: rem(21px);
+      color: $Tundora;
+      margin: 0;
+      padding: 0;
+      margin-bottom: rem(10px);
+      display: inline-block;
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden !important;
+      text-overflow: ellipsis;
+    }
+  }
+
+  &-body {
+    &__content {
+      height: rem(153px);
+      overflow: hidden;
+      width: 100%;
+      box-sizing: border-box;
+    }
+  }
+
+  .a-btn--tag {
+    margin-bottom: rem(14px);
+  }
+
+  .m-shared-button {
+    position: absolute;
+    right: rem(20px);
+    top: rem(20px);
+    z-index: 2;
+  }
+
+  .a-icon-link {
+    margin-top: rem(22px);
+    font-weight: bold;
+    font-size: rem(15px);
+    line-height: rem(18px);
+    color: $Tundora;
+
+    &:hover {
+      color: $Matisse;
+    }
+
+    &:before {
+      transform: rotate(-90deg);
+      font-size: rem(10px);
+    }
+  }
+
+  &--video {
+    .m-card__head {
+      overflow: hidden;
+      display: flex;
+      border-radius: rem(30px);
+      @media screen and (max-width: 768px) {
+        border-radius: rem(15px);
+      }
+
+      @media screen and (max-width: 990px) {
+        display: inline-block;
+      }
+
+      img {
+        border-radius: rem(30px);
+        overflow: hidden;
+
+        @media screen and (max-width: 768px) {
+          border-radius: rem(15px);
+        }
+      }
+
+      &:before {
+        background: rgba($color: #000000, $alpha: .1);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        content: '';
+        border-radius: rem(30px);
+        overflow: hidden;
+
+        @media screen and (max-width: 990px) {
+          height: calc(100% - 2px);
+        }
+
+        @media screen and (max-width: 768px) {
+          border-radius: rem(15px);
+        }
+      }
+    }
+    .a-btn-icon {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      z-index: 3;
+      margin-left: rem(-32px);
+      margin-top: rem(-32px);
+
+      i {
+        margin-left: rem(6px);
+      }
+    }
+
+    h2 {
+      margin-bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.a-check-box {
+  position: relative;
+  margin-bottom: rem(20px);
+
+  input[type="checkbox"] {
+    opacity: 0;
+  }
+
+  input[type="checkbox"] + label {
+    font-size: rem(16px);
+    font-weight: 600;
+    color: rgba($color: $CodGray2, $alpha: 0.6);
+    border: 2px solid rgba($color: $CodGray2, $alpha: 0.2);
+    width: 100%;
+    padding: rem(25px) rem(30px);
+    transition: all 0.5s ease;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  input[type="checkbox"]:checked + label{
+    color: $Monza !important;
+    border: 2px solid $Monza !important;
+  }
+
+  input[type="checkbox"]:hover + label {
+    color: $CodGray2;
+    border: 2px solid $CodGray2;
+  }
+}

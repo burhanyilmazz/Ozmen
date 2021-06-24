@@ -1,0 +1,19 @@
+$ {
+    const src = input.src;
+    const title = input.title;
+    const classes = ["m-product-box"];
+
+    if (input.class) {
+        classes.push(input.class)
+    }
+}
+
+<a href="#" class=classes>
+    <Image src=src />
+    <div class="m-product-box__foot">
+        <h4>${title}</h4>
+        <div class="m-product-box-foot__button">
+            <i class="icon-arrow-right" />
+        </div>
+    </div>
+</a>

@@ -1,0 +1,16 @@
+
+.a-icon-link {
+   display: inline-flex;
+   flex-direction: row-reverse;
+
+   &:before {
+      margin-left: 3px;
+      transition: all 0.25s ease-in-out;
+   }
+
+   &:hover {
+      &:before {
+         margin-left: rem(13px);
+      }
+   }
+}

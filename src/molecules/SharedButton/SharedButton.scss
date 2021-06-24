@@ -1,0 +1,28 @@
+.m-shared-button {
+  margin-top: rem(60px);
+  &__title {
+    color: $black;
+    font-size: rem(16px);
+    line-height: rem(23px);
+    font-weight: 600;
+  }
+
+  &__list {
+    margin-top: rem(17px);
+    .a-btn-icon {
+      width: rem(50px);
+      height: rem(50px);
+      background: #eaeaea;
+      border-radius: 100%;
+      margin-right: rem(12px);
+      color: $black;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+      &:hover {
+        color: $Green;
+      }
+    }
+  }
+}

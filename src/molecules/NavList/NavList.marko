@@ -1,0 +1,11 @@
+$ {
+    const items = input.items || [{title: "Yurt Dışında Oturum"}, {title: "Yurt Dışında İş Kurma"}, {title: "2. Vatandaşlık"}, {title: "Yurt Dışında Emlak Alımı", isActive: true}, {title: "Yurt Dışında Eğitim"}, {title: "İletişim"}];
+    const icon = input.icon || "arrow";
+}
+<div class="m-nav-list">
+    <ul>
+        <for(item in items)>
+            <li><a href="#" class=(item.isActive ? "m-nav-list--active" : null)>${item.title} <i class=`icon-${icon}`></i></a></li>
+        </for>
+    </ul>
+</div>

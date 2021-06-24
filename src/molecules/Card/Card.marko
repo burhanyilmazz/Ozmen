@@ -1,0 +1,19 @@
+$ {
+    let classes = ["m-card"];
+    const items = input.items || { title: "Kanada Aile Ziyareti Vizesi", text: "Kanada Aile Ziyareti Vizesinde başvuru sahibinin hazırlaması gereken kişisel evrak listesi herkes için aynıdır. Ancak mesleki durumunuzu gösteren evraklar  veya  çalışmıyorsanız seyahatinizi destekleyecek kişilerin evrakları değişiklik gösterir. Kanada Konsolosluğu vize yetkilileri ayrıca zorunlu evraklara ek olarak Kanada’ya..", image: "../../assets/images/dummy/video.jpg" };
+    const video = input.video;
+    
+    if (input.class) {
+        classes.push(input.class);
+    }
+
+    if (input.type) {
+        classes.push(`m-card--${input.type}`);
+    }
+}
+<div class=classes>
+    <div class="m-card__head">
+        <Image src=items.image />
+        <ButtonIcon circle size="big" variant="transparent" type="span" icon="play" attrs=video></ButtonIcon>
+    </div>
+</div>

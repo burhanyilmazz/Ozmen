@@ -1,0 +1,52 @@
+.hr-form {
+  margin-top: rem(70px);
+  @media screen and (max-width: 990px) {
+    margin-top: rem(40px);
+    margin-bottom: rem(40px);
+  }
+  
+
+  h2 {
+    color: $black;
+    font-size: rem(60px);
+    line-height: rem(64px);
+    font-weight: 600;
+    margin-bottom: rem(50px);
+
+    @media screen and (max-width: 990px) {
+      font-size: rem(36px);
+      line-height: rem(40px);
+      margin-bottom: rem(24px);
+    }
+  }
+
+  h3 {
+    color: $black;
+    font-size: rem(24px);
+    line-height: rem(34px);
+    font-weight: 600;
+    margin-top: rem(50px);
+    margin-bottom: rem(40px);
+
+    @media screen and (max-width: 990px) {
+      font-size: rem(21px);
+      line-height: rem(29px);
+    }
+  }
+
+  .a-btn {
+    margin-top: rem(30px);
+    @media screen and (max-width: 990px) {
+      margin-top: rem(24px);
+    }
+  }
+
+  .a-input,
+  .a-textarea,
+  .a-file-input {
+    margin-bottom: rem(30px);
+    @media screen and (max-width: 990px) {
+      margin-bottom: rem(24px);
+    }
+  }
+}

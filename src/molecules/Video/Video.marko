@@ -1,0 +1,33 @@
+$ {
+    const classes = ["m-video"];
+    const attrs = input.attrs || {};
+
+    if (input.class) {
+        classes.push(input.class)
+    }
+}
+<div class=classes ...attrs>
+    <Grid>
+        <@GridCol class="col-xl-6">
+          <Card type="video" video={"data-component" : "ModalVideo", "data-btn-type": "video-button", "data-base-class": "fancybox-video-mobile", "data-url":"https://www.youtube.com/embed/yDm6PAgNohU", "data-title":"Yenilenen Turkcell Mağazaları Hizmetinizde", "data-desc":"Geleceğin alışveriş deneyimini yaşayın.", "data-button":"Detayları Gör", "data-btnhref" :"javascript:;"} />
+        </@GridCol>
+        <@GridCol class="col-xl-6">
+          <h3>Buraya video <span>Başlığı gelecek.</span></h3>    
+          <p>Ağız ve diş sağlığı bakımında önemli bir etken olan ürün ise diş fırçalarıdır. Maksimum 3 ayda bir değiştirilmesi gereken diş fırçalarımızın doğa dostu içeriği ile sürdürülebilirlik.</p>   
+          <SharedButton />    
+        </@GridCol>
+    </Grid>
+</div>
+
+<Modal id="modal-video" type="video" />
+
+<script id="modal-video-html" type="text/x-handlebars-template">
+    <div class="m-modal__body">
+        <iframe src="{{src}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="m-modal__foot">
+        <div class="m-modal__video-caps">
+        <h3>{{title}}</h3>
+        </div>
+    </div>
+</script> 

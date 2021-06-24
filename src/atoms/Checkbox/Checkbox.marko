@@ -1,0 +1,21 @@
+$ {
+    const title = input.title || "Checkbox";
+    const name = input.name || "checkbox";
+    const attrs = input.attrs || {};
+    const _required = input.required;
+    
+    if(_required) {
+        attrs.required = true;
+    }
+
+    if ( input.name ) {
+        attrs.name = input.name;
+    } else {
+        const date = new Date();
+        attrs.name = `input-${date.getTime()}`
+    }
+}
+<div class="a-check-box">
+    <input type="checkbox" id:scoped="input" value:scoped="input" ...attrs>
+    <label for:scoped="input">${title}</label>
+</div>

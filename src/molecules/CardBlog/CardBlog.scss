@@ -1,0 +1,57 @@
+.m-card-blog {
+  margin: rem(50px) 0;
+  display: block;
+
+  @media screen and (max-width: 768px) {
+    margin: rem(25px) 0;
+  }
+
+  &__head {
+    position: relative;
+    height: 0;
+    padding-top: calc(9 / 16 * 100%);
+    img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100% !important;
+      height: 100% !important;
+      object-fit: cover;
+    }
+  }
+
+  &__body {
+    h2 {
+      color: $black;
+      font-size: rem(24px);
+      line-height: rem(32px);
+      letter-spacing: -0.4px;
+      margin-top: rem(30px);
+      font-weight: 600;
+
+      @media screen and (max-width: 1440px) {
+        font-size: rem(20px);
+        line-height: rem(29px);
+      }
+
+      @media screen and (max-width: 768px) {
+        font-size: rem(16px);
+        line-height: rem(20px);
+        margin-top: rem(20px);
+      }
+    }
+
+    h6 {
+      font-size: rem(16px);
+      letter-spacing: -0.4px;
+      color: #606060;
+      margin-top: rem(20px);
+      font-weight: 500;
+
+      @media screen and (max-width: 768px) {
+        font-size: rem(14px);
+        margin-top: rem(10px);
+      }
+    }
+  }
+}

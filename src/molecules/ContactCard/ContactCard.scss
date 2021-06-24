@@ -1,0 +1,50 @@
+.m-contact-card {
+  background: $mineshaft;
+  padding: rem(60px);
+  color: $white;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media screen and (max-width: 990px) {
+    padding: rem(40px) rem(55px);
+  }
+
+  h3 {
+    font-size: rem(21px);
+    font-weight: 500;
+    margin: 0;
+
+    @media screen and (max-width: 990px) {
+      margin-bottom: rem(60px);
+    }
+  }
+
+  a {
+    display: flex;
+    color: $Gray2;
+    align-items: center;
+
+    i {
+      &:before {
+        font-size: rem(46px);
+      }
+    }
+
+    span {
+      color: $white;
+      font-size: rem(36px);
+      display: flex;
+      flex-direction: column;
+      margin-left: rem(22px);
+      font-weight: 600;
+
+      b {
+        color: $Gray2;
+        font-size: rem(18px);
+        font-weight: 500;
+      }
+    }
+  }
+}

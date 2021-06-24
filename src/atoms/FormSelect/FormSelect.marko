@@ -1,0 +1,34 @@
+$ {
+  let classes = ["a-select"];
+  const attrs = input.attrs || {};
+  const _id = input.id;
+  const _required = input.required;
+  const items = input.items || [{ text: "Option 1", value: "Value1" }, { text: "Option 2", value: "Value2" }, { text: "Option 3", value: "Value3" }]
+
+  if ( input.disabled ) {
+    classes.push("a-select--disabled");
+    attrs.disabled = true;
+  }
+
+  if(_required) {
+    attrs.required = true;
+  }
+
+  if ( input.name ) {
+    attrs.name = input.name;
+  } else {
+    const date = new Date();
+    attrs.name = `select-${date.getTime()}`
+  }
+
+}
+
+<div class=classes>
+  <select ...attrs id:scoped="select">
+    <option disabled selected if(input.placeholder)>${input.placeholder}</option>
+    <for(item in items)>
+       <option value=item.value>${item.text}</option>
+    </for>
+  </select>
+</div>
+

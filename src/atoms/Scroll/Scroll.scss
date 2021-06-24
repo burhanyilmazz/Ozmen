@@ -1,0 +1,56 @@
+.a-scroll {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  bottom: rem(50px);
+  left: rem(40px);
+
+  @media screen and (max-width: 1024px) {
+    bottom: rem(90px);
+    left: rem(30px);
+  }
+
+  span {
+    font-size: rem(16px);
+    font-weight: 600;
+    color: $Green;
+    transform: rotate(-90deg);
+    display: inline-flex;
+  }
+
+  div {
+    width: rem(20px);
+    height: rem(30px);
+    position: relative;
+    border-radius: rem(10px);
+    border: 1px solid $Green;
+    position: relative;
+    margin-top: rem(20px);
+
+    &:before {
+      position: absolute;
+      content: "";
+      display: block;
+      width: 2px;
+      height: 1px;
+      background: $Green;
+      top: rem(6px);
+      left: rem(8px);
+      animation: mainArrowAnim 2s infinite;
+    }
+  }
+}
+
+@keyframes mainArrowAnim {
+  0% {
+    height: 0px;
+  }
+  50% {
+    height: 8px;
+  }
+  100% {
+    height: 0px;
+  }
+}

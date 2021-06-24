@@ -1,0 +1,24 @@
+<include('../../templates/Homepage/Homepage.marko')>
+<@title>DatePicker</@title>
+<@body>
+
+<section id="datepicker" style="background: white; padding: 50px 0;">
+
+  <div class="container">
+    <div style="margin: 20px auto 10px;">
+      <h1 class="text-center" >DatePicker</h1>
+      
+      <Grid>
+        <@GridCol class="col-lg-6">
+          <FormInput field="Datepicker" inputClasses="inline-datepicker" inputOptions=[{type: "DatePicker", minDate: "today", inline: true}] />
+        </@GridCol>
+      </Grid>
+
+    </div>
+  </div>
+
+
+</section>
+
+</@body>
+</include>

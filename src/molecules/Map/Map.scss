@@ -1,0 +1,45 @@
+.hero-map {
+  width: 100%;
+  height: rem(384px);
+
+  .gm-style {
+    &-iw {
+      width: rem(253px);
+      height: rem(165px);
+      padding: rem(19px) !important;
+
+      button {
+        top: 0 !important;
+        right: 0 !important;
+      }
+
+      h1 {
+        font-size: rem(16px);
+        font-weight: bold;
+        line-height: rem(17px);
+        color: theme(midnight);
+        margin-bottom: rem(15px);
+      }
+
+      ul {
+        li {
+          margin-bottom: rem(8px);
+          font-size: rem(12px);
+          line-height: rem(17px);
+          color: theme(midgray);
+          display: flex;
+        }
+
+        strong {
+          color: theme(midnight);
+          min-width: rem(30px);
+        }
+      }
+    }
+
+    &-iw-t {
+      &:after {
+      }
+    }
+  }
+}

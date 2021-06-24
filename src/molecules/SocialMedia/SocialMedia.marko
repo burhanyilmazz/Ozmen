@@ -1,0 +1,17 @@
+$ {
+    let classes = ["m-social-media"];
+    const items = input.items || ["facebook", "instagram", "linkedin", "twitter", "youtube"];
+    const title = input.title;
+
+    if (input.class) {
+        classes.push(input.class);
+    }
+}
+<div class=classes>
+    <div class="m-social-media__title" if(title)>${title}</div>
+    <div class="m-social-media__item">
+    <for(item in items)>
+        <ButtonIcon icon=item attrs={"rel":"noreferrer", "target":"_blank"} />
+    </for>
+    </div>
+</div>

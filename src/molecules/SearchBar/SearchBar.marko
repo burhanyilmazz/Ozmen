@@ -1,0 +1,18 @@
+$ {
+    let classes = ["m-search-bar"];
+
+    if (input.type) {
+        classes.push(`m-search-bar--${input.type}`);
+    }
+}
+<div class=classes data-component="SearchBar">
+    <Form>
+        <h1 if(input.type) >Arama</h1>
+        <div class="m-search-bar__container">
+            <div class="m-search-bar__icon"><i class="icon-search"></i></div>
+            <input type="text" placeholder="Ne Aramıştınız ?" required>
+            <div class="m-search-bar__line"></div>
+            <ButtonIcon icon="enter" type="button" />
+        </div>
+    </Form>
+</div>

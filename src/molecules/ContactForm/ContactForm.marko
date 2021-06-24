@@ -1,0 +1,30 @@
+<div class="m-contact-form">
+    <h1>İletişim Formu</h1>
+
+    <Form>
+        <FormInput placeholder="Adınız Soyadınız" required />
+        <FormInput placeholder="Mail Adresiniz" required type="email" />
+        <FormInput placeholder="Telefon Numaranız" required />
+        <FormTextarea attrs={"rows": "2"} placeholder="Mesajınız" />
+        <FormCheckbox required field="<b data-fancyId='#modal-contact'>Kişisel Verilerimin Korunması</b>’nı kabul ediyorum." />
+        <BtnGroup>
+            <Button type="button" icon="arrow-right">Gönder</Button>
+        </BtnGroup>
+    </Form>
+</div>
+
+<Modal id="modal-contact" type="user-agreement">
+    <@Title>
+        <h4>Kredi Kartı Kaydetme Şartları</h4>
+    </@Title>
+    <@Body>
+        <ScrollBox>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec erat tortor, faucibus et leo ut, accumsan scelerisque augue. Vestibulum volutpat rhoncus faucibus. Nunc sollicitudin neque eget orci malesuada, ac dictum justo imperdiet. In quis fringilla metus. Vestibulum condimentum arcu at lectus finibus sodales. Donec a elit consequat elit porttitor hendrerit id eu ante. Nulla facilisi. Maecenas nec ligula ac mauris tempus mollis. Maecenas quis lorem lacus. Pellentesque et vulputate lacus. Fusce fringilla egestas mauris vel varius.</p>
+            <p>Pellentesque quis lorem tortor. Fusce egestas augue nisl, ut volutpat velit porta eget. Quisque est sapien, tincidunt eget ullamcorper in, scelerisque eu diam. Curabitur sollicitudin nibh at turpis posuere molestie. Cras ac sollicitudin diam. Nam in pellentesque nunc. Nullam consectetur, orci at eleifend hendrerit, massa diam tempus nisl, eu pharetra quam risus vitae orci. Duis aliquam, nulla vitae vulputate vestibulum, nunc orci eleifend quam, quis pellentesque ex dui eget arcu. Morbi pretium velit est, pharetra efficitur ex pulvinar eget.</p>
+            <p>In fringilla turpis eget orci scelerisque tristique. Sed facilisis auctor quam, sed ultricies nunc. Nulla gravida augue felis, quis laoreet ligula imperdiet sed. Nunc eu lacus libero. Etiam eget urna ut elit consectetur mattis eget eu arcu. Praesent arcu justo, tincidunt quis varius vitae, semper nec tortor. Quisque pulvinar enim ex, ut viverra ligula ullamcorper sit amet. Phasellus iaculis sodales justo, id tincidunt sapien scelerisque ac. Nulla pulvinar feugiat est, nec maximus lacus faucibus in. Nulla nec lacus nec ligula mollis porta ac ut ante. Vivamus pellentesque suscipit tortor, a aliquet felis malesuada et.</p>
+        </ScrollBox>
+    </@Body>
+    <@Foot>
+        <Button attrs={"data-component":"RemoteCheck"} icon="arrow-right">Okudum, Onaylıyorum</Button>
+    </@Foot>
+</Modal>

@@ -1,0 +1,23 @@
+<include('../../templates/Homepage/Homepage.marko')>
+  <@title>Carousel</@title>
+  <@body>
+
+    <style>
+      .body {
+        overflow: hidden;
+      }
+    </style>
+
+    <section id="buttons" style="background: white; padding: 50px 0;">
+      <h1 style="color: #000000; text-align: center;">Carousel</h1>
+
+      <div style="margin-bottom: 20px;">
+        <div style="color: #000000; margin-bottom: 10px; text-align: center;">m-carousel</div>
+        <div style="position: relative;">
+          <Carousel />
+        </div>
+      </div>
+    </section>
+
+  </@body>
+</include>

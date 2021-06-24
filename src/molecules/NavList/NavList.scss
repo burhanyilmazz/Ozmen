@@ -1,0 +1,52 @@
+.m-nav-list {
+  font-weight: 500;
+  font-size: rem(16px);
+  line-height: rem(19px);
+  background: $white;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+  }
+
+  li {
+    border-bottom: 2px solid rgba($color: $mineshaft, $alpha: 0.05);
+
+    &:last-child {
+      border: 0;
+    }
+  }
+
+  a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgba($color: $Tundora, $alpha: 0.5);
+    padding: rem(16px) rem(30px);
+
+    &:hover {
+      color: $Matisse;
+    }
+  }
+
+  &--active {
+    color: $Matisse !important;
+  }
+
+  .icon-arrow {
+    transform: rotate(-90deg);
+
+    &:before {
+      font-size: rem(12px);
+    }
+  }
+
+  .icon-download {
+    &:before {
+      font-size: rem(16px);
+    }
+  }
+}

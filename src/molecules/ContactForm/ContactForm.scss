@@ -1,0 +1,39 @@
+.m-contact-form {
+  margin-top: rem(170px);
+
+  @media screen and (max-width: 1024px) {
+    margin-top: rem(100px);
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-top: rem(55px);
+  }
+
+  h1 {
+    color: $black;
+    font-size: rem(60px);
+    line-height: rem(64px);
+    font-weight: 600;
+    margin-bottom: rem(60px);
+    letter-spacing: -1.5px;
+
+    @media screen and (max-width: 768px) {
+      font-size: rem(36px);
+      line-height: rem(40px);
+      margin-bottom: rem(40px);
+    }
+  }
+
+  .a-input,
+  .a-textarea {
+    margin-bottom: rem(30px);
+  }
+
+  .m-btn-group{
+    justify-content: flex-start;
+  }
+
+  .a-btn {
+    margin-top: rem(30px);
+  }
+}

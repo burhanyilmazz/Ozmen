@@ -1,0 +1,16 @@
+$ {
+    let classes = ["m-shared-button"];
+    const items = input.items || ["facebook", "twitter", "linkedin"];
+
+    if (input.class) {
+        classes.push(input.class);
+    }
+}
+<div class=classes>
+    <div class="m-shared-button__title">Paylaş:</div>
+    <div class="m-shared-button__list">
+    <for(item in items)>
+        <ButtonIcon icon=item attrs={"rel":"noreferrer", "target":"_blank"} />
+    </for>
+    </div>
+</div>

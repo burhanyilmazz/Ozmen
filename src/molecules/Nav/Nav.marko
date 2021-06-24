@@ -1,0 +1,84 @@
+$ const items = input.items || [
+    {
+        title: "Hikayemiz",
+    },
+    {
+        title: "Ürünlerimiz",
+        child: [
+            {
+                title: "Diş Tableti",
+                child: [{ title: "Nane Özlü Diş Tableti" }, { title: "Okaliptüs Özlü Diş Tableti" }, { title: "Mentol Özlü Diş Tableti" }]
+            },
+            {
+                title: "Çocuk Diş Tableti",
+                child: [{ title: "Nane Özlü Diş Tableti" }, { title: "Okaliptüs Özlü Diş Tableti" }, { title: "Mentol Özlü Diş Tableti" }]
+            },
+            {
+                title: "Diş Macunu",
+                child: [{ title: "Nane Özlü Diş Tableti" }, { title: "Okaliptüs Özlü Diş Tableti" }, { title: "Mentol Özlü Diş Tableti" }]
+            },
+            {
+                title: "Ağız Yıkama Tableti",
+                child: [{ title: "Nane Özlü Diş Tableti" }, { title: "Okaliptüs Özlü Diş Tableti" }, { title: "Mentol Özlü Diş Tableti" }]
+            },
+        ]
+    },
+    {
+        title: "Üretim",
+        isActive: true
+    },
+    {
+        title: "Blog"
+    },
+    {
+        title: "E-Shop"
+    },
+    {
+        title: "Kariyer"
+    },
+    {
+        title: "İletişim"
+    }
+];
+
+<nav class="m-nav">
+    <ul>
+        <for(item in items)>
+            <li class=(item.child ? "m-nav--dropdown": "")>
+                <a href="History.html" class=(item.isActive ? "m-nav--active" : null)>${item.title}</a>
+                <ul if(item.child)>
+                    <for(child in item.child)>
+                        <li class=(child.child ? "m-nav--dropdown-child": "")>
+                            <a href="History.html">${child.title}</a>
+                            <ul if(child.child)>
+                                <for(grand in child.child)>
+                                    <li class="m-nav--dropdown-child-link">
+                                        <a href="History.html">${grand.title}</a>
+                                    </li>
+                                </for>
+                                <li class="m-nav--dropdown-child-link">
+                                    <a href="History.html">Tümünü Gör</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </for>
+                </ul>
+            </li>
+        </for>
+    </ul>
+
+    <div class="m-nav__language">
+        <a href="#">
+            <i class="icon-language"></i>
+            <span>ENGLISH</span>
+        </a>
+    </div>
+
+    <div class="m-nav__bottom">
+        <ul>
+            <li><a href="#">SSS</a></li>
+            <li><a href="#">Gizlilik Güvenlik</a></li>
+            <li><a href="#">Cookies</a></li>
+        </ul>
+    </div>
+</nav>

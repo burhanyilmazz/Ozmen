@@ -1,0 +1,95 @@
+export default class Sidebar {
+  constructor(el, options) {
+    this.$el = el;
+
+    const defaults = {
+      hamburger: ".a-hamburger",
+      toggle: "o-sidebar--open",
+      shadow: ".a-shadow",
+      product: {
+        self: ".o-sidebar__product",
+        item: ".o-sidebar__product--dropdown",
+        active: "o-sidebar__product--active",
+        link: ".o-sidebar__product--link"
+      },
+      search: {
+        self: ".m-search-bar--header",
+        trigger: ".js-search",
+        class: "m-search-bar--open"
+      }
+    };
+
+    this.options = $.extend({}, defaults, options);
+
+    this.$hamburger = this.$el.find(this.options.hamburger);
+    this.$product = this.$el.find(this.options.product.self);
+    this.$shadow = $(this.options.shadow);
+    this.$searchBar = $(this.options.search.self);
+
+    this.$el
+      .on("click", this.options.product.item, event => this.onClickNav(event))
+      .on("click", this.options.product.link, event => this.onClickLink(event))
+      .on("click", this.options.search.trigger, event => this.onClickSearch(event))
+
+    $(document)
+      .on("hamburger.click", (event) => this.onClickHamburger(event))
+      .on("click", this.options.shadow, () => this.closeAll())
+
+    $(window).resize(() => this.windowResize())
+
+  }
+
+  windowResize() {
+    const windowWidth = $(window).width();
+
+    if (windowWidth < 769) {
+      this.closeAll()
+    }
+  }
+
+  closeAll() {
+    this.$el.removeClass(this.options.toggle);
+    this.$hamburger.removeClass('a-hamburger--open')
+    this.$searchBar.removeClass(this.options.search.class)
+  }
+
+  onClickNav(event) {
+    const $target = $(event.currentTarget)
+    if ($target.find("ul").length) {
+      event.preventDefault();
+
+      if (!$target.hasClass(this.options.product.active)) {
+        $(this.options.product.item).removeClass(this.options.product.active)
+        $target.addClass(this.options.product.active)
+      } else {
+        $target.removeClass(this.options.product.active)
+      }
+    }
+  }
+
+  onClickLink(event) {
+    event.preventDefault();
+    const $target = $(event.currentTarget)
+    const url = $target.find("a").attr("href");
+
+    window.location.href = url;
+  }
+
+  onClickSearch(event) {
+    event.preventDefault()
+
+    this.$searchBar.toggleClass(this.options.search.class)
+    this.$el.removeClass(this.options.toggle);
+    this.$hamburger.removeClass('a-hamburger--open')
+  }
+
+  onClickHamburger(event) {
+    const windowWidth = $(window).width();
+
+    if (windowWidth > 768) {
+      event.preventDefault()
+      this.$el.toggleClass(this.options.toggle);
+      this.$searchBar.removeClass(this.options.search.class)
+    }
+  }
+}

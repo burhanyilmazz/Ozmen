@@ -1,0 +1,90 @@
+.m-slider {
+  position: relative;
+
+  &__prev,
+  &__next {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    cursor: pointer;
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    z-index: 5;
+    width: rem(60px);
+    height: rem(60px);
+    transition: all 0.5s ease;
+    @extend .icon-arrow-right;
+
+    &:before {
+      font-family: "IconFont";
+    }
+
+    &.swiper-button-disabled,
+    &.a-btn-icon--disabled {
+      opacity: 0.25;
+    }
+  }
+
+  &__prev {
+    transform: rotate(-180deg);
+  }
+
+  &__next {
+  }
+
+  .swiper-pagination {
+    bottom: rem(143px);
+    left: rem(160px);
+    width: auto;
+    text-align: left;
+
+    @media screen and (max-width: 1440px) {
+      left: rem(100px);
+      bottom: rem(36px);
+    }
+
+    @media screen and (max-width: 1366px) {
+      left: rem(50px);
+    }
+
+    @media screen and (max-width: 1200px) {
+      left: rem(40px);
+    }
+
+    &-bullet {
+      width: rem(16px);
+      height: rem(16px);
+      background: transparent;
+      outline: 0;
+      margin: 0;
+      cursor: pointer;
+      border: 1px solid $CodGray;
+      opacity: 1;
+      margin-right: rem(20px);
+      transition: all 0.5s ease;
+
+      @media screen and (max-width: 990px) {
+        width: rem(10px);
+        height: rem(10px);
+        margin-right: rem(10px);
+      }
+
+      &:focus {
+        outline: 0;
+      }
+
+      &-active,
+      &:hover {
+        background: $CodGray;
+        position: relative;
+      }
+    }
+  }
+
+  [data-animation] {
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+  }
+}

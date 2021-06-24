@@ -1,0 +1,27 @@
+.m-scroll-box {
+  padding: rem(14px) rem(16px);
+  border: 1px solid $solitude;
+  border-radius: rem(10px);
+
+  &__body {
+    background: $white;
+    max-height: rem(210px);
+    overflow: auto;
+
+    &::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 rem(6px) rgba(0,0,0,0.3);
+      background-color: $solitude;
+      border-radius: 4px;
+    }
+
+    &::-webkit-scrollbar {
+      width: 3px;
+      background-color: $solitude;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: $midgray;
+      border-radius: 4px;
+    }
+  }
+}

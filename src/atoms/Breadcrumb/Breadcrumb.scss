@@ -1,0 +1,46 @@
+ul.a-breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+
+  li {
+    a {
+      position: relative;
+      color: #b2b2b2;
+      font-size: rem(12px);
+      text-decoration: none;
+      flex: 1 1 auto;
+      display: flex;
+      font-weight: 500;
+      align-items: center;
+      margin-right: rem(8px);
+      line-height: rem(18px);
+
+      &:before {
+        position: relative;
+        margin-right: rem(8px);
+        content: "";
+        border: solid #b2b2b2;
+        border-width: 0 1px 1px 0;
+        display: inline-block;
+        padding: 2px;
+        transform: rotate(-45deg);
+      }
+    }
+
+    &:first-child {
+      a {
+        &:before {
+          display: none;
+        }
+      }
+    }
+
+    &:last-child {
+      a {
+        color: $black;
+      }
+    }
+  }
+}

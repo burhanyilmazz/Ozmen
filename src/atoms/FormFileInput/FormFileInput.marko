@@ -1,0 +1,31 @@
+$ {
+    const options = input || {};
+    const inputOptions = input.inputOptions || {};
+    inputOptions.type = "FormFileInput";
+  
+    let classes = ["a-file-input"];
+    let inputClasses = [input.inputClasses] || [];
+    const attrs = input.attrs || {};
+    const _id = input.id;
+    const _required = input.required;
+    const field = input.field || "";
+  
+    if(_required) {
+      attrs.required = true;
+    }
+  
+    if ( input.name ) {
+      attrs.name = input.name;
+    } else {
+      const date = new Date();
+      attrs.name = `input-${date.getTime()}`
+    }
+  
+  }
+<div class=classes data-component=inputOptions>
+    <div class="a-file-input__text"><i class="icon-upload"></i> <span>Dosya Seçin <sub>(Pdf, Docx, Jpeg)</sub></span></div>
+    <input if(_id) class=inputClasses type="file" id=_id  ...attrs data-parsley-max-file-size="8704" accept=".doc,.docx, application/msword, application/vnd.ms-excel, application/vnd.ms-powerpoint, text/plain, application/pdf, image/*, application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document" />
+    <input else class=inputClasses type="file" id:scoped="input"  ...attrs data-parsley-max-file-size="8704" accept=".doc,.docx, application/msword, application/vnd.ms-excel, application/vnd.ms-powerpoint, text/plain, application/pdf, image/*, application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document" />
+    <label if(_id) for=_id>${field}</label>
+    <label else for:scoped="input">${field}</label>
+</div>

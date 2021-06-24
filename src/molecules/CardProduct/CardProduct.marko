@@ -1,0 +1,25 @@
+$ {
+    let classes = ["m-card-product"];
+    
+    if (input.class) {
+        classes.push(input.class);
+    }
+
+    if (input.type) {
+        classes.push(`m-card-product--${input.type}`);
+    }
+
+    const image = input.image;
+    const title = input.title;
+    const text = input.text;
+}
+<a href="#" class=classes>
+    <div class="m-card-product__head">
+        <Image src=image />
+    </div>
+
+    <div class="m-card-product__body">
+        <h2>${title}</h2>
+        <h3>${text}</h3>
+    </div>
+</a>

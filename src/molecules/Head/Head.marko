@@ -1,0 +1,18 @@
+$ {
+  const desktop = input.desktop || "../../assets/images/dummy/head.png";
+  const mobile = input.mobile || "../../assets/images/dummy/head-mobile.png";
+  const title = input.title;
+  let classes = ["m-head"];
+
+  if (input.class) {
+    classes.push(input.class);
+  }
+}
+
+<div class=classes>
+  <Picture desktop=desktop mobile=mobile />
+  <div class="container-fluid">
+    <Breadcrumb />
+    <h1 if(title)>${title}</h1>
+  </div>
+</div>

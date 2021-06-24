@@ -1,0 +1,59 @@
+<div class="hr-form">
+    <h2>Başvuru Formu</h2>
+
+    <Form>
+        <Grid>
+            <@GridCol class="col-lg-6">
+                <FormSelect required placeholder="Pozisyon Seçin" items=[{ text: "Item", value: "0" }, { text: "Item 2", value: "1" }, { text: "Item 3", value: "2" }]  />
+            </@GridCol>
+        </Grid>
+
+        <h3>Kişisel Bilgiler</h3>
+
+        <Grid>
+            <@GridCol class="col-lg-6">
+                <FormInput placeholder="Adınız" required />
+            </@GridCol>
+            <@GridCol class="col-lg-6">
+                <FormInput placeholder="Soyadınız" required />
+            </@GridCol>
+            <@GridCol class="col-lg-6">
+                <FormInput placeholder="Mail Adresiniz" type="email" required />
+            </@GridCol>
+            <@GridCol class="col-lg-6">
+                <FormInput placeholder="Telefon Numaranız" required />
+            </@GridCol>
+            <@GridCol class="col-lg-12">
+                <FormTextarea attrs={"rows": "2"} placeholder="Mesajınız" />
+            </@GridCol>
+            <@GridCol class="col-lg-6">
+                <FormFileInput required />
+            </@GridCol>
+            <@GridCol class="col-lg-12">
+                <FormCheckbox required field="<b data-fancyId='#modal-hr'>Kişisel Verilerimin Korunması</b>’nı kabul ediyorum." />
+            </@GridCol>
+        </Grid>
+
+        <Grid>
+            <@GridCol class="col-lg-4">
+                <Button type="button" icon="arrow-right">Gönder</Button>            
+            </@GridCol>
+        </Grid>
+    </Form>
+
+    <Modal id="modal-hr" type="user-agreement">
+        <@Title>
+            <h4>Kredi Kartı Kaydetme Şartları</h4>
+        </@Title>
+        <@Body>
+            <ScrollBox>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec erat tortor, faucibus et leo ut, accumsan scelerisque augue. Vestibulum volutpat rhoncus faucibus. Nunc sollicitudin neque eget orci malesuada, ac dictum justo imperdiet. In quis fringilla metus. Vestibulum condimentum arcu at lectus finibus sodales. Donec a elit consequat elit porttitor hendrerit id eu ante. Nulla facilisi. Maecenas nec ligula ac mauris tempus mollis. Maecenas quis lorem lacus. Pellentesque et vulputate lacus. Fusce fringilla egestas mauris vel varius.</p>
+                <p>Pellentesque quis lorem tortor. Fusce egestas augue nisl, ut volutpat velit porta eget. Quisque est sapien, tincidunt eget ullamcorper in, scelerisque eu diam. Curabitur sollicitudin nibh at turpis posuere molestie. Cras ac sollicitudin diam. Nam in pellentesque nunc. Nullam consectetur, orci at eleifend hendrerit, massa diam tempus nisl, eu pharetra quam risus vitae orci. Duis aliquam, nulla vitae vulputate vestibulum, nunc orci eleifend quam, quis pellentesque ex dui eget arcu. Morbi pretium velit est, pharetra efficitur ex pulvinar eget.</p>
+                <p>In fringilla turpis eget orci scelerisque tristique. Sed facilisis auctor quam, sed ultricies nunc. Nulla gravida augue felis, quis laoreet ligula imperdiet sed. Nunc eu lacus libero. Etiam eget urna ut elit consectetur mattis eget eu arcu. Praesent arcu justo, tincidunt quis varius vitae, semper nec tortor. Quisque pulvinar enim ex, ut viverra ligula ullamcorper sit amet. Phasellus iaculis sodales justo, id tincidunt sapien scelerisque ac. Nulla pulvinar feugiat est, nec maximus lacus faucibus in. Nulla nec lacus nec ligula mollis porta ac ut ante. Vivamus pellentesque suscipit tortor, a aliquet felis malesuada et.</p>
+            </ScrollBox>
+        </@Body>
+        <@Foot>
+            <Button attrs={"data-component":"RemoteCheck"} icon="arrow-right">Okudum, Onaylıyorum</Button>
+        </@Foot>
+    </Modal>
+</div>

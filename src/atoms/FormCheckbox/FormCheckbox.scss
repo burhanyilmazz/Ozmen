@@ -1,0 +1,76 @@
+.a-checkbox {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  padding: rem(6px) 0;
+
+  span {
+    font-size: rem(14px);
+    line-height: rem(19px);
+    color: $mineshaft;
+    padding-left: rem(30px);
+    position: relative;
+    font-weight: 400;
+    display: block;
+    @extend .icon-check;
+
+    &:before {
+      position: absolute;
+      font-family: $iconFontName !important;
+      color: $mineshaft;
+      font-size: rem(20px);
+      font-weight: bold;
+      display: none;
+      z-index: 1;
+      top: 1px;
+      left: 0;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      height: rem(19px);
+      width: rem(19px);
+      border: 1px solid $Silver;
+      top: 0;
+      left: 0;
+      background-color: $Alabaster2;
+    }
+
+    b {
+      font-size: rem(14px);
+      line-height: rem(19px);
+      color: $mineshaft;
+      font-weight: 500;
+      text-decoration: underline;
+    }
+  }
+
+  &--checked,
+  & input:checked {
+    ~ span {
+
+      &:before {
+        display: block;
+        color: $white;
+      }
+
+      &:after {
+        background-color: $Green;
+        border: 1px solid $Green;
+      }
+    }
+  }
+
+  &--disabled {
+    opacity: 0.6;
+  }
+
+  &.parsley-error {
+    span {
+      &:after {
+        border: 1px solid $Monza;
+      }
+    }
+  }
+}

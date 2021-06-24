@@ -1,0 +1,12 @@
+$ const items = input.items || ["Ana Sayfa", "Ticemlabs"];
+
+<ul class="a-breadcrumb" aria-label="Breadcrumb">
+  <for(item in items | status-var=loop)>
+    <li if(loop.isLast())>
+      <a href="javascript:;" aria-current="page" title="${item}">${item}</a>
+    </li>
+    <li else>
+      <a href="javascript:;" title="${item}">${item}</a>
+    </li>
+  </for>
+</ul>

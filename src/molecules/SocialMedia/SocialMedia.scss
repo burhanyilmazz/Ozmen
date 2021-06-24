@@ -1,0 +1,42 @@
+.m-social-media {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .a-btn-icon {
+    background: $Gallery;
+    width: rem(40px);
+    height: rem(40px);
+    border-radius: 100%;
+    color: $black;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 rem(5px);
+    transition: all 0.5s ease;
+
+    i {
+      &:before {
+        font-size: rem(18px);
+      }
+    }
+
+    &:hover {
+      color: $Green;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__share {
+    padding: rem(75px) 0;
+  }
+}

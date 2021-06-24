@@ -1,0 +1,20 @@
+$ {
+  const attrs = {};
+
+  if(input.dataLat && input.dataLng) {
+    attrs['data-lat'] = input.dataLat;
+    attrs['data-lng'] = input.dataLng;
+    attrs['data-content'] = input.dataContent;
+    attrs['data-url'] = input.dataUrl;
+  }
+}
+
+<div id="map" class='hero-map' 
+  data-component='Map' 
+  data-url='../../assets/data/Map.json' 
+  data-pinMedia='../../assets/images/content/pin.png'
+  ...attrs
+>
+
+
+</div>

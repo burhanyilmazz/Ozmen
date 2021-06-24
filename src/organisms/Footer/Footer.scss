@@ -1,0 +1,75 @@
+.o-footer {
+  background: $Alabaster;
+  position: relative;
+  z-index: 2;
+  margin-top: rem(50px);
+
+  &:before {
+    content: "";
+    width: 100%;
+    height: rem(100px);
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    position: absolute;
+    top: rem(-100px);
+
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 990px) {
+    padding-bottom: rem(30px);
+  }
+
+  .m-logo {
+    margin-top: rem(60px);
+  }
+
+  .m-social-media {
+    margin-top: rem(48px);
+
+    @media screen and (max-width: 1024px) {
+      margin-bottom: rem(70px);
+    }
+
+    @media screen and (max-width: 990px) {
+      display: inline-flex;
+      margin-top: rem(40px);
+      float: right;
+      margin-bottom: 0;
+
+      &__item {
+        flex-direction: column;
+
+        .a-btn-icon {
+          margin-bottom: rem(12px);
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .fikirmod {
+    position: absolute;
+    right: calc(25% + 20px);
+    bottom: rem(60px);
+    transform: rotate(90deg);
+
+    @media screen and (max-width: 1366px) {
+      bottom: rem(30px);
+    }
+
+    @media screen and (max-width: 1024px) {
+      right: rem(60px);
+      bottom: rem(10px);
+    }
+  }
+}

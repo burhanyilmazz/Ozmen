@@ -1,0 +1,22 @@
+<include('../../templates/Homepage/Homepage.marko')>
+  <@title>Tab</@title>
+  <@body>
+
+    <section id="tabs" style="background: white; padding: 50px 0;color: #000000; " >
+      <h1 style="color: #000000; text-align: center;">Tabs</h1>
+
+      <TabDefault tab-options={}>
+        <@TabItem label="Vize İsteyen Ülkeler">
+          <p>Tab pane1</p>
+        </@TabItem>
+        <@TabItem label="Vize İstemeyen Ülkeler" href="javascript:;">
+          <p>Tab pane2</p>
+        </@TabItem>
+        <@TabItem label="Kapıda Vize İsteyen Ülkeler" href="javascript:;">
+          <p>Tab pane3</p>
+        </@TabItem>
+      </TabDefault>
+
+    </section>
+  </@body>
+</include>
