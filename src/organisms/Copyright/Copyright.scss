@@ -1,23 +1,14 @@
 .o-copyright {
-  margin-top: rem(50px);
-  line-height: rem(16px);
-
-  @media screen and (max-width: 1200px) {
-    margin-top: rem(20px);
-  }
-
   h6 {
-    font-size: rem(12px);
-    font-weight: normal;
-    color: #949494;
+    font-size: rem(14px);
+    font-weight: 600;
+    color: $Tuna;
+    margin-bottom: rem(10px);
   }
 
   p {
     font-size: rem(12px);
-    color: #000000;
-
-    @media screen and (max-width: 480px) {
-      width: 80%;
-    }
+    color: $Tuna;
+    line-height: rem(16px);
   }
 }

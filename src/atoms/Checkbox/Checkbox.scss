@@ -1,31 +1,86 @@
 .a-check-box {
   position: relative;
   margin-bottom: rem(20px);
+  cursor: pointer;
 
   input[type="checkbox"] {
     opacity: 0;
-  }
+    position: absolute;
 
-  input[type="checkbox"] + label {
-    font-size: rem(16px);
-    font-weight: 600;
-    color: rgba($color: $CodGray2, $alpha: 0.6);
-    border: 2px solid rgba($color: $CodGray2, $alpha: 0.2);
-    width: 100%;
-    padding: rem(25px) rem(30px);
-    transition: all 0.5s ease;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-  }
+    & + label {
+      width: 100%;
+      height: rem(130px);
+      border: 2px solid $Gallery;
+      padding: rem(10px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      border-radius: rem(8px);
+      position: relative;
+      transition: all 0.5s ease;
+      cursor: pointer;
 
-  input[type="checkbox"]:checked + label{
-    color: $Monza !important;
-    border: 2px solid $Monza !important;
-  }
+      img {
+        max-height: rem(60px);
+        margin-bottom: rem(7px);
+      }
 
-  input[type="checkbox"]:hover + label {
-    color: $CodGray2;
-    border: 2px solid $CodGray2;
+      h3 {
+        font-size: rem(15px);
+        text-align: center;
+        line-height: rem(18px);
+      }
+
+      &:after {
+        content: "";
+        background: $Mercury;
+        width: rem(22px);
+        height: rem(22px);
+        border-radius: rem(4px);
+        position: absolute;
+        left: rem(10px);
+        top: rem(10px);
+        opacity: 0;
+        transition: all 0.5s ease;
+        z-index: 2;
+      }
+
+      span {
+        @extend .icon-check;
+        opacity: 0;
+        transition: all 0.2s ease;
+        &:before {
+          position: absolute;
+          font-family: $iconFontName !important;
+          color: $white;
+          font-size: rem(20px);
+          font-weight: bold;
+          z-index: 3;
+          top: rem(11px);
+          left: rem(11px);
+        }
+      }
+
+      &:hover {
+        border-color: $Tumbleweed;
+
+        &:after {
+          opacity: 1;
+        }
+      }
+    }
+
+    &:checked {
+      & + label {
+        &:after {
+          opacity: 1;
+          background: $Tumbleweed;
+        }
+        span {
+          opacity: 1;
+        }
+      }
+    }
   }
 }

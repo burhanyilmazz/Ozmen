@@ -9,27 +9,15 @@ $ {
 }
 
 <section class=classes data-component="Carousel">
-  <Slider options={effect:"fade", navigation: true, pagination: true, autoplay: { delay: 4000 }}>
+  <Slider options={effect:"fade", navigation: true, pagination: true, autoplay: { delay: 4000 }, watchOverflow: true, preloadImages: false, lazy: {loadPrevNext: false, loadOnTransitionStart: true }}>
     <@SliderItem>
-      <Mask type="mask2">
-        <Image class="a-mask__image" src="../../assets/images/dummy/blog1.jpg" />
-      </Mask>
+      <Picture swiper desktop="../../assets/images/content/carousel/carousel-1.jpg" mobile="../../assets/images/content/carousel/carousel-1-m.jpg" />
     </@SliderItem>
     <@SliderItem>
-      <Mask type="mask2">
-        <Image class="a-mask__image" src="../../assets/images/dummy/blog2.jpg" />
-      </Mask>
+      <Picture swiper desktop="../../assets/images/content/carousel/carousel-2.jpg" mobile="../../assets/images/content/carousel/carousel-1-m.jpg" />
     </@SliderItem>
     <@SliderItem>
-      <Mask type="mask2">
-        <Image class="a-mask__image" src="../../assets/images/dummy/blog3.jpg" />
-      </Mask>
+      <Picture swiper desktop="../../assets/images/content/carousel/carousel-3.jpg" mobile="../../assets/images/content/carousel/carousel-1-m.jpg" />
     </@SliderItem>
   </Slider>
-
-  <ul class="m-carousel__thumbs">
-    <li><Image src="../../assets/images/dummy/blog1.jpg" /></li>
-    <li><Image src="../../assets/images/dummy/blog2.jpg" /></li>
-    <li><Image src="../../assets/images/dummy/blog3.jpg" /></li>
-  </ul>
 </section>

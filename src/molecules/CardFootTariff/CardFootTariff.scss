@@ -1,0 +1,47 @@
+.m-card-foot-tariff {
+  position: relative;
+  display: flex;
+  height: rem(500px);
+  background: $SpringWood;
+  margin-bottom: rem(30px);
+
+  &__content {
+    padding: rem(160px) rem(30px) rem(30px) rem(57px);
+    width: 50%;
+
+    h3 {
+      font-size: rem(40px);
+      color: $Tuna;
+      margin-bottom: rem(27px);
+    }
+
+    p {
+      font-size: rem(18px);
+      font-weight: 300;
+      color: $Tuna;
+    }
+
+    a {
+      margin-top: rem(77px);
+      z-index: 2;
+      font-size: rem(14px);
+      color: $Tuna;
+      display: inline-flex;
+      align-items: center;
+
+      i {
+        margin-left: rem(20px);
+
+        &:before {
+          font-size: rem(10px);
+        }
+      }
+    }
+  }
+
+  &__image {
+    img {
+      width: 100%;
+    }
+  }
+}

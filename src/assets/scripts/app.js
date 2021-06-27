@@ -22,10 +22,9 @@ import TabDefault       from  '../../../src/molecules/TabDefault/TabDefault';
 import LeftNav          from  '../../../src/molecules/LeftNav/LeftNav';
 
 import Sidebar          from  '../../../src/organisms/Sidebar/Sidebar';
-
 import Contact          from  '../../../src/organisms/Contact/Contact';
 import Header           from  '../../../src/organisms/Header/Header';
-import Hero             from  '../../../src/organisms/Hero/Hero';
+import Services         from  '../../../src/organisms/Services/Services';
 
 const Components = {
   LazyLoad,
@@ -53,7 +52,7 @@ const Components = {
   Sidebar,
   Contact,
   Header,
-  Hero,
+  Services,
 };
 
 function buildComponent( that, type, data ) {

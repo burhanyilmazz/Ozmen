@@ -3,77 +3,50 @@
   list-style: none;
   padding: 0;
   z-index: 1;
-  padding-right: rem(50px);
 
-  @media screen and (max-width: 1200px) {
-    padding-right: 0;
-  }
-
-  .a-mask {
-    @media screen and (max-width: 1200px) {
-      margin: auto;
-    }
+  img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    margin-bottom: -4px;
   }
 
   &__button {
     display: none;
   }
 
-  &__thumbs {
-    display: flex;
-    position: relative;
-    margin-top: rem(-80px);
-    z-index: 2;
-
-    @media screen and (max-width: 1440px) {
-      margin-top: rem(-60px);
-    }
-
-    @media screen and (max-width: 1280px) {
-      margin-top: rem(-50px);
-    }
-
-    li {
-      margin-right: rem(20px);
-      cursor: pointer;
-      border-radius: 100%;
-      overflow: hidden;
-      width: rem(72px);
-      height: rem(72px);
-
-      @media screen and (max-width: 1366px) {
-        width: rem(60px);
-        height: rem(60px);
-      }
-
-      @media screen and (max-width: 1024px) {
-        width: rem(50px);
-        height: rem(50px);
-        margin-right: rem(10px);
-      }
-
-      &:last-child {
-        position: absolute;
-        right: 0;
-        margin-right: 0;
-      }
-
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-    }
-  }
-
   .m-slider {
     &__prev,
     &__next {
-      display: none;
+      width: rem(97px);
+      height: rem(60px);
+      background-color: rgba($color: $white, $alpha: 0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      top: 50%;
+      margin-top: rem(-30px);
+      border-radius: rem(30px);
+    }
+
+    &__prev {
+      left: rem(107px);
+      &::before {
+        @extend %icon-arrow-left;
+      }
+    }
+    &__next {
+      right: rem(204px);
+      &::before {
+        @extend %icon-arrow-right;
+      }
     }
   }
 
   .swiper {
+    &-wrapper {
+      height: auto;
+    }
     &-lazy {
       opacity: 0;
       transition: opacity 150ms ease;
@@ -83,25 +56,53 @@
         opacity: 1;
       }
     }
+    &-pagination {
+      bottom: rem(122px);
+      left: rem(107px);
+      width: auto;
+      text-align: left;
+      z-index: 99;
+      position: absolute;
 
-    &-slide {
-      background-color: $white;
-      background-size: cover;
-      background-position: 100% 0;
-      display: flex;
-      width: 100% !important;
+      &-bullet {
+        width: rem(40px);
+        height: rem(40px);
+        background: transparent;
+        outline: 0;
+        margin: 0;
+        cursor: pointer;
+        border: 1px solid transparent;
+        opacity: 1;
+        margin-right: rem(20px);
+        transition: all 0.5s ease;
+        position: relative;
 
-      &-active {
-        .m-carousel__desc {
-          animation-duration: 0.5s;
-          animation-fill-mode: both;
-          animation-name: fadeInUpBig;
+        &:before {
+          content: "";
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          margin-left: -5px;
+          margin-top: -5px;
+          background: rgba($color: $white, $alpha: .15);
+          width: rem(10px);
+          height: rem(10px);
+          border-radius: 100%;
+        }
+
+        &:focus {
+          outline: 0;
+        }
+
+        &-active,
+        &:hover {
+          border-color: $white;
+
+          &:before {
+            background: $white;
+          }
         }
       }
-    }
-
-    &-pagination {
-      display: none;
     }
   }
 }

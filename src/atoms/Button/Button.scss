@@ -1,7 +1,7 @@
 .a-btn {
   min-width: rem(140px);
   line-height: rem(20px);
-  background-color: $Green;
+  background-color: $Tumbleweed;
   padding: rem(20px) rem(30px);
   color: $white;
   text-decoration: none;
@@ -23,7 +23,7 @@
     height: 100%;
     position: absolute;
     z-index: 1;
-    background-color: $Green;
+    background-color: $Tuna;
     transition: all 0.5s ease;
     border-radius: rem(35px);
     right: 0;
@@ -35,7 +35,7 @@
   }
 
   &:hover {
-    background: #7AAF93;
+    background: $Tumbleweed;
   }
 
   &--white {
@@ -68,7 +68,7 @@
     padding: rem(20px) rem(85px) rem(20px) rem(30px);
     position: relative;
     justify-content: flex-start;
-    background-color: #7AAF93;
+    background-color: $Tumbleweed;
     color: $white;
     transition: all 0.5s ease;
 

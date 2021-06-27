@@ -1,115 +1,57 @@
 .m-newsletter {
-  background-color: #0b6255;
-  background-size: cover;
-  padding: rem(60px);
-  @media screen and (max-width: 1440px) {
-    padding: rem(40px);
-  }
-  @media screen and (max-width: 1366px) {
-    padding: rem(30px);
-  }
+  background: $Gallery;
+  height: rem(350px);
+  padding: rem(65px) rem(57px);
+  margin-bottom: rem(30px);
 
-  @media screen and (max-width: 1200px) {
-    margin: 0 rem(-35px);
-  }
-
-  h2 {
-    letter-spacing: -0.75px;
-    color: #ffffff;
+  h5 {
     font-size: rem(30px);
-    line-height: rem(33px);
-    font-weight: 600;
+    font-weight: 400;
+  }
 
-    @media screen and (max-width: 768px) {
-      font-size: rem(21px);
-      line-height: rem(25px);
-    }
-
-    span {
-      color: #7aaf93;
-      display: block;
-
-      @media screen and (max-width: 1200px) {
-        display: inline-block;
-        margin-right: rem(10px);
-      }
-
-      @media screen and (max-width: 480px) {
-        display: block;
-        margin-right: 0;
-      }
-    }
+  h4 {
+    font-size: rem(40px);
   }
 
   .m-form {
-    margin-top: rem(46px);
-
-    @media screen and (max-width: 1200px) {
-      display: flex;
-      margin-top: rem(15px);
-    }
+    margin-top: rem(70px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
-  .a-input {
-    @extend .icon-email;
+  &__input {
     position: relative;
+    width: calc(100% - 234px);
 
-    @media screen and (max-width: 1200px) {
-      width: calc(100% - 75px);
-    }
-
-    &:before {
-      font-family: "IconFont";
+    .a-icon {
       position: absolute;
-      top: rem(22px);
-      left: rem(20px);
+      z-index: 2;
+      left: 0;
+      top: rem(17px);
     }
 
-    input {
-      box-shadow: 0px rem(10px) rem(20px) #00353010;
-      border-radius: rem(35px);
-      padding-left: rem(50px);
-      font-size: rem(12px);
-      line-height: rem(34px);
+    .a-input {
+      position: relative;
+      z-index: 1;
+      input {
+        background: $Gallery;
+        border-bottom: 1px solid #707070;
+        font-size: rem(12px);
+        padding: rem(22px);
+        padding-left: rem(40px);
+        color: $Tuna;
 
-      &:hover,
-      &:focus {
-        border: 0px;
-      }
+        &::placeholder {
+          color: rgba($color: $Tuna, $alpha: 0.5);
+        }
 
-      &::placeholder {
-        color: rgba($color: #ccc, $alpha: 1);
-      }
-    }
-
-    i {
-      display: none;
-    }
-  }
-
-  .a-btn--with-icon {
-    margin-top: rem(20px);
-    background-color: #25514d;
-
-    @media screen and (max-width: 1200px) {
-      min-height: rem(60px);
-      min-width: rem(60px);
-      padding-left: 0;
-      padding-right: 0;
-      margin-top: 0;
-      margin-left: rem(15px);
-      span {
-        display: none;
-      }
-    }
-
-    &:after {
-      background-color: #7aaf93;
-    }
-
-    @media screen and (max-width: 990px) {
-      &:before {
-        right: rem(23px);
+        &:focus,
+        &:valid {
+          &::placeholder {
+            opacity: 0;
+          }
+        }
       }
     }
   }

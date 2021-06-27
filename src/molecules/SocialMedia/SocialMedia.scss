@@ -1,25 +1,26 @@
 .m-social-media {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  &__item {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-  }
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 
   .a-btn-icon {
-    background: $Gallery;
-    width: rem(40px);
-    height: rem(40px);
-    border-radius: 100%;
-    color: $black;
+    color: $Tuna;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     margin: 0 rem(5px);
     transition: all 0.5s ease;
+    position: relative;
+
+    &:after {
+      position: absolute;
+      content: "";
+      background: rgba($color: $Tuna, $alpha: .3);
+      width: 1px;
+      height: rem(16px);
+      right: rem(-35px);
+    }
 
     i {
       &:before {
@@ -28,15 +29,15 @@
     }
 
     &:hover {
-      color: $Green;
+      color: $Tuna;
     }
 
     &:last-child {
       margin-right: 0;
-    }
-  }
 
-  &__share {
-    padding: rem(75px) 0;
+      &:after{
+        display: none;
+      }
+    }
   }
 }

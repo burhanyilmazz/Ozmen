@@ -5,7 +5,7 @@ export default class SearchBar {
     const defaults = {
       search: {
         toggle: "m-search-bar--open",
-        trigger: ".m-search-bar__close",
+        trigger: ".js-close-search-bar",
       },
       icons: {
         self: ".js-search",

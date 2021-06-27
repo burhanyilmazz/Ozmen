@@ -1,0 +1,35 @@
+.m-card-catalog {
+  position: relative;
+  display: flex;
+  height: rem(500px);
+  background: linear-gradient(121deg, #eff0ed 0%, #c6cebf 100%);
+  margin-bottom: rem(30px);
+
+  &__content {
+    padding: rem(160px) rem(30px) rem(30px) rem(57px);
+    width: 60%;
+
+    h3 {
+      font-size: rem(40px);
+      color: $Tuna;
+      margin-bottom: rem(27px);
+    }
+
+    p {
+      font-size: rem(18px);
+      font-weight: 300;
+      color: $Tuna;
+    }
+
+    .a-btn {
+      margin-top: rem(77px);
+    }
+  }
+
+  &__image {
+      margin-top: rem(133px);
+    img {
+      width: 100%;
+    }
+  }
+}

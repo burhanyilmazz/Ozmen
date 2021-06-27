@@ -1,144 +1,155 @@
 .m-search-bar {
-  position: relative;
-  display: flex;
-  justify-content: start;
+  position: absolute;
+  background: $white;
+  width: 60%;
+  height: 100vh;
+  top: 0;
+  right: -100%;
+  z-index: 999;
+  transition: all 0.5s ease;
+
+  h1 {
+    font-size: rem(70px);
+    margin: 0;
+  }
+
+  h3 {
+    font-size: rem(26px);
+    font-weight: 400;
+    margin-bottom: rem(22px);
+  }
+
+  .icon-close {
+    position: absolute;
+    top: rem(57px);
+    right: rem(57px);
+    cursor: pointer;
+
+    &:before {
+      font-size: rem(40px);
+    }
+  }
 
   &__container {
     position: relative;
+    padding: rem(100px);
   }
 
   .m-form {
     width: 100%;
     position: relative;
+    margin-top: rem(200px);
   }
 
   &__icon {
     position: absolute;
+    right: rem(48px);
+    top: rem(50px);
     z-index: 2;
-    left: 0;
-    top: rem(18px);
-    color: #191919;
-
-    i {
-      &:before {
-        font-size: rem(22px);
-      }
-    }
   }
 
-  .a-btn-icon {
-    position: absolute;
-    z-index: 2;
-    right: 0;
-    top: rem(18px);
-    color: #191919;
-
-    i {
-      &:before {
-        font-size: rem(22px);
-      }
-    }
-  }
-
-  &__line {
-    position: absolute;
-    width: 0;
-    height: 1px;
-    background: #191919;
-    margin-top: -1px;
-    transition: all 0.5s ease;
-    z-index: 2;
-    top: rem(60px);
-
-    @media screen and (max-width: 768px) {
-      margin-top: 1px;
-    }
-  }
-
-  input {
-    border-bottom: 1px solid #191919;
-    font-weight: normal;
-    font-size: rem(24px);
-    color: #191919;
-    padding: rem(15px) rem(50px);
-    width: 100%;
-    border-radius: 0;
+  &__input {
     position: relative;
-    z-index: 1;
+    input {
+      background: rgba($color: $Mercury, $alpha: 0.2);
+      border: 1px solid $Alto;
+      border-radius: rem(10px);
+      color: $Tuna;
+      font-size: rem(20px);
+      padding: rem(47px) rem(80px) rem(47px) rem(53px);
+      position: relative;
+      z-index: 1;
+      width: 100%;
 
-    &::placeholder {
-      color: #191919;
-    }
-
-    &:focus,
-    &:valid {
       &::placeholder {
-        opacity: 0;
+        color: rgba($color: $Tuna, $alpha: 0.5);
       }
 
-      & ~ .m-search-bar__line {
-        background: $Green;
-        width: 100%;
+      &:focus,
+      &:valid {
+        &::placeholder {
+          opacity: 0;
+        }
       }
     }
   }
 
-  &--header {
-    position: fixed;
-    width: calc(100% - 140px);
-    top: -100%;
+  &__footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     left: 0;
-    transform: translateY(-100%);
-    opacity: 0;
-    -webkit-tap-highlight-color: transparent;
-    transition: transform 0.25s ease-in-out;
-    z-index: 9;
-    border-radius: 0;
-    padding-top: rem(250px);
-    padding-bottom: rem(177px);
-    background: $WildSand;
-    max-width: 100%;
+    display: flex;
+  }
 
-    h1 {
-      letter-spacing: -1.5px;
-      color: #000000;
-      font-size: rem(60px);
-      margin-bottom: rem(30px);
-      font-weight: 600;
+  &-footer {
+    &__social {
+      background: $DesertStorm2;
+      padding: 0 rem(100px);
+      height: rem(184px);
+      display: flex;
+      align-items: center;
+      width: 50%;
 
-      @media screen and (max-width: 768px) {
-        font-size: rem(36px);
-        font-weight: 500;
+      .m-social-media {
+        margin-top: 0;
+        &__item {
+          justify-content: flex-start;
+        }
+
+        .a-btn-icon {
+          &:first-child {
+            margin-left: 0px !important;
+          }
+        }
       }
     }
+    &__nav {
+      background: $DesertStorm;
+      width: 50%;
+      padding: 0 rem(100px);
+      height: rem(184px);
+      display: flex;
+      align-items: center;
 
-    .m-form {
-      width: 100%;
-      max-width: rem(950px);
-      margin: auto;
+      ul {
+        font-size: rem(14px);
+        font-weight: 300;
 
-      @media screen and (max-width: 1024px) {
-        max-width: rem(815px);
+        li {
+          margin-bottom: rem(20px);
+
+          &:last-child {
+            margin: 0;
+          }
+        }
+
+        a {
+          color: $Tuna;
+          transition: all 0.5s ease;
+
+          &:hover {
+            color: $Green;
+          }
+        }
       }
     }
   }
 
   &--open {
-    transform: translateY(0);
-    top: 0;
+    right: rem(107px);
     opacity: 1;
-    transition: transform 0.25s ease-in-out;
 
-    @media screen and (max-width: 768px) {
-      padding: rem(50px) rem(30px);
-      box-shadow: none;
-      width: 100%;
-      top: rem(80px);
-    }
-
-    & + .a-shadow {
+    & ~ .a-shadow {
       z-index: 8;
       opacity: 1;
+    }
+    & + .o-sidebar {
+      .o-sidebar__main {
+        background: $white;
+        transition: all 0.5s ease;
+        border-color: rgba($color: $Tuna, $alpha: 0.3);
+      }
     }
   }
 }

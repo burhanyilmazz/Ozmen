@@ -6,14 +6,14 @@ export default class Sidebar {
       hamburger: ".a-hamburger",
       toggle: "o-sidebar--open",
       shadow: ".a-shadow",
-      product: {
-        self: ".o-sidebar__product",
-        item: ".o-sidebar__product--dropdown",
-        active: "o-sidebar__product--active",
-        link: ".o-sidebar__product--link"
+      nav: {
+        self: ".o-sidebar__nav",
+        item: "nav > ul > li",
+        active: "o-sidebar__nav--active",
+        link: ".o-sidebar__nav--link"
       },
       search: {
-        self: ".m-search-bar--header",
+        self: ".m-search-bar",
         trigger: ".js-search",
         class: "m-search-bar--open"
       }
@@ -22,13 +22,13 @@ export default class Sidebar {
     this.options = $.extend({}, defaults, options);
 
     this.$hamburger = this.$el.find(this.options.hamburger);
-    this.$product = this.$el.find(this.options.product.self);
+    this.$nav = this.$el.find(this.options.nav.self);
     this.$shadow = $(this.options.shadow);
     this.$searchBar = $(this.options.search.self);
 
     this.$el
-      .on("click", this.options.product.item, event => this.onClickNav(event))
-      .on("click", this.options.product.link, event => this.onClickLink(event))
+      .on("click", this.options.nav.item, event => this.onClickNav(event))
+      .on("click", this.options.nav.link, event => this.onClickLink(event))
       .on("click", this.options.search.trigger, event => this.onClickSearch(event))
 
     $(document)
@@ -58,11 +58,11 @@ export default class Sidebar {
     if ($target.find("ul").length) {
       event.preventDefault();
 
-      if (!$target.hasClass(this.options.product.active)) {
-        $(this.options.product.item).removeClass(this.options.product.active)
-        $target.addClass(this.options.product.active)
+      if (!$target.hasClass(this.options.nav.active)) {
+        $(this.options.nav.item).removeClass(this.options.nav.active)
+        $target.addClass(this.options.nav.active)
       } else {
-        $target.removeClass(this.options.product.active)
+        $target.removeClass(this.options.nav.active)
       }
     }
   }

@@ -1,0 +1,48 @@
+.o-looking {
+  background: $white;
+  padding: rem(75px) 0;
+  position: relative;
+
+  h2 {
+    font-size: rem(57px);
+    text-align: center;
+    line-height: rem(68px);
+    margin-bottom: rem(14px);
+  }
+
+  p {
+    font-size: rem(20px);
+    font-weight: 300;
+    color: $black;
+    text-align: center;
+  }
+
+  &__list {
+    margin: rem(65px) rem(-20px);
+    display: flex;
+    flex-wrap: wrap;
+
+    .a-check-box {
+      width: calc((100% / 8) - 40px);
+      height: rem(130px);
+      margin: rem(20px);
+    }
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #looking-error {
+      margin-top: rem(65px);
+      margin-bottom: rem(10px);
+      font-weight: 600;
+      font-size: rem(16px);
+
+      & + .o-looking__list {
+          margin-top: 0;
+      }
+  }
+}

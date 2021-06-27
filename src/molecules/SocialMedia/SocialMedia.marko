@@ -8,10 +8,7 @@ $ {
     }
 }
 <div class=classes>
-    <div class="m-social-media__title" if(title)>${title}</div>
-    <div class="m-social-media__item">
     <for(item in items)>
         <ButtonIcon icon=item attrs={"rel":"noreferrer", "target":"_blank"} />
     </for>
-    </div>
 </div>

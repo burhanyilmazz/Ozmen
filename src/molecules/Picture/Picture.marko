@@ -1,5 +1,6 @@
 <picture>
     <source media="(max-width: 989px)" srcset=input.mobile>
     <source media="(min-width: 990px)" srcset=input.desktop>
-    <Image src=input.desktop />
+    <img class="swiper-lazy" if(input.swiper) data-src=input.desktop>
+    <Image src=input.desktop else />
 </picture>

@@ -1,0 +1,37 @@
+.m-social-media-box {
+  width: 100%;
+  background: $Mercury;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: rem(66px) rem(57px);
+
+  &__title {
+    h5 {
+      font-size: rem(30px);
+      font-weight: 400;
+    }
+
+    h4 {
+      font-size: rem(40px);
+    }
+  }
+
+  &__list {
+    display: flex;
+    a {
+      color: $Tuna;
+      font-size: rem(16px);
+      display: flex;
+      align-items: flex-end;
+      margin-right: rem(110px);
+
+      &:last-child {
+        margin: 0;
+      }
+      span {
+        margin-left: rem(5px);
+      }
+    }
+  }
+}

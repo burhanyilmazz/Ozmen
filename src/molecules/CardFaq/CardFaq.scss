@@ -1,0 +1,47 @@
+.m-card-faq {
+    position: relative;
+    height: rem(350px);
+    margin-bottom: rem(30px);
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 1;
+        position: relative;
+    }
+
+    &__title {
+        font-size: rem(40px);
+        font-weight: 600;
+        color: $white;
+        line-height: rem(50px);
+        position: absolute;
+        top: rem(65px);
+        left: rem(57px);
+        z-index: 2;
+
+        span {
+            color: $Sage;
+        }
+    }
+
+    a {
+        position: absolute;
+        bottom: rem(65px);
+        left: rem(57px);
+        z-index: 2;
+        font-size: rem(14px);
+        color: $white;
+        display: inline-flex;
+        align-items: center;
+
+        i {
+            margin-left: rem(20px);
+
+            &:before {
+                font-size: rem(10px);
+            }
+        }
+    }
+}

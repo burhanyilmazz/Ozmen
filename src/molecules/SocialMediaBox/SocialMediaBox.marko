@@ -1,0 +1,16 @@
+$ const items = input.items || [{ "icon": "instagram", "title": "Instagram" }, { "icon": "twitter", "title": "Twitter" }, { "icon": "facebook", "title": "Facebook" }, { "icon": "linkedin", "title": "Linkedin" }];
+
+<div class="m-social-media-box">
+    <div class="m-social-media-box__title">
+        <h5>Sosyal Medyada</h5>
+        <h4>Bizi Takip Edin!</h4>
+    </div>
+    <div class="m-social-media-box__list">
+        <for(item in items)>
+            <a href="#" rel="noreferrer" target="_blank">
+                <IconFont icon=item.icon />
+                <span>${item.title}</span>
+            </a>
+        </for>
+    </div>
+</div>

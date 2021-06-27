@@ -1,5 +1,4 @@
 $ {
-    const items = input.items || ["Hikayemiz", "Üretim", "Blog", "E-Shop", "Kariyer", "İletişim"];
     const classes = ["m-footer-nav"];
 
     if (input.class) {
@@ -8,9 +7,49 @@ $ {
 }
 
 <div class=classes>
-    <ul>
-        <for(item in items)>
-            <li><a href="#">${item}</a></li>
-        </for>
-    </ul>
+    <div class="m-footer-nav__block">
+        <h3>Kurumsal</h3>
+        <ul>
+            <li><a href="#">Hakkımızda</a></li>
+            <li><a href="#">İhracat</a></li>
+            <li><a href="#">Sosyal Sorumluluk</a></li>
+            <li><a href="#">Sürdürülebilirlik</a></li>
+        </ul>
+    </div>
+    <div class="m-footer-nav__block">
+        <h3>Üretim</h3>
+        <ul>
+            <li><a href="#">Endüstri 4.0</a></li>
+            <li><a href="#">AR-GE</a></li>
+            <li><a href="#">Gıda Güvenliği</a></li>
+            <li><a href="#">Kalite Yönetim</a></li>
+        </ul>
+    </div>
+    <div class="m-footer-nav__block">
+        <h3>Ürünler</h3>
+        <ul>
+            <li><a href="#">Zanaatkarlık Serisi</a></li>
+            <li><a href="#">Ustalık Serisi</a></li>
+            <li><a href="#">Fırıncılık Serisi</a></li>
+            <li><a href="#">Markaya Özel Kişiselleştirilmiş Un</a></li>
+            <li><a href="#">Ev İçi Tüketim</a></li>
+        </ul>
+    </div>
+    <div class="m-footer-nav__block">
+        <h3>Kariyer</h3>
+        <ul>
+            <li><a href="#">İK Politikamız</a></li>
+            <li><a href="#">İşe Alım Süreci</a></li>
+            <li><a href="#">Bize Katılın</a></li>
+        </ul>
+    </div>
+    <div class="m-footer-nav__block">
+        
+        <ul>
+            <li><a href="#"><h3>Hikayemiz</h3></a></li>
+            <li><a href="#"><h3>Haberler</h3></a></li>
+            <li><a href="#"><h3>Tarım Takvimi</h3></a></li>
+            <li><a href="#"><h3>İletişim</h3></a></li>
+        </ul>
+    </div>
 </div>

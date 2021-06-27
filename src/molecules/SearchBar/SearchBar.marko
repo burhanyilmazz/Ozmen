@@ -1,18 +1,26 @@
-$ {
-    let classes = ["m-search-bar"];
+<div class="m-search-bar" data-component="SearchBar">
+    <div class="m-search-bar__container">
+        <h1>Ne aramıştınız?</h1>
 
-    if (input.type) {
-        classes.push(`m-search-bar--${input.type}`);
-    }
-}
-<div class=classes data-component="SearchBar">
-    <Form>
-        <h1 if(input.type) >Arama</h1>
-        <div class="m-search-bar__container">
-            <div class="m-search-bar__icon"><i class="icon-search"></i></div>
-            <input type="text" placeholder="Ne Aramıştınız ?" required>
-            <div class="m-search-bar__line"></div>
-            <ButtonIcon icon="enter" type="button" />
+        <Form>
+            <h3>Ürünler, hizmetler ve daha fazlası için...</h3>
+            <div class="m-search-bar__input">
+                <button class="m-search-bar__icon"><i class="icon-search"></i></button>
+                <input type="text" placeholder="anahtar kelime" required>
+            </div>
+        </Form>
+    </div>
+
+    <div class="m-search-bar__footer">
+        <div class="m-search-bar-footer__social">
+            <SocialMedia />
         </div>
-    </Form>
+        <div class="m-search-bar-footer__nav">
+            <ul>
+                <li><a href="#">Kişisel Verileri Koruma Kanunu</a></li>
+                <li><a href="#">Gizlilik ve Güvenlik Politikası</a></li>
+            </ul>
+        </div>
+    </div>
+    <IconFont icon="close" class="js-close-search-bar" />
 </div>

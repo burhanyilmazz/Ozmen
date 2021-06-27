@@ -1,1 +1,13 @@
-<i class="a-icon icon-${input.icon}"></i>
+$ {
+    const classes = ["a-icon"];
+    const icon = input.icon;
+
+    if (icon) {
+        classes.push(`icon-${input.icon}`)
+    }
+
+    if (input.class) {
+        classes.push(input.class)
+    }
+}
+<i class=classes />

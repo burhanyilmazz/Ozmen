@@ -1,6 +1,15 @@
 
-%icon-arrow-left {
+%icon-arrow-down {
   content: "\EA01";
+}
+.icon-arrow-down {
+  &::before {
+    @extend %icon-arrow-down;
+  }
+}
+
+%icon-arrow-left {
+  content: "\EA02";
 }
 .icon-arrow-left {
   &::before {
@@ -9,7 +18,7 @@
 }
 
 %icon-arrow-right {
-  content: "\EA02";
+  content: "\EA03";
 }
 .icon-arrow-right {
   &::before {
@@ -18,7 +27,7 @@
 }
 
 %icon-arrow-up {
-  content: "\EA03";
+  content: "\EA04";
 }
 .icon-arrow-up {
   &::before {
@@ -27,7 +36,7 @@
 }
 
 %icon-bactery {
-  content: "\EA04";
+  content: "\EA05";
 }
 .icon-bactery {
   &::before {
@@ -36,7 +45,7 @@
 }
 
 %icon-blog {
-  content: "\EA05";
+  content: "\EA06";
 }
 .icon-blog {
   &::before {
@@ -45,7 +54,7 @@
 }
 
 %icon-certificate {
-  content: "\EA06";
+  content: "\EA07";
 }
 .icon-certificate {
   &::before {
@@ -54,7 +63,7 @@
 }
 
 %icon-check {
-  content: "\EA07";
+  content: "\EA08";
 }
 .icon-check {
   &::before {
@@ -63,7 +72,7 @@
 }
 
 %icon-circle-arrow {
-  content: "\EA08";
+  content: "\EA09";
 }
 .icon-circle-arrow {
   &::before {
@@ -72,7 +81,7 @@
 }
 
 %icon-circle-error {
-  content: "\EA09";
+  content: "\EA0A";
 }
 .icon-circle-error {
   &::before {
@@ -81,7 +90,7 @@
 }
 
 %icon-circle-success {
-  content: "\EA0A";
+  content: "\EA0B";
 }
 .icon-circle-success {
   &::before {
@@ -90,7 +99,7 @@
 }
 
 %icon-close {
-  content: "\EA0B";
+  content: "\EA0C";
 }
 .icon-close {
   &::before {
@@ -99,7 +108,7 @@
 }
 
 %icon-download {
-  content: "\EA0C";
+  content: "\EA0D";
 }
 .icon-download {
   &::before {
@@ -108,7 +117,7 @@
 }
 
 %icon-email {
-  content: "\EA0D";
+  content: "\EA0E";
 }
 .icon-email {
   &::before {
@@ -117,7 +126,7 @@
 }
 
 %icon-enter {
-  content: "\EA0E";
+  content: "\EA0F";
 }
 .icon-enter {
   &::before {
@@ -126,7 +135,7 @@
 }
 
 %icon-facebook {
-  content: "\EA0F";
+  content: "\EA10";
 }
 .icon-facebook {
   &::before {
@@ -135,7 +144,7 @@
 }
 
 %icon-history {
-  content: "\EA10";
+  content: "\EA11";
 }
 .icon-history {
   &::before {
@@ -144,7 +153,7 @@
 }
 
 %icon-instagram {
-  content: "\EA11";
+  content: "\EA12";
 }
 .icon-instagram {
   &::before {
@@ -153,7 +162,7 @@
 }
 
 %icon-language {
-  content: "\EA12";
+  content: "\EA13";
 }
 .icon-language {
   &::before {
@@ -162,7 +171,7 @@
 }
 
 %icon-linkedin {
-  content: "\EA13";
+  content: "\EA14";
 }
 .icon-linkedin {
   &::before {
@@ -170,8 +179,17 @@
   }
 }
 
+%icon-logo {
+  content: "\EA15";
+}
+.icon-logo {
+  &::before {
+    @extend %icon-logo;
+  }
+}
+
 %icon-ours {
-  content: "\EA14";
+  content: "\EA16";
 }
 .icon-ours {
   &::before {
@@ -180,7 +198,7 @@
 }
 
 %icon-pdf {
-  content: "\EA15";
+  content: "\EA17";
 }
 .icon-pdf {
   &::before {
@@ -189,7 +207,7 @@
 }
 
 %icon-phone {
-  content: "\EA16";
+  content: "\EA18";
 }
 .icon-phone {
   &::before {
@@ -198,7 +216,7 @@
 }
 
 %icon-pill {
-  content: "\EA17";
+  content: "\EA19";
 }
 .icon-pill {
   &::before {
@@ -207,7 +225,7 @@
 }
 
 %icon-play {
-  content: "\EA18";
+  content: "\EA1A";
 }
 .icon-play {
   &::before {
@@ -216,7 +234,7 @@
 }
 
 %icon-product {
-  content: "\EA19";
+  content: "\EA1B";
 }
 .icon-product {
   &::before {
@@ -225,7 +243,7 @@
 }
 
 %icon-right {
-  content: "\EA1A";
+  content: "\EA1C";
 }
 .icon-right {
   &::before {
@@ -234,7 +252,7 @@
 }
 
 %icon-search {
-  content: "\EA1B";
+  content: "\EA1D";
 }
 .icon-search {
   &::before {
@@ -243,7 +261,7 @@
 }
 
 %icon-shopping {
-  content: "\EA1C";
+  content: "\EA1E";
 }
 .icon-shopping {
   &::before {
@@ -252,7 +270,7 @@
 }
 
 %icon-sun {
-  content: "\EA1D";
+  content: "\EA1F";
 }
 .icon-sun {
   &::before {
@@ -261,7 +279,7 @@
 }
 
 %icon-sustainability {
-  content: "\EA1E";
+  content: "\EA20";
 }
 .icon-sustainability {
   &::before {
@@ -270,7 +288,7 @@
 }
 
 %icon-twitter {
-  content: "\EA1F";
+  content: "\EA21";
 }
 .icon-twitter {
   &::before {
@@ -279,7 +297,7 @@
 }
 
 %icon-upload {
-  content: "\EA20";
+  content: "\EA22";
 }
 .icon-upload {
   &::before {
@@ -288,7 +306,7 @@
 }
 
 %icon-word {
-  content: "\EA21";
+  content: "\EA23";
 }
 .icon-word {
   &::before {
@@ -297,7 +315,7 @@
 }
 
 %icon-youtube {
-  content: "\EA22";
+  content: "\EA24";
 }
 .icon-youtube {
   &::before {

@@ -2,93 +2,61 @@
 
   <@title>Homepage</@title>
   <@body>
-    <Hero />
+    <Carousel />
 
-    <Section class="p-homepage__history">
+    <Section class="p-homepage-seed">
       <div class="container-fluid">
         <Grid>
-          <@GridCol class="col-lg-5 order-2 order-lg-1">
-            <h2>bizler doğanın <span>aynasıyız!</span></h2>
-            <p>Doğadan ilham alarak oluşturduğumuz formülleri yine doğa dostu cam malzemeler ile birleştirip sizlere sunarız.</p>
-            <Button icon="arrow-right">Hikayemiz</Button>
+          <@GridCol class="col-xl-7">
+            <Image src="../../assets/images/content/homepage/people.png" />
           </@GridCol>
-
-          <@GridCol class="col-lg-7 order-1 order-lg-2">
-            <div class="p-homepage-history__woman">
-              <Image class="p-homepage-history__woman--bg" src="../../assets/images/content/history/girl.png" />
-              <Image class="p-homepage-history__woman--leaf-1" src="../../assets/images/content/history/leaf-1.png" />
-              <Image class="p-homepage-history__woman--leaf-2" src="../../assets/images/content/history/leaf-2.png" />
-              <Image class="p-homepage-history__woman--leaf-3" src="../../assets/images/content/history/leaf-3.png" />
-            </div>
-          </@GridCol>
-
-          <@GridCol class="col-lg-12 order-3">
-            <TabDefault class="m-tab-default--horizontal" tab-options={}>
-              <@TabItem icon="sun">
-                <h3>Sürdürülebilirlik</h3>
-                <p>Kendi gereksinimlerimizi, gelecek nesillerin ihtiyaçlarından ödün vermeden karşılamak adına doğal içerik ve doğaya saygılı ambalaj kullanmayı tercih ediyoruz. İnsanlığın yaşamının daimi kılınması, yaşanılabilir bir dünya ve sürdürülebilir bir yaşam için karbon ayak izimizi minimum seviyede tutmaya çalışıyoruz.</p>
-              </@TabItem>
-              <@TabItem icon="bactery">
-                <h3>Sürdürülebilirlik2</h3>
-                <p>Kendi gereksinimlerimizi, gelecek nesillerin ihtiyaçlarından ödün vermeden karşılamak adına doğal içerik ve doğaya saygılı ambalaj kullanmayı tercih ediyoruz. İnsanlığın yaşamının daimi kılınması, yaşanılabilir bir dünya ve sürdürülebilir bir yaşam için karbon ayak izimizi minimum seviyede tutmaya çalışıyoruz.</p>
-              </@TabItem>
-              <@TabItem icon="pill">
-                <h3>Sürdürülebilirlik3</h3>
-                <p>Kendi gereksinimlerimizi, gelecek nesillerin ihtiyaçlarından ödün vermeden karşılamak adına doğal içerik ve doğaya saygılı ambalaj kullanmayı tercih ediyoruz. İnsanlığın yaşamının daimi kılınması, yaşanılabilir bir dünya ve sürdürülebilir bir yaşam için karbon ayak izimizi minimum seviyede tutmaya çalışıyoruz.</p>
-              </@TabItem>
-            </TabDefault>
+          <@GridCol class="col-xl-5">
+            <h1>Tohuma, tarıma, <span>geleceğe</span></h1>
+            <p>Yerele, yerelin emeğine inanarak, yarım asra varan deneyimimizle, ileri teknoloji ve yenilikçi yatırımlar yaparak Anadolu tarımı ve gıda endüstrisine katkı sunmaya devam ediyoruz. Coğrafi işaretlerin izinden giderek yerel ve tescilli tohumların destekçisi olup, lisanslı depoculuk ile sözleşmeli tarım çalışmalarına da öncülük ediyoruz. </p>
+            <Button icon="arrow-right">Detaylı Bilgi</Button>
           </@GridCol>
         </Grid>
       </div>
-
-      <TitleIcon title="Hikayemiz" icon="history" />
+      <img src="../../assets/images/spacer.gif"  data-src="../../assets/images/content/homepage/seed-1.png" class="lazyload lax p-homepage-seed__lax p-homepage-seed__lax--1" data-lax-preset="fadeIn" />
+      <img src="../../assets/images/spacer.gif"  data-src="../../assets/images/content/homepage/seed-2.png" class="lazyload lax p-homepage-seed__lax p-homepage-seed__lax--2" data-lax-preset="fadeIn" />
+      <img src="../../assets/images/spacer.gif"  data-src="../../assets/images/content/homepage/seed-3.png" class="lazyload lax p-homepage-seed__lax p-homepage-seed__lax--3" data-lax-preset="fadeIn" />
+      <img src="../../assets/images/spacer.gif"  data-src="../../assets/images/content/homepage/seed-4.png" class="lazyload lax p-homepage-seed__lax p-homepage-seed__lax--4" data-lax-preset="fadeIn" />
+      <img src="../../assets/images/spacer.gif"  data-src="../../assets/images/content/homepage/leaf.png" class="lazyload lax p-homepage-seed__lax p-homepage-seed__lax--5" data-lax-preset="fadeIn" />
     </Section>
 
-    <Section class="p-homepage__products">
-      <div class="container-fluid">
-        <Grid class="no-gutters">
-          <@GridCol class="col-lg-4"><ProductBox title="Diş Tableti" src="../../assets/images/content/product/dis-tableti.jpg" /></@GridCol>
-          <@GridCol class="col-lg-4"><ProductBox title="Çocuk Diş Tableti" src="../../assets/images/content/product/cocuk-dis-tableti.jpg" /></@GridCol>
-          <@GridCol class="col-lg-4">
-            <ProductBox class="m-product-box--small" title="Diş Macunu" src="../../assets/images/content/product/dis-macunu.jpg" />
-            <ProductBox class="m-product-box--small" title="Ağız Yıkama Tableti" src="../../assets/images/content/product/agiz-yikama-tableti.jpg" />
-          </@GridCol>
-        </Grid>
-      </div>
-      <TitleIcon title="Ürünler" icon="product" />
-    </Section>
-
-    <Section class="p-homepage__certificate">
+    <Section class="p-homepage-collection" style="background-image: url(../../assets/images/content/bg/collection.jpg);">
       <div class="container-fluid">
         <Grid>
-          <@GridCol class="col-lg-5">
-            <h2>doğaya ve hayvanlara <span>saygılıyız.</span></h2>
-            <p>Kimyasal içermez. Hayvanlar üzerinde deney yapılmamıştır.
-              Hayvansal gıda kullanılmamıştır. Doğa dostudur.<br>
-              FDA & GMP onaylıdır.</p>
+          <@GridCol class="col-xl-4">
+            <h2>Lezzet Koleksiyonu</h2>
+            <p>Markanıza başarı, sofranıza lezzet, hayatınıza şifa katması dileğimizle... Tadına doyulmaz lezzet buluşmalarımızı, ilhamımızı ve ürünlerimizi keşfedin!</p>
           </@GridCol>
-
-          <@GridCol class="col-lg-7">
-            <div class="p-homepage-certificate__icons">
-              <div><SvgImage src="../../assets/images/content/certificate/currently.svg" /></div>
-              <div><SvgImage src="../../assets/images/content/certificate/eco.svg" /></div>
-              <div><SvgImage src="../../assets/images/content/certificate/vegan.svg" /></div>
-              <div><SvgImage src="../../assets/images/content/certificate/gmp.svg" /></div>
-              <div><SvgImage src="../../assets/images/content/certificate/naturel.svg" /></div>
-              <div><SvgImage src="../../assets/images/content/certificate/gluten.svg" /></div>
-            </div>
+          <@GridCol class="col-xl-4">
+            <CardCollection />
+          </@GridCol>
+          <@GridCol class="col-xl-4">
+            <CardCollection title="Ustalık<br>Serisi" img="ustalik" />
+          </@GridCol>
+          <@GridCol class="col-xl-4">
+            <CardCollection title="Fırıncılık<br>Serisi" img="firincilik" />
+          </@GridCol>
+          <@GridCol class="col-xl-4">
+            <CardCollection title="Markaya Özel<br>Kişiselleştirilmiş Unlar" img="markaya-ozel" />
+          </@GridCol>
+          <@GridCol class="col-xl-4">
+            <CardCollection title="Ev İçi Tüketim<br>Serisi" img="ev-ici" />
           </@GridCol>
         </Grid>
       </div>
-      <TitleIcon title="Sertifikalar" icon="certificate" />
     </Section>
 
-    <Section class="p-homepage__slider">
-      <div class="container-fluid">
-        <HomePageSlider />
-      </div>
-      <TitleIcon title="Blog" icon="blog" />
+    <Looking />
+
+    <Section class="p-homepage__slider" style="background-image: url(../../assets/images/content/bg/service.png);">
+      <Services />
     </Section>
+
+    <Video />
   </@body>
 
 

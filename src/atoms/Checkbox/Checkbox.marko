@@ -3,8 +3,9 @@ $ {
     const name = input.name || "checkbox";
     const attrs = input.attrs || {};
     const _required = input.required;
+    const src = input.src;
     
-    if(_required) {
+    if (_required) {
         attrs.required = true;
     }
 
@@ -16,6 +17,10 @@ $ {
     }
 }
 <div class="a-check-box">
-    <input type="checkbox" id:scoped="input" value:scoped="input" ...attrs>
-    <label for:scoped="input">${title}</label>
+    <input type="checkbox" id:scoped="input" value:scoped="input" data-parsley-errors-container="#looking-error" ...attrs>
+    <label for:scoped="input">
+        <Image src=src />
+        <h3>${title}</h3>
+        <span />
+    </label>
 </div>

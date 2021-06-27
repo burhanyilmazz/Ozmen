@@ -23,6 +23,7 @@ config = {
     styles:       "web/assets/styles/",
     fonts:        "web/assets/fonts/",
     sprite:       "web/assets/images/sprite/",
+    videos:       "web/assets/videos/",
   },
   target: {
     svg:          "src/assets/svg/*.svg",
