@@ -38,3 +38,15 @@
     padding-left: 35px;
   }
 }
+
+.container-fluid-mobile {
+  width: 100%;
+  padding: 0 107px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media (max-width: 990px) {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+}

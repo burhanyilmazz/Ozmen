@@ -3,6 +3,15 @@
   height: rem(800px);
   position: relative;
   margin-bottom: rem(30px);
+  content-visibility:auto;
+
+  @media screen and (max-width: 1440px) {
+    height: rem(700px);
+  }
+
+  @media screen and (max-width: 1366px) {
+    height: rem(600px);
+  }
 
   video {
     width: 100%;

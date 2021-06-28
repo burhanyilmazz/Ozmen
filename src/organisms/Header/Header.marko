@@ -8,7 +8,8 @@ $ {
 }
 <header class=classes data-component="Header">
    <div class="container-fluid">
-      <Logo />
+      <Logo if(out.global.homepage) class="m-logo--white" />
+      <Logo if(!out.global.homepage) />
       <ButtonIcon class="js-search-header" icon="search" />
       <Hamburger />
       <Nav />

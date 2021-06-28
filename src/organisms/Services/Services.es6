@@ -8,7 +8,6 @@ export default class Services {
         watchSlidesVisibility: true,
         watchSlidesProgress: true,
         allowTouchMove: false,
-        autoHeight: true,
         lazy: {
           loadPrevNext: true
         },

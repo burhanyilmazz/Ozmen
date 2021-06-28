@@ -31,12 +31,18 @@
 
     &__prev {
       left: rem(107px);
+      @media screen and (max-width: 1024px) {
+        left: rem(35px);
+      }
       &::before {
         @extend %icon-arrow-left;
       }
     }
     &__next {
       right: rem(204px);
+      @media screen and (max-width: 1024px) {
+        right: rem(142px);
+      }
       &::before {
         @extend %icon-arrow-right;
       }

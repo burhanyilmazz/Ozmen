@@ -8,4 +8,10 @@
       font-size: rem(93px);
     }
   }
+
+  &--white {
+    i {
+      color: $white;
+    }
+  }
 }

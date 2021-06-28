@@ -5,20 +5,47 @@
   background: $SpringWood;
   margin-bottom: rem(30px);
 
+  @media screen and (max-width: 1366px) {
+    height: rem(400px);
+  }
+
+  @media screen and (max-width: 1024px) {
+    height: rem(300px);
+  }
+
   &__content {
     padding: rem(160px) rem(30px) rem(30px) rem(57px);
     width: 50%;
+
+    @media screen and (max-width: 1366px) {
+      padding-top: rem(90px);
+      width: 60%;
+      padding-left: rem(37px);
+    }
+
+    @media screen and (max-width: 1024px) {
+      padding-top: rem(50px);
+    }
 
     h3 {
       font-size: rem(40px);
       color: $Tuna;
       margin-bottom: rem(27px);
+
+      @media screen and (max-width: 1366px) {
+        font-size: rem(32px);
+        margin-bottom: rem(20px);
+      }
     }
 
     p {
       font-size: rem(18px);
       font-weight: 300;
       color: $Tuna;
+
+      @media screen and (max-width: 1024px) {
+        font-size: rem(16px);
+      }
     }
 
     a {
@@ -28,6 +55,9 @@
       color: $Tuna;
       display: inline-flex;
       align-items: center;
+      @media screen and (max-width: 1366px) {
+        margin-top: rem(40px);
+      }
 
       i {
         margin-left: rem(20px);

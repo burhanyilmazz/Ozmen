@@ -1,12 +1,13 @@
 .p-homepage {
   &-seed {
     position: relative;
-    background: linear-gradient(137deg, #F8F3EB 0%, #F8F3EB00 100%);
+    background: linear-gradient(137deg, #f8f3eb 0%, #f8f3eb00 100%);
     padding: rem(134px) 0;
+    content-visibility: auto;
 
     .container-fluid {
       position: relative;
-      z-index: 1;
+      z-index: 2;
       img {
         width: 100%;
       }
@@ -21,10 +22,25 @@
       color: $Tuna;
       font-weight: 600;
       line-height: rem(84px);
+      @media screen and (max-width: 1366px) {
+        font-size: rem(50px);
+      }
       span {
         color: $Tumbleweed;
         font-size: rem(142px);
         display: block;
+
+        @media screen and (max-width: 1440px) {
+          font-size: rem(120px);
+        }
+
+        @media screen and (max-width: 1366px) {
+          font-size: rem(110px);
+        }
+
+        @media screen and (max-width: 1280px) {
+          font-size: rem(100px);
+        }
       }
     }
 
@@ -32,15 +48,23 @@
       font-size: rem(20px);
       margin-top: rem(50px);
       font-weight: 300;
+      line-height: rem(36px);
+
+      @media screen and (max-width: 1366px) {
+        font-size: rem(18px);
+        line-height: rem(30px);
+      }
     }
 
     .a-btn {
       margin-top: rem(50px);
+      position: relative;
+      z-index: 3;
     }
 
     &__lax {
       position: absolute;
-      z-index: 2;
+      z-index: 1;
 
       &--1 {
         left: 0;
@@ -65,15 +89,36 @@
     }
   }
 
-  &-collection{
+  &-collection {
     padding: rem(175px) 0;
     background-size: cover;
+    content-visibility: auto;
+
+    @media screen and (max-width: 1024px) {
+      padding: rem(100px) 0;
+    }
 
     h2 {
       color: $Tumbleweed;
       font-size: rem(63px);
       line-height: rem(70px);
       margin-bottom: rem(27px);
+
+      @media screen and (max-width: 1440px) {
+        font-size: rem(58px);
+        line-height: rem(62px);
+        margin-bottom: rem(10px);
+      }
+
+      @media screen and (max-width: 1366px) {
+        font-size: rem(50px);
+        line-height: rem(56px);
+      }
+
+      @media screen and (max-width: 1280px) {
+        font-size: rem(46px);
+        line-height: rem(50px);
+      }
     }
 
     p {
@@ -82,6 +127,20 @@
       font-weight: 300;
       width: 90%;
       line-height: rem(29px);
+
+      @media screen and (max-width: 1440px) {
+        width: 100%;
+        line-height: rem(26px);
+      }
+
+      @media screen and (max-width: 1366px) {
+        font-size: rem(18px);
+      }
+
+      @media screen and (max-width: 1280px) {
+        font-size: rem(17px);
+        line-height: rem(24px);
+      }
     }
 
     .m-card-collection {
@@ -94,5 +153,6 @@
     background-size: cover;
     position: relative;
     overflow: hidden;
+    content-visibility: auto;
   }
 }

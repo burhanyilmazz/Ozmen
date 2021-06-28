@@ -10,6 +10,9 @@
   &__bottom {
     padding: rem(50px) rem(57px);
     border-top: 1px solid rgba($color: $Tuna, $alpha: .2);
+    @media screen and (max-width: 1024px) {
+      text-align: center;
+    }
     
     .row {
       align-items: center;
@@ -19,5 +22,9 @@
   .fikirmod {
     transform: rotate(90deg);
     float: right;
+
+    @media screen and (max-width: 1024px) {
+      float: none;
+    }
   }
 }

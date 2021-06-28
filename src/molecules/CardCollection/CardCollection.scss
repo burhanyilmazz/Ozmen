@@ -33,6 +33,9 @@
 
       & + img {
         opacity: 0;
+        @media screen and (max-width: 1366px) {
+          transform: scale(.8);
+        }
       }
     }
   }
@@ -69,11 +72,25 @@
         font-size: rem(32px);
         color: $white;
         line-height: rem(39px);
+
+        @media screen and (max-width: 1440px) {
+          font-size: rem(28px);
+          line-height: rem(34px);
+        }
+
+        @media screen and (max-width: 1366px) {
+          font-size: rem(24px);
+          line-height: rem(28px);
+        }
       }
 
       img {
         opacity: 0;
         bottom: rem(90px);
+
+        @media screen and (max-width: 1366px) {
+          bottom: rem(70px);
+        }
 
         & + img {
           opacity: 1;
@@ -83,7 +100,7 @@
 
     .a-icon {
       left: 100%;
-      margin-left: rem(-60px);
+      margin-left: rem(-50px);
     }
   }
 }
