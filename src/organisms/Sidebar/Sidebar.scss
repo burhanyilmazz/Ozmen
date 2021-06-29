@@ -68,27 +68,39 @@
     height: 100vh;
     background: $white;
     top: 0;
-    padding: rem(160px) rem(100px);
     z-index: 2;
     transition: all 0.5s ease;
     transform: translateX(100%);
     transition-delay: 0.2s;
     display: block;
 
-    @media screen and (max-width: 1366px) {
-      padding: rem(100px);
-    }
-
     @media screen and (max-width: 1280px) {
       width: rem(500px);
     }
 
     @media screen and (max-width: 1100px) {
-      width: calc((100vw - 140px) / 2);
-      padding: rem(120px) rem(50px);
+      width: calc((100vw - 107px) / 2);
     }
 
     nav {
+      overflow-y: auto;
+      max-height: calc(100vh - 200px);
+      padding: rem(117px) rem(100px) rem(20px);
+
+      @media screen and (max-width: 1440px) {
+        max-height: calc(100vh - 180px);
+        padding-top: rem(87px);
+      }
+
+      @media screen and (max-width: 1280px) {
+        padding: rem(87px) rem(80px) rem(20px);
+      }
+
+      @media screen and (max-width: 1100px) {
+        max-height: calc(100vh - 100px);
+        padding: rem(50px) rem(50px) rem(20px);
+      }
+      
       ul {
         font-size: rem(26px);
         font-weight: 600;
@@ -201,6 +213,15 @@
       display: flex;
       align-items: center;
 
+      @media screen and (max-width: 1280px) {
+        padding: 0 rem(80px);
+      }
+
+      @media screen and (max-width: 1100px) {
+        height: rem(130px);
+        padding: 0 rem(50px);
+      }
+
       ul {
         font-size: rem(14px);
         font-weight: 300;
@@ -232,26 +253,27 @@
     background: $DesertStorm;
     top: 0;
     right: rem(689px);
-    padding: rem(120px);
+    padding: rem(120px) rem(100px);
     display: flex;
     flex-direction: column;
     z-index: 1;
     transition: all 0.5s ease;
     transform: translateX(300%);
 
-    @media screen and (max-width: 1366px) {
-      padding: rem(100px);
+    @media screen and (max-width: 1440px) {
+      padding: rem(86px) rem(100px);
     }
 
     @media screen and (max-width: 1280px) {
       width: rem(500px);
-      right: rem(600px);
+      right: rem(607px);
+      padding: rem(86px) rem(80px);
     }
 
     @media screen and (max-width: 1100px) {
-      width: calc((100vw - 140px) / 2);
-      padding: rem(120px) rem(50px);
-      right: calc((100vw / 2) + 70px);
+      width: calc((100vw - 107px) / 2);
+      padding: rem(50px) rem(50px);
+      right: calc((100vw / 2) + 53px);
     }
 
     h3 {
@@ -270,6 +292,10 @@
       a {
         line-height: rem(60px);
         color: $Tuna;
+
+        @media screen and (max-width: 1440px) {
+          line-height: rem(50px);
+        }
       }
     }
   }
@@ -278,6 +304,10 @@
     &__nav-bottom {
       position: absolute;
       bottom: rem(200px);
+
+      @media screen and (max-width: 1100px) {
+        bottom: rem(140px);
+      }
 
       a {
         display: flex;
@@ -302,6 +332,15 @@
       height: rem(184px);
       display: flex;
       align-items: center;
+
+      @media screen and (max-width: 1280px) {
+        padding: 0 rem(80px);
+      }
+
+      @media screen and (max-width: 1100px) {
+        height: rem(130px);
+        padding: 0 rem(50px);
+      }
 
       .m-social-media {
         margin-top: 0;

@@ -1,5 +1,5 @@
 .o-looking {
-  background: $white;
+  background: #F9FAF8;
   padding: rem(75px) 0;
   position: relative;
   content-visibility: auto;
@@ -13,6 +13,10 @@
     @media screen and (max-width: 1024px) {
       font-size: rem(44px);
     }
+
+    @media screen and (max-width: 768px) {
+      font-size: rem(30px);
+    }
   }
 
   p {
@@ -24,12 +28,19 @@
     @media screen and (max-width: 1024px) {
       font-size: rem(18px);
     }
+    @media screen and (max-width: 768px) {
+      font-size: rem(17px);
+    }
   }
 
   &__list {
     margin: rem(65px) rem(-20px);
     display: flex;
     flex-wrap: wrap;
+
+    @media screen and (max-width: 768px) {
+      margin: rem(45px) rem(-20px);
+    }
 
     .a-check-box {
       width: calc((100% / 8) - 40px);
@@ -43,6 +54,10 @@
       @media screen and (max-width: 1024px) {
         width: calc((100% / 5) - 40px);
       }
+
+      @media screen and (max-width: 768px) {
+        width: calc((100% / 3) - 40px);
+      }
     }
   }
 
@@ -50,6 +65,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    .a-btn {
+      @media screen and (max-width: 768px) {
+        width: 100%
+      }
+    }
   }
 
   #looking-error {
@@ -57,6 +78,10 @@
     margin-bottom: rem(10px);
     font-weight: 600;
     font-size: rem(16px);
+
+    @media screen and (max-width: 768px) {
+      margin-top: rem(40px);
+    }
 
     & + .o-looking__list {
       margin-top: 0;

@@ -10,6 +10,10 @@
 
   &__text {
     font-size: rem(14px);
+
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
   }
 
   &__bar {
@@ -41,6 +45,10 @@
       &:nth-child(4) {
         top: rem(33px);
         width: rem(25px);
+      }
+
+      @media screen and (max-width: 768px) {
+        background: $white;
       }
     }
   }

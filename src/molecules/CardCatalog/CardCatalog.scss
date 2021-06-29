@@ -13,6 +13,12 @@
     height: rem(300px);
   }
 
+  @media screen and (max-width: 990px) {
+    height: auto;
+    padding: rem(35px);
+    margin-bottom: 0;
+  }
+
   &__content {
     padding: rem(160px) rem(30px) rem(30px) rem(57px);
     width: 60%;
@@ -23,6 +29,10 @@
 
     @media screen and (max-width: 1024px) {
       padding-top: rem(50px);
+    }
+
+    @media screen and (max-width: 990px) {
+      padding: 0;
     }
 
     h3 {
@@ -48,6 +58,11 @@
       @media screen and (max-width: 1024px) {
         font-size: rem(16px);
       }
+
+      @media screen and (max-width: 990px) {
+        font-size: rem(14px);
+        font-weight: 400;
+      }
     }
 
     .a-btn {
@@ -69,8 +84,13 @@
     @media screen and (max-width: 1366px) {
       margin-top: rem(90px);
     }
+
     @media screen and (max-width: 1024px) {
       margin-top: rem(50px);
+    }
+
+    @media screen and (max-width: 990px) {
+      margin-top: 0;
     }
     img {
       width: 100%;

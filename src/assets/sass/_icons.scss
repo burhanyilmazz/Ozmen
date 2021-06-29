@@ -143,8 +143,17 @@
   }
 }
 
-%icon-history {
+%icon-filter {
   content: "\EA11";
+}
+.icon-filter {
+  &::before {
+    @extend %icon-filter;
+  }
+}
+
+%icon-history {
+  content: "\EA12";
 }
 .icon-history {
   &::before {
@@ -153,7 +162,7 @@
 }
 
 %icon-instagram {
-  content: "\EA12";
+  content: "\EA13";
 }
 .icon-instagram {
   &::before {
@@ -162,7 +171,7 @@
 }
 
 %icon-language {
-  content: "\EA13";
+  content: "\EA14";
 }
 .icon-language {
   &::before {
@@ -171,7 +180,7 @@
 }
 
 %icon-linkedin {
-  content: "\EA14";
+  content: "\EA15";
 }
 .icon-linkedin {
   &::before {
@@ -179,8 +188,17 @@
   }
 }
 
+%icon-list {
+  content: "\EA16";
+}
+.icon-list {
+  &::before {
+    @extend %icon-list;
+  }
+}
+
 %icon-logo {
-  content: "\EA15";
+  content: "\EA17";
 }
 .icon-logo {
   &::before {
@@ -189,7 +207,7 @@
 }
 
 %icon-ours {
-  content: "\EA16";
+  content: "\EA18";
 }
 .icon-ours {
   &::before {
@@ -198,7 +216,7 @@
 }
 
 %icon-pdf {
-  content: "\EA17";
+  content: "\EA19";
 }
 .icon-pdf {
   &::before {
@@ -207,7 +225,7 @@
 }
 
 %icon-phone {
-  content: "\EA18";
+  content: "\EA1A";
 }
 .icon-phone {
   &::before {
@@ -216,7 +234,7 @@
 }
 
 %icon-pill {
-  content: "\EA19";
+  content: "\EA1B";
 }
 .icon-pill {
   &::before {
@@ -225,7 +243,7 @@
 }
 
 %icon-play {
-  content: "\EA1A";
+  content: "\EA1C";
 }
 .icon-play {
   &::before {
@@ -234,7 +252,7 @@
 }
 
 %icon-product {
-  content: "\EA1B";
+  content: "\EA1D";
 }
 .icon-product {
   &::before {
@@ -243,7 +261,7 @@
 }
 
 %icon-right {
-  content: "\EA1C";
+  content: "\EA1E";
 }
 .icon-right {
   &::before {
@@ -252,7 +270,7 @@
 }
 
 %icon-search {
-  content: "\EA1D";
+  content: "\EA1F";
 }
 .icon-search {
   &::before {
@@ -261,7 +279,7 @@
 }
 
 %icon-shopping {
-  content: "\EA1E";
+  content: "\EA20";
 }
 .icon-shopping {
   &::before {
@@ -270,7 +288,7 @@
 }
 
 %icon-sun {
-  content: "\EA1F";
+  content: "\EA21";
 }
 .icon-sun {
   &::before {
@@ -279,7 +297,7 @@
 }
 
 %icon-sustainability {
-  content: "\EA20";
+  content: "\EA22";
 }
 .icon-sustainability {
   &::before {
@@ -288,7 +306,7 @@
 }
 
 %icon-twitter {
-  content: "\EA21";
+  content: "\EA23";
 }
 .icon-twitter {
   &::before {
@@ -297,7 +315,7 @@
 }
 
 %icon-upload {
-  content: "\EA22";
+  content: "\EA24";
 }
 .icon-upload {
   &::before {
@@ -306,7 +324,7 @@
 }
 
 %icon-word {
-  content: "\EA23";
+  content: "\EA25";
 }
 .icon-word {
   &::before {
@@ -315,7 +333,7 @@
 }
 
 %icon-youtube {
-  content: "\EA24";
+  content: "\EA26";
 }
 .icon-youtube {
   &::before {

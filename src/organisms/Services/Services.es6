@@ -40,7 +40,8 @@ export default class Services {
         },
         breakpoints: {
           990: {
-            spaceBetween: 20
+            spaceBetween: 20,
+            direction: "horizontal",
           }
         }
       });

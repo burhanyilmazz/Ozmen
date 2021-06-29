@@ -20,6 +20,13 @@
       width: 1px;
       height: rem(16px);
       right: rem(-35px);
+      @media screen and (max-width: 1440px) {
+        right: rem(-16px);
+      }
+
+      @media screen and (max-width: 1100px) {
+        right: rem(-23px);
+      }
     }
 
     i {

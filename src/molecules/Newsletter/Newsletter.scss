@@ -9,6 +9,12 @@
     padding: rem(35px) rem(37px);
   }
 
+  @media screen and (max-width: 990px) {
+    padding: rem(45px) rem(35px);
+    height: auto;
+    margin-bottom: 0;
+  }
+
   h5 {
     font-size: rem(30px);
     font-weight: 400;
@@ -34,11 +40,20 @@
     @media screen and (max-width: 1366px) {
       margin-top: rem(40px);
     }
+
+    @media screen and (max-width: 990px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
   }
 
   &__input {
     position: relative;
     width: calc(100% - 234px);
+
+    @media screen and (max-width: 990px) {
+      width: 100%;
+    }
 
     .a-icon {
       position: absolute;
@@ -69,6 +84,12 @@
           }
         }
       }
+    }
+  }
+
+  .a-btn {
+    @media screen and (max-width: 990px) {
+      margin-top: rem(30px);
     }
   }
 }

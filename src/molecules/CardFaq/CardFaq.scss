@@ -6,6 +6,11 @@
     height: rem(250px);
   }
 
+  @media screen and (max-width: 990px) {
+    height: auto;
+    margin-bottom: 0;
+  }
+
   img {
     width: 100%;
     height: 100%;
@@ -31,6 +36,12 @@
       left: rem(37px);
     }
 
+    @media screen and (max-width: 990px) {
+      top: 50%;
+      left: rem(35px);
+      margin-top: rem(-90px);
+    }
+
     span {
       color: $Sage;
     }
@@ -49,6 +60,12 @@
     @media screen and (max-width: 1366px) {
       bottom: rem(40px);
       left: rem(37px)
+    }
+
+    @media screen and (max-width: 990px) {
+      bottom: 50%;
+      left: rem(35px);
+      margin-bottom: rem(-90px);
     }
 
     i {

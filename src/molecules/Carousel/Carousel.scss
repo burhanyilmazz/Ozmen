@@ -12,7 +12,47 @@
   }
 
   &__button {
-    display: none;
+    position: absolute;
+    z-index: 3;
+    display: inline-flex;
+    align-items: center;
+    right: rem(200px);
+    bottom: rem(100px);
+
+    @media screen and (max-width: 1024px) {
+      right: rem(142px);
+    }
+
+    @media screen and (max-width: 768px) {
+      right: rem(35px);
+    }
+
+    span {
+      font-size: rem(17px);
+      color: $white;
+    }
+
+    .a-icon {
+      width: rem(90px);
+      height: rem(90px);
+      border: 1px solid $white;
+      background: rgba($color: $white, $alpha: 0.15);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $white;
+      border-radius: 100%;
+      margin-left: rem(20px);
+
+      @media screen and (max-width: 768px) {
+        width: rem(72px);
+        height: rem(72px);
+      }
+
+      &:before {
+        font-size: rem(18px);
+      }
+    }
   }
 
   .m-slider {
@@ -27,6 +67,10 @@
       top: 50%;
       margin-top: rem(-30px);
       border-radius: rem(30px);
+
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
     }
 
     &__prev {
@@ -70,6 +114,10 @@
       z-index: 99;
       position: absolute;
 
+      @media screen and (max-width: 768px) {
+        left: rem(35px);
+      }
+
       &-bullet {
         width: rem(40px);
         height: rem(40px);
@@ -90,7 +138,7 @@
           top: 50%;
           margin-left: -5px;
           margin-top: -5px;
-          background: rgba($color: $white, $alpha: .15);
+          background: rgba($color: $white, $alpha: 0.15);
           width: rem(10px);
           height: rem(10px);
           border-radius: 100%;
