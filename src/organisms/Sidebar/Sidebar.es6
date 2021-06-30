@@ -8,7 +8,7 @@ export default class Sidebar {
       shadow: ".a-shadow",
       nav: {
         self: ".o-sidebar__nav",
-        item: "nav > ul > li",
+        item: "nav > ul > li span",
         active: "o-sidebar__nav--active",
         link: ".o-sidebar__nav--link"
       },
@@ -54,15 +54,16 @@ export default class Sidebar {
   }
 
   onClickNav(event) {
-    const $target = $(event.currentTarget)
-    if ($target.find("ul").length) {
+    const $target = $(event.currentTarget);
+    if ($target.next("ul").length) {
       event.preventDefault();
+      const $parent = $target.parent();
 
-      if (!$target.hasClass(this.options.nav.active)) {
-        $(this.options.nav.item).removeClass(this.options.nav.active)
-        $target.addClass(this.options.nav.active)
+      if (!$parent.hasClass(this.options.nav.active)) {
+        $(this.options.nav.item).parent().removeClass(this.options.nav.active)
+        $parent.addClass(this.options.nav.active)
       } else {
-        $target.removeClass(this.options.nav.active)
+        $parent.removeClass(this.options.nav.active)
       }
     }
   }

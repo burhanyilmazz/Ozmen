@@ -1,84 +1,49 @@
-$ const items = input.items || [
-    {
-        title: "Hikayemiz",
-    },
-    {
-        title: "Ürünlerimiz",
-        child: [
-            {
-                title: "Diş Tableti",
-                child: [{ title: "Nane Özlü Diş Tableti" }, { title: "Okaliptüs Özlü Diş Tableti" }, { title: "Mentol Özlü Diş Tableti" }]
-            },
-            {
-                title: "Çocuk Diş Tableti",
-                child: [{ title: "Nane Özlü Diş Tableti" }, { title: "Okaliptüs Özlü Diş Tableti" }, { title: "Mentol Özlü Diş Tableti" }]
-            },
-            {
-                title: "Diş Macunu",
-                child: [{ title: "Nane Özlü Diş Tableti" }, { title: "Okaliptüs Özlü Diş Tableti" }, { title: "Mentol Özlü Diş Tableti" }]
-            },
-            {
-                title: "Ağız Yıkama Tableti",
-                child: [{ title: "Nane Özlü Diş Tableti" }, { title: "Okaliptüs Özlü Diş Tableti" }, { title: "Mentol Özlü Diş Tableti" }]
-            },
-        ]
-    },
-    {
-        title: "Üretim",
-        isActive: true
-    },
-    {
-        title: "Blog"
-    },
-    {
-        title: "E-Shop"
-    },
-    {
-        title: "Kariyer"
-    },
-    {
-        title: "İletişim"
-    }
-];
-
 <nav class="m-nav">
     <ul>
-        <for(item in items)>
-            <li class=(item.child ? "m-nav--dropdown": "")>
-                <a href="History.html" class=(item.isActive ? "m-nav--active" : null)>${item.title}</a>
-                <ul if(item.child)>
-                    <for(child in item.child)>
-                        <li class=(child.child ? "m-nav--dropdown-child": "")>
-                            <a href="History.html">${child.title}</a>
-                            <ul if(child.child)>
-                                <for(grand in child.child)>
-                                    <li class="m-nav--dropdown-child-link">
-                                        <a href="History.html">${grand.title}</a>
-                                    </li>
-                                </for>
-                                <li class="m-nav--dropdown-child-link">
-                                    <a href="History.html">Tümünü Gör</a>
-                                </li>
-                            </ul>
-                        </li>
-                    </for>
-                </ul>
-            </li>
-        </for>
+        <li>
+            <span>Kurumsal</span>
+            <ul>
+                <li><a href="#" class="o-sidebar-nav--sub-active">Hakkımızda</a></li>
+                <li><a href="#">İhracat</a></li>
+                <li><a href="#">Sosyal Sorumluluk</a></li>
+                <li><a href="#">Sürdürülebilirlik</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Hikayemiz</a></li>
+        <li>
+            <span>Ürünler</span>
+            <ul>
+                <li><a href="#">Zanaatkarlık Serisi</a></li>
+                <li><a href="#">Ustalık Serisi</a></li>
+                <li><a href="#">Fırıncılık Serisi</a></li>
+                <li><a href="#">Markaya Özel Kişiselleştirilmiş Unlar</a></li>
+                <li><a href="#">Ev İçi Tüketim</a></li>
+            </ul>
+        </li>
+        <li>
+            <span>Üretim</span>
+            <ul>
+                <li><a href="#">Endüstri 4.0</a></li>
+                <li><a href="#">AR-GE</a></li>
+                <li><a href="#">Gıda Güvenliği</a></li>
+                <li><a href="#">Kalite Yönetim</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Haberler</a></li>
+        <li><a href="#">Tarım Takvimi</a></li>
+        <li>
+            <span>Kariyer</span>
+            <ul>
+                <li><a href="#">İK Politikamız</a></li>
+                <li><a href="#">İşe Alım Süreci</a></li>
+                <li><a href="#">Bize Katılın</a></li>
+            </ul>
+        </li>
+        <li><a href="#">İletişim</a></li>
     </ul>
 
-    <div class="m-nav__language">
-        <a href="#">
-            <i class="icon-language"></i>
-            <span>ENGLISH</span>
-        </a>
-    </div>
-
     <div class="m-nav__bottom">
-        <ul>
-            <li><a href="#">SSS</a></li>
-            <li><a href="#">Gizlilik Güvenlik</a></li>
-            <li><a href="#">Cookies</a></li>
-        </ul>
+        <a href="#"><i class="icon-list"></i>Tüm Ürünler</a>
+        <a href="#"><i class="icon-language"></i><span>English</span></a>
     </div>
 </nav>

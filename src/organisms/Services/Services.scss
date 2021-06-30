@@ -1,6 +1,10 @@
 .o-services {
   padding-left: rem(160px);
 
+  @media screen and (max-width: 990px) {
+    padding: rem(35px) 0;
+  }
+
   .row {
     align-items: center;
   }
@@ -50,12 +54,113 @@
 
   &__text {
     .swiper {
+      &-slide {
+        width: 100% !important;
+        padding: 0 rem(35px);
+      }
+    }
+  }
+
+  &__image {
+    @media screen and (max-width: 990px) {
+      margin-top: rem(50px);
+    }
+
+    .swiper {
+      &-container {
+        height: rem(1000px);
+
+        @media screen and (max-width: 1440px) {
+          height: rem(900px);
+        }
+
+        @media screen and (max-width: 1280px) {
+          height: rem(800px) !important;
+        }
+
+        @media screen and (max-width: 990px) {
+          height: auto !important;
+        }
+      }
+      &-wrapper {
+        padding-left: rem(50px);
+
+        @media screen and (max-width: 990px) {
+          padding-left: 0;
+        }
+      }
+      &-slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @media screen and (max-width: 990px) {
+          width: 80%;
+          height: 100%;
+          padding-bottom: rem(100px);
+        }
+
+        &-prev {
+          @media screen and (max-width: 990px) {
+            justify-content: flex-end;
+          }
+        }
+
+        &-next {
+          @media screen and (max-width: 990px) {
+            justify-content: flex-start;
+          }
+        }
+
+        img {
+          max-width: 100%;
+          height: rem(350px);
+          object-fit: cover;
+          border-radius: rem(10px);
+          transition: all 0.5s ease;
+
+          @media screen and (max-width: 1024px) {
+            height: rem(250px);
+          }
+
+          @media screen and (max-width: 990px) {
+            height: 300px !important;
+          }
+        }
+
+        &-active {
+          img {
+            height: rem(700px) !important;
+            box-shadow: 0px rem(50px) rem(50px)
+              rgba($color: $black, $alpha: 0.29);
+            border-radius: rem(10px) 0px 0px rem(10px);
+
+            @media screen and (max-width: 1440px) {
+              height: rem(600px) !important;
+            }
+
+            @media screen and (max-width: 1280px) {
+              height: rem(500px) !important;
+            }
+
+            @media screen and (max-width: 990px) {
+              height: auto !important;
+              border-radius: rem(10px) !important;
+            }
+          }
+        }
+      }
+
       &-pagination {
-        position: absolute;
-        left: rem(-100px);
+        position: relative;
         display: flex;
         flex-direction: column;
-        margin-top: rem(100px);
+        margin-top: rem(10px);
+
+        @media screen and (max-width: 990px) {
+          flex-direction: row;
+          margin: 0 rem(20px);
+        }
 
         &-bullet {
           display: flex;
@@ -74,69 +179,16 @@
           }
         }
       }
-
-      &-slide {
-        width: 100% !important;
-      }
-    }
-  }
-
-  &__image {
-    .swiper {
-      &-container {
-        height: rem(1000px);
-
-        @media screen and (max-width: 1440px) {
-          height: rem(900px);
-        }
-
-        @media screen and (max-width: 1280px) {
-          height: rem(800px) !important;
-        }
-      }
-      &-wrapper {
-        padding-left: rem(50px);
-      }
-      &-slide {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        &-active {
-          img {
-            height: rem(700px) !important;
-            box-shadow: 0px rem(50px) rem(50px)
-              rgba($color: $black, $alpha: 0.29);
-            border-radius: rem(10px) 0px 0px rem(10px);
-
-            @media screen and (max-width: 1440px) {
-              height: rem(600px) !important;
-            }
-
-            @media screen and (max-width: 1280px) {
-              height: rem(500px) !important;
-            }
-          }
-        }
-
-        img {
-          max-width: 100%;
-          height: rem(350px);
-          object-fit: cover;
-          border-radius: rem(10px);
-
-          @media screen and (max-width: 1024px) {
-            height: rem(250px);
-          }
-        }
-      }
     }
   }
 
   .m-slider {
     &__prev,
     &__next {
-      left: rem(-100px);
+      left: auto;
       bottom: auto;
+      top: auto;
+      position: relative;
       &:after {
         font-family: $iconFontName !important;
         color: $Tuna;
@@ -150,17 +202,43 @@
     }
 
     &__prev {
-      top: 0;
       &:after {
         @extend %icon-arrow-down;
         transform: rotate(180deg);
+        @media screen and (max-width: 990px) {
+          transform: rotate(90deg);
+        }
       }
     }
 
     &__next {
-      bottom: 0;
       &:after {
         @extend %icon-arrow-down;
+        @media screen and (max-width: 990px) {
+          transform: rotate(-90deg);
+        }
+      }
+    }
+
+    &__control {
+      position: absolute;
+      left: -85%;
+      display: flex;
+      flex-direction: column;
+      top: 50%;
+      transform: translate(0, -50%);
+
+      @media screen and (max-width: 990px) {
+        position: relative;
+        flex-direction: row;
+        top: auto;
+        transform: translate(0, 0);
+        left: auto;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+        margin-top: rem(-20px);
+        margin-bottom: rem(50px);
       }
     }
   }

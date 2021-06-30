@@ -2,21 +2,17 @@ export default class Header {
   constructor(el, options) {
     this.$el = el;
 
-
     const defaults = {
       hamburger: ".a-hamburger",
       shadow: ".a-shadow",
       nav: {
         self: ".m-nav",
         toggle: "m-nav--open",
-        dropdown: ".m-nav--dropdown",
-        dropdownOpen: "m-nav--dropdown-open",
-        child: ".m-nav--dropdown-child",
-        childOpen: "m-nav--dropdown-child-open",
-        link: ".m-nav--dropdown-child-link"
+        item: "nav > ul > li span",
+        active: "m-nav--active",
       },
       search: {
-        self: ".m-search-bar--header",
+        self: ".m-search-bar",
         trigger: ".js-search-header",
         class: "m-search-bar--open"
       }
@@ -30,9 +26,7 @@ export default class Header {
     this.$shadow = $(this.options.shadow);
 
     this.$el
-      .on("click", this.options.nav.dropdown, event => this.onClickDropdown(event))
-      .on("click", this.options.nav.child, event => this.onClickChild(event))
-      .on("click", this.options.nav.link, event => this.onClickLink(event))
+      .on("click", this.options.nav.item, event => this.onClickDropdown(event))
       .on("click", this.options.search.trigger, event => this.onClickSearch(event))
 
     $(document)
@@ -49,38 +43,35 @@ export default class Header {
   }
 
   onClickDropdown(event) {
-    event.preventDefault();
-    const $target = $(event.currentTarget)
-    $target.toggleClass(this.options.nav.dropdownOpen)
-  }
+    const $target = $(event.currentTarget);
+    if ($target.next("ul").length) {
+      event.preventDefault();
+      const $parent = $target.parent();
 
-  onClickChild(event) {
-    event.preventDefault();
-    event.stopPropagation()
-    const $target = $(event.currentTarget)
-
-    if ($target.hasClass(this.options.nav.childOpen)) {
-      $target.removeClass(this.options.nav.childOpen)
-    } else {
-      $target.addClass(this.options.nav.childOpen).siblings().removeClass(this.options.nav.childOpen)
+      if (!$parent.hasClass(this.options.nav.active)) {
+        $(this.options.nav.item).parent().removeClass(this.options.nav.active)
+        $parent.addClass(this.options.nav.active)
+      } else {
+        $parent.removeClass(this.options.nav.active)
+      }
     }
   }
 
-  onClickLink(event) {
-    event.preventDefault();
-    const $target = $(event.currentTarget)
-    const url = $target.find("a").attr("href");
-
-    window.location.href = url;
-  }
 
   onClickSearch(event) {
     event.preventDefault()
 
     this.$searchBar.toggleClass(this.options.search.class)
     this.$nav.removeClass(this.options.nav.toggle);
-    this.$hamburger.removeClass('a-hamburger--open')
-    this.$searchBar.hasClass(this.options.search.class) ? $("html").addClass('disable-scroll') : $("html").removeClass('disable-scroll')
+    this.$hamburger.removeClass('a-hamburger--open');
+
+    if (this.$searchBar.hasClass(this.options.search.class)){
+      $("html").addClass('disable-scroll');
+      this.$el.addClass('o-header--opened')
+    } else {
+      $("html").removeClass('disable-scroll');
+      this.$el.removeClass('o-header--opened')
+    }
   }
 
   onClickHamburger(event) {
@@ -89,8 +80,15 @@ export default class Header {
     if (windowWidth < 769) {
       event.preventDefault()
       this.$nav.toggleClass(this.options.nav.toggle);
-      this.$searchBar.removeClass(this.options.search.class)
-      this.$nav.hasClass(this.options.nav.toggle) ? $("html").addClass('disable-scroll') : $("html").removeClass('disable-scroll')
+      this.$searchBar.removeClass(this.options.search.class);
+
+      if (this.$nav.hasClass(this.options.nav.toggle)){
+        $("html").addClass('disable-scroll');
+        this.$el.addClass('o-header--opened')
+      } else {
+        $("html").removeClass('disable-scroll');
+        this.$el.removeClass('o-header--opened')
+      }
     }
   }
 }

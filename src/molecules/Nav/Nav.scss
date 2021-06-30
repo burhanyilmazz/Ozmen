@@ -1,10 +1,10 @@
 .m-nav {
   display: none;
   position: fixed;
-  background: #f7f7f7;
-  padding: rem(50px);
+  background: #fff;
+  padding: rem(35px);
   width: 100%;
-  height: calc(100% - 80px);
+  height: calc(100% - 90px);
   left: 0;
   will-change: transform;
   transition: transform 0.5s ease-in-out;
@@ -12,6 +12,7 @@
   overflow: hidden;
   transform: translateY(-150%);
   z-index: -1;
+  flex-direction: column;
 
   @media screen and (max-width: 768px) {
     display: flex;
@@ -19,153 +20,149 @@
   }
 
   &--open {
-    transform: translateY(25px);
+    transform: translateY(18px);
     opacity: 1;
     z-index: 1;
     transition: transform 0.5s ease-in-out;
   }
 
-  > ul {
-    display: flex;
-    height: calc(100% - 100px);
+  ul {
+    font-size: rem(18px);
+    font-weight: 600;
     overflow-y: auto;
-    flex-direction: column;
-    width: 100%;
+    max-height: calc(100% - 90px);
 
-    > li {
-      > a {
-        font-size: rem(24px);
-        line-height: rem(42px);
-        color: $black;
-        font-weight: 600;
+    li {
+      display: flex;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      position: relative;
+      line-height: rem(50px);
+      cursor: pointer;
+      color: $Tuna;
+
+      a {
+        color: $Tuna;
       }
 
-      > ul {
-        display: none;
-        flex-direction: column;
-        > li {
-          display: flex;
-          align-items: center;
-          flex-wrap: wrap;
+      span {
+        display: flex;
+        padding: rem(10px) 0;
+        width: 100%;
 
-          > a {
-            font-size: rem(18px);
-            font-weight: 600;
-            color: $black;
-            display: flex;
-            width: calc(100% - 40px);
-            line-height: rem(45px);
-          }
-
-          > ul {
-            display: none;
-            flex-direction: column;
-            > li {
-              > a {
-                font-weight: 500;
-                font-size: rem(14px);
-                line-height: rem(35px);
-                color: $black;
-                padding-left: rem(40px);
-              }
-
-              &:last-child {
-                > a {
-                  color: $Green;
-                }
-              }
-            }
-          }
+        &:after {
+          width: rem(30px);
+          content: "+";
+          display: inline-flex;
+          position: absolute;
+          font-weight: normal;
+          transition: all 0.5s ease;
+          margin-top: 0;
+          right: 0;
         }
       }
-    }
-  }
 
-  &--dropdown {
-    &-child {
-      &:before {
-        width: rem(20px);
-        content: "+";
-        display: inline-flex;
-        position: relative;
-        font-weight: 600;
-        transition: all 0.5s ease;
-        margin-left: rem(20px);
-      }
-
-      &-open {
+      &:hover {
         > a {
-          color: $Green !important;
-        }
-        &:before {
-          content: "-";
+          color: $Tuna;
         }
 
-        > ul {
-          display: flex !important;
+        &:after {
+          color: $Tuna;
         }
       }
     }
 
-    &-open {
-      > a {
-        color: $Green !important;
-      }
-      > ul {
-        display: flex !important;
+    a {
+      color: $Tuna;
+      padding: rem(8px) 0;
+      display: flex;
+      width: calc(100% - 50px);
+      transition: all 0.5s ease;
+    }
+
+    ul {
+      font-size: rem(16px);
+      font-weight: 300;
+      width: 100%;
+      display: none;
+      flex-direction: column;
+      padding-left: rem(30px);
+
+      li {
+        line-height: rem(28px);
+        a {
+          color: rgba($color: $Tuna, $alpha: 0.6);
+        }
+        span {
+          &:after {
+            display: none;
+          }
+        }
       }
     }
   }
 
   &--active {
-    color: $Green !important;
-  }
+    color: $Tuna !important;
+    > a {
+      color: $Tuna !important;
+    }
 
-  &__language {
-    position: absolute;
-    bottom: rem(90px);
-    a {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: $black;
-      transition: all 0.5s ease;
-
-      &:hover {
-        color: $Green;
+    span {
+      &:after {
+        color: $Tuna !important;
+        content: "-" !important;
       }
+    }
 
-      span {
-        font-size: rem(10px);
-        font-weight: 600;
-        margin-left: rem(10px);
-      }
+    ul {
+      display: flex !important;
     }
   }
 
   &__bottom {
     position: absolute;
-    bottom: rem(50px);
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    background: rgba($color: $Tuna, $alpha: 0.1);
+    width: 100%;
+    left: 0;
+    font-size: rem(14px);
+    font-weight: 600;
 
-    ul {
-      font-size: rem(11px);
-      letter-spacing: -0.45px;
-      font-weight: 400;
-      line-height: rem(30px);
+    a {
+      width: 50%;
+      height: rem(90px);
       display: flex;
+      align-items: center;
+      color: $Tuna;
+      padding: 0 rem(35px);
+      position: relative;
 
-      li {
+      i {
         margin-right: rem(10px);
+        font-weight: 400;
       }
 
-      a {
-        color: $black;
-        transition: all 0.5s ease;
+      &:after {
+        position: absolute;
+        width: 1px;
+        height: rem(60px);
+        right: 1px;
+        top: rem(15px);
+        content: "";
+        background: rgba($color: $Tuna, $alpha: 0.2);
+      }
 
-        &:hover {
-          color: $Green;
+      &:last-child {
+        &:after {
+          display: none;
         }
       }
     }
   }
+
+
 }

@@ -12,12 +12,23 @@
     width: 80%;
   }
 
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    right: 0;
+    top: -100%;
+    height: calc(100vh - 90px);
+  }
+
   h1 {
     font-size: rem(70px);
     margin: 0;
 
     @media screen and (max-width: 1366px) {
       font-size: rem(60px);
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: rem(40px);
     }
   }
 
@@ -29,6 +40,10 @@
     @media screen and (max-width: 1280px) {
       font-size: rem(22px);
     }
+
+    @media screen and (max-width: 768px) {
+      font-size: rem(17px);
+    }
   }
 
   .icon-close {
@@ -36,6 +51,10 @@
     top: rem(57px);
     right: rem(57px);
     cursor: pointer;
+
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
 
     &:before {
       font-size: rem(40px);
@@ -48,6 +67,10 @@
 
     @media screen and (max-width: 1280px) {
       padding: rem(100px) rem(80px);
+    }
+
+    @media screen and (max-width: 768px) {
+      padding: rem(50px) rem(35px);
     }
   }
 
@@ -73,6 +96,10 @@
     @media screen and (max-width: 1366px) {
       top: rem(40px);
     }
+
+    @media screen and (max-width: 768px) {
+      right: rem(28px);
+    }
   }
 
   &__input {
@@ -90,6 +117,10 @@
 
       @media screen and (max-width: 1366px) {
         padding: rem(37px) rem(80px) rem(37px) rem(53px);
+      }
+
+      @media screen and (max-width: 768px) {
+        padding: rem(37px) rem(60px) rem(37px) rem(30px);
       }
 
       &::placeholder {
@@ -127,6 +158,11 @@
         padding: 0 rem(80px);
       }
 
+      @media screen and (max-width: 768px) {
+        width: 100%;
+        padding: 0 rem(50px);
+      }
+
       .m-social-media {
         margin-top: 0;
         &__item {
@@ -151,6 +187,10 @@
       @media screen and (max-width: 1280px) {
         height: rem(130px);
         padding: 0 rem(80px);
+      }
+
+      @media screen and (max-width: 768px) {
+        display: none;
       }
 
       ul {
@@ -180,6 +220,11 @@
   &--open {
     right: rem(107px);
     opacity: 1;
+
+    @media screen and (max-width: 768px) {
+      top: rem(90px);
+      right: 0;
+    }
 
     & ~ .a-shadow {
       z-index: 8;

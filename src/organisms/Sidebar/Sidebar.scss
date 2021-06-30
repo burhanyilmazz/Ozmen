@@ -14,8 +14,15 @@
     z-index: 3;
     height: 100%;
     width: rem(107px);
-    backdrop-filter: blur(107px);
+    background: rgba($color: $white, $alpha: 0.3);
     border-left: 1px solid transparent;
+
+    @supports (
+      (-webkit-backdrop-filter: blur(107px)) or (backdrop-filter: blur(107px))
+    ) {
+      background: transparent;
+      backdrop-filter: blur(107px);
+    }
   }
 
   &-main {
@@ -100,7 +107,7 @@
         max-height: calc(100vh - 100px);
         padding: rem(50px) rem(50px) rem(20px);
       }
-      
+
       ul {
         font-size: rem(26px);
         font-weight: 600;

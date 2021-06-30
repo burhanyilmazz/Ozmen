@@ -7,12 +7,13 @@ export default class Services {
         slidesPerView: 1,
         watchSlidesVisibility: true,
         watchSlidesProgress: true,
+        slideToClickedSlide: false,
         allowTouchMove: false,
         lazy: {
           loadPrevNext: true
         },
         pagination: {
-          el: ".o-services__text .swiper-pagination",
+          el: ".o-services .swiper-pagination",
           clickable: true,
           renderBullet: function (index, className) {
             return '<span class="' + className + '">' + (index + 1) + "</span>";
@@ -23,7 +24,7 @@ export default class Services {
       const productCarouselImage = new Swiper(".o-services__image .m-slider__swiper", {
         slidesPerView: "auto",
         direction: "vertical",
-        slideToClickedSlide: true,
+        slideToClickedSlide: false,
         spaceBetween: 30,
         autoHeight: true,
         centeredSlides: true,
