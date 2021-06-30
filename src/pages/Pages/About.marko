@@ -1,0 +1,38 @@
+<include('../../templates/Base/Base.marko')>
+
+  <@title>About</@title>
+  <@body>
+    <Section class="p-about">
+      <div class="container-fluid">
+        <Grid>
+          <@GridCol class="col-xl-3">
+            <LeftNav title="Kurumsal" items=[{"text": "Hakkımızda", "value": "#", "isActive": true},{"text": "İhracat", "value": "#"},{"text": "Sosyal Sorumluluk", "value": "#"},{"text": "Sürdürülebilirlik", "value": "#"}] />
+          </@GridCol>
+          <@GridCol class="col-xl-9">
+            <Head desktop="../../assets/images/content/head/about.png" mobile="../../assets/images/content/head/about-m.png" />
+            <div class="p-about__content">
+              <h1>Hakkımızda</h1>
+              <h2>Yarım Asırlık Deneyim</h2>
+
+              <p>Özmen Un, temelleri yarım asra varan ve bugün 3. kuşak yöneticilerinin de içinde bulunduğu köklü bir firmadır. Kuruluşundan bugüne teknolojiye yaptığı yatırımlar ile Anadolu tarım mirasına sunduğu katkılar, sürdürülebilirlik konusunda yaptığı öncü çalışmalar ve sosyal sorumluluk projeleriyle yerel ve ulusal düzeyde değer yaratan bir kurumdur. </p>
+              <pre>
+Pazar beklentilerini çok yakından takip ederek, faaliyet alanını sürekli aktif tutan Özmen Un, güçlü, deneyimli, uzman, Ar-Ge ekibi ve Üniversitelerle olan akademik iş birlikleri sayesinde, 43 çeşit ürün gamına ulaşarak yenilikçi ve inovatif ürünlerle sektöre yön vermeye devam ediyor. 
+
+Endüstri 4.0 teknolojisi ile dünyanın en iyi üretim tesislerinden birine sahip olmanın yanı sıra, karanlık değirmen ile el değmeden üretilen unlar, güvenli gıda üretiminde fark yaratıyor. 
+
+Yarım asırlık deneyimi ile Ulusal ve Uluslararası birçok markaya ürün geliştirmiş ve geliştirmeye devam eden Özmen Un, 100’den fazla çalışanı, 250’den fazla iş ortağı ve lisanslı depoculukta yıllık 55 bin tonluk kapasitesiyle birlikte, sektörün büyümesi ve gelişmesine büyük oranda katkı sağlıyor.
+Teknolojiye olan sürekli yatırımı ve güvenli gıda üretimi ile sofraları keyiflendirerek, geleceğe ışık saçanların öyküleriyle yoluna güvenle devam ediyor. 
+              </pre>
+
+              <Image src="../../assets/images/content/about/content.jpg" />
+            </div>
+          </@GridCol>
+        </Grid>
+      </div>
+    </Section>
+
+    <Video />
+  </@body>
+</include>
+
+

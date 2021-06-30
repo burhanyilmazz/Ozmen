@@ -1,37 +1,20 @@
 $ {
-    const subnav = input.subnav
-    const items = input.items
+    const title = input.title;
+    const items = input.items;
 }
 <div class="m-left-nav" data-component="LeftNav">
-    <ul class="m-left-nav__top">
-        <if (!items)>
-            <li><a href="#">Diş Tableti</a></li>
-            <li><a href="#">Çocuk Diş Tableti</a></li>
-            <li><a href="#">Diş Macunu</a></li>
-            <li><a href="#">Ağız Yıkama Tableti</a></li>
-            <li><a href="#">Supplement</a></li>
-            <li><a href="#" class="m-left-nav--active">Diş Fırçası</a></li>
-        </if>
-        <else>
-            <for(item in items)>
-                <if (item.isActive)>
-                    <li class="m-left-nav__top--anchor m-left-nav--active"><a href=item.url>${item.title}</a></li>
-                </if>
+    <h2>${title}</h2>
+    <ul>
+        <for(item in items)>
+            <if (!item.isActive)>
+                <li><a href=item.value>${item.text}</a></li>
+            </if>
 
-                <else>
-                    <li class="m-left-nav__top--anchor"><a href=item.url>${item.title}</a></li>
-                </else>
-            </for>
-        </else>
+            <else>
+                <li><a href=item.value class="m-left-nav--active">${item.text}</a></li>
+            </else>
+        </for>
     </ul>
 
-    <ul class="m-left-nav__bottom" if(subnav)>
-        <li><a href="#">Bambu Diş Fırçası</a></li>
-        <li><a href="#">Doğal Diş Fırçası</a></li>
-        <li><a href="#" class="m-left-nav--active">Natural Diş Fırçası</a></li>
-    </ul>
-
-    <if (!items)>
-        <FormSelect placeholder="Seçin" items=[{ text: "Diş Tableti", value: "pageurl" }, { text: "Çocuk Diş Tableti", value: "pageurl" }, { text: "Diş Macunu", value: "pageurl" }]  />
-    </if>
+    <FormSelect placeholder="Seçin" items=items />
 </div>

@@ -7,8 +7,9 @@ ul.a-breadcrumb {
   li {
     a {
       position: relative;
-      color: #b2b2b2;
+      color: #B3B5B4;
       font-size: rem(12px);
+      font-weight: 400;
       text-decoration: none;
       flex: 1 1 auto;
       display: flex;
@@ -21,11 +22,10 @@ ul.a-breadcrumb {
         position: relative;
         margin-right: rem(8px);
         content: "";
-        border: solid #b2b2b2;
-        border-width: 0 1px 1px 0;
-        display: inline-block;
-        padding: 2px;
-        transform: rotate(-45deg);
+        width: rem(5px);
+        height: rem(5px);
+        border-radius: 100%;
+        background: #B3B5B4;
       }
     }
 
@@ -39,7 +39,7 @@ ul.a-breadcrumb {
 
     &:last-child {
       a {
-        color: $black;
+        font-weight: 600;
       }
     }
   }

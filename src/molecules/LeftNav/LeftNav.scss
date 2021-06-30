@@ -1,119 +1,50 @@
 .m-left-nav {
-  position: fixed;
+  position: sticky;
   top: rem(250px);
-  left: rem(30px);
 
-  @media screen and (max-width: 990px) {
-    position: relative;
-    left: 0;
-    top: 0;
+  h2 {
+    font-size: rem(26px);
+    line-height: rem(49px);
   }
 
-  &--sticky {
-    position: absolute;
-  }
-
-  &__top {
-    font-weight: 500;
-    line-height: rem(32px);
+  ul {
+    margin-top: rem(20px);
     font-size: rem(16px);
+    line-height: rem(49px);
 
-    @media screen and (max-width: 1200px) {
-      max-width: 16.66667%;
-    }
-    @media screen and (max-width: 990px) {
-      display: none;
-    }
-
-    a {
-      color: #b2b2b2;
-      display: flex;
-      align-items: center;
-      padding-left: rem(21px);
+    li {
       position: relative;
-      transition: all 0.5s ease;
 
-      &:before {
-        transition: all 0.5s ease;
-      }
-
-      &.m-left-nav--active,
-      &:hover {
-        color: #000;
+      a {
+        color: $Tuna;
         transition: all 0.5s ease;
 
         &:before {
-          width: 6px;
-          height: 6px;
+          background: #95a585;
           content: "";
-          border-radius: 100%;
-          background: #000;
+          width: rem(80px);
+          height: 1px;
           position: absolute;
-          left: 0;
+          left: -100%;
+          top: rem(24px);
           transition: all 0.5s ease;
         }
-      }
-    }
 
-    &--anchor {
-      &.m-left-nav--active {
-        a {
-          color: #000;
-          transition: all 0.5s ease;
-
+        &:hover {
+          font-weight: 600;
           &:before {
-            width: 6px;
-            height: 6px;
-            content: "";
-            border-radius: 100%;
-            background: #000;
-            position: absolute;
-            left: 0;
-            transition: all 0.5s ease;
+            left: rem(-107px);
           }
         }
       }
     }
   }
 
-  &__bottom {
-    font-weight: 500;
-    line-height: rem(36px);
-    font-size: rem(15px);
-    margin-top: rem(86px);
+  &--active {
+    font-weight: 600;
 
-    @media screen and (max-width: 1200px) {
-      display: none;
-    }
-
-    a {
-      color: #b2b2b2;
-      display: flex;
-      align-items: center;
-      padding-left: rem(21px);
-      position: relative;
-      transition: all 0.5s ease;
-
-      &:before {
-        transition: all 0.5s ease;
-      }
-
-      &.m-left-nav--active,
-      &:hover {
-        color: #000;
-        transition: all 0.5s ease;
-
-        &:before {
-          width: 17px;
-          height: 3px;
-          content: "";
-          border-radius: 2px;
-          background: #000;
-          position: absolute;
-          left: -5px;
-          transition: all 0.5s ease;
-        }
-      }
+    &:before {
+      left: rem(-107px) !important;
     }
   }
 

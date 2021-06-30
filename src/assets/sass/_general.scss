@@ -34,6 +34,12 @@ i::before {
   }
 }
 
+pre {
+  font-family: inherit;
+  white-space: break-spaces;
+  color: inherit;
+}
+
 .inline-block {
   display: inline-block;
 }
