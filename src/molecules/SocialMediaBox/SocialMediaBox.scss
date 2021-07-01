@@ -21,7 +21,7 @@
         font-size: rem(26px);
       }
 
-      @media screen and (max-width: 990px) {
+      @media screen and (max-width: 1024px) {
         font-size: rem(20px);
       }
     }
@@ -32,8 +32,11 @@
         font-size: rem(34px);
       }
 
-      @media screen and (max-width: 990px) {
+      @media screen and (max-width: 1024px) {
         font-size: rem(30px);
+      }
+
+      @media screen and (max-width: 990px) {
         margin-top: rem(10px);
       }
     }
@@ -56,8 +59,12 @@
         margin-right: rem(80px);
       }
 
+      @media screen and (max-width: 1280px) {
+        margin-right: rem(50px);
+      }
+
       @media screen and (max-width: 1024px) {
-        margin-right: rem(40px);
+        margin-right: rem(20px);
       }
 
       @media screen and (max-width: 990px) {

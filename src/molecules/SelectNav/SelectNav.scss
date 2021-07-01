@@ -1,0 +1,23 @@
+.m-select-nav {
+  display: none;
+
+  @media screen and (max-width: 990px) {
+    display: flex;
+    margin-top: rem(30px);
+
+    .a-select {
+      width: calc(100% - 137px);
+
+      select {
+        font-weight: 600;
+        border-color: rgba($color: $Tuna, $alpha: 0.2);
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .a-select {
+      width: 100%;
+    }
+  }
+}

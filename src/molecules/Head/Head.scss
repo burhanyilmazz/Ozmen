@@ -15,6 +15,12 @@
   .a-breadcrumb {
     position: absolute;
     left: 0;
-    top: rem(92px)
+    top: rem(92px);
+
+    @media screen and (max-width: 990px) {
+      position: relative;
+      top: auto;
+      margin-top: rem(20px);
+    }
   }
 }

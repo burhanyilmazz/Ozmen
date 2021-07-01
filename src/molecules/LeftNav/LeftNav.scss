@@ -1,6 +1,9 @@
 .m-left-nav {
   position: sticky;
   top: rem(250px);
+  @media screen and (max-width: 990px) {
+    display: none;
+  }
 
   h2 {
     font-size: rem(26px);
@@ -10,7 +13,7 @@
   ul {
     margin-top: rem(20px);
     font-size: rem(16px);
-    line-height: rem(49px);
+    line-height: rem(45px);
 
     li {
       position: relative;
@@ -45,14 +48,6 @@
 
     &:before {
       left: rem(-107px) !important;
-    }
-  }
-
-  .a-select {
-    display: none;
-
-    @media screen and (max-width: 990px) {
-      display: flex;
     }
   }
 }

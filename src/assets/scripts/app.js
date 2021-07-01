@@ -19,7 +19,7 @@ import RemoteCheck      from  '../../../src/molecules/RemoteCheck/RemoteCheck';
 import SearchBar        from  '../../../src/molecules/SearchBar/SearchBar';
 import Slider           from  '../../../src/molecules/Slider/Slider';
 import TabDefault       from  '../../../src/molecules/TabDefault/TabDefault';
-import LeftNav          from  '../../../src/molecules/LeftNav/LeftNav';
+import SelectNav          from  '../../../src/molecules/SelectNav/SelectNav';
 
 import Sidebar          from  '../../../src/organisms/Sidebar/Sidebar';
 import Contact          from  '../../../src/organisms/Contact/Contact';
@@ -47,7 +47,7 @@ const Components = {
   SearchBar,
   Slider,
   TabDefault,
-  LeftNav,
+  SelectNav,
   
   Sidebar,
   Contact,

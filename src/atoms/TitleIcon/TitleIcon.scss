@@ -2,16 +2,18 @@
   font-size: rem(16px);
   display: inline-flex;
   align-items: center;
-  color: $Green;
+  justify-content: center;
+  color: $black;
+  flex-direction: column;
+  margin-top: rem(30px);
 
   @media screen and (max-width: 768px) {
-    font-size: rem(13px);
+    font-size: rem(12px);
   }
 
   span {
     font-weight: 600;
     display: inline-flex;
-    line-height: rem(23px);
-    margin-left: rem(10px);
+    line-height: rem(40px);
   }
 }

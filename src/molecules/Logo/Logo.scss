@@ -7,15 +7,13 @@
     &:before {
       font-size: rem(93px);
 
+      @media screen and (max-width: 1280px) {
+        font-size: rem(85px);
+      }
+
       @media screen and (max-width: 768px) {
         font-size: rem(50px);
       }
-    }
-  }
-
-  &--white {
-    i {
-      color: $white;
     }
   }
 }

@@ -1,0 +1,64 @@
+.p-calendar {
+
+  &__icons {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: 1366px) {
+      justify-content: flex-start;
+    }
+
+    .a-title-icon {
+      min-width: rem(120px);
+
+      @media screen and (max-width: 1440px) {
+        min-width: rem(110px);
+      }
+
+      @media screen and (max-width: 1366px) {
+        min-width: rem(140px);
+      }
+
+      @media screen and (max-width: 1280px) {
+        min-width: rem(130px);
+      }
+
+      @media screen and (max-width: 990px) {
+        min-width: rem(110px);
+      }
+
+      @media screen and (max-width: 768px) {
+        min-width: rem(75px);
+      }
+    }
+  }
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 rem(-20px);
+
+    .m-card-calendar {
+      width: calc((100% / 3) - 40px);
+      margin: rem(20px);
+
+      @media screen and (max-width: 1024px) {
+        width: calc((100% / 2) - 40px);
+      }
+
+      @media screen and (max-width: 768px) {
+        width: calc((100% / 2) - 20px);
+        margin: rem(10px);
+      }
+    }
+  }
+
+  .m-left-nav {
+    @media screen and (max-width: 1440px) {
+      ul {
+        line-height: rem(34px);
+      }
+    }
+  }
+}

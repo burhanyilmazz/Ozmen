@@ -1,0 +1,128 @@
+.m-card-calendar {
+  display: flex;
+  flex-direction: column;
+  border-radius: rem(10px);
+  box-shadow: 0px rem(20px) rem(30px) rgba($color: $black, $alpha: 0.1);
+  background: $white;
+  width: 100%;
+  transition: all 0.5s ease;
+
+  @media screen and (max-width: 768px) {
+    background: $Tuna;
+  }
+
+  &__body {
+    position: relative;
+    padding: rem(30px);
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: rem(324px);
+
+    @media screen and (max-width: 768px) {
+      color: $white;
+      padding: rem(20px);
+      height: rem(158px);
+    }
+
+    h3 {
+      color: $Tuna;
+      font-size: rem(26px);
+      font-weight: 600;
+      line-height: rem(36px);
+      transition: all 0.5s ease;
+
+			@media screen and (max-width: 1440px) {
+        font-size: rem(23px);
+				line-height: rem(34px);
+      }
+
+			@media screen and (max-width: 1280px) {
+        font-size: rem(20px);
+      }
+
+      @media screen and (max-width: 768px) {
+        color: $white;
+        font-size: rem(13px);
+        line-height: rem(20px);
+      }
+    }
+
+    span {
+      position: absolute;
+      font-size: rem(63px);
+      right: rem(30px);
+      top: rem(30px);
+      color: rgba($color: $Tuna, $alpha: 0.2);
+      transition: all 0.5s ease;
+
+			@media screen and (max-width: 1280px) {
+        font-size: rem(50px);
+      }
+
+      @media screen and (max-width: 768px) {
+        color: rgba($color: $white, $alpha: 0.1);
+        font-size: rem(30px);
+        right: rem(20px);
+        top: rem(20px);
+      }
+    }
+
+    img {
+      max-height: rem(70px);
+      max-width: rem(100px);
+      width: fit-content;
+      margin-bottom: rem(15px);
+
+      @media screen and (max-width: 768px) {
+        max-height: rem(35px);
+				max-width: rem(42px);
+      }
+    }
+  }
+
+  &__foot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: rem(76px);
+    padding: 0 rem(30px);
+    font-size: rem(14px);
+    color: $black;
+    border-top: 1px solid #e9e9ea;
+    transition: all 0.5s ease;
+
+    @media screen and (max-width: 768px) {
+      color: $white;
+      height: rem(37px);
+      font-size: rem(12px);
+      padding: 0 rem(20px);
+
+      i {
+        &:before {
+          font-size: rem(10px);
+        }
+      }
+    }
+  }
+
+  &:hover {
+    background: $Tuna;
+
+    .m-card-calendar {
+      &__body {
+        h3 {
+          color: $white;
+        }
+
+        span {
+          color: rgba($color: $white, $alpha: 0.1);
+        }
+      }
+
+      &__foot {
+        color: $white;
+      }
+    }
+  }
+}

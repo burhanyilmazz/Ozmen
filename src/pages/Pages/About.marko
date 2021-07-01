@@ -2,15 +2,16 @@
 
   <@title>About</@title>
   <@body>
-    <Section class="p-about">
+    <Section class="p-content p-about">
       <div class="container-fluid">
         <Grid>
-          <@GridCol class="col-xl-3">
+          <@GridCol class="col-lg-3">
             <LeftNav title="Kurumsal" items=[{"text": "Hakkımızda", "value": "#", "isActive": true},{"text": "İhracat", "value": "#"},{"text": "Sosyal Sorumluluk", "value": "#"},{"text": "Sürdürülebilirlik", "value": "#"}] />
           </@GridCol>
-          <@GridCol class="col-xl-9">
+          <@GridCol class="col-lg-9">
             <Head desktop="../../assets/images/content/head/about.png" mobile="../../assets/images/content/head/about-m.png" />
-            <div class="p-about__content">
+            <SelectNav items=[{"text": "Hakkımızda", "value": "#", "isActive": true},{"text": "İhracat", "value": "#"},{"text": "Sosyal Sorumluluk", "value": "#"},{"text": "Sürdürülebilirlik", "value": "#"}] />
+            <div class="p-content__container">
               <h1>Hakkımızda</h1>
               <h2>Yarım Asırlık Deneyim</h2>
 

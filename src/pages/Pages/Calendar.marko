@@ -1,0 +1,53 @@
+<include('../../templates/Base/Base.marko')>
+
+  <@title>Agricultural Calendar</@title>
+  <@body>
+    <Section class="p-content p-calendar">
+      <div class="container-fluid">
+        <Grid>
+          <@GridCol class="col-lg-3">
+            <LeftNav title="Tarım Takvimi" items=[{"text": "Ocak", "value": "#"},{"text": "Şubat", "value": "#"},{"text": "Mart", "value": "#"},{"text": "Nisan", "value": "#"},{"text": "Mayıs", "value": "#"},{"text": "Haziran", "value": "#"},{"text": "Temmuz", "value": "#"},{"text": "Ağustos", "value": "#"},{"text": "Eylül", "value": "#"},{"text": "Ekim", "value": "#"},{"text": "Kasım", "value": "#"},{"text": "Aralık", "value": "#"}] />
+          </@GridCol>
+          <@GridCol class="col-lg-9">
+            <Head desktop="../../assets/images/content/head/about.png" mobile="../../assets/images/content/head/about-m.png" />
+            <SelectNav items=[{"text": "Ocak", "value": "#"},{"text": "Şubat", "value": "#"},{"text": "Mart", "value": "#"},{"text": "Nisan", "value": "#"},{"text": "Mayıs", "value": "#"},{"text": "Haziran", "value": "#"},{"text": "Temmuz", "value": "#"},{"text": "Ağustos", "value": "#"},{"text": "Eylül", "value": "#"},{"text": "Ekim", "value": "#"},{"text": "Kasım", "value": "#"},{"text": "Aralık", "value": "#"}] />
+            <div class="p-content__container">
+              <h1>Tarım Takvimi</h1>
+
+              <pre>
+Tarımsal üretimden beklenen faydanın sağlanması ekim – dikim, bakım, besleme, koruma ve hasat gibi faaliyetlerin zamanında yapılmasına bağlıdır. Bu açılardan pazar değeri yüksek, bol verimli ve üstün kaliteli ürün hasat etmek için tarımsal üretim mutlaka bir takvim çerçevesinde yapılmalıdır.
+              </pre>
+
+              <div class="p-calendar__icons">
+                <TitleIcon title="Tarla Ziraatı" icon="ecologism" />
+                <TitleIcon title="Meyvecilik" icon="harvest" />
+                <TitleIcon title="Sebzecilik" icon="vegetable" />
+                <TitleIcon title="Bağcılık" icon="fruit" />
+                <TitleIcon title="Hayvancılık" icon="sheep" />
+                <TitleIcon title="Tavukçuluk" icon="chicken" />
+                <TitleIcon title="Arıcılık" icon="bee" />
+              </div>
+
+              <div class="p-calendar__cards">
+                <CardCalendar count="01" title="Ocak Ayı" icon="ocak" />
+                <CardCalendar count="02" title="Şubat Ayı" icon="subat" />
+                <CardCalendar count="03" title="Mart Ayı" icon="mart" />
+                <CardCalendar count="04" title="Nisan Ayı" icon="nisan" />
+                <CardCalendar count="05" title="Mayıs Ayı" icon="mayis" />
+                <CardCalendar count="06" title="Haziran Ayı" icon="haziran" />
+                <CardCalendar count="07" title="Temmuz Ayı" icon="temmuz" />
+                <CardCalendar count="08" title="Ağustos Ayı" icon="agustos" />
+                <CardCalendar count="09" title="Eylül Ayı" icon="eylul" />
+                <CardCalendar count="10" title="Ekim Ayı" icon="ekim" />
+                <CardCalendar count="11" title="Kasım Ayı" icon="kasim" />
+                <CardCalendar count="12" title="Aralık Ayı" icon="aralik" />
+              </div>
+            </div>
+          </@GridCol>
+        </Grid>
+      </div>
+    </Section>
+  </@body>
+</include>
+
+
