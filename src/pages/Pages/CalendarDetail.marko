@@ -1,0 +1,32 @@
+<include('../../templates/Base/Base.marko')>
+
+  <@title>Agricultural Calendar</@title>
+  <@body>
+    <Section class="p-content p-calendar">
+      <div class="container-fluid">
+        <Grid>
+          <@GridCol class="col-lg-3">
+            <LeftNav title="Tarım Takvimi" items=[{"text": "Ocak", "value": "#"},{"text": "Şubat", "value": "#"},{"text": "Mart", "value": "#"},{"text": "Nisan", "value": "#"},{"text": "Mayıs", "value": "#"},{"text": "Haziran", "value": "#"},{"text": "Temmuz", "value": "#"},{"text": "Ağustos", "value": "#"},{"text": "Eylül", "value": "#"},{"text": "Ekim", "value": "#"},{"text": "Kasım", "value": "#"},{"text": "Aralık", "value": "#"}] />
+          </@GridCol>
+          <@GridCol class="col-lg-9">
+            <Head desktop="../../assets/images/content/head/about.png" mobile="../../assets/images/content/head/about-m.png" />
+            <SelectNav items=[{"text": "Ocak", "value": "#"},{"text": "Şubat", "value": "#"},{"text": "Mart", "value": "#"},{"text": "Nisan", "value": "#"},{"text": "Mayıs", "value": "#"},{"text": "Haziran", "value": "#"},{"text": "Temmuz", "value": "#"},{"text": "Ağustos", "value": "#"},{"text": "Eylül", "value": "#"},{"text": "Ekim", "value": "#"},{"text": "Kasım", "value": "#"},{"text": "Aralık", "value": "#"}] />
+            <div class="p-content__container">
+              <h1>Ocak ayı tarım takvimi</h1>
+
+              <CalendarContent title="Tarla Ziraatı" icon="ecologism" />
+              <CalendarContent title="Meyvecilik" icon="harvest" />
+              <CalendarContent title="Sebzecilik" icon="vegetable" />
+              <CalendarContent title="Bağcılık" icon="fruit" />
+              <CalendarContent title="Hayvancılık" icon="sheep" />
+              <CalendarContent title="Tavukçuluk" icon="chicken" />
+              <CalendarContent title="Arıcılık" icon="bee" />
+            </div>
+          </@GridCol>
+        </Grid>
+      </div>
+    </Section>
+  </@body>
+</include>
+
+

@@ -1,19 +1,24 @@
 $ {
-    let classes = ["m-card"];
-    const items = input.items || { title: "Kanada Aile Ziyareti Vizesi", text: "Kanada Aile Ziyareti Vizesinde başvuru sahibinin hazırlaması gereken kişisel evrak listesi herkes için aynıdır. Ancak mesleki durumunuzu gösteren evraklar  veya  çalışmıyorsanız seyahatinizi destekleyecek kişilerin evrakları değişiklik gösterir. Kanada Konsolosluğu vize yetkilileri ayrıca zorunlu evraklara ek olarak Kanada’ya..", image: "../../assets/images/dummy/video.jpg" };
-    const video = input.video;
-    
-    if (input.class) {
-        classes.push(input.class);
-    }
+    const classes = ["m-card"];
 
-    if (input.type) {
-        classes.push(`m-card--${input.type}`);
+    if (input.date) {
+        classes.push("m-card--news")
     }
 }
-<div class=classes>
+<a href="#" class=classes>
     <div class="m-card__head">
-        <Image src=items.image />
-        <ButtonIcon circle size="big" variant="transparent" type="span" icon="play" attrs=video></ButtonIcon>
+        <Image src="../../assets/images/dummy/tariff/tarif.jpg" />
     </div>
-</div>
+    <div class="m-card__body">
+        <h6>Portakallı Krep Tarifi</h6>
+
+        <div class="m-card__date" if(input.date)>
+            <span><IconFont icon="calendar" />2 Ekim 2019</span>
+            <span>Fuarlar</span>
+        </div>
+    </div>
+    <div class="m-card__foot">
+        <span>Detaya Git</span>
+        <IconFont icon="arrow-right" />
+    </div>
+</a>

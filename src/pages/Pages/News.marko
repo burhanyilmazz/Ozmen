@@ -1,0 +1,43 @@
+<include('../../templates/Base/Base.marko')>
+
+  <@title>News</@title>
+  <@body>
+    <Section class="p-news">
+      <div class="container-fluid">
+        <Breadcrumb />
+        <div class="p-news__title">
+          <h1>Haberler</h1>
+
+          <div class="p-news-title__select">
+            <FormSelect placeholder="Kategori Seçiniz" />
+          </div>
+        </div>
+
+        <div class="p-news__list">
+          <Card date />
+          <Card date />
+          <Card date />
+          <Card date />
+          <Card date />
+          <Card date />
+          <Card date />
+          <Card date />
+          <Card date />
+          <Card date />
+          <Card date />
+          <Card date />
+          <Card date />
+          <Card date />
+          <Card date />
+          <Card date />
+        </div>
+
+        <div class="p-news__button">
+          <Button icon="more">Daha Fazla</Button>
+        </div>
+      </div>
+    </Section>
+  </@body>
+</include>
+
+

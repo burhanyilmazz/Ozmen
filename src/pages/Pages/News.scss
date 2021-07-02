@@ -1,0 +1,110 @@
+.p-news {
+  position: relative;
+  padding: rem(250px) rem(97px) rem(150px) 0;
+
+  @media screen and (max-width: 768px) {
+    padding: rem(40px) 0;
+  }
+
+  .a-breadcrumb {
+    position: absolute;
+    top: rem(92px);
+    left: rem(495px);
+
+    @media screen and (max-width: 768px) {
+      position: relative;
+      top: auto;
+      left: auto;
+    }
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h1 {
+      font-size: rem(50px);
+
+      @media screen and (max-width: 1024px) {
+        font-size: rem(40px);
+      }
+
+      @media screen and (max-width: 768px) {
+        font-size: rem(30px);
+        margin-top: rem(40px);
+      }
+    }
+
+    @media screen and (max-width: 990px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  &-title {
+    &__select {
+      .a-select {
+        select {
+          background: $white;
+          box-shadow: 0px rem(20px) rem(30px) rgba($color: $black, $alpha: 0.2);
+          border: 0;
+          padding: rem(26px) rem(36px);
+          padding-right: rem(100px);
+          border-radius: rem(10px);
+          font-weight: 600;
+          font-size: rem(20px);
+        }
+
+        &:after {
+          top: rem(34px);
+          right: rem(25px);
+        }
+
+        &:before {
+          background: #E9E9EA;
+          width: 1px;
+          height: rem(43px);
+          content:'';
+          position: absolute;
+          right: rem(60px);
+          top: rem(20px)
+        }
+      }
+
+      @media screen and (max-width: 990px) {
+        width: 100%;
+        margin-top: rem(30px);
+      }
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: rem(40px) rem(-20px);
+
+    .m-card {
+      width: calc((100% / 4) - 40px);
+      margin: rem(20px);
+
+      @media screen and (max-width: 1280px) {
+        width: calc((100% / 3) - 40px);
+      }
+
+      @media screen and (max-width: 990px) {
+        width: calc((100% / 2) - 40px);
+      }
+
+      @media screen and (max-width: 768px) {
+        width: 100%;
+      }
+    }
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    margin-top: rem(90px);
+  }
+}

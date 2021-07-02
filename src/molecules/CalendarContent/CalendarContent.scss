@@ -1,0 +1,65 @@
+.m-calendar-content {
+  margin-top: rem(60px);
+  &__head {
+    background: rgba($color: $Tuna, $alpha: 0.06);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: rem(86px);
+    padding: 0 rem(20px);
+    border-radius: rem(10px);
+
+    h2 {
+      font-size: rem(30px) !important;
+      margin: 0 !important;
+      color: $Tuna !important;
+
+      @media screen and (max-width: 768px) {
+        font-size: rem(20px) !important;
+      }
+    }
+
+    img {
+      max-height: rem(40px);
+    }
+  }
+
+  &__body {
+    font-weight: 300;
+    font-size: rem(20px);
+    line-height: rem(34px);
+    margin-top: rem(20px);
+    color: $black;
+
+    @media screen and (max-width: 768px) {
+      font-size: rem(17px);
+      line-height: rem(24px);
+    }
+
+    ul {
+      li {
+        padding-left: rem(20px);
+        position: relative;
+        margin-bottom: rem(10px);
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+        &:before {
+          position: absolute;
+          content: "";
+          width: rem(5px);
+          height: rem(5px);
+          background: $black;
+          border-radius: 100%;
+          left: 0;
+          top: rem(15px);
+
+          @media screen and (max-width: 768px) {
+            top: rem(10px)
+          }
+        }
+      }
+    }
+  }
+}
