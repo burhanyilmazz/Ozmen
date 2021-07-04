@@ -9,9 +9,9 @@ $ {
         classes.push(`m-card-product--${input.type}`);
     }
 
-    const image = input.image;
-    const title = input.title;
-    const text = input.text;
+    const image = input.image || "../../assets/images/dummy/product/product-1.png";
+    const title = input.title || "ANTEP UNU";
+    const text = input.text || "Baklavalık";
 }
 <a href="#" class=classes>
     <div class="m-card-product__head">
@@ -19,7 +19,11 @@ $ {
     </div>
 
     <div class="m-card-product__body">
-        <h2>${title}</h2>
-        <h3>${text}</h3>
+        <h3>${title}</h3>
+        <h4>${text}</h4>
+    </div>
+
+    <div class="m-card-product__foot">
+        <span>İncele</span>
     </div>
 </a>

@@ -1,0 +1,33 @@
+.m-right-nav {
+  background: $white;
+  box-shadow: 0px rem(20px) rem(30px) rgba($color: $black, $alpha: 0.2);
+  border-radius: rem(10px);
+  padding: rem(57px);
+
+  @media screen and (max-width: 1366px) {
+    padding: rem(37px);
+  }
+
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
+
+  h4 {
+    font-size: rem(20px);
+    color: $Tuna;
+    margin-bottom: rem(30px);
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: $Tuna;
+    padding: rem(10px) 0;
+    border-bottom: 1px solid rgba($color: $black, $alpha: 0.2);
+
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+}

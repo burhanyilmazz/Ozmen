@@ -1,0 +1,25 @@
+.p-quality {
+  &__certificate {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 rem(-15px);
+
+    > a {
+      width: calc((100% / 4) - 30px);
+      margin: rem(15px);
+      display: block;
+      border: rem(10px) solid #707070;
+      background: $Gallery;
+      padding: rem(10px);
+      border-radius: 2px;
+
+      @media screen and (max-width: 768px) {
+        width: calc((100% / 2) - 30px);
+      }
+
+      > img {
+        width: 100%;
+      }
+    }
+  }
+}

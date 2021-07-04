@@ -52,15 +52,29 @@
     p {
       margin-bottom: rem(20px);
     }
+  }
 
-    > img {
-      width: 100%;
-      border-radius: rem(10px);
+  &__gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 rem(-15px);
 
-      & + {
-        img {
-          margin-bottom: rem(20px);
-        }
+    > a {
+      width: calc((100% / 3) - 30px);
+      margin: rem(15px);
+      display: block;
+
+      @media screen and (max-width: 768px) {
+        width: 100%;
+      }
+
+      > img {
+        border-radius: rem(10px);
+        width: 100%;
+      }
+
+      &:first-child {
+        width: 100%;
       }
     }
   }

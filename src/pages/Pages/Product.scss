@@ -1,0 +1,77 @@
+.p-product {
+  padding: rem(234px) 0 rem(100px);
+  position: relative;
+
+  @media screen and (max-width: 1200px) {
+    padding-right: rem(107px);
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: rem(34px) 0 rem(60px);
+  }
+
+  .container-fluid {
+    > .a-breadcrumb {
+      position: absolute;
+      top: rem(92px);
+      left: rem(495px);
+
+      @media screen and (max-width: 768px) {
+        position: relative;
+        top: auto;
+        left: auto;
+      }
+    }
+  }
+
+  h1 {
+    font-size: rem(50px);
+    line-height: rem(78px);
+    color: $Tuna;
+    margin-bottom: rem(106px);
+
+    @media screen and (max-width: 768px) {
+      font-size: rem(30px);
+      line-height: rem(36px);
+      margin-top: rem(20px);
+      margin-bottom: rem(50px);
+    }
+  }
+
+  .m-card-product {
+    margin-bottom: rem(30px);
+  }
+
+  &-banner {
+    img {
+      width: 100%;
+    }
+  }
+
+  &-content {
+    padding: rem(107px) 0;
+    @media screen and (max-width: 768px) {
+      padding: rem(50px) 0;
+    }
+    h2 {
+      color: #95a585;
+      font-size: rem(30px);
+      line-height: rem(34px);
+      margin-bottom: rem(20px);
+      @media screen and (max-width: 768px) {
+        font-size: rem(24px);
+      }
+    }
+
+    p,
+    pre {
+      font-size: rem(19px);
+      line-height: rem(34px);
+      font-weight: 300;
+
+      @media screen and (max-width: 768px) {
+        font-size: rem(17px);
+      }
+    }
+  }
+}

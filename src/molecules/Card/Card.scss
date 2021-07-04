@@ -3,6 +3,7 @@
   overflow: hidden;
   box-shadow: 0px rem(20px) rem(30px) rgba($color: $black, $alpha: 0.1);
   background: $white;
+  display: block;
   &__head {
     width: 100%;
     position: relative;

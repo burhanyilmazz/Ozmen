@@ -1,0 +1,131 @@
+.p-search {
+  padding: rem(234px) 0 rem(100px);
+  position: relative;
+
+  @media screen and (max-width: 1200px) {
+    padding-right: rem(107px);
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: rem(34px) 0 rem(60px);
+  }
+
+  h1 {
+    font-size: rem(50px);
+    line-height: rem(78px);
+    color: $Tuna;
+
+    @media screen and (max-width: 768px) {
+      font-size: rem(30px);
+      line-height: rem(36px);
+      margin-top: rem(20px);
+    }
+  }
+
+  .container-fluid {
+    > .a-breadcrumb {
+      position: absolute;
+      top: rem(92px);
+      left: rem(495px);
+
+      @media screen and (max-width: 768px) {
+        position: relative;
+        top: auto;
+        left: auto;
+      }
+    }
+  }
+
+  &__form {
+    margin-top: rem(30px);
+  }
+
+  &__counts {
+    margin-top: rem(20px);
+    ul {
+      font-size: rem(20px);
+      line-height: rem(40px);
+
+      @media screen and (max-width: 768px) {
+        font-size: rem(16px);
+      }
+    }
+  }
+
+  &__page-result {
+    border-top: 1px solid #707070;
+    margin-top: rem(50px);
+    padding-top: rem(50px);
+  }
+
+  &-page-result {
+    &__box {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      padding: rem(30px) 0;
+      border-bottom: 1px solid #b3b5b4;
+
+      h2 {
+        font-size: rem(30px);
+        margin-bottom: rem(20px);
+        @media screen and (max-width: 768px) {
+          font-size: rem(20px);
+        }
+      }
+
+      p {
+        font-size: rem(19px);
+        font-weight: 300;
+        line-height: rem(34px);
+        width: 80%;
+
+        @media screen and (max-width: 1024px) {
+          width: 100%;
+        }
+
+        @media screen and (max-width: 768px) {
+          font-size: rem(17px);
+          font-weight: 400;
+        }
+      }
+
+      .a-breadcrumb {
+        margin-top: rem(20px);
+      }
+
+      > a {
+        position: absolute;
+        top: rem(86px);
+        right: 0;
+        color: $Tuna;
+        font-size: rem(20px);
+        font-weight: 600;
+
+        @media screen and (max-width: 1024px) {
+          position: relative;
+          right: auto;
+          top: auto;
+          margin-top: rem(20px);
+        }
+
+        @media screen and (max-width: 768px) {
+          font-size: rem(16px);
+        }
+      }
+    }
+  }
+
+  &__cards {
+    margin-top: rem(80px);
+    h2 {
+      font-size: rem(30px);
+      margin-bottom: rem(50px);
+    }
+
+    .m-card-product,
+    .m-card {
+      margin-bottom: rem(30px);
+    }
+  }
+}

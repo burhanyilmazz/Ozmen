@@ -90,4 +90,405 @@
     justify-content: center;
     margin-top: rem(90px);
   }
+
+  &__lax {
+    position: absolute;
+    z-index: 2;
+
+    &--1 {
+      right: rem(200px);
+      top: rem(-60px);
+
+      @media (max-width: 768px) {
+        display: none;
+      }
+    }
+
+    &--2 {
+      left: rem(300px);
+      top: rem(-60px);
+    }
+
+    &--3 {
+      right: 0;
+      top: rem(-60px);
+    }
+
+    &--4 {
+      left: rem(-50px);
+      bottom: rem(-100px);
+
+      @media (max-width: 1200px) {
+        display: none;
+      }
+    }
+
+    &--5 {
+      right: 30%;
+      bottom: rem(-150px);
+
+      @media (max-width: 768px) {
+        display: none;
+      }
+    }
+
+    &--6 {
+      z-index: 1;
+      left: 0;
+      top: 0;
+    }
+
+    &--7 {
+      z-index: 1;
+      left: 0;
+      bottom: 0;
+      @media (max-width: 768px) {
+        display: none;
+      }
+    }
+
+    &--8 {
+      z-index: 1;
+      right: 0;
+      bottom: 0;
+      @media (max-width: 768px) {
+        display: none;
+      }
+    }
+  }
+
+  &-detail {
+    padding-top: rem(234px);
+
+    @media screen and (max-width: 1200px) {
+      padding-right: rem(87px);
+      padding-top: rem(170px);
+    }
+
+    @media (max-width: 768px) {
+      padding-right: 0;
+      padding-top: rem(40px);
+    }
+
+    .row {
+      align-items: stretch;
+    }
+
+    &__img {
+      width: 100%;
+      border-radius: rem(10px);
+      overflow: hidden;
+
+      @media screen and (max-width: 1200px) {
+        margin-top: rem(40px);
+      }
+    }
+
+    &__container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      padding: 0 rem(67px);
+      @media (max-width: 1200px) {
+        padding: rem(60px) 0 0;
+      }
+
+      .a-breadcrumb {
+        margin-top: rem(60px);
+        margin-bottom: rem(20px);
+
+        @media screen and (max-width: 1440px) {
+          margin-top: 0;
+        }
+
+        @media screen and (max-width: 1200px) {
+          display: none;
+        }
+      }
+    }
+
+    &__content {
+      h1 {
+        font-size: rem(50px);
+        line-height: rem(60px);
+        color: $Tuna;
+        margin-bottom: rem(50px);
+
+        @media screen and (max-width: 1366px) {
+          font-size: rem(40px);
+          line-height: rem(50px);
+          margin-bottom: rem(30px);
+        }
+
+        @media (max-width: 768px) {
+          font-size: rem(30px);
+          line-height: rem(36px);
+          margin-bottom: rem(20px);
+        }
+      }
+
+      p,
+      pre {
+        font-size: rem(20px);
+        line-height: rem(34px);
+        margin-bottom: rem(20px);
+
+        @media screen and (max-width: 1366px) {
+          font-size: rem(18px);
+          line-height: rem(30px);
+        }
+
+        @media (max-width: 768px) {
+          font-size: rem(17px);
+          line-height: rem(24px);
+        }
+      }
+    }
+
+    &__icons {
+      display: flex;
+
+      @media (max-width: 768px) {
+        justify-content: space-between;
+      }
+
+      > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        padding-right: rem(40px);
+        margin-right: rem(40px);
+
+        @media (max-width: 768px) {
+          padding-right: rem(20px);
+          margin-right: rem(20px);
+          width: 33.33%;
+        }
+
+        > span {
+          text-align: center;
+          font-size: rem(20px);
+          font-weight: 600;
+          margin-top: rem(10px);
+
+          @media (max-width: 768px) {
+            font-size: rem(16px);
+          }
+        }
+
+        &:after {
+          background: #707070;
+          content: "";
+          width: 1px;
+          height: rem(62px);
+          position: absolute;
+          right: 0;
+        }
+
+        &:last-child {
+          padding-right: 0;
+          margin-right: 0;
+          &:after {
+            display: none;
+          }
+        }
+
+        .a-title-icon {
+          span {
+            font-size: rem(14px);
+            font-weight: 400;
+          }
+        }
+      }
+    }
+
+    &-metarials {
+      background: $Tuna;
+      position: relative;
+      padding: rem(30px) rem(95px) rem(95px);
+      overflow: hidden;
+      margin-top: rem(100px);
+
+      @media screen and (max-width: 1440px) {
+        padding-left: 0;
+      }
+
+      @media (max-width: 1200px) {
+        padding: rem(30px) rem(95px) rem(95px);
+      }
+
+      @media (max-width: 768px) {
+        padding: rem(130px) rem(30px) rem(50px);
+      }
+
+      .row {
+        align-items: stretch;
+        position: relative;
+        z-index: 2;
+      }
+
+      .a-title-icon {
+        width: 100%;
+        position: relative;
+        @media (max-width: 768px) {
+          align-items: flex-start;
+        }
+        span {
+          font-size: rem(53px);
+          font-weight: 600;
+          text-shadow: 0px rem(23px) rem(46px)
+            rgba($color: #000000, $alpha: 0.2);
+          color: $white;
+          margin-top: rem(-70px);
+          line-height: rem(80px);
+          @media (max-width: 1200px) {
+            margin-top: 0;
+          }
+
+          @media (max-width: 768px) {
+            font-size: rem(30px);
+            line-height: rem(44px);
+          }
+        }
+
+        img {
+          @media (max-width: 1200px) {
+            position: absolute;
+            right: rem(-100px);
+            top: rem(-50px);
+            z-index: 1;
+          }
+          @media (max-width: 768px) {
+            right: rem(-90px);
+            top: rem(-150px);
+          }
+        }
+      }
+
+      ul {
+        font-size: rem(20px);
+        font-weight: 400;
+        color: $white;
+        line-height: rem(30px);
+        margin-top: rem(60px);
+        position: relative;
+        columns: 2;
+        z-index: 2;
+        @media (max-width: 768px) {
+          columns: 1;
+          font-size: rem(17px);
+          line-height: rem(24px);
+          margin-top: rem(30px);
+        }
+
+        li {
+          position: relative;
+          padding-left: rem(20px);
+          margin-bottom: rem(20px);
+
+          &:before {
+            position: absolute;
+            left: 0;
+            top: rem(12px);
+            content: "";
+            width: rem(5px);
+            height: rem(5px);
+            background: $white;
+            border-radius: 100%;
+          }
+        }
+
+        &:after {
+          position: absolute;
+          left: rem(-50px);
+          top: 0;
+          content: "";
+          width: 1px;
+          height: 100%;
+          background: rgba($color: $white, $alpha: 0.2);
+
+          @media (max-width: 1200px) {
+            display: none;
+          }
+        }
+      }
+    }
+
+    &-preparation {
+      padding: rem(120px) 0;
+      padding-right: rem(120px);
+
+      @media (max-width: 768px) {
+        padding: rem(60px) 0;
+      }
+      h3 {
+        color: #95a585;
+        font-size: rem(30px);
+      }
+      ul {
+        font-size: rem(20px);
+        font-weight: 400;
+        color: $Tuna;
+        line-height: rem(34px);
+        margin-top: rem(60px);
+        position: relative;
+
+        @media (max-width: 768px) {
+          font-size: rem(17px);
+          line-height: rem(24px);
+          margin-top: rem(30px);
+        }
+
+        li {
+          position: relative;
+          padding-left: rem(20px);
+          margin-bottom: rem(20px);
+
+          &:before {
+            position: absolute;
+            left: 0;
+            top: rem(14px);
+            content: "";
+            width: rem(5px);
+            height: rem(5px);
+            background: $Tuna;
+            border-radius: 100%;
+
+            @media (max-width: 768px) {
+              top: rem(8px);
+            }
+          }
+        }
+      }
+    }
+
+    &-gallery {
+      margin-bottom: rem(100px);
+
+      @media (max-width: 768px) {
+        margin-bottom: rem(50px);
+      }
+      a {
+        display: flex;
+        border-radius: rem(10px);
+        margin-bottom: rem(30px);
+        overflow: hidden;
+        box-shadow: 0px rem(20px) rem(50px) rgba($color: #000000, $alpha: 0.2);
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    &-video {
+      margin-bottom: rem(120px);
+
+      @media (max-width: 768px) {
+        margin-bottom: rem(50px);
+      }
+    }
+  }
 }

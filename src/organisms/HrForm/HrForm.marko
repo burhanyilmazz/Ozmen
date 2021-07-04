@@ -1,41 +1,30 @@
 <div class="hr-form">
-    <h2>Başvuru Formu</h2>
+    <h2>İş Başvuru Formu</h2>
 
     <Form>
         <Grid>
             <@GridCol class="col-lg-6">
-                <FormSelect required placeholder="Pozisyon Seçin" items=[{ text: "Item", value: "0" }, { text: "Item 2", value: "1" }, { text: "Item 3", value: "2" }]  />
-            </@GridCol>
-        </Grid>
-
-        <h3>Kişisel Bilgiler</h3>
-
-        <Grid>
-            <@GridCol class="col-lg-6">
-                <FormInput placeholder="Adınız" required />
+                <FormInput field="Adınız" required />
             </@GridCol>
             <@GridCol class="col-lg-6">
-                <FormInput placeholder="Soyadınız" required />
+                <FormInput field="Soyadınız" required />
             </@GridCol>
             <@GridCol class="col-lg-6">
-                <FormInput placeholder="Mail Adresiniz" type="email" required />
+                <FormInput field="Mail Adresiniz" type="email" required />
             </@GridCol>
             <@GridCol class="col-lg-6">
-                <FormInput placeholder="Telefon Numaranız" required />
+                <FormInput field="Telefon Numaranız" required />
             </@GridCol>
             <@GridCol class="col-lg-12">
-                <FormTextarea attrs={"rows": "2"} placeholder="Mesajınız" />
-            </@GridCol>
-            <@GridCol class="col-lg-6">
                 <FormFileInput required />
             </@GridCol>
             <@GridCol class="col-lg-12">
-                <FormCheckbox required field="<b data-fancyId='#modal-hr'>Kişisel Verilerimin Korunması</b>’nı kabul ediyorum." />
+                <FormTextarea attrs={"rows": "5"} field="Mesajınız" />
             </@GridCol>
-        </Grid>
-
-        <Grid>
-            <@GridCol class="col-lg-4">
+            <@GridCol class="col-lg-9">
+                <FormCheckbox required field="Özmen Un San. ve Tic. A.Ş tarafından yukarıda belirtmiş olduğum bilgiler üzerinden benimle iletişim kurulmasını ve <b data-fancyId='#modal-hr'>izinli iletişim formu</b>‘nu onaylıyorum." />
+            </@GridCol>
+            <@GridCol class="col-lg-3">
                 <Button type="button" icon="arrow-right">Gönder</Button>            
             </@GridCol>
         </Grid>

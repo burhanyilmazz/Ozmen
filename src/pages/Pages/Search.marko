@@ -1,0 +1,84 @@
+<include('../../templates/Base/Base.marko')>
+
+  <@title>Search</@title>
+  <@body>
+    <Section class="p-search">
+      <div class="container-fluid">
+        <Breadcrumb />
+        <h1>Arama Sonuçları</h1>
+
+        <div class="p-search__form">
+          <Form>
+            <div class="m-search-bar__input">
+              <button class="m-search-bar__icon"><i class="icon-search"></i></button>
+              <input type="text" placeholder="anahtar kelime" required>
+            </div>
+          </Form>
+        </div>
+
+        <div class="p-search__counts">
+          <ul>
+            <li><b>Kurumsal, 2 adet</b> sonuç bulunmuştur.</li>
+            <li><b>Üretim, 2 adet</b> sonuç bulunmuştur.</li>
+            <li><b>Ürünler, 2 adet</b> sonuç bulunmuştur.</li>
+            <li><b>Haberler, 2 adet</b> sonuç bulunmuştur.</li>
+            <li><b>Tarifler, 2 adet</b> sonuç bulunmuştur.</li>
+          </ul>
+        </div>
+
+        <div class="p-search__page-result">
+          <div class="p-search-page-result__box">
+            <h2>Sürdürülebilirlik</h2>
+            <p>Firmamız, çeşitli amaçlarla kişisel veriler toplayabilir. Aşağıda, toplanan kişisel verilerin nasıl ve ne şekilde toplandığı, bu verilerin nasıl ve ne şekilde korunduğu belirtilmiştir.</p>
+            <Breadcrumb />
+            <a href="#">Sayfaya Git</a>
+          </div>
+          
+          <div class="p-search-page-result__box">
+            <h2>İhracat</h2>
+            <p>Firmamız, çeşitli amaçlarla kişisel veriler toplayabilir. Aşağıda, toplanan kişisel verilerin nasıl ve ne şekilde toplandığı, bu verilerin nasıl ve ne şekilde korunduğu belirtilmiştir.</p>
+            <Breadcrumb />
+            <a href="#">Sayfaya Git</a>
+          </div>
+
+          <div class="p-search-page-result__box">
+            <h2>Gıda Güvenliği</h2>
+            <p>Firmamız, çeşitli amaçlarla kişisel veriler toplayabilir. Aşağıda, toplanan kişisel verilerin nasıl ve ne şekilde toplandığı, bu verilerin nasıl ve ne şekilde korunduğu belirtilmiştir.</p>
+            <Breadcrumb />
+            <a href="#">Sayfaya Git</a>
+          </div>
+        </div>
+
+        <div class="p-search__cards">
+          <h2>Ürünler</h2>
+          <Grid>
+            <@GridCol class="col-xl-3 col-lg-4 col-md-6"><CardProduct /></@GridCol>
+            <@GridCol class="col-xl-3 col-lg-4 col-md-6"><CardProduct /></@GridCol>
+            <@GridCol class="col-xl-3 col-lg-4 col-md-6"><CardProduct /></@GridCol>
+            <@GridCol class="col-xl-3 col-lg-4 col-md-6"><CardProduct /></@GridCol>
+          </Grid>
+        </div>
+
+        <div class="p-search__cards">
+          <h2>Haberler</h2>
+          <Grid>
+            <@GridCol class="col-xl-3 col-lg-4 col-md-6"><Card date /></@GridCol>
+            <@GridCol class="col-xl-3 col-lg-4 col-md-6"><Card date /></@GridCol>
+          </Grid>
+        </div>
+
+        <div class="p-search__cards">
+          <h2>Tarifler</h2>
+          <Grid>
+            <@GridCol class="col-xl-3 col-lg-4 col-md-6"><Card /></@GridCol>
+            <@GridCol class="col-xl-3 col-lg-4 col-md-6"><Card /></@GridCol>
+            <@GridCol class="col-xl-3 col-lg-4 col-md-6"><Card /></@GridCol>
+            <@GridCol class="col-xl-3 col-lg-4 col-md-6"><Card /></@GridCol>
+          </Grid>
+        </div>
+      </div>
+    </Section>
+  </@body>
+</include>
+
+

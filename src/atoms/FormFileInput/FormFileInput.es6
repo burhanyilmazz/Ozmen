@@ -4,7 +4,7 @@ export default class FormFileInput {
 
     const defaults = {
       selector: "input",
-      text: "span"
+      text: ".a-file-input__text span"
     };
 
     this.options = $.extend({}, defaults, options);
@@ -14,8 +14,6 @@ export default class FormFileInput {
 
     this.$el.on("change", this.options.selector, event => this.onChange(event));
   }
-
-
 
   onChange(event) {
     event.preventDefault();

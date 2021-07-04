@@ -1,7 +1,6 @@
 .m-shared-button {
-  margin-top: rem(60px);
   &__title {
-    color: $black;
+    color: $Tuna;
     font-size: rem(16px);
     line-height: rem(23px);
     font-weight: 600;
@@ -12,16 +11,18 @@
     .a-btn-icon {
       width: rem(50px);
       height: rem(50px);
-      background: #eaeaea;
+      background: transparent;
       border-radius: 100%;
       margin-right: rem(12px);
-      color: $black;
+      color: $Tuna;
       display: inline-flex;
       align-items: center;
       justify-content: center;
+      border:1px solid $Tuna;
 
       &:hover {
         color: $Green;
+        border-color: $Tuna;
       }
     }
   }

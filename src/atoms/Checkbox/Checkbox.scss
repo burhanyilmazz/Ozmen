@@ -31,6 +31,10 @@
         font-size: rem(15px);
         text-align: center;
         line-height: rem(18px);
+
+        @media screen and (max-width: 768px) {
+          font-size: rem(13px);
+        }
       }
 
       &:after {

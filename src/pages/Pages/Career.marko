@@ -1,0 +1,34 @@
+<include('../../templates/Base/Base.marko')>
+
+  <@title>Career</@title>
+  <@body>
+    <Section class="p-content">
+      <div class="container-fluid">
+        <Grid>
+          <@GridCol class="col-lg-3">
+            <LeftNav title="Kariyer" items=[{"text": "İK Politikamız ", "value": "#"},{"text": "İşe Alım Süreci", "value": "#"},{"text": "Bize Katılın", "value": "#", "isActive": true}] />
+          </@GridCol>
+          <@GridCol class="col-lg-9">
+            <Head desktop="../../assets/images/content/head/about.png" mobile="../../assets/images/content/head/about-m.png" />
+            <SelectNav items=[{"text": "İK Politikamız ", "value": "#"},{"text": "İşe Alım Süreci", "value": "#"},{"text": "Bize Katılın", "value": "#"}] />
+            <div class="p-content__container">
+              <h1>Bize Katılın</h1>
+
+              <pre>
+İşe alım sürecinde, şirketimizi geleceğe taşıyacak, kurumsal değerlerimizi içinde barındıran, işe en uygun nitelikteki adaylar arasından seçmek ve adapte etmeyi amaçlamaktayız. Bu sayede uzun vadeli, verimli ve etkin bir çalışma hayatı oluşturulacağına inanmaktayız.
+
+Doğru işe, doğru insan bakış açısı ile devam etmekte olup, temel amaçlarımız arasında söz konusu göreve ve çalışma kriterlerimize en uygun ve uzun vadede şirketimize katma değer yaratmak için gönüllü olan çalışanları aramıza katmaktır. 
+              </pre>
+
+              <HrForm />
+            </div>
+          </@GridCol>
+        </Grid>
+      </div>
+    </Section>
+
+    <Video />
+  </@body>
+</include>
+
+

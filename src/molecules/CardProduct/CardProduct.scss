@@ -1,53 +1,111 @@
 .m-card-product {
   background: $white;
   transition: all 0.5s ease;
-  border: 1px solid #eaeaea;
-  margin-left: -1px;
-  margin-top: -1px;
+  box-shadow: 0px rem(30px) rem(30px) rgba($color: $black, $alpha: 0.1);
   display: flex;
   flex-direction: column;
+  position: relative;
+  border-radius: rem(10px);
+  padding: rem(20px);
+  overflow: hidden;
 
-  @media screen and (max-width: 1200px) {
-    margin-bottom: rem(20px);
+  @media screen and (max-width: 768px) {
+    padding: rem(50px) rem(20px);
   }
 
   &__head {
     position: relative;
-    overflow: hidden;
+    z-index: 3;
+    padding: rem(30px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: rem(340px);
+
+    @media screen and (max-width: 1024px) {
+      height: rem(240px);
+    }
+
+    @media screen and (max-width: 990px) {
+      height: rem(320px);
+    }
+
+    @media screen and (max-width: 768px) {
+      height: auto;
+    }
 
     img {
-      width: 100%;
+      max-width: 100%;
       z-index: 1;
-      transform: scale(1);
-      transition: all 1.5s ease;
     }
   }
 
   &__body {
-    padding: rem(30px) rem(20px) rem(60px);
+    padding: 0 rem(20px);
     text-align: center;
+    position: relative;
+    z-index: 1;
+    height: rem(100px);
 
-    h2 {
-      font-size: rem(19px);
-      font-weight: 500;
-      letter-spacing: 0px;
-      color: $black;
-      line-height: rem(25px);
+    @media screen and (max-width: 1024px) {
+      height: rem(80px);
+    }
+
+    @media screen and (max-width: 768px) {
+      height: auto;
+      margin-top: rem(10px);
     }
 
     h3 {
-      font-size: rem(14px);
-      font-weight: 500;
-      letter-spacing: 0px;
-      color: #b2b2b2;
+      font-size: rem(22px);
+      line-height: rem(27px);
+      color: $Tuna;
+      margin-bottom: rem(5px) !important;
+    }
+
+    h4 {
+      font-size: rem(16px);
       line-height: rem(19px);
+      font-weight: 300;
+      letter-spacing: 0px;
+      color: #0b0b0b;
+    }
+  }
+
+  &__foot {
+    position: absolute;
+    width: calc(100% - 40px);
+    background: #f4f5f5;
+    height: rem(200px);
+    z-index: 2;
+    left: rem(20px);
+    bottom: -100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: rem(40px);
+    transition: all 0.3s ease;
+    border-radius: rem(5px);
+
+    span {
+      background: $Tuna;
+      width: 100%;
+      max-width: rem(171px);
+      border-radius: rem(30px);
+      height: rem(61px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $white;
+      font-size: rem(16px);
+      font-weight: 600;
     }
   }
 
   &:hover {
-    img {
-      transition: all 1.5s ease;
-      transform: scale(1.1);
+    .m-card-product__foot{
+      bottom: rem(20px);
     }
   }
 }

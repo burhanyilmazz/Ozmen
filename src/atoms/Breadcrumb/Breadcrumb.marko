@@ -1,6 +1,13 @@
-$ const items = input.items || ["Ana Sayfa", "Ticemlabs"];
+$ { 
+  const items = input.items || ["Ana Sayfa", "Özmen Un"];
+  const classes = ["a-breadcrumb"];
 
-<ul class="a-breadcrumb" aria-label="Breadcrumb">
+  if (input.class) {
+    classes.push(input.class);
+  }
+}
+
+<ul class=classes aria-label="Breadcrumb">
   <for(item in items | status-var=loop)>
     <li if(loop.isLast())>
       <a href="javascript:;" aria-current="page" title="${item}">${item}</a>

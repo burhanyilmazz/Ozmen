@@ -23,7 +23,8 @@ $ {
   
   }
 <div class=classes data-component=inputOptions>
-    <div class="a-file-input__text"><i class="icon-upload"></i> <span>Dosya Seçin <sub>(Pdf, Docx, Jpeg)</sub></span></div>
+    <div class="a-file-input__text"><span>Lütfen CV’nizi yükleyiniz. <sub>(Pdf, Docx, Jpeg)</sub></span></div>
+    <div class="a-file-input__label"><span>CV Yükle</span><i class="icon-upload"></i></div>
     <input if(_id) class=inputClasses type="file" id=_id  ...attrs data-parsley-max-file-size="8704" accept=".doc,.docx, application/msword, application/vnd.ms-excel, application/vnd.ms-powerpoint, text/plain, application/pdf, image/*, application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document" />
     <input else class=inputClasses type="file" id:scoped="input"  ...attrs data-parsley-max-file-size="8704" accept=".doc,.docx, application/msword, application/vnd.ms-excel, application/vnd.ms-powerpoint, text/plain, application/pdf, image/*, application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document" />
     <label if(_id) for=_id>${field}</label>

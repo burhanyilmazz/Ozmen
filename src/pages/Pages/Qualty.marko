@@ -1,0 +1,60 @@
+<include('../../templates/Base/Base.marko')>
+
+  <@title>Quality</@title>
+  <@body>
+    <Section class="p-content p-quality">
+      <div class="container-fluid">
+        <Grid>
+          <@GridCol class="col-lg-3">
+            <LeftNav title="Üretim" items=[{"text": "Endüstri 4.0", "value": "#", "isActive": true},{"text": "Ar-Ge", "value": "#"},{"text": "Gıda Güvenliği", "value": "#"},{"text": "Kalite Yönetimi", "value": "#"}] />
+          </@GridCol>
+          <@GridCol class="col-lg-9">
+            <Head desktop="../../assets/images/content/head/about.png" mobile="../../assets/images/content/head/about-m.png" />
+            <SelectNav items=[{"text": "Endüstri 4.0", "value": "#", "isActive": true},{"text": "Ar-Ge", "value": "#"},{"text": "Gıda Güvenliği", "value": "#"},{"text": "Kalite Yönetimi", "value": "#"}] />
+            <div class="p-content__container">
+              <h1>Kalite Yönetimi</h1>
+
+              <pre>
+İnovatif, sürdürülebilir bir büyüme hedefi ile paydaşlarımızla birlikte sağlıklı bir iş ortaklığı yürüterek, tüketicilere en sağlıklı ürünler sunmayı ilke edindik. Ayrıca çalışanlarımıza huzurlu ve gelişime açık bir iş ortamı sağlayarak, gezegen ile uyumlu bir organizasyon amaçlıyoruz. İzlenebilir, sürdürülebilir ve hesap verilebilir olmak temel hedeflerimiz arasındadır.  
+              </pre>
+
+              <div class="p-quality__certificate">
+                <a href="../../assets/images/dummy/quality/sertifika.jpg" data-fancybox="certificate">
+                  <Image src="../../assets/images/dummy/quality/sertifika.jpg" />
+                </a>
+                <a href="../../assets/images/dummy/quality/sertifika.jpg" data-fancybox="certificate">
+                  <Image src="../../assets/images/dummy/quality/sertifika.jpg" />
+                </a>
+                <a href="../../assets/images/dummy/quality/sertifika.jpg" data-fancybox="certificate">
+                  <Image src="../../assets/images/dummy/quality/sertifika.jpg" />
+                </a>
+                <a href="../../assets/images/dummy/quality/sertifika.jpg" data-fancybox="certificate">
+                  <Image src="../../assets/images/dummy/quality/sertifika.jpg" />
+                </a>
+              </div>
+
+              <div class="p-content__gallery">
+                <a href="../../assets/images/content/about/content.jpg" data-fancybox="gallery">
+                  <Image src="../../assets/images/content/about/content.jpg" />
+                </a>
+                <a href="../../assets/images/content/about/content.jpg" data-fancybox="gallery">
+                  <Image src="../../assets/images/content/about/content.jpg" />
+                </a>
+                <a href="../../assets/images/content/about/content.jpg" data-fancybox="gallery">
+                  <Image src="../../assets/images/content/about/content.jpg" />
+                </a>
+                <a href="../../assets/images/content/about/content.jpg" data-fancybox="gallery">
+                  <Image src="../../assets/images/content/about/content.jpg" />
+                </a>
+              </div>
+            </div>
+          </@GridCol>
+        </Grid>
+      </div>
+    </Section>
+
+    <Video />
+  </@body>
+</include>
+
+

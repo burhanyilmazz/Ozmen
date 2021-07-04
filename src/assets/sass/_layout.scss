@@ -44,8 +44,22 @@
   padding: 0 107px;
   margin-right: auto;
   margin-left: auto;
+  position: relative;
 
-  @media (max-width: 990px) {
+  @media (max-width: 1200px) {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+}
+
+.container-fluid-lp {
+  width: 100%;
+  padding: 0 0 0 107px;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+
+  @media (max-width: 1200px) {
     padding-right: 0px;
     padding-left: 0px;
   }

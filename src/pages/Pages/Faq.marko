@@ -1,0 +1,60 @@
+<include('../../templates/Base/Base.marko')>
+
+  <@title>FAQ</@title>
+  <@body>
+    <Section class="p-faq">
+      <div class="container-fluid">
+        <Breadcrumb />
+        <h1>
+          <span>S</span>ıkça
+          <span>S</span>orulan
+          <span>S</span>orular
+        </h1>
+
+        <Accordion accordion-options={'showOnlyOne' : true} >
+          <@AccordionItem active>
+            <@Head>
+              Mauris consectetur mi eu elit mollis, sit amet egestas lacus vestibulum?
+            </@Head>
+            <@Body>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </@Body>
+          </@AccordionItem>
+          <@AccordionItem>
+            <@Head>
+              Phasellus ultricies tortor eget augue efficitur euismod?
+            </@Head>
+            <@Body>
+              <p>Excepteur sint lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </@Body>
+          </@AccordionItem>
+          <@AccordionItem>
+            <@Head>
+              Lorem ipsum dolor sit amet, consectetur adipiscing mauris consectetur  elit mollis, sit amet egestas lacus vestibulum?
+            </@Head>
+            <@Body>
+              <p>Excepteur sint lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </@Body>
+          </@AccordionItem>
+        </Accordion>
+      </div>
+    </Section>
+  </@body>
+</include>
+
+
