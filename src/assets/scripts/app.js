@@ -25,6 +25,7 @@ import Sidebar          from  '../../../src/organisms/Sidebar/Sidebar';
 import Contact          from  '../../../src/organisms/Contact/Contact';
 import Header           from  '../../../src/organisms/Header/Header';
 import Services         from  '../../../src/organisms/Services/Services';
+import ProductNav       from  '../../../src/organisms/ProductNav/ProductNav';
 
 const Components = {
   LazyLoad,
@@ -53,6 +54,7 @@ const Components = {
   Contact,
   Header,
   Services,
+  ProductNav,
 };
 
 function buildComponent( that, type, data ) {

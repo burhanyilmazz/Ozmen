@@ -143,8 +143,17 @@
   }
 }
 
-%icon-facebook {
+%icon-ev {
   content: "\EA11";
+}
+.icon-ev {
+  &::before {
+    @extend %icon-ev;
+  }
+}
+
+%icon-facebook {
+  content: "\EA12";
 }
 .icon-facebook {
   &::before {
@@ -153,7 +162,7 @@
 }
 
 %icon-filter {
-  content: "\EA12";
+  content: "\EA13";
 }
 .icon-filter {
   &::before {
@@ -161,8 +170,17 @@
   }
 }
 
+%icon-firinci {
+  content: "\EA14";
+}
+.icon-firinci {
+  &::before {
+    @extend %icon-firinci;
+  }
+}
+
 %icon-history {
-  content: "\EA13";
+  content: "\EA15";
 }
 .icon-history {
   &::before {
@@ -171,7 +189,7 @@
 }
 
 %icon-instagram {
-  content: "\EA14";
+  content: "\EA16";
 }
 .icon-instagram {
   &::before {
@@ -180,7 +198,7 @@
 }
 
 %icon-language {
-  content: "\EA15";
+  content: "\EA17";
 }
 .icon-language {
   &::before {
@@ -189,7 +207,7 @@
 }
 
 %icon-linkedin {
-  content: "\EA16";
+  content: "\EA18";
 }
 .icon-linkedin {
   &::before {
@@ -198,7 +216,7 @@
 }
 
 %icon-list {
-  content: "\EA17";
+  content: "\EA19";
 }
 .icon-list {
   &::before {
@@ -207,7 +225,7 @@
 }
 
 %icon-logo {
-  content: "\EA18";
+  content: "\EA1A";
 }
 .icon-logo {
   &::before {
@@ -215,8 +233,17 @@
   }
 }
 
+%icon-marka {
+  content: "\EA1B";
+}
+.icon-marka {
+  &::before {
+    @extend %icon-marka;
+  }
+}
+
 %icon-more {
-  content: "\EA19";
+  content: "\EA1C";
 }
 .icon-more {
   &::before {
@@ -225,7 +252,7 @@
 }
 
 %icon-ours {
-  content: "\EA1A";
+  content: "\EA1D";
 }
 .icon-ours {
   &::before {
@@ -234,7 +261,7 @@
 }
 
 %icon-pdf {
-  content: "\EA1B";
+  content: "\EA1E";
 }
 .icon-pdf {
   &::before {
@@ -243,7 +270,7 @@
 }
 
 %icon-phone {
-  content: "\EA1C";
+  content: "\EA1F";
 }
 .icon-phone {
   &::before {
@@ -252,7 +279,7 @@
 }
 
 %icon-pill {
-  content: "\EA1D";
+  content: "\EA20";
 }
 .icon-pill {
   &::before {
@@ -261,7 +288,7 @@
 }
 
 %icon-play {
-  content: "\EA1E";
+  content: "\EA21";
 }
 .icon-play {
   &::before {
@@ -270,7 +297,7 @@
 }
 
 %icon-product {
-  content: "\EA1F";
+  content: "\EA22";
 }
 .icon-product {
   &::before {
@@ -279,7 +306,7 @@
 }
 
 %icon-right {
-  content: "\EA20";
+  content: "\EA23";
 }
 .icon-right {
   &::before {
@@ -288,7 +315,7 @@
 }
 
 %icon-search {
-  content: "\EA21";
+  content: "\EA24";
 }
 .icon-search {
   &::before {
@@ -297,7 +324,7 @@
 }
 
 %icon-shopping {
-  content: "\EA22";
+  content: "\EA25";
 }
 .icon-shopping {
   &::before {
@@ -306,7 +333,7 @@
 }
 
 %icon-sun {
-  content: "\EA23";
+  content: "\EA26";
 }
 .icon-sun {
   &::before {
@@ -315,7 +342,7 @@
 }
 
 %icon-sustainability {
-  content: "\EA24";
+  content: "\EA27";
 }
 .icon-sustainability {
   &::before {
@@ -324,7 +351,7 @@
 }
 
 %icon-twitter {
-  content: "\EA25";
+  content: "\EA28";
 }
 .icon-twitter {
   &::before {
@@ -333,7 +360,7 @@
 }
 
 %icon-upload {
-  content: "\EA26";
+  content: "\EA29";
 }
 .icon-upload {
   &::before {
@@ -342,7 +369,7 @@
 }
 
 %icon-usta {
-  content: "\EA27";
+  content: "\EA2A";
 }
 .icon-usta {
   &::before {
@@ -351,7 +378,7 @@
 }
 
 %icon-word {
-  content: "\EA28";
+  content: "\EA2B";
 }
 .icon-word {
   &::before {
@@ -360,7 +387,7 @@
 }
 
 %icon-youtube {
-  content: "\EA29";
+  content: "\EA2C";
 }
 .icon-youtube {
   &::before {
@@ -369,7 +396,7 @@
 }
 
 %icon-zanaatkar {
-  content: "\EA2A";
+  content: "\EA2D";
 }
 .icon-zanaatkar {
   &::before {
