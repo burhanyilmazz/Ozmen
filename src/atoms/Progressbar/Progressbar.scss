@@ -1,16 +1,48 @@
 .a-progressbar {
-  background: $Silver2;
-  width: 100%;
-  height: rem(8px);
-  position: absolute;
-  left: 0;
-  bottom: 0;
+  &__text {
+    color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h6 {
+      font-size: rem(33px);
 
-  span {
-    background: $Monza;
-    display: block;
+      @media screen and (max-width: 990px) {
+        font-size: rem(20px);
+      }
+    }
+
+    span {
+      font-size: rem(15px);
+      @media screen and (max-width: 990px) {
+        font-size: rem(14px);
+      }
+    }
+  }
+
+  &__bar {
+    position: relative;
+    background: #4a4b50;
     width: 100%;
-    height: rem(8px);
-    transition: all 0.5s ease-in-out;
+    height: rem(20px);
+    border-radius: rem(10px);
+    margin-top: rem(20px);
+
+    @media screen and (max-width: 990px) {
+      height: rem(10px);
+    }
+    span {
+      background: #ddb480;
+      height: rem(30px);
+      position: absolute;
+      left: 0;
+      top: -5px;
+      border-top-left-radius: rem(20px);
+      border-bottom-left-radius: rem(20px);
+      box-shadow: 0px rem(10px) rem(30px) #212226;
+      @media screen and (max-width: 990px) {
+        height: rem(20px);
+      }
+    }
   }
 }

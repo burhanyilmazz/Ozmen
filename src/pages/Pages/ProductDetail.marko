@@ -7,7 +7,9 @@
         <Grid>
           <@GridCol class="col-xl-5">
             <Breadcrumb class="tablet-visible" />
-            <div class="p-product-detail__img" style="background-image: url(../../assets/images/content/product/../../assets/images/dummy/product/product.png.png)">
+            <SelectNav items=[{"text": "Hakkımızda", "value": "#", "isActive": true},{"text": "İhracat", "value": "#"},{"text": "Sosyal Sorumluluk", "value": "#"},{"text": "Sürdürülebilirlik", "value": "#"}] />
+
+            <div class="p-product-detail__img" style="background-image: url(../../assets/images/content/product/product-detail-bg.png)">
               <Image src="../../assets/images/dummy/product/product.png" />
             </div>
             <div class="p-product-detail__choose">
@@ -20,7 +22,7 @@
               <Breadcrumb />
 
               <div class="p-product-detail__content">
-                <h1>ANTEP UNU | <span>Baklavalık</span></h1>
+                <h1>ANTEP UNU<span> | Baklavalık</span></h1>
                 <pre>Ustalarımız bizden ezberleri bozacak yeni bir baklavalık un istediler. AR-GE birimimiz ustalarımıza öyle farklı bir un geliştirdi ki; fırından erken çıkıyor, fıstığı yemyeşil, yağı burcu burcu mis gibi kokuyor, damakta dağılırken hışşşş ediyor ve tazeliğini uzun süre koruyor. . Sarayların tatlısı baklavaya Özmen un mühendisliğini de katarak, Antep unu ile istediğiniz baklavayı yaratmak size kalmış. İsterseniz %100 Antep unu ile isterseniz farklı un alternatiflerimiz ile karışım yaparak zanaatkârlığınızı baklava dilimlerine yansıtabilirsiniz.</pre>
               </div>
 
@@ -50,11 +52,11 @@
 
     <Section class="p-product-detail-banner">
       <div class="container-fluid-lp">
-        <Grid>
-          <@GridCol class="col-xl-8">
+        <Grid class="no-gutters">
+          <@GridCol class="col-md-8">
             <Image src="../../assets/images/dummy/product/detail.jpg" />
           </@GridCol>
-          <@GridCol class="col-xl-4">
+          <@GridCol class="col-md-4">
             <div class="p-product-detail-banner__progress">
               <Progressbar title="Antep Unu" percent="50%" />
               <Progressbar title="Özmen Özel" percent="25%" />
@@ -171,18 +173,16 @@
       <div class="container-fluid">
         <h2><span>Zanaatkarlık Serisi</span>Diğer Ürünlerimiz</h2>
 
-        <Slider options={slidesPerView: 4, effect:"fade", navigation: true, pagination: true, breakpoints: { 768: { slidesPerView: "auto", centeredSlides: true }}}>
-          <@SliderItem><CardProduct /></@SliderItem>
-          <@SliderItem><CardProduct /></@SliderItem>
-          <@SliderItem><CardProduct /></@SliderItem>
-          <@SliderItem><CardProduct /></@SliderItem>
+        <Slider options={slidesPerView: 4, loop:false, navigation: true, pagination: true, spaceBetween: 40, centeredSlides: false, breakpoints: { 768: { slidesPerView: "auto", centeredSlides: true, loop:true}}}>
           <@SliderItem><CardProduct /></@SliderItem>
           <@SliderItem><CardProduct /></@SliderItem>
           <@SliderItem><CardProduct /></@SliderItem>
           <@SliderItem><CardProduct /></@SliderItem>
           <@SliderItem><CardProduct /></@SliderItem>
         </Slider>
-        <Button icon="more">Tüm ürünleri listele</Button>
+        <div class="p-product-detail-others__buttons">
+          <Button icon="more">Tüm ürünleri listele</Button>
+        </div>
       </div>
     </Section>
     <ProductNav />

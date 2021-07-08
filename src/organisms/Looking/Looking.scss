@@ -6,6 +6,13 @@
 
   &--product {
     background: $white;
+    @media screen and (max-width: 1200px) {
+      padding-left: rem(87px);
+    }
+
+    @media screen and (max-width: 768px) {
+      padding-left: 0;
+    }
   }
 
   h2 {

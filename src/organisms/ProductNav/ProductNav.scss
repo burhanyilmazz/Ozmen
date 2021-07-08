@@ -5,6 +5,10 @@
   height: 100vh;
   z-index: 11;
 
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+
   &__main {
     width: rem(77px);
     height: 100%;
