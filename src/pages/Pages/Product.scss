@@ -469,7 +469,7 @@
                   border: 1px solid $Sage;
                   position: absolute;
                   left: -5px;
-                  top: -5px
+                  top: -5px;
                 }
               }
             }
@@ -504,6 +504,38 @@
           }
         }
       }
+    }
+  }
+
+  &-filter {
+    padding: rem(234px) 0 rem(100px);
+    position: relative;
+
+    @media screen and (max-width: 1200px) {
+      padding-right: rem(107px);
+      padding-left: rem(87px);
+    }
+
+    @media screen and (max-width: 768px) {
+      padding: rem(34px) 0 rem(60px);
+    }
+
+    .container-fluid {
+      > .a-breadcrumb {
+        position: absolute;
+        top: rem(92px);
+        left: rem(495px);
+  
+        @media screen and (max-width: 768px) {
+          position: relative;
+          top: auto;
+          left: auto;
+        }
+      }
+    }
+
+    .m-card-product {
+      margin-bottom: rem(30px);
     }
   }
 }

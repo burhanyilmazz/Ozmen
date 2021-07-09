@@ -1,85 +1,15 @@
 .m-address {
-  margin-top: rem(80px);
-  color: $black;
-  position: relative;
-  z-index: 2;
-
-  @media screen and (max-width: 1024px) {
-    margin-top: rem(0px);
+  margin-bottom: rem(33px);
+  h4 {
+    font-size: rem(17px);
+    color: $Sage;
+    margin-bottom: rem(20px);
   }
 
-  @media screen and (max-width: 990px) {
-    margin-top: rem(30px);
-  }
-
-  @media screen and (max-width: 768px) {
-    margin-top: rem(0px);
-  }
-
-  p, pre {
-    font-size: rem(24px);
-    line-height: rem(29px);
+  p {
+    color: $white;
+    font-size: rem(22px);
+    line-height: rem(28px);
     font-weight: 600;
-    font-family: "Gilroy", sans-serif;
-
-    @media screen and (max-width: 768px) {
-      font-size: rem(19px);
-      line-height: rem(26px);
-    }
-  }
-
-  &__info {
-    display: flex;
-    margin-top: rem(50px);
-    width: 100%;
-
-    @media screen and (max-width: 990px) {
-      margin-top: rem(30px);
-      flex-wrap: wrap;
-    }
-
-    > div {
-      width: 30%;
-
-      @media screen and (max-width: 990px) {
-        width: 100%;
-        margin-bottom: rem(30px);
-      }
-
-      @media screen and (max-width: 768px) {
-        width: 100%;
-        margin-bottom: rem(20px);
-      }
-    }
-
-    span {
-      display: block;
-      font-size: rem(16px);
-      line-height: rem(44px);
-      color: $Green;
-
-      @media screen and (max-width: 768px) {
-        font-size: rem(12px);
-        line-height: rem(32px);
-        font-weight: 600;
-      }
-    }
-
-    a {
-      color: $black;
-      font-size: rem(24px);
-      line-height: rem(30px);
-      margin-top: rem(12px);
-
-      @media screen and (max-width: 1366px) {
-        font-size: rem(20px);
-      }
-
-      @media screen and (max-width: 768px) {
-        font-size: rem(19px);
-        margin-top: rem(0px);
-        font-weight: 600;
-      }
-    }
   }
 }

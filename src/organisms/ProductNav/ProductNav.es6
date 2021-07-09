@@ -16,7 +16,9 @@ export default class ProductNav {
     this.$active = this.$el.find(this.options.mainActive);
 
     this.$el
-      .on("click", this.options.main, event => this.onClickMain(event));
+      .on("click mouseenter", this.options.main, event => this.onClickMain(event))
+      .on("click mouseenter", this.options.list, event => this.onClickList(event))
+    ;
 
     $(document)
       .on("click", this.options.shadow, () => this.closeAll())
@@ -39,6 +41,20 @@ export default class ProductNav {
     this.$el.addClass("o-product-nav--open");
     $target.addClass("active").siblings().removeClass("active");
     $hash.addClass("active").siblings().removeClass("active");
+    $subHash.show().siblings().hide();
+
+    this.$shadow.addClass('a-shadow--open');
+  }
+
+  onClickList(event) {
+    event.preventDefault();
+    const $target = $(event.currentTarget);
+    const $parent = $(`a[href$='${$target.attr("id")}']`);
+    const $subHash = $($target.attr('href'));
+
+    this.$el.addClass("o-product-nav--open");
+    $target.addClass("active").siblings().removeClass("active");
+    $parent.addClass("active").siblings().removeClass("active");
     $subHash.show().siblings().hide();
 
     this.$shadow.addClass('a-shadow--open');

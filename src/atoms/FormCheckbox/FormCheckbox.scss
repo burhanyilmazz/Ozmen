@@ -5,42 +5,42 @@
   padding: rem(6px) 0;
 
   span {
-    font-size: rem(14px);
+    font-size: rem(13px);
     line-height: rem(19px);
-    color: $mineshaft;
+    color: $Tuna;
     padding-left: rem(30px);
     position: relative;
-    font-weight: 400;
+    font-weight: 600;
     display: block;
     @extend .icon-check;
 
     &:before {
       position: absolute;
       font-family: $iconFontName !important;
-      color: $mineshaft;
+      color: $Tuna;
       font-size: rem(20px);
       font-weight: bold;
       display: none;
       z-index: 1;
-      top: 1px;
-      left: 0;
+      top: 2px;
+      left: 1px;
     }
 
     &:after {
       content: "";
       position: absolute;
-      height: rem(19px);
-      width: rem(19px);
-      border: 1px solid $Silver;
+      height: rem(22px);
+      width: rem(22px);
       top: 0;
       left: 0;
-      background-color: $Alabaster2;
+      background-color: #F0F0F0;
+      border-radius: 4px;
     }
 
     b {
       font-size: rem(14px);
       line-height: rem(19px);
-      color: $mineshaft;
+      color: $Tuna;
       font-weight: 500;
       text-decoration: underline;
     }
@@ -56,8 +56,7 @@
       }
 
       &:after {
-        background-color: $Green;
-        border: 1px solid $Green;
+        background-color: $Tuna;
       }
     }
   }

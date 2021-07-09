@@ -1,1 +1,8 @@
-<div class="m-address"><include(input.renderBody)/></div>
+$ {
+	var classes = ["m-address"];
+
+	if ( input.class ) {
+		classes = classes.concat( input.class );
+	}
+}
+<div class=classes><include(input.renderBody)/></div>

@@ -1,0 +1,71 @@
+.p-contact {
+  background: $Tuna;
+  padding-top: rem(320px);
+  padding-bottom: rem(112px);
+  position: relative;
+
+  &__image {
+    position: absolute;
+    right: rem(-150px);
+    top: 0;
+    z-index: 2;
+  }
+
+  &__lax {
+    position: absolute;
+    z-index: 1;
+
+    &--1 {
+      right: 0;
+      top: rem(-150px);
+    }
+
+    &--2 {
+      left: 40%;
+      top: rem(180px);
+    }
+
+    &--3 {
+      left: rem(-550px);
+      bottom: 0;
+    }
+  }
+
+  &__content {
+    width: 33%;
+    h1 {
+      font-size: rem(50px);
+      line-height: rem(78px);
+      color: $white;
+      margin-bottom: rem(55px);
+    }
+  }
+  &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+		margin-top: rem(80px);
+  }
+
+  &-bottom {
+    &__infos {
+      display: flex;
+      align-items: center;
+			color: $white;
+
+			div {
+				display: flex;
+				flex-direction: column;
+				margin-right: rem(60px);
+			}
+
+			a {
+				color: $white;
+				font-size: rem(18px);
+				line-height: rem(30px);
+				font-weight: 300;
+				margin-top: rem(20px);
+			}
+    }
+  }
+}

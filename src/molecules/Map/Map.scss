@@ -1,6 +1,11 @@
 .hero-map {
   width: 100%;
-  height: rem(384px);
+  height: rem(613px);
+  border-radius: rem(14px);
+  overflow: hidden;
+  margin-top: rem(110px);
+  position: relative;
+  z-index: 3;
 
   .gm-style {
     &-iw {
@@ -34,11 +39,6 @@
           color: theme(midnight);
           min-width: rem(30px);
         }
-      }
-    }
-
-    &-iw-t {
-      &:after {
       }
     }
   }

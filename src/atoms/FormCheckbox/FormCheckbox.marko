@@ -8,6 +8,7 @@ $ {
   var _value = input.value;
   var elementClass = input.elementClass;
   var dataUrl = input.dataUrl;
+  const parsley = input.parsley;
 
   if ( input.class ) {
     classes = classes.concat( input.class );
@@ -23,15 +24,8 @@ $ {
     attrs.disabled = true;
   }
 
-  if(_required) {
+  if (_required) {
     attrs.required = true;
-  }
-
-  if( input.id ) {
-    attrs.id = input.id;
-  } else {
-    const date = new Date();
-    attrs.id = `checkbox-${date.getTime()}`;
   }
 
   if ( input.name ) {
@@ -41,13 +35,14 @@ $ {
     attrs.name = `checkbox-${date.getTime()}`;
   }
 
-  if(_value) {
+  if (_value) {
     attrs.value = _value;
   }
 }
 
-<label class=classes for=attrs.id data-component="FormCheckbox" data-url=(dataUrl ? dataUrl : null)>
-  <input type="checkbox" ...attrs class=elementClass />
+<label class=classes for:scoped="input" data-component="FormCheckbox" data-url=(dataUrl ? dataUrl : null)>
+  <input type="checkbox" ...attrs id:scoped="input" class=elementClass data-parsley-errors-container="#filter-error" if(parsley)/>
+  <input type="checkbox" ...attrs id:scoped="input" class=elementClass else />
   <span>$!{field}</span>
 </label>
 
