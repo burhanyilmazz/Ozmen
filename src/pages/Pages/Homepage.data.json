@@ -1,6 +1,5 @@
 {
-    "$global": {
-      "homepage": true
-    }
+  "$global": {
+    "logoWhite": true
   }
-  
+}

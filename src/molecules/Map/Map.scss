@@ -7,6 +7,10 @@
   position: relative;
   z-index: 3;
 
+  @media screen and (max-width: 990px) {
+    height: rem(400px);
+  }
+
   .gm-style {
     &-iw {
       width: rem(253px);

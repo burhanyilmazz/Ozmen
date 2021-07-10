@@ -4,22 +4,19 @@ import OnLoadModal     from  '../../../src/assets/scripts/OnLoadModal';
 import Sticky           from  '../../../src/assets/scripts/Sticky';
 
 import FormCheckbox     from  '../../../src/atoms/FormCheckbox/FormCheckbox';
-import FormFileInput        from  '../../../src/atoms/FormFileInput/FormFileInput';
+import FormFileInput    from  '../../../src/atoms/FormFileInput/FormFileInput';
 import FormInput        from  '../../../src/atoms/FormInput/FormInput';
 import FormTextarea     from  '../../../src/atoms/FormTextarea/FormTextarea';
 import Hamburger        from  '../../../src/atoms/Hamburger/Hamburger';
-import MoreInfinite     from  '../../../src/atoms/MoreInfinite/MoreInfinite';
 
 import Accordion        from  '../../../src/molecules/Accordion/Accordion';
 import Carousel         from  '../../../src/molecules/Carousel/Carousel';
 import Map              from  '../../../src/molecules/Map/Map';
 import Modal            from  '../../../src/molecules/Modal/Modal';
-import ModalVideo       from  '../../../src/molecules/Modal/ModalVideo';
 import RemoteCheck      from  '../../../src/molecules/RemoteCheck/RemoteCheck';
 import SearchBar        from  '../../../src/molecules/SearchBar/SearchBar';
 import Slider           from  '../../../src/molecules/Slider/Slider';
-import TabDefault       from  '../../../src/molecules/TabDefault/TabDefault';
-import SelectNav          from  '../../../src/molecules/SelectNav/SelectNav';
+import SelectNav        from  '../../../src/molecules/SelectNav/SelectNav';
 
 import Sidebar          from  '../../../src/organisms/Sidebar/Sidebar';
 import Contact          from  '../../../src/organisms/Contact/Contact';
@@ -37,17 +34,14 @@ const Components = {
   FormInput,
   FormTextarea,
   Hamburger,
-  MoreInfinite,
 
   Accordion,
   Carousel,
   Map,
   Modal,
-  ModalVideo,
   RemoteCheck,
   SearchBar,
   Slider,
-  TabDefault,
   SelectNav,
   
   Sidebar,

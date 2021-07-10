@@ -1,21 +1,21 @@
 .m-contact-form {
-  margin-top: rem(170px);
+  padding: rem(170px) 0;
 
-  @media screen and (max-width: 1024px) {
+  /* @media screen and (max-width: 1024px) {
     margin-top: rem(100px);
   }
 
   @media screen and (max-width: 768px) {
     margin-top: rem(55px);
-  }
+  } */
 
-  h1 {
-    color: $black;
-    font-size: rem(60px);
-    line-height: rem(64px);
+  h2 {
+    color: $Tuna;
+    font-size: rem(50px);
+    line-height: rem(60px);
     font-weight: 600;
     margin-bottom: rem(60px);
-    letter-spacing: -1.5px;
+    text-align: center;
 
     @media screen and (max-width: 768px) {
       font-size: rem(36px);
@@ -33,7 +33,21 @@
     justify-content: flex-start;
   }
 
+  .a-select {
+    margin-bottom: rem(30px);
+    select {
+      background: transparent;
+      font-size: rem(14px);
+      font-weight: 500;
+      border-bottom: 1px solid #707070;
+    }
+  }
+
   .a-btn {
-    margin-top: rem(30px);
+    width: 100%;
+
+    @media screen and (max-width: 990px) {
+      margin-top: rem(40px);
+    }
   }
 }

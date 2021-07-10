@@ -1,15 +1,22 @@
-<div class="m-contact-form">
-    <h1>İletişim Formu</h1>
+<div class="m-contact-form" id="contact-form">
+    <h2>İletişim Formu</h2>
 
     <Form>
-        <FormInput placeholder="Adınız Soyadınız" required />
-        <FormInput placeholder="Mail Adresiniz" required type="email" />
-        <FormInput placeholder="Telefon Numaranız" required />
-        <FormTextarea attrs={"rows": "2"} placeholder="Mesajınız" />
-        <FormCheckbox required field="<b data-fancyId='#modal-contact'>Kişisel Verilerimin Korunması</b>’nı kabul ediyorum." />
-        <BtnGroup>
-            <Button type="button" icon="arrow-right">Gönder</Button>
-        </BtnGroup>
+        <Grid>
+            <@GridCol class="col-lg-6"><FormInput field="Adınız" required /></@GridCol>
+            <@GridCol class="col-lg-6"><FormInput field="Soyadınız" required /></@GridCol>
+            <@GridCol class="col-lg-6"><FormInput field="Mail Adresiniz" required type="email" /></@GridCol>
+            <@GridCol class="col-lg-6"><FormInput field="Telefon Numaranız" required /></@GridCol>
+            <@GridCol class="col-lg-6"><FormSelect placeholder="Bulunduğunuz ili seçiniz" /></@GridCol>
+            <@GridCol class="col-lg-6"><FormSelect placeholder="Bulunduğunuz ülkeyi seçiniz" /></@GridCol>
+            <@GridCol class="col-lg-12"><FormTextarea attrs={"rows": "5"} field="Mesajınız" /></@GridCol>
+            <@GridCol class="col-lg-9">
+                <FormCheckbox required field="Özmen Un San. ve Tic. A.Ş tarafından yukarıda belirtmiş olduğum bilgiler üzerinden benimle iletişim kurulmasını ve <b data-fancyId='#modal-contact'>izinli iletişim formu</b>‘nu onaylıyorum." />
+            </@GridCol>
+            <@GridCol class="col-lg-3">
+                <Button type="button" icon="arrow-right">Gönder</Button>            
+            </@GridCol>
+        </Grid>
     </Form>
 </div>
 

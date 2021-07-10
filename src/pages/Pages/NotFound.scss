@@ -1,0 +1,119 @@
+.p-not-found {
+  background: $Tuna;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: rem(90px);
+
+  &__lax {
+    position: absolute;
+    z-index: 1;
+
+    &--1 {
+      left: rem(-400px);
+      top: rem(-400px);
+
+      @media screen and (max-width: 990px) {
+        width: rem(207px);
+        left: rem(-60px);
+        top: rem(-60px);
+      }
+    }
+
+    &--2 {
+      right: rem(50px);
+      top: rem(80px);
+
+      @media screen and (max-width: 1280px) {
+        top: rem(-30px);
+      }
+
+      @media screen and (max-width: 990px) {
+        width: rem(247px);
+        right: rem(-50px);
+				top: rem(-50px);
+      }
+    }
+  }
+
+  .m-logo {
+    position: relative;
+    z-index: 3;
+    i {
+      color: $white;
+    }
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+    margin-top: rem(-90px);
+
+    @media screen and (max-width: 1280px) {
+      margin-top: rem(-20px);
+    }
+    @media screen and (max-width: 990px) {
+      flex-direction: column;
+			margin-top: 0;
+    }
+  }
+
+  &-content {
+    &__image {
+      order: 2;
+			@media screen and (max-width: 990px) {
+				order: 1;
+				margin-bottom: rem(40px);
+			}
+      img {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+      }
+      h1 {
+        color: $white;
+        font-size: rem(54px);
+        font-weight: 300;
+        text-align: center;
+        position: relative;
+        z-index: 2;
+        margin-top: -100px;
+
+				@media screen and (max-width: 990px) {
+					font-size: rem(25px);
+				}
+      }
+    }
+
+    &__link {
+      border: 1px solid #707070;
+      color: $white;
+      box-shadow: 0px rem(8px) rem(35px) rgba($color: $black, $alpha: 0.1);
+      width: rem(269px);
+      height: rem(61px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+      font-size: rem(16px);
+      border-radius: 35px;
+      background: $Tuna;
+
+      &--1 {
+        order: 1;
+
+				@media screen and (max-width: 990px) {
+					order: 2;
+					margin-bottom: rem(30px);
+				}
+      }
+      &--2 {
+        order: 3;
+      }
+    }
+  }
+}
