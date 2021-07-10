@@ -14,15 +14,7 @@
     z-index: 3;
     height: 100%;
     width: rem(107px);
-    background: rgba($color: $white, $alpha: 0.3);
-    border-left: 1px solid transparent;
-
-    @supports (
-      (-webkit-backdrop-filter: blur(107px)) or (backdrop-filter: blur(107px))
-    ) {
-      background: transparent;
-      backdrop-filter: blur(107px);
-    }
+    border-left: 1px solid rgba($color: $Tuna, $alpha: 0.3);
   }
 
   &-main {

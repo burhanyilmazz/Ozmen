@@ -1,7 +1,6 @@
 import General         from  '../../../src/assets/scripts/General';
 import LazyLoad         from  '../../../src/assets/scripts/LazyLoad';
 import OnLoadModal     from  '../../../src/assets/scripts/OnLoadModal';
-import Sticky           from  '../../../src/assets/scripts/Sticky';
 
 import FormCheckbox     from  '../../../src/atoms/FormCheckbox/FormCheckbox';
 import FormFileInput    from  '../../../src/atoms/FormFileInput/FormFileInput';
@@ -26,7 +25,6 @@ import ProductNav       from  '../../../src/organisms/ProductNav/ProductNav';
 
 const Components = {
   LazyLoad,
-  Sticky,
   OnLoadModal,
 
   FormCheckbox,

@@ -4,10 +4,14 @@ $ {
 
    if (input.class) {
       classes.push(input.class);
+   }
+
+  if (out.global.transparent) {
+   classes.push("o-header--transparent");
   }
 
-  if(out.global.logoWhite) {
-   classes.push("o-header--transparent");
+  if (out.global.whiteLogo) {
+   classes.push("o-header--white");
   }
 }
 <header class=classes data-component="Header">

@@ -2,6 +2,7 @@
   background: $Alabaster;
   position: relative;
   z-index: 2;
+  content-visibility: auto;
   
   &__top {
     padding: rem(54px) rem(57px);

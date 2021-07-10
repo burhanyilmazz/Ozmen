@@ -1,5 +1,7 @@
 {
   "$global": {
-    "logoWhite": true
+    "transparent": true,
+    "whiteLogo": true,
+    "paddless": true
   }
 }

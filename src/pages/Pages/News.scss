@@ -106,6 +106,12 @@
     display: flex;
     justify-content: center;
     margin-top: rem(90px);
+
+    .a-btn {
+      &:before {
+        font-size: rem(4px);
+      }
+    }
   }
 
   &-detail {

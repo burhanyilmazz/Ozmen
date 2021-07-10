@@ -22,11 +22,11 @@
         }
     </style>
     <link rel="stylesheet" type="text/css" media="all" href="../../assets/styles/vendors.css">
-    <link rel="stylesheet" type="text/css" media="all" href="../../assets/styles/app.css">
+    <link rel="stylesheet" type="text/css" media="all" href="../../assets/styles/app.min.css">
 </head>
 
-<body>
-    <header class="o-header" data-component="Header">
+<body class="paddless">
+    <header class="o-header o-header--white" data-component="Header">
         <div class="container-fluid">
             <div class="m-logo"><a href="#"><i class="a-icon icon-logo"></i> </a></div><a class="a-btn-icon js-search-header" href="javascript:;"><i class="icon-search"></i></a>
             <div class="a-hamburger" data-component="Hamburger">
@@ -80,8 +80,8 @@
         <div class="m-search-bar__container">
             <h1>Ne aramıştınız?</h1>
             <form class="m-form" data-parsley-validate="data-parsley-validate" data-parsley-excluded="disabled, :hidden">
-                <h3>Ürünler, hizmetler ve daha fazlası için...</h3>
-                <div class="m-search-bar__input"><button class="m-search-bar__icon"><i class="icon-search"></i></button><input type="text" placeholder="anahtar kelime" required></div>
+                <h2>Ürünler, hizmetler ve daha fazlası için...</h2>
+                <div class="m-search-bar__input"><button class="m-search-bar__icon" aria-label="Search"><i class="icon-search"></i></button><input type="text" placeholder="anahtar kelime" required></div>
             </form>
         </div>
         <div class="m-search-bar__footer">
@@ -97,7 +97,7 @@
         </div><i class="a-icon icon-close js-close-search-bar"></i>
     </div>
     <aside class="o-sidebar" data-component="Sidebar">
-        <div class="o-sidebar__main">
+        <div class="o-sidebar__main" style="background-image: url(../../assets/images/content/bg/sidebar.png);">
             <ul class="o-sidebar-main__nav">
                 <li>
                     <div class="a-hamburger" data-component="Hamburger">
@@ -263,7 +263,7 @@
                     <h4>Haberdar Olun!</h4>
                     <form class="m-form" data-parsley-validate="data-parsley-validate" data-parsley-excluded="disabled, :hidden">
                         <div class="m-newsletter__input"><i class="a-icon icon-email"></i>
-                            <div class="a-input" data-component='{"type":"FormInput"}'><input type="email" required name="input-1625942491794" placeholder="E-Posta Adresiniz" id="s0-0-19-25-3-6-input"><label for="s0-0-19-25-3-6-input"></label><i>*</i></div>
+                            <div class="a-input" data-component='{"type":"FormInput"}'><input type="email" required name="input-1625948554197" placeholder="E-Posta Adresiniz" id="s0-0-19-25-3-6-input"><label for="s0-0-19-25-3-6-input"></label><i>*</i></div>
                         </div><button class="a-btn a-btn--with-icon icon-arrow-right"><span>Kaydol</span></button>
                     </form>
                 </div>
@@ -406,8 +406,7 @@
         <div class="m-modal__foot"><a class="a-btn a-btn--with-icon icon-arrow-right" data-fancybox-close href="javascript:;"><span>Tamam</span></a></div><a class="a-btn-icon btn-close" data-fancybox-close href="javascript:;"><i class="icon-close"></i>ButtonIcon</a>
     </div>
     <script defer src="../../assets/scripts/vendors.js"></script>
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNKq_xbp6KM9nQAOe3cTr8RnafKIBfQn4"></script>
-    <script defer src="../../assets/scripts/app.js"></script>
+    <script defer src="../../assets/scripts/app.min.js"></script>
 </body>
 
 </html>

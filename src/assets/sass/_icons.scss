@@ -35,26 +35,8 @@
   }
 }
 
-%icon-bactery {
-  content: "\EA05";
-}
-.icon-bactery {
-  &::before {
-    @extend %icon-bactery;
-  }
-}
-
-%icon-blog {
-  content: "\EA06";
-}
-.icon-blog {
-  &::before {
-    @extend %icon-blog;
-  }
-}
-
 %icon-calendar {
-  content: "\EA07";
+  content: "\EA05";
 }
 .icon-calendar {
   &::before {
@@ -63,7 +45,7 @@
 }
 
 %icon-certificate {
-  content: "\EA08";
+  content: "\EA06";
 }
 .icon-certificate {
   &::before {
@@ -72,7 +54,7 @@
 }
 
 %icon-check {
-  content: "\EA09";
+  content: "\EA07";
 }
 .icon-check {
   &::before {
@@ -81,7 +63,7 @@
 }
 
 %icon-circle-arrow {
-  content: "\EA0A";
+  content: "\EA08";
 }
 .icon-circle-arrow {
   &::before {
@@ -90,7 +72,7 @@
 }
 
 %icon-circle-error {
-  content: "\EA0B";
+  content: "\EA09";
 }
 .icon-circle-error {
   &::before {
@@ -99,7 +81,7 @@
 }
 
 %icon-circle-success {
-  content: "\EA0C";
+  content: "\EA0A";
 }
 .icon-circle-success {
   &::before {
@@ -108,7 +90,7 @@
 }
 
 %icon-close {
-  content: "\EA0D";
+  content: "\EA0B";
 }
 .icon-close {
   &::before {
@@ -117,7 +99,7 @@
 }
 
 %icon-download {
-  content: "\EA0E";
+  content: "\EA0C";
 }
 .icon-download {
   &::before {
@@ -126,7 +108,7 @@
 }
 
 %icon-email {
-  content: "\EA0F";
+  content: "\EA0D";
 }
 .icon-email {
   &::before {
@@ -134,17 +116,8 @@
   }
 }
 
-%icon-enter {
-  content: "\EA10";
-}
-.icon-enter {
-  &::before {
-    @extend %icon-enter;
-  }
-}
-
 %icon-ev {
-  content: "\EA11";
+  content: "\EA0E";
 }
 .icon-ev {
   &::before {
@@ -153,7 +126,7 @@
 }
 
 %icon-facebook {
-  content: "\EA12";
+  content: "\EA0F";
 }
 .icon-facebook {
   &::before {
@@ -162,7 +135,7 @@
 }
 
 %icon-fax {
-  content: "\EA13";
+  content: "\EA10";
 }
 .icon-fax {
   &::before {
@@ -171,7 +144,7 @@
 }
 
 %icon-filter {
-  content: "\EA14";
+  content: "\EA11";
 }
 .icon-filter {
   &::before {
@@ -180,7 +153,7 @@
 }
 
 %icon-firinci {
-  content: "\EA15";
+  content: "\EA12";
 }
 .icon-firinci {
   &::before {
@@ -189,7 +162,7 @@
 }
 
 %icon-form {
-  content: "\EA16";
+  content: "\EA13";
 }
 .icon-form {
   &::before {
@@ -197,17 +170,8 @@
   }
 }
 
-%icon-history {
-  content: "\EA17";
-}
-.icon-history {
-  &::before {
-    @extend %icon-history;
-  }
-}
-
 %icon-instagram {
-  content: "\EA18";
+  content: "\EA14";
 }
 .icon-instagram {
   &::before {
@@ -216,7 +180,7 @@
 }
 
 %icon-language {
-  content: "\EA19";
+  content: "\EA15";
 }
 .icon-language {
   &::before {
@@ -225,7 +189,7 @@
 }
 
 %icon-linkedin {
-  content: "\EA1A";
+  content: "\EA16";
 }
 .icon-linkedin {
   &::before {
@@ -234,7 +198,7 @@
 }
 
 %icon-list {
-  content: "\EA1B";
+  content: "\EA17";
 }
 .icon-list {
   &::before {
@@ -242,8 +206,17 @@
   }
 }
 
+%icon-list2 {
+  content: "\EA18";
+}
+.icon-list2 {
+  &::before {
+    @extend %icon-list2;
+  }
+}
+
 %icon-logo {
-  content: "\EA1C";
+  content: "\EA19";
 }
 .icon-logo {
   &::before {
@@ -252,7 +225,7 @@
 }
 
 %icon-marka {
-  content: "\EA1D";
+  content: "\EA1A";
 }
 .icon-marka {
   &::before {
@@ -261,7 +234,7 @@
 }
 
 %icon-more {
-  content: "\EA1E";
+  content: "\EA1B";
 }
 .icon-more {
   &::before {
@@ -269,26 +242,8 @@
   }
 }
 
-%icon-ours {
-  content: "\EA1F";
-}
-.icon-ours {
-  &::before {
-    @extend %icon-ours;
-  }
-}
-
-%icon-pdf {
-  content: "\EA20";
-}
-.icon-pdf {
-  &::before {
-    @extend %icon-pdf;
-  }
-}
-
 %icon-phone {
-  content: "\EA21";
+  content: "\EA1C";
 }
 .icon-phone {
   &::before {
@@ -296,17 +251,8 @@
   }
 }
 
-%icon-pill {
-  content: "\EA22";
-}
-.icon-pill {
-  &::before {
-    @extend %icon-pill;
-  }
-}
-
 %icon-play {
-  content: "\EA23";
+  content: "\EA1D";
 }
 .icon-play {
   &::before {
@@ -315,7 +261,7 @@
 }
 
 %icon-product {
-  content: "\EA24";
+  content: "\EA1E";
 }
 .icon-product {
   &::before {
@@ -324,7 +270,7 @@
 }
 
 %icon-right {
-  content: "\EA25";
+  content: "\EA1F";
 }
 .icon-right {
   &::before {
@@ -333,7 +279,7 @@
 }
 
 %icon-search {
-  content: "\EA26";
+  content: "\EA20";
 }
 .icon-search {
   &::before {
@@ -341,35 +287,8 @@
   }
 }
 
-%icon-shopping {
-  content: "\EA27";
-}
-.icon-shopping {
-  &::before {
-    @extend %icon-shopping;
-  }
-}
-
-%icon-sun {
-  content: "\EA28";
-}
-.icon-sun {
-  &::before {
-    @extend %icon-sun;
-  }
-}
-
-%icon-sustainability {
-  content: "\EA29";
-}
-.icon-sustainability {
-  &::before {
-    @extend %icon-sustainability;
-  }
-}
-
 %icon-twitter {
-  content: "\EA2A";
+  content: "\EA21";
 }
 .icon-twitter {
   &::before {
@@ -378,7 +297,7 @@
 }
 
 %icon-upload {
-  content: "\EA2B";
+  content: "\EA22";
 }
 .icon-upload {
   &::before {
@@ -387,7 +306,7 @@
 }
 
 %icon-usta {
-  content: "\EA2C";
+  content: "\EA23";
 }
 .icon-usta {
   &::before {
@@ -395,17 +314,8 @@
   }
 }
 
-%icon-word {
-  content: "\EA2D";
-}
-.icon-word {
-  &::before {
-    @extend %icon-word;
-  }
-}
-
 %icon-youtube {
-  content: "\EA2E";
+  content: "\EA24";
 }
 .icon-youtube {
   &::before {
@@ -414,7 +324,7 @@
 }
 
 %icon-zanaatkar {
-  content: "\EA2F";
+  content: "\EA25";
 }
 .icon-zanaatkar {
   &::before {

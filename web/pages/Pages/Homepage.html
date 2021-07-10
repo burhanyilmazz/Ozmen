@@ -22,11 +22,11 @@
         }
     </style>
     <link rel="stylesheet" type="text/css" media="all" href="../../assets/styles/vendors.css">
-    <link rel="stylesheet" type="text/css" media="all" href="../../assets/styles/app.css">
+    <link rel="stylesheet" type="text/css" media="all" href="../../assets/styles/app.min.css">
 </head>
 
-<body>
-    <header class="o-header o-header--transparent" data-component="Header">
+<body class="paddless">
+    <header class="o-header o-header--transparent o-header--white" data-component="Header">
         <div class="container-fluid">
             <div class="m-logo"><a href="#"><i class="a-icon icon-logo"></i> </a></div><a class="a-btn-icon js-search-header" href="javascript:;"><i class="icon-search"></i></a>
             <div class="a-hamburger" data-component="Hamburger">
@@ -80,8 +80,8 @@
         <div class="m-search-bar__container">
             <h1>Ne aramıştınız?</h1>
             <form class="m-form" data-parsley-validate="data-parsley-validate" data-parsley-excluded="disabled, :hidden">
-                <h3>Ürünler, hizmetler ve daha fazlası için...</h3>
-                <div class="m-search-bar__input"><button class="m-search-bar__icon"><i class="icon-search"></i></button><input type="text" placeholder="anahtar kelime" required></div>
+                <h2>Ürünler, hizmetler ve daha fazlası için...</h2>
+                <div class="m-search-bar__input"><button class="m-search-bar__icon" aria-label="Search"><i class="icon-search"></i></button><input type="text" placeholder="anahtar kelime" required></div>
             </form>
         </div>
         <div class="m-search-bar__footer">
@@ -97,7 +97,7 @@
         </div><i class="a-icon icon-close js-close-search-bar"></i>
     </div>
     <aside class="o-sidebar" data-component="Sidebar">
-        <div class="o-sidebar__main">
+        <div class="o-sidebar__main" style="background-image: url(../../assets/images/content/bg/sidebar.png);">
             <ul class="o-sidebar-main__nav">
                 <li>
                     <div class="a-hamburger" data-component="Hamburger">
@@ -174,19 +174,19 @@
                     <div class="swiper-slide swiper-lazy">
                         <picture>
                             <source media="(max-width: 768px)" srcset="../../assets/images/content/carousel/carousel-1-m.jpg">
-                            <source media="(min-width: 769px)" srcset="../../assets/images/content/carousel/carousel-1.jpg"><img class="swiper-lazy" data-src="../../assets/images/content/carousel/carousel-1.jpg">
+                            <source media="(min-width: 769px)" srcset="../../assets/images/content/carousel/carousel-1.jpg"><img loading="lazy" class="swiper-lazy" data-src="../../assets/images/content/carousel/carousel-1.jpg" alt="">
                         </picture><a href="#" class="m-carousel__button"><span>Detaylı Bilgi</span><i class="a-icon icon-arrow-right"></i></a>
                     </div>
                     <div class="swiper-slide swiper-lazy">
                         <picture>
                             <source media="(max-width: 768px)" srcset="../../assets/images/content/carousel/carousel-1-m.jpg">
-                            <source media="(min-width: 769px)" srcset="../../assets/images/content/carousel/carousel-2.jpg"><img class="swiper-lazy" data-src="../../assets/images/content/carousel/carousel-2.jpg">
+                            <source media="(min-width: 769px)" srcset="../../assets/images/content/carousel/carousel-2.jpg"><img loading="lazy" class="swiper-lazy" data-src="../../assets/images/content/carousel/carousel-2.jpg" alt="">
                         </picture><a href="#" class="m-carousel__button"><span>Detaylı Bilgi</span><i class="a-icon icon-arrow-right"></i></a>
                     </div>
                     <div class="swiper-slide swiper-lazy">
                         <picture>
                             <source media="(max-width: 768px)" srcset="../../assets/images/content/carousel/carousel-1-m.jpg">
-                            <source media="(min-width: 769px)" srcset="../../assets/images/content/carousel/carousel-3.jpg"><img class="swiper-lazy" data-src="../../assets/images/content/carousel/carousel-3.jpg">
+                            <source media="(min-width: 769px)" srcset="../../assets/images/content/carousel/carousel-3.jpg"><img loading="lazy" class="swiper-lazy" data-src="../../assets/images/content/carousel/carousel-3.jpg" alt="">
                         </picture><a href="#" class="m-carousel__button"><span>Detaylı Bilgi</span><i class="a-icon icon-arrow-right"></i></a>
                     </div>
                 </div>
@@ -205,7 +205,7 @@
                     <p>Yerele, yerelin emeğine inanarak, yarım asra varan deneyimimizle, ileri teknoloji ve yenilikçi yatırımlar yaparak Anadolu tarımı ve gıda endüstrisine katkı sunmaya devam ediyoruz. Coğrafi işaretlerin izinden giderek yerel ve tescilli tohumların destekçisi olup, lisanslı depoculuk ile sözleşmeli tarım çalışmalarına da öncülük ediyoruz. </p><a class="a-btn a-btn--with-icon icon-arrow-right" href="javascript:;"><span>Detaylı Bilgi</span></a>
                 </div>
             </div>
-        </div><img src="../../assets/images/spacer.gif" data-src="../../assets/images/content/homepage/seed-1.png" class="lazyload lax p-homepage-seed__lax p-homepage-seed__lax--1" data-lax-preset="fadeIn"><img src="../../assets/images/spacer.gif" data-src="../../assets/images/content/homepage/seed-2.png" class="lazyload lax p-homepage-seed__lax p-homepage-seed__lax--2" data-lax-preset="fadeIn"><img src="../../assets/images/spacer.gif" data-src="../../assets/images/content/homepage/seed-3.png" class="lazyload lax p-homepage-seed__lax p-homepage-seed__lax--3" data-lax-preset="fadeIn"><img src="../../assets/images/spacer.gif" data-src="../../assets/images/content/homepage/seed-4.png" class="lazyload lax p-homepage-seed__lax p-homepage-seed__lax--4" data-lax-preset="fadeIn"><img src="../../assets/images/spacer.gif" data-src="../../assets/images/content/homepage/leaf.png" class="lazyload lax p-homepage-seed__lax p-homepage-seed__lax--5" data-lax-preset="fadeIn">
+        </div><img src="../../assets/images/spacer.gif" alt="" data-src="../../assets/images/content/homepage/seed-1.png" class="lazyload lax p-homepage-seed__lax p-homepage-seed__lax--1" data-lax-preset="fadeIn"><img src="../../assets/images/spacer.gif" alt="" data-src="../../assets/images/content/homepage/seed-2.png" class="lazyload lax p-homepage-seed__lax p-homepage-seed__lax--2" data-lax-preset="fadeIn"><img src="../../assets/images/spacer.gif" alt="" data-src="../../assets/images/content/homepage/seed-3.png" class="lazyload lax p-homepage-seed__lax p-homepage-seed__lax--3" data-lax-preset="fadeIn"><img src="../../assets/images/spacer.gif" alt="" data-src="../../assets/images/content/homepage/seed-4.png" class="lazyload lax p-homepage-seed__lax p-homepage-seed__lax--4" data-lax-preset="fadeIn"><img src="../../assets/images/spacer.gif" alt="" data-src="../../assets/images/content/homepage/leaf.png" class="lazyload lax p-homepage-seed__lax p-homepage-seed__lax--5" data-lax-preset="fadeIn">
     </section>
     <section class="p-homepage-collection" style="background-image: url(../../assets/images/content/bg/collection.jpg);">
         <div class="container-fluid">
@@ -254,99 +254,99 @@
             <form class="m-form" data-parsley-validate="data-parsley-validate" data-parsley-excluded="disabled, :hidden">
                 <div id="looking-error"></div>
                 <div class="o-looking__list">
-                    <div class="a-check-box"><input type="checkbox" data-parsley-errors-container="#looking-error" required name="input-1625942491808" id="s0-0-35-0-6-9-input" value="s0-0-35-0-6-9-input"><label for="s0-0-35-0-6-9-input"><img src="../../assets/images/spacer.gif" alt="" data-src="../../assets/images/dummy/filter/img-1.png" class="lazyload">
+                    <div class="a-check-box"><input type="checkbox" data-parsley-errors-container="#looking-error" required name="input-1625948554249" id="s0-0-35-0-6-9-input" value="s0-0-35-0-6-9-input"><label for="s0-0-35-0-6-9-input"><img src="../../assets/images/spacer.gif" alt="" data-src="../../assets/images/dummy/filter/img-1.png" class="lazyload">
                             <h3>Artizan Francalalık</h3><span></span>
                         </label></div>
-                    <div class="a-check-box"><input type="checkbox" data-parsley-errors-container="#looking-error" required name="input-1625942491808" id="s0-0-35-0-6-10-input" value="s0-0-35-0-6-10-input"><label for="s0-0-35-0-6-10-input"><img src="../../assets/images/spacer.gif" alt="" data-src="../../assets/images/dummy/filter/img-2.png" class="lazyload">
+                    <div class="a-check-box"><input type="checkbox" data-parsley-errors-container="#looking-error" required name="input-1625948554249" id="s0-0-35-0-6-10-input" value="s0-0-35-0-6-10-input"><label for="s0-0-35-0-6-10-input"><img src="../../assets/images/spacer.gif" alt="" data-src="../../assets/images/dummy/filter/img-2.png" class="lazyload">
                             <h3>Baklavalık</h3><span></span>
                         </label></div>
-                    <div class="a-check-box"><input type="checkbox" data-parsley-errors-container="#looking-error" required name="input-1625942491808" id="s0-0-35-0-6-11-input" value="s0-0-35-0-6-11-input"><label for="s0-0-35-0-6-11-input"><img src="../../assets/images/spacer.gif" alt="" data-src="../../assets/images/dummy/filter/img-3.png" class="lazyload">
+                    <div class="a-check-box"><input type="checkbox" data-parsley-errors-container="#looking-error" required name="input-1625948554249" id="s0-0-35-0-6-11-input" value="s0-0-35-0-6-11-input"><label for="s0-0-35-0-6-11-input"><img src="../../assets/images/spacer.gif" alt="" data-src="../../assets/images/dummy/filter/img-3.png" class="lazyload">
                             <h3>Bazlamalık</h3><span></span>
                         </label></div>
-                    <div class="a-check-box"><input type="checkbox" data-parsley-errors-container="#looking-error" required name="input-1625942491808" id="s0-0-35-0-6-12-input" value="s0-0-35-0-6-12-input"><label for="s0-0-35-0-6-12-input"><img src="../../assets/images/spacer.gif" alt="" data-src="../../assets/images/dummy/filter/img-4.png" class="lazyload">
+                    <div class="a-check-box"><input type="checkbox" data-parsley-errors-container="#looking-error" required name="input-1625948554249" id="s0-0-35-0-6-12-input" value="s0-0-35-0-6-12-input"><label for="s0-0-35-0-6-12-input"><img src="../../assets/images/spacer.gif" alt="" data-src="../../assets/images/dummy/filter/img-4.png" class="lazyload">
                             <h3>Böreklik</h3><span></span>
                         </label></div>
-                    <div class="a-check-box"><input type="checkbox" data-parsley-errors-container="#looking-error" required name="input-1625942491808" id="s0-0-35-0-6-13-input" value="s0-0-35-0-6-13-input"><label for="s0-0-35-0-6-13-input"><img src="../../assets/images/spacer.gif" alt="" data-src="../../assets/images/dummy/filter/img-1.png" class="lazyload">
+                    <div class="a-check-box"><input type="checkbox" data-parsley-errors-container="#looking-error" required name="input-1625948554249" id="s0-0-35-0-6-13-input" value="s0-0-35-0-6-13-input"><label for="s0-0-35-0-6-13-input"><img src="../../assets/images/spacer.gif" alt="" data-src="../../assets/images/dummy/filter/img-1.png" class="lazyload">
                             <h3>Çeşitlik</h3><span></span>
                         </label></div>
-                    <div class="a-check-box"><input type="checkbox" data-parsley-errors-container="#looking-error" required name="input-1625942491808" id="s0-0-35-0-6-14-input" value="s0-0-35-0-6-14-input"><label for="s0-0-35-0-6-14-input"><img src="../../assets/images/spacer.gif" alt="" data-src="../../assets/images/dummy/filter/img-2.png" class="lazyload">
+                    <div class="a-check-box"><input type="checkbox" data-parsley-errors-container="#looking-error" required name="input-1625948554249" id="s0-0-35-0-6-14-input" value="s0-0-35-0-6-14-input"><label for="s0-0-35-0-6-14-input"><img src="../../assets/images/spacer.gif" alt="" data-src="../../assets/images/dummy/filter/img-2.png" class="lazyload">
                             <h3>Ekmeklik</h3><span></span>
                         </label></div>
-                    <div class="a-check-box"><input type="checkbox" data-parsley-errors-container="#looking-error" required name="input-1625942491808" id="s0-0-35-0-6-15-input" value="s0-0-35-0-6-15-input"><label for="s0-0-35-0-6-15-input"><img src="../../assets/images/spacer.gif" alt="" data-src="../../assets/images/dummy/filter/img-2.png" class="lazyload">
+                    <div class="a-check-box"><input type="checkbox" data-parsley-errors-container="#looking-error" required name="input-1625948554249" id="s0-0-35-0-6-15-input" value="s0-0-35-0-6-15-input"><label for="s0-0-35-0-6-15-input"><img src="../../assets/images/spacer.gif" alt="" data-src="../../assets/images/dummy/filter/img-2.png" class="lazyload">
                             <h3>Francalalık</h3><span></span>
                         </label></div>
-                    <div class="a-check-box"><input type="checkbox" data-parsley-errors-container="#looking-error" required name="input-1625942491808" id="s0-0-35-0-6-16-input" value="s0-0-35-0-6-16-input"><label for="s0-0-35-0-6-16-input"><img src="../../assets/images/spacer.gif" alt="" data-src="../../assets/images/dummy/filter/img-2.png" class="lazyload">
+                    <div class="a-check-box"><input type="checkbox" data-parsley-errors-container="#looking-error" required name="input-1625948554249" id="s0-0-35-0-6-16-input" value="s0-0-35-0-6-16-input"><label for="s0-0-35-0-6-16-input"><img src="../../assets/images/spacer.gif" alt="" data-src="../../assets/images/dummy/filter/img-2.png" class="lazyload">
                             <h3>İrmik</h3><span></span>
                         </label></div>
-                    <div class="a-check-box"><input type="checkbox" data-parsley-errors-container="#looking-error" required name="input-1625942491808" id="s0-0-35-0-6-17-input" value="s0-0-35-0-6-17-input"><label for="s0-0-35-0-6-17-input"><img src="../../assets/images/spacer.gif" alt="" data-src="../../assets/images/dummy/filter/img-1.png" class="lazyload">
+                    <div class="a-check-box"><input type="checkbox" data-parsley-errors-container="#looking-error" required name="input-1625948554249" id="s0-0-35-0-6-17-input" value="s0-0-35-0-6-17-input"><label for="s0-0-35-0-6-17-input"><img src="../../assets/images/spacer.gif" alt="" data-src="../../assets/images/dummy/filter/img-1.png" class="lazyload">
                             <h3>Artizan Francalalık</h3><span></span>
                         </label></div>
-                    <div class="a-check-box"><input type="checkbox" data-parsley-errors-container="#looking-error" required name="input-1625942491808" id="s0-0-35-0-6-18-input" value="s0-0-35-0-6-18-input"><label for="s0-0-35-0-6-18-input"><img src="../../assets/images/spacer.gif" alt="" data-src="../../assets/images/dummy/filter/img-3.png" class="lazyload">
+                    <div class="a-check-box"><input type="checkbox" data-parsley-errors-container="#looking-error" required name="input-1625948554249" id="s0-0-35-0-6-18-input" value="s0-0-35-0-6-18-input"><label for="s0-0-35-0-6-18-input"><img src="../../assets/images/spacer.gif" alt="" data-src="../../assets/images/dummy/filter/img-3.png" class="lazyload">
                             <h3>Bazlamalık</h3><span></span>
                         </label></div>
-                    <div class="a-check-box"><input type="checkbox" data-parsley-errors-container="#looking-error" required name="input-1625942491808" id="s0-0-35-0-6-19-input" value="s0-0-35-0-6-19-input"><label for="s0-0-35-0-6-19-input"><img src="../../assets/images/spacer.gif" alt="" data-src="../../assets/images/dummy/filter/img-1.png" class="lazyload">
+                    <div class="a-check-box"><input type="checkbox" data-parsley-errors-container="#looking-error" required name="input-1625948554249" id="s0-0-35-0-6-19-input" value="s0-0-35-0-6-19-input"><label for="s0-0-35-0-6-19-input"><img src="../../assets/images/spacer.gif" alt="" data-src="../../assets/images/dummy/filter/img-1.png" class="lazyload">
                             <h3>Çeşitlik</h3><span></span>
                         </label></div>
-                    <div class="a-check-box"><input type="checkbox" data-parsley-errors-container="#looking-error" required name="input-1625942491808" id="s0-0-35-0-6-20-input" value="s0-0-35-0-6-20-input"><label for="s0-0-35-0-6-20-input"><img src="../../assets/images/spacer.gif" alt="" data-src="../../assets/images/dummy/filter/img-2.png" class="lazyload">
+                    <div class="a-check-box"><input type="checkbox" data-parsley-errors-container="#looking-error" required name="input-1625948554249" id="s0-0-35-0-6-20-input" value="s0-0-35-0-6-20-input"><label for="s0-0-35-0-6-20-input"><img src="../../assets/images/spacer.gif" alt="" data-src="../../assets/images/dummy/filter/img-2.png" class="lazyload">
                             <h3>Baklavalık</h3><span></span>
                         </label></div>
-                    <div class="a-check-box"><input type="checkbox" data-parsley-errors-container="#looking-error" required name="input-1625942491808" id="s0-0-35-0-6-21-input" value="s0-0-35-0-6-21-input"><label for="s0-0-35-0-6-21-input"><img src="../../assets/images/spacer.gif" alt="" data-src="../../assets/images/dummy/filter/img-2.png" class="lazyload">
+                    <div class="a-check-box"><input type="checkbox" data-parsley-errors-container="#looking-error" required name="input-1625948554249" id="s0-0-35-0-6-21-input" value="s0-0-35-0-6-21-input"><label for="s0-0-35-0-6-21-input"><img src="../../assets/images/spacer.gif" alt="" data-src="../../assets/images/dummy/filter/img-2.png" class="lazyload">
                             <h3>Ekmeklik</h3><span></span>
                         </label></div>
-                    <div class="a-check-box"><input type="checkbox" data-parsley-errors-container="#looking-error" required name="input-1625942491808" id="s0-0-35-0-6-22-input" value="s0-0-35-0-6-22-input"><label for="s0-0-35-0-6-22-input"><img src="../../assets/images/spacer.gif" alt="" data-src="../../assets/images/dummy/filter/img-2.png" class="lazyload">
+                    <div class="a-check-box"><input type="checkbox" data-parsley-errors-container="#looking-error" required name="input-1625948554249" id="s0-0-35-0-6-22-input" value="s0-0-35-0-6-22-input"><label for="s0-0-35-0-6-22-input"><img src="../../assets/images/spacer.gif" alt="" data-src="../../assets/images/dummy/filter/img-2.png" class="lazyload">
                             <h3>Francalalık</h3><span></span>
                         </label></div>
-                    <div class="a-check-box"><input type="checkbox" data-parsley-errors-container="#looking-error" required name="input-1625942491808" id="s0-0-35-0-6-23-input" value="s0-0-35-0-6-23-input"><label for="s0-0-35-0-6-23-input"><img src="../../assets/images/spacer.gif" alt="" data-src="../../assets/images/dummy/filter/img-4.png" class="lazyload">
+                    <div class="a-check-box"><input type="checkbox" data-parsley-errors-container="#looking-error" required name="input-1625948554249" id="s0-0-35-0-6-23-input" value="s0-0-35-0-6-23-input"><label for="s0-0-35-0-6-23-input"><img src="../../assets/images/spacer.gif" alt="" data-src="../../assets/images/dummy/filter/img-4.png" class="lazyload">
                             <h3>Böreklik</h3><span></span>
                         </label></div>
-                    <div class="a-check-box"><input type="checkbox" data-parsley-errors-container="#looking-error" required name="input-1625942491809" id="s0-0-35-0-6-24-input" value="s0-0-35-0-6-24-input"><label for="s0-0-35-0-6-24-input"><img src="../../assets/images/spacer.gif" alt="" data-src="../../assets/images/dummy/filter/img-2.png" class="lazyload">
+                    <div class="a-check-box"><input type="checkbox" data-parsley-errors-container="#looking-error" required name="input-1625948554249" id="s0-0-35-0-6-24-input" value="s0-0-35-0-6-24-input"><label for="s0-0-35-0-6-24-input"><img src="../../assets/images/spacer.gif" alt="" data-src="../../assets/images/dummy/filter/img-2.png" class="lazyload">
                             <h3>İrmik</h3><span></span>
                         </label></div>
-                    <div class="a-check-box"><input type="checkbox" data-parsley-errors-container="#looking-error" required name="input-1625942491809" id="s0-0-35-0-6-25-input" value="s0-0-35-0-6-25-input"><label for="s0-0-35-0-6-25-input"><img src="../../assets/images/spacer.gif" alt="" data-src="../../assets/images/dummy/filter/img-1.png" class="lazyload">
+                    <div class="a-check-box"><input type="checkbox" data-parsley-errors-container="#looking-error" required name="input-1625948554250" id="s0-0-35-0-6-25-input" value="s0-0-35-0-6-25-input"><label for="s0-0-35-0-6-25-input"><img src="../../assets/images/spacer.gif" alt="" data-src="../../assets/images/dummy/filter/img-1.png" class="lazyload">
                             <h3>Artizan Francalalık</h3><span></span>
                         </label></div>
-                    <div class="a-check-box"><input type="checkbox" data-parsley-errors-container="#looking-error" required name="input-1625942491809" id="s0-0-35-0-6-26-input" value="s0-0-35-0-6-26-input"><label for="s0-0-35-0-6-26-input"><img src="../../assets/images/spacer.gif" alt="" data-src="../../assets/images/dummy/filter/img-2.png" class="lazyload">
+                    <div class="a-check-box"><input type="checkbox" data-parsley-errors-container="#looking-error" required name="input-1625948554250" id="s0-0-35-0-6-26-input" value="s0-0-35-0-6-26-input"><label for="s0-0-35-0-6-26-input"><img src="../../assets/images/spacer.gif" alt="" data-src="../../assets/images/dummy/filter/img-2.png" class="lazyload">
                             <h3>Baklavalık</h3><span></span>
                         </label></div>
-                    <div class="a-check-box"><input type="checkbox" data-parsley-errors-container="#looking-error" required name="input-1625942491809" id="s0-0-35-0-6-27-input" value="s0-0-35-0-6-27-input"><label for="s0-0-35-0-6-27-input"><img src="../../assets/images/spacer.gif" alt="" data-src="../../assets/images/dummy/filter/img-4.png" class="lazyload">
+                    <div class="a-check-box"><input type="checkbox" data-parsley-errors-container="#looking-error" required name="input-1625948554250" id="s0-0-35-0-6-27-input" value="s0-0-35-0-6-27-input"><label for="s0-0-35-0-6-27-input"><img src="../../assets/images/spacer.gif" alt="" data-src="../../assets/images/dummy/filter/img-4.png" class="lazyload">
                             <h3>Böreklik</h3><span></span>
                         </label></div>
-                    <div class="a-check-box"><input type="checkbox" data-parsley-errors-container="#looking-error" required name="input-1625942491809" id="s0-0-35-0-6-28-input" value="s0-0-35-0-6-28-input"><label for="s0-0-35-0-6-28-input"><img src="../../assets/images/spacer.gif" alt="" data-src="../../assets/images/dummy/filter/img-3.png" class="lazyload">
+                    <div class="a-check-box"><input type="checkbox" data-parsley-errors-container="#looking-error" required name="input-1625948554250" id="s0-0-35-0-6-28-input" value="s0-0-35-0-6-28-input"><label for="s0-0-35-0-6-28-input"><img src="../../assets/images/spacer.gif" alt="" data-src="../../assets/images/dummy/filter/img-3.png" class="lazyload">
                             <h3>Bazlamalık</h3><span></span>
                         </label></div>
-                    <div class="a-check-box"><input type="checkbox" data-parsley-errors-container="#looking-error" required name="input-1625942491809" id="s0-0-35-0-6-29-input" value="s0-0-35-0-6-29-input"><label for="s0-0-35-0-6-29-input"><img src="../../assets/images/spacer.gif" alt="" data-src="../../assets/images/dummy/filter/img-1.png" class="lazyload">
+                    <div class="a-check-box"><input type="checkbox" data-parsley-errors-container="#looking-error" required name="input-1625948554250" id="s0-0-35-0-6-29-input" value="s0-0-35-0-6-29-input"><label for="s0-0-35-0-6-29-input"><img src="../../assets/images/spacer.gif" alt="" data-src="../../assets/images/dummy/filter/img-1.png" class="lazyload">
                             <h3>Çeşitlik</h3><span></span>
                         </label></div>
-                    <div class="a-check-box"><input type="checkbox" data-parsley-errors-container="#looking-error" required name="input-1625942491809" id="s0-0-35-0-6-30-input" value="s0-0-35-0-6-30-input"><label for="s0-0-35-0-6-30-input"><img src="../../assets/images/spacer.gif" alt="" data-src="../../assets/images/dummy/filter/img-2.png" class="lazyload">
+                    <div class="a-check-box"><input type="checkbox" data-parsley-errors-container="#looking-error" required name="input-1625948554250" id="s0-0-35-0-6-30-input" value="s0-0-35-0-6-30-input"><label for="s0-0-35-0-6-30-input"><img src="../../assets/images/spacer.gif" alt="" data-src="../../assets/images/dummy/filter/img-2.png" class="lazyload">
                             <h3>Francalalık</h3><span></span>
                         </label></div>
-                    <div class="a-check-box"><input type="checkbox" data-parsley-errors-container="#looking-error" required name="input-1625942491809" id="s0-0-35-0-6-31-input" value="s0-0-35-0-6-31-input"><label for="s0-0-35-0-6-31-input"><img src="../../assets/images/spacer.gif" alt="" data-src="../../assets/images/dummy/filter/img-2.png" class="lazyload">
+                    <div class="a-check-box"><input type="checkbox" data-parsley-errors-container="#looking-error" required name="input-1625948554250" id="s0-0-35-0-6-31-input" value="s0-0-35-0-6-31-input"><label for="s0-0-35-0-6-31-input"><img src="../../assets/images/spacer.gif" alt="" data-src="../../assets/images/dummy/filter/img-2.png" class="lazyload">
                             <h3>Ekmeklik</h3><span></span>
                         </label></div>
-                    <div class="a-check-box"><input type="checkbox" data-parsley-errors-container="#looking-error" required name="input-1625942491809" id="s0-0-35-0-6-32-input" value="s0-0-35-0-6-32-input"><label for="s0-0-35-0-6-32-input"><img src="../../assets/images/spacer.gif" alt="" data-src="../../assets/images/dummy/filter/img-2.png" class="lazyload">
+                    <div class="a-check-box"><input type="checkbox" data-parsley-errors-container="#looking-error" required name="input-1625948554250" id="s0-0-35-0-6-32-input" value="s0-0-35-0-6-32-input"><label for="s0-0-35-0-6-32-input"><img src="../../assets/images/spacer.gif" alt="" data-src="../../assets/images/dummy/filter/img-2.png" class="lazyload">
                             <h3>İrmik</h3><span></span>
                         </label></div>
-                    <div class="a-check-box"><input type="checkbox" data-parsley-errors-container="#looking-error" required name="input-1625942491809" id="s0-0-35-0-6-33-input" value="s0-0-35-0-6-33-input"><label for="s0-0-35-0-6-33-input"><img src="../../assets/images/spacer.gif" alt="" data-src="../../assets/images/dummy/filter/img-1.png" class="lazyload">
+                    <div class="a-check-box"><input type="checkbox" data-parsley-errors-container="#looking-error" required name="input-1625948554250" id="s0-0-35-0-6-33-input" value="s0-0-35-0-6-33-input"><label for="s0-0-35-0-6-33-input"><img src="../../assets/images/spacer.gif" alt="" data-src="../../assets/images/dummy/filter/img-1.png" class="lazyload">
                             <h3>Artizan Francalalık</h3><span></span>
                         </label></div>
-                    <div class="a-check-box"><input type="checkbox" data-parsley-errors-container="#looking-error" required name="input-1625942491809" id="s0-0-35-0-6-34-input" value="s0-0-35-0-6-34-input"><label for="s0-0-35-0-6-34-input"><img src="../../assets/images/spacer.gif" alt="" data-src="../../assets/images/dummy/filter/img-2.png" class="lazyload">
+                    <div class="a-check-box"><input type="checkbox" data-parsley-errors-container="#looking-error" required name="input-1625948554250" id="s0-0-35-0-6-34-input" value="s0-0-35-0-6-34-input"><label for="s0-0-35-0-6-34-input"><img src="../../assets/images/spacer.gif" alt="" data-src="../../assets/images/dummy/filter/img-2.png" class="lazyload">
                             <h3>Baklavalık</h3><span></span>
                         </label></div>
-                    <div class="a-check-box"><input type="checkbox" data-parsley-errors-container="#looking-error" required name="input-1625942491809" id="s0-0-35-0-6-35-input" value="s0-0-35-0-6-35-input"><label for="s0-0-35-0-6-35-input"><img src="../../assets/images/spacer.gif" alt="" data-src="../../assets/images/dummy/filter/img-3.png" class="lazyload">
+                    <div class="a-check-box"><input type="checkbox" data-parsley-errors-container="#looking-error" required name="input-1625948554250" id="s0-0-35-0-6-35-input" value="s0-0-35-0-6-35-input"><label for="s0-0-35-0-6-35-input"><img src="../../assets/images/spacer.gif" alt="" data-src="../../assets/images/dummy/filter/img-3.png" class="lazyload">
                             <h3>Bazlamalık</h3><span></span>
                         </label></div>
-                    <div class="a-check-box"><input type="checkbox" data-parsley-errors-container="#looking-error" required name="input-1625942491809" id="s0-0-35-0-6-36-input" value="s0-0-35-0-6-36-input"><label for="s0-0-35-0-6-36-input"><img src="../../assets/images/spacer.gif" alt="" data-src="../../assets/images/dummy/filter/img-4.png" class="lazyload">
+                    <div class="a-check-box"><input type="checkbox" data-parsley-errors-container="#looking-error" required name="input-1625948554250" id="s0-0-35-0-6-36-input" value="s0-0-35-0-6-36-input"><label for="s0-0-35-0-6-36-input"><img src="../../assets/images/spacer.gif" alt="" data-src="../../assets/images/dummy/filter/img-4.png" class="lazyload">
                             <h3>Böreklik</h3><span></span>
                         </label></div>
-                    <div class="a-check-box"><input type="checkbox" data-parsley-errors-container="#looking-error" required name="input-1625942491809" id="s0-0-35-0-6-37-input" value="s0-0-35-0-6-37-input"><label for="s0-0-35-0-6-37-input"><img src="../../assets/images/spacer.gif" alt="" data-src="../../assets/images/dummy/filter/img-1.png" class="lazyload">
+                    <div class="a-check-box"><input type="checkbox" data-parsley-errors-container="#looking-error" required name="input-1625948554250" id="s0-0-35-0-6-37-input" value="s0-0-35-0-6-37-input"><label for="s0-0-35-0-6-37-input"><img src="../../assets/images/spacer.gif" alt="" data-src="../../assets/images/dummy/filter/img-1.png" class="lazyload">
                             <h3>Çeşitlik</h3><span></span>
                         </label></div>
                 </div>
-                <div class="o-looking__button"><button class="a-btn a-btn--with-icon icon-arrow-right"><span>Seçili kategorileri listele</span></button></div>
+                <div class="o-looking__button"><button class="a-btn a-btn--with-icon icon-list2"><span>Seçili kategorileri listele</span></button></div>
             </form>
         </div>
     </section>
-    <section class="p-homepage__slider" style="background-image: url(../../assets/images/content/bg/service.png);">
+    <section class="p-homepage-slider" style="background-image: url(../../assets/images/content/bg/service.png);">
         <div class="o-services" data-component="Services">
             <div class="row">
                 <div class="col-lg-5">
@@ -373,9 +373,9 @@
                     <div class="m-slider o-services__image">
                         <div class="m-slider__swiper swiper-container">
                             <div class="swiper-wrapper">
-                                <div class="swiper-slide"><img class="swiper-lazy" src="../../assets/images/dummy/services/service1.png"></div>
-                                <div class="swiper-slide"><img class="swiper-lazy" src="../../assets/images/dummy/services/service1.png"></div>
-                                <div class="swiper-slide"><img class="swiper-lazy" src="../../assets/images/dummy/services/service1.png"></div>
+                                <div class="swiper-slide"><img class="swiper-lazy" loading="lazy" alt="" src="../../assets/images/dummy/services/service1.png"></div>
+                                <div class="swiper-slide"><img class="swiper-lazy" loading="lazy" alt="" src="../../assets/images/dummy/services/service1.png"></div>
+                                <div class="swiper-slide"><img class="swiper-lazy" loading="lazy" alt="" src="../../assets/images/dummy/services/service1.png"></div>
                             </div>
                         </div>
                         <div class="m-slider__control">
@@ -417,7 +417,7 @@
                     <h4>Haberdar Olun!</h4>
                     <form class="m-form" data-parsley-validate="data-parsley-validate" data-parsley-excluded="disabled, :hidden">
                         <div class="m-newsletter__input"><i class="a-icon icon-email"></i>
-                            <div class="a-input" data-component='{"type":"FormInput"}'><input type="email" required name="input-1625942491809" placeholder="E-Posta Adresiniz" id="s0-0-19_1-25-3-6-input"><label for="s0-0-19_1-25-3-6-input"></label><i>*</i></div>
+                            <div class="a-input" data-component='{"type":"FormInput"}'><input type="email" required name="input-1625948554250" placeholder="E-Posta Adresiniz" id="s0-0-19_1-25-3-6-input"><label for="s0-0-19_1-25-3-6-input"></label><i>*</i></div>
                         </div><button class="a-btn a-btn--with-icon icon-arrow-right"><span>Kaydol</span></button>
                     </form>
                 </div>
@@ -560,8 +560,7 @@
         <div class="m-modal__foot"><a class="a-btn a-btn--with-icon icon-arrow-right" data-fancybox-close href="javascript:;"><span>Tamam</span></a></div><a class="a-btn-icon btn-close" data-fancybox-close href="javascript:;"><i class="icon-close"></i>ButtonIcon</a>
     </div>
     <script defer src="../../assets/scripts/vendors.js"></script>
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNKq_xbp6KM9nQAOe3cTr8RnafKIBfQn4"></script>
-    <script defer src="../../assets/scripts/app.js"></script>
+    <script defer src="../../assets/scripts/app.min.js"></script>
 </body>
 
 </html>

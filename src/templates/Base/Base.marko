@@ -1,3 +1,9 @@
+$ {
+  const classes = []
+  if (out.global.whiteLogo) {
+    classes.push("paddless");
+  }
+}
 <!doctype html>
 <html lang="tr">
   <head>
@@ -14,11 +20,11 @@
     </style>
 
     <link rel="stylesheet" type="text/css" media="all" href="../../assets/styles/vendors.css">
-    <link rel="stylesheet" type="text/css" media="all" href="../../assets/styles/app.css">
+    <link rel="stylesheet" type="text/css" media="all" href="../../assets/styles/app.min.css">
     <include(input.head) />
 
   </head>
-  <body>
+  <body class=classes>
     <Header />
     <SearchBar type="header" />
     <Sidebar />
@@ -44,8 +50,6 @@
       <SocialMediaBox />
       <Footer />
     </div>
-
-    <include(input.afterFooter)/>
 
     <Modal id="modal-preset-success" type="success">
       <@Body>
@@ -96,8 +100,9 @@
     </Modal>
 
     <script defer src="../../assets/scripts/vendors.js" />
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNKq_xbp6KM9nQAOe3cTr8RnafKIBfQn4"></script>
-    <script defer src="../../assets/scripts/app.js" />
+    <include(input.afterFooter)/>
+    <!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNKq_xbp6KM9nQAOe3cTr8RnafKIBfQn4"></script> -->
+    <script defer src="../../assets/scripts/app.min.js" />
 
   </body>
 </html>
