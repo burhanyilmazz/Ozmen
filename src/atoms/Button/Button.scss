@@ -39,14 +39,31 @@
   }
 
   &--white {
-    background: transparent;
-    color: $mineshaft;
-    border: 1px solid rgba($color: $mineshaft, $alpha: .3);
+    background: $Tuna !important;
+    color: $white;
+    border: 1px solid #D6D6D6;
+
+    span {
+      color: $Tuna
+    }
 
     &:hover {
       border: 1px solid transparent;
-      background: rgba($color: $mineshaft, $alpha: .1);
+      background: $Tuna;
+
+      span {
+        color: $white;
+      }
     }
+
+    &:after {
+      background: $white;
+    }
+
+    &:before{
+      color: $Tuna
+    }
+    
   }
 
   &--black {

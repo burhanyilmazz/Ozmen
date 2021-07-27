@@ -1,0 +1,60 @@
+.a-tariff-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  left: rem(27px);
+  bottom: rem(100px);
+	transition: all 0.5s ease;
+	overflow: hidden;
+	width: rem(60px);
+	height: rem(230px);
+
+  span {
+    font-size: rem(14px);
+    font-weight: 600;
+    color: $black;
+    position: absolute;
+    transform: rotate(-90deg);
+    display: inline-flex;
+    width: rem(100px);
+    bottom: rem(112px);
+    left: rem(-22px);
+  }
+
+  .a-icon {
+		position: absolute;
+		bottom: rem(20px);
+		transition: all 0.5s ease;
+		left: rem(19px);
+    & + .a-icon {
+			left: auto;
+      right: -50px;
+    }
+  }
+
+  &:before {
+    width: rem(60px);
+    height: rem(60px);
+    content: "";
+    border: 1px solid #707070;
+    border-radius: rem(30px);
+    position: absolute;
+		transition: all 0.5s ease;
+		bottom: 0;
+  }
+
+	&:hover {
+		&:before {
+			height: rem(190px);
+		}
+
+		.a-icon {
+			left: -50px;
+			& + .a-icon {
+				left: auto;
+				right: rem(16px);
+			}
+		}
+	}
+}

@@ -1,7 +1,7 @@
 body {
   background-color: #f7f7f7;
   font-size: 16px;
-  color: #35373C;
+  color: #35373c;
   font-family: "Gilmer", sans-serif;
   font-weight: 400;
   margin: 0;
@@ -245,5 +245,32 @@ $animation-list: ("slideInLeft", "slideInRight", "slideInDown", "slideInUp");
 @each $animation in $animation-list {
   .#{$animation} {
     animation-name: #{$animation} !important;
+  }
+}
+
+@keyframes bounceInUp {
+  0%,
+  60%,
+  75%,
+  90%,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 3000px, 0) scaleY(5);
+  }
+  60% {
+    opacity: 1;
+    transform: translate3d(0, -20px, 0) scaleY(0.9);
+  }
+  75% {
+    transform: translate3d(0, 10px, 0) scaleY(0.95);
+  }
+  90% {
+    transform: translate3d(0, -5px, 0) scaleY(0.985);
+  }
+  to {
+    transform: translateZ(0);
   }
 }

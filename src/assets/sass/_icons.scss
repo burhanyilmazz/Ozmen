@@ -260,8 +260,17 @@
   }
 }
 
-%icon-product {
+%icon-plus {
   content: "\EA1E";
+}
+.icon-plus {
+  &::before {
+    @extend %icon-plus;
+  }
+}
+
+%icon-product {
+  content: "\EA1F";
 }
 .icon-product {
   &::before {
@@ -270,7 +279,7 @@
 }
 
 %icon-right {
-  content: "\EA1F";
+  content: "\EA20";
 }
 .icon-right {
   &::before {
@@ -279,7 +288,7 @@
 }
 
 %icon-search {
-  content: "\EA20";
+  content: "\EA21";
 }
 .icon-search {
   &::before {
@@ -287,8 +296,17 @@
   }
 }
 
+%icon-tariff {
+  content: "\EA22";
+}
+.icon-tariff {
+  &::before {
+    @extend %icon-tariff;
+  }
+}
+
 %icon-twitter {
-  content: "\EA21";
+  content: "\EA23";
 }
 .icon-twitter {
   &::before {
@@ -297,7 +315,7 @@
 }
 
 %icon-upload {
-  content: "\EA22";
+  content: "\EA24";
 }
 .icon-upload {
   &::before {
@@ -306,7 +324,7 @@
 }
 
 %icon-usta {
-  content: "\EA23";
+  content: "\EA25";
 }
 .icon-usta {
   &::before {
@@ -315,7 +333,7 @@
 }
 
 %icon-youtube {
-  content: "\EA24";
+  content: "\EA26";
 }
 .icon-youtube {
   &::before {
@@ -324,7 +342,7 @@
 }
 
 %icon-zanaatkar {
-  content: "\EA25";
+  content: "\EA27";
 }
 .icon-zanaatkar {
   &::before {

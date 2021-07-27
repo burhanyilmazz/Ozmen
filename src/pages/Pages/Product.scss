@@ -257,12 +257,8 @@
         }
 
         > span {
-          font-size: rem(18px);
+          font-size: rem(12px);
           font-weight: 500;
-
-          @media (max-width: 1440px) {
-            font-size: rem(16px);
-          }
         }
 
         &:last-child {
@@ -276,7 +272,7 @@
             align-items: center;
           }
           span {
-            font-size: rem(16px);
+            font-size: rem(12px);
             line-height: rem(24px);
             font-weight: 600;
             margin-top: rem(10px);
@@ -286,9 +282,27 @@
     }
 
     &-banner {
+      position: relative;
+      padding-left: rem(76px);
       img {
-        width: 100%;
-        margin-bottom: -2px;
+        &:first-child {
+          width: 100%;
+          margin-bottom: -2px;
+        }
+      }
+
+      &__icon {
+        position: absolute;
+        right: rem(30px);
+        top: rem(30px);
+      }
+
+      .no-gutters {
+        > div {
+          &:first-child {
+            position: relative;
+          }
+        }
       }
 
       &__progress {
@@ -296,7 +310,7 @@
         display: flex;
         flex-direction: column;
         padding-left: rem(40px);
-        padding-right: rem(107px);
+        padding-right: rem(157px);
         height: 100%;
         justify-content: center;
 
@@ -375,9 +389,50 @@
         margin-bottom: rem(30px);
         overflow: hidden;
         box-shadow: 0px rem(20px) rem(50px) rgba($color: #000000, $alpha: 0.2);
+        position: relative;
+
+        &:before {
+          @extend %icon-plus;
+          position: absolute;
+          left: 50%;
+          bottom: 50%;
+          z-index: 3;
+          font-family: $iconFontName;
+          color: $white;
+          margin-left: rem(-30px);
+          margin-bottom: rem(-30px);
+          font-size: rem(60px);
+          transform: translateY(400%);
+        }
+
+        &:after {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          content: "";
+          background: rgba($color: #000000, $alpha: 0.4);
+          left: 0;
+          bottom: 0;
+          z-index: 2;
+          transform: translateY(110%);
+        }
+
+        &:hover {
+          &:before,
+          &:after {
+            animation-name: bounceInUp;
+            animation-duration: 0.5s;
+            animation-fill-mode: both;
+          }
+
+          &:before {
+            animation-duration: 0.7s;
+          }
+        }
 
         img {
           width: 100%;
+          z-index: 1;
         }
       }
     }
@@ -389,7 +444,7 @@
         text-align: center;
         font-size: rem(36px);
         line-height: rem(44px);
-        font-weight: 500;
+        font-weight: 700;
 
         @media (max-width: 768px) {
           font-size: rem(30px);
@@ -400,7 +455,7 @@
           color: #c6cebe;
           font-size: rem(22px);
           display: block;
-          font-weight: 500;
+          font-weight: 600;
 
           @media (max-width: 768px) {
             font-size: rem(18px);
@@ -482,9 +537,10 @@
           width: rem(60px);
           height: rem(60px);
           border-radius: 100%;
-          border: 1px solid $Tuna;
+          border: 1px solid #707070;
           transform: rotate(180deg);
           left: 30%;
+          color: #707070;
 
           @media (max-width: 768px) {
             display: none;
@@ -496,8 +552,9 @@
           width: rem(60px);
           height: rem(60px);
           border-radius: 100%;
-          border: 1px solid $Tuna;
+          border: 1px solid #707070;
           right: 30%;
+          color: #707070;
 
           @media (max-width: 768px) {
             display: none;
@@ -525,7 +582,7 @@
         position: absolute;
         top: rem(92px);
         left: rem(495px);
-  
+
         @media screen and (max-width: 768px) {
           position: relative;
           top: auto;
