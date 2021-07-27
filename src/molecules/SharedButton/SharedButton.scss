@@ -14,14 +14,14 @@
       background: transparent;
       border-radius: 100%;
       margin-right: rem(12px);
-      color: $Tuna;
+      color: rgba($color: $Tuna, $alpha: .5);
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      border:1px solid $Tuna;
+      border: 1px solid rgba($color: $Tuna, $alpha: .5);
 
       &:hover {
-        color: $Green;
+        color: $Tuna;
         border-color: $Tuna;
       }
     }

@@ -32,19 +32,15 @@
       }
       span {
         color: $Tumbleweed;
-        font-size: rem(142px);
+        font-size: rem(120px);
         display: block;
 
-        @media screen and (max-width: 1440px) {
-          font-size: rem(120px);
-        }
-
         @media screen and (max-width: 1366px) {
-          font-size: rem(110px);
+          font-size: rem(100px);
         }
 
         @media screen and (max-width: 1280px) {
-          font-size: rem(100px);
+          font-size: rem(90px);
         }
 
         @media screen and (max-width: 768px) {
@@ -87,12 +83,12 @@
         top: rem(5px);
       }
       &--2 {
-        left: rem(300px);
-        top: rem(65px);
+        left: rem(210px);
+        top: rem(30px);
       }
       &--3 {
-        right: rem(317px);
-        top: rem(207px);
+        right: rem(257px);
+        top: rem(107px);
       }
       &--4 {
         right: rem(-300px);

@@ -26,7 +26,7 @@ export default class Services {
         direction: "vertical",
         slideToClickedSlide: false,
         spaceBetween: 30,
-        autoHeight: true,
+        autoHeight: false,
         centeredSlides: true,
         loop: true,
         lazy: {
@@ -41,6 +41,7 @@ export default class Services {
         },
         breakpoints: {
           990: {
+            autoHeight: true,
             spaceBetween: 20,
             direction: "horizontal",
           }

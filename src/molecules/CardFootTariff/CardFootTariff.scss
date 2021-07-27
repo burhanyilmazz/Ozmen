@@ -5,6 +5,10 @@
   background: $SpringWood;
   margin-bottom: rem(30px);
 
+  &:hover {
+    background: #fff1dd;
+  }
+
   @media screen and (max-width: 1366px) {
     height: rem(400px);
   }
@@ -77,6 +81,7 @@
       color: $Tuna;
       display: inline-flex;
       align-items: center;
+      position: relative;
       @media screen and (max-width: 1366px) {
         margin-top: rem(40px);
       }
@@ -85,11 +90,36 @@
         margin-top: rem(20px);
       }
 
-      i {
-        margin-left: rem(20px);
+      &:before {
+        content: "";
+        background: $Tuna;
+        height: 1px;
+        width: 10px;
+        position: absolute;
+        right: -30px;
+        transition: all 0.5s ease;
+      }
 
+      &:after {
+        border: solid $Tuna;
+        border-width: 0 1px 1px 0;
+        display: inline-block;
+        padding: 3px;
+        position: absolute;
+        right: -30px;
+        content: "";
+        transform: rotate(-45deg);
+        transition: all 0.5s ease;
+      }
+
+      &:hover {
         &:before {
-          font-size: rem(10px);
+          width: 40px;
+          right: -60px;
+        }
+
+        &:after {
+          right: -60px;
         }
       }
     }

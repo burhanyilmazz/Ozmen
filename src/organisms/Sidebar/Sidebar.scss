@@ -1,5 +1,5 @@
 .o-sidebar {
-  position: absolute;
+  position: fixed;
   right: 0;
   top: 0;
   height: 100vh;
@@ -14,7 +14,13 @@
     z-index: 3;
     height: 100%;
     width: rem(107px);
-    border-left: 1px solid rgba($color: $Tuna, $alpha: 0.3);
+    border-left: 1px solid rgba(179, 186, 204, .3);
+    background: rgba($color: $white, $alpha: 0.3);
+
+    @supports((-webkit-backdrop-filter: blur(107px)) or (backdrop-filter: blur(107px))) {
+      background: transparent;
+      backdrop-filter: blur(107px);
+    }
   }
 
   &-main {
@@ -55,6 +61,12 @@
           span {
             font-size: rem(14px);
             margin-top: rem(10px);
+          }
+        }
+
+        i {
+          &:before {
+            font-size: rem(16px);
           }
         }
       }
@@ -133,27 +145,31 @@
           }
 
           &:hover {
+            color: $Green;
             > a {
-              color: $Tuna;
+              color: $Green;
             }
 
             &:after {
-              color: $Tuna;
+              color: $Green;
             }
           }
         }
 
         a {
           color: $Tuna;
-          padding: rem(8px) 0;
           display: flex;
           width: calc(100% - 50px);
           transition: all 0.5s ease;
+
+          &:hover {
+            color: $Green !important;
+          }
         }
 
         ul {
           font-size: rem(20px);
-          font-weight: 300;
+          font-weight: 400;
           width: 100%;
           display: none;
           flex-direction: column;
@@ -165,7 +181,8 @@
           li {
             line-height: rem(34px);
             a {
-              color: rgba($color: $Tuna, $alpha: 0.6);
+              color: $Tuna;
+              padding: rem(8px) 0;
             }
             span {
               &:after {
@@ -178,14 +195,14 @@
     }
 
     &--active {
-      color: $Tuna !important;
+      color: $Green !important;
       > a {
-        color: $Tuna !important;
+        color: $Green !important;
       }
 
       span {
         &:after {
-          color: $Tuna !important;
+          color: $Green !important;
           content: "-" !important;
         }
       }
@@ -198,7 +215,7 @@
 
   &-nav {
     &--sub-active {
-      color: $Tuna !important;
+      color: $Green !important;
     }
 
     &__bottom {
@@ -222,7 +239,7 @@
       }
 
       ul {
-        font-size: rem(14px);
+        font-size: rem(12px);
         font-weight: 300;
 
         li {
@@ -312,12 +329,17 @@
         display: flex;
         color: $Tuna;
         font-weight: 600;
-        font-size: rem(16px);
+        font-size: rem(12px);
         align-items: center;
         margin-bottom: rem(20px);
 
         i {
           margin-right: rem(20px);
+          font-weight: 300;
+
+          &::before {
+            font-size: rem(12px);
+          }
         }
       }
     }
@@ -360,7 +382,7 @@
     .o-sidebar {
       &__main {
         background: $white;
-        border-color: rgba($color: $Tuna, $alpha: 0.3);
+        border-color: rgba(179, 186, 204, .3);
       }
       &__nav {
         transform: translateX(-100%);

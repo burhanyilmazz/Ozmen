@@ -54,6 +54,7 @@
       display: flex;
       align-items: flex-end;
       margin-right: rem(110px);
+      transition: all 0.5s ease;
 
       @media screen and (max-width: 1366px) {
         margin-right: rem(80px);
@@ -79,6 +80,10 @@
         @media screen and (max-width: 990px) {
           margin-left: rem(15px);
         }
+      }
+
+      &:hover {
+        color: $Green;
       }
     }
   }

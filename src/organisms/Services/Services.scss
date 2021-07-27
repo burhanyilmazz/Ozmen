@@ -1,5 +1,6 @@
 .o-services {
   padding-left: rem(160px);
+  padding-right: rem(107px);
 
   @media screen and (max-width: 990px) {
     padding: rem(35px) 0;
@@ -10,17 +11,12 @@
   }
 
   h2 {
-    font-size: rem(60px);
-    line-height: rem(72px);
+    font-size: rem(54px);
+    line-height: rem(62px);
     margin: 0;
     font-weight: 600;
     span {
       color: $Tumbleweed;
-    }
-
-    @media screen and (max-width: 1440px) {
-      font-size: rem(54px);
-      line-height: rem(66px);
     }
 
     @media screen and (max-width: 1366px) {
@@ -68,7 +64,7 @@
 
     .swiper {
       &-container {
-        height: rem(1000px);
+        height: rem(800px);
 
         @media screen and (max-width: 1440px) {
           height: rem(900px);
@@ -84,6 +80,7 @@
       }
       &-wrapper {
         padding-left: rem(50px);
+        padding-right: rem(50px);
 
         @media screen and (max-width: 990px) {
           padding-left: 0;
@@ -114,37 +111,33 @@
 
         img {
           max-width: 100%;
-          height: rem(350px);
+          //height: rem(350px);
           object-fit: cover;
           border-radius: rem(10px);
           transition: all 0.5s ease;
 
-          @media screen and (max-width: 1024px) {
+          /* @media screen and (max-width: 1024px) {
             height: rem(250px);
           }
 
           @media screen and (max-width: 990px) {
             height: 300px !important;
-          }
+          } */
         }
 
         &-active {
           img {
-            height: rem(700px) !important;
+            //height: rem(550px) !important;
             box-shadow: 0px rem(50px) rem(50px)
               rgba($color: $black, $alpha: 0.29);
             border-radius: rem(10px) 0px 0px rem(10px);
 
-            @media screen and (max-width: 1440px) {
-              height: rem(600px) !important;
-            }
-
             @media screen and (max-width: 1280px) {
-              height: rem(500px) !important;
+              //height: rem(500px) !important;
             }
 
             @media screen and (max-width: 990px) {
-              height: auto !important;
+              //height: auto !important;
               border-radius: rem(10px) !important;
             }
           }

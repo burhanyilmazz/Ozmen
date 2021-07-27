@@ -10,6 +10,7 @@
 
   &__text {
     font-size: rem(14px);
+    margin-top: rem(9px);
 
     @media screen and (max-width: 768px) {
       display: none;

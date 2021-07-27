@@ -1,5 +1,5 @@
 .o-looking {
-  background: #F9FAF8;
+  background: #f9faf8;
   padding: rem(75px) 0;
   position: relative;
   content-visibility: auto;
@@ -12,6 +12,14 @@
 
     @media screen and (max-width: 768px) {
       padding-left: 0;
+    }
+
+    .a-check-box {
+      input[type="checkbox"] {
+        & + label {
+          background: $white !important;
+        }
+      }
     }
   }
 
@@ -80,7 +88,7 @@
 
     .a-btn {
       @media screen and (max-width: 768px) {
-        width: 100%
+        width: 100%;
       }
     }
   }

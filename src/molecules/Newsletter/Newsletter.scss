@@ -59,7 +59,7 @@
       position: absolute;
       z-index: 2;
       left: 0;
-      top: rem(17px);
+      top: rem(12px);
     }
 
     .a-input {
@@ -83,6 +83,10 @@
             opacity: 0;
           }
         }
+      }
+
+      i {
+        display: none;
       }
     }
   }

@@ -1,5 +1,5 @@
 .m-search-bar {
-  position: absolute;
+  position: fixed;
   background: $white;
   width: 60%;
   height: 100vh;
@@ -194,7 +194,7 @@
       }
 
       ul {
-        font-size: rem(14px);
+        font-size: rem(12px);
         font-weight: 300;
 
         li {

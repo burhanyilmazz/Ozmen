@@ -15,8 +15,8 @@
     z-index: 3;
     display: inline-flex;
     align-items: center;
-    right: rem(200px);
-    bottom: rem(100px);
+    right: rem(205px);
+    bottom: rem(50px);
 
     @media screen and (max-width: 1024px) {
       right: rem(142px);
@@ -32,8 +32,8 @@
     }
 
     .a-icon {
-      width: rem(90px);
-      height: rem(90px);
+      width: rem(44px);
+      height: rem(44px);
       border: 1px solid $white;
       background: rgba($color: $white, $alpha: 0.15);
       display: flex;
@@ -49,7 +49,7 @@
       }
 
       &:before {
-        font-size: rem(18px);
+        font-size: rem(12px);
       }
     }
   }
@@ -106,7 +106,7 @@
       }
     }
     &-pagination {
-      bottom: rem(122px);
+      bottom: rem(58px);
       left: rem(107px);
       width: auto;
       text-align: left;
@@ -118,8 +118,8 @@
       }
 
       &-bullet {
-        width: rem(40px);
-        height: rem(40px);
+        width: rem(20px);
+        height: rem(20px);
         background: transparent;
         outline: 0;
         margin: 0;
@@ -135,11 +135,11 @@
           position: absolute;
           left: 50%;
           top: 50%;
-          margin-left: -5px;
-          margin-top: -5px;
+          margin-left: -3px;
+          margin-top: -3px;
           background: rgba($color: $white, $alpha: 0.15);
-          width: rem(10px);
-          height: rem(10px);
+          width: rem(6px);
+          height: rem(6px);
           border-radius: 100%;
         }
 
