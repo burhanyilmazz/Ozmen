@@ -3,6 +3,7 @@
   padding: rem(75px) 0;
   position: relative;
   content-visibility: auto;
+  z-index: 2;
 
   &--product {
     background: $white;

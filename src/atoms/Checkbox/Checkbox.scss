@@ -68,7 +68,7 @@
       }
 
       &:hover {
-        border-color: $Tumbleweed;
+        border-color: $black;
 
         &:after {
           opacity: 1;
@@ -80,7 +80,7 @@
       & + label {
         &:after {
           opacity: 1;
-          background: $Tumbleweed;
+          background: $black;
         }
         span {
           opacity: 1;

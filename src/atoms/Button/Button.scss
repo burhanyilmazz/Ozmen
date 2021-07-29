@@ -10,7 +10,7 @@
   align-items: center;
   justify-content: center;
   font-weight: 600;
-  overflow: hidden;
+  //overflow: hidden;
   text-align: center;
   cursor: pointer;
   transition: all 0.5s ease;
@@ -91,11 +91,12 @@
 
     &::before {
       font-family: $iconFontName;
-      font-size: rem(16px);
+      font-size: rem(12px);
       position: absolute;
       right: rem(21px);
       transition: all 0.5s ease;
       z-index: 2;
+      font-weight: 500;
     }
 
     &--start {

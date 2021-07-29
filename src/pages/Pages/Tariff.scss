@@ -1,6 +1,6 @@
 .p-tariff {
   position: relative;
-  padding: rem(250px) rem(97px) rem(150px) 0;
+  padding: rem(250px) 0 rem(150px) 0;
 
   @media screen and (max-width: 768px) {
     padding: rem(40px) 0;
@@ -313,17 +313,9 @@
     &-metarials {
       background: $Tuna;
       position: relative;
-      padding: rem(30px) rem(95px) rem(95px);
+      padding: rem(30px) rem(95px) rem(95px) 0;
       overflow: hidden;
       margin-top: rem(100px);
-
-      @media screen and (max-width: 1440px) {
-        padding-left: 0;
-      }
-
-      @media (max-width: 1200px) {
-        padding: rem(30px) rem(95px) rem(95px);
-      }
 
       @media (max-width: 768px) {
         padding: rem(130px) rem(30px) rem(50px);
@@ -495,6 +487,10 @@
       @media (max-width: 768px) {
         margin-bottom: rem(50px);
       }
+    }
+
+    & + .container-fluid-lp {
+      padding-left: rem(107px);
     }
   }
 }

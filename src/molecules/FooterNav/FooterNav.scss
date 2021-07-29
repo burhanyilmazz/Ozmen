@@ -10,22 +10,22 @@
   }
 
   h3 {
-    font-size: rem(16px);
+    font-size: rem(12px);
     color: $Tuna;
     font-weight: 600;
     margin: 0;
     padding: 0;
 
     & + ul {
-      margin-top: rem(20px);
+      margin-top: rem(10px);
     }
   }
 
   ul {
     margin: 0;
     padding: 0;
-    font-size: rem(16px);
-    line-height: rem(48px);
+    font-size: rem(12px);
+    line-height: rem(30px);
     margin-top: rem(-13px);
 
     @media screen and (max-width: 1366px) {

@@ -21,7 +21,7 @@ export default class ProductNav {
     ;
 
     $(document)
-      .on("click", this.options.shadow, () => this.closeAll())
+      .on("click mouseenter", this.options.shadow, () => this.closeAll())
 
   }
 

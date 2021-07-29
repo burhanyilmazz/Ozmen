@@ -10,7 +10,7 @@
     color: $Tuna;
     padding-left: rem(30px);
     position: relative;
-    font-weight: 600;
+    font-weight: 500;
     display: block;
     @extend .icon-check;
 
@@ -41,7 +41,7 @@
       font-size: rem(14px);
       line-height: rem(19px);
       color: $Tuna;
-      font-weight: 500;
+      font-weight: 600;
       text-decoration: underline;
     }
   }

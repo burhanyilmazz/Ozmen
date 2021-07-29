@@ -124,8 +124,8 @@ export default class Map {
     }];
 
     const defaults = {
-      zoom: 15,
-      center: new google.maps.LatLng(41.0428027, 28.9826327),
+      zoom: 11,
+      center: new google.maps.LatLng(37.1539307,37.2792745),
       url: '../../assets/data/Map.json',
       pin: options.pinmedia || '../../assets/images/content/pin.png',
     };

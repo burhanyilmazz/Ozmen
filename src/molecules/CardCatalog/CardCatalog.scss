@@ -1,13 +1,10 @@
 .m-card-catalog {
   position: relative;
   display: flex;
-  height: rem(500px);
+  height: rem(400px);
   background: linear-gradient(121deg, #eff0ed 0%, #c6cebf 100%);
   margin-bottom: rem(30px);
-
-  @media screen and (max-width: 1366px) {
-    height: rem(400px);
-  }
+  align-items: center;
 
   @media screen and (max-width: 1024px) {
     height: rem(300px);
@@ -20,8 +17,8 @@
   }
 
   &__content {
-    padding: rem(160px) rem(30px) rem(30px) rem(57px);
-    width: 60%;
+    padding: rem(60px) rem(30px) rem(30px) rem(57px);
+    width: 70%;
     @media screen and (max-width: 1366px) {
       padding-top: rem(90px);
       padding-left: rem(37px);
@@ -38,7 +35,11 @@
     h3 {
       font-size: rem(40px);
       color: $Tuna;
-      margin-bottom: rem(27px);
+      margin-bottom: rem(12px);
+
+      @media screen and (max-width: 1440px) {
+        font-size: rem(36px);
+      }
 
       @media screen and (max-width: 1366px) {
         font-size: rem(32px);
@@ -51,13 +52,9 @@
     }
 
     p {
-      font-size: rem(18px);
+      font-size: rem(14px);
       font-weight: 300;
       color: $Tuna;
-
-      @media screen and (max-width: 1024px) {
-        font-size: rem(16px);
-      }
 
       @media screen and (max-width: 990px) {
         font-size: rem(14px);
@@ -66,32 +63,14 @@
     }
 
     .a-btn {
-      margin-top: rem(77px);
-
-      @media screen and (max-width: 1366px) {
-        margin-top: rem(40px);
-      }
-
-      @media screen and (max-width: 1024px) {
-        margin-top: rem(30px);
-      }
+      margin-top: rem(20px);
+      transform: scale(.7);
+      margin-left: rem(-20px);
     }
   }
 
   &__image {
-    margin-top: rem(133px);
-
-    @media screen and (max-width: 1366px) {
-      margin-top: rem(90px);
-    }
-
-    @media screen and (max-width: 1024px) {
-      margin-top: rem(50px);
-    }
-
-    @media screen and (max-width: 990px) {
-      margin-top: 0;
-    }
+    margin-top: rem(43px);
     img {
       width: 100%;
     }
