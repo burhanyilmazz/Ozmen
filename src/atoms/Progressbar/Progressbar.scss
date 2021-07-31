@@ -40,6 +40,7 @@
       border-top-left-radius: rem(20px);
       border-bottom-left-radius: rem(20px);
       box-shadow: 0px rem(10px) rem(30px) #212226;
+      transition: all .5s ease;
       @media screen and (max-width: 990px) {
         height: rem(20px);
       }

@@ -13,6 +13,14 @@ $(window).scroll(function () {
       $(".o-header").removeClass("o-header--transparent").removeClass("o-header--white") :
       $(".o-header").addClass("o-header--transparent").addClass("o-header--white");
   }
+
+  const $historyImg = $(".p-history-block-1__img");
+  if ($historyImg.length) {
+    const st = $(this).scrollTop();
+    $historyImg.css({
+      bottom: st * 0.2
+    });
+  }
 })
 
 window.Parsley.addValidator('maxFileSize', {

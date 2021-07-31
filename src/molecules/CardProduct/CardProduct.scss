@@ -106,8 +106,8 @@
 
   &:hover {
     .m-card-product__foot {
-      animation-name: bounceInUp;
-      animation-duration: .7s;
+      animation-name: slideInUp;
+      animation-duration: .5s;
       animation-fill-mode: both;
     }
   }

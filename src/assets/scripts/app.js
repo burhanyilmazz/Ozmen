@@ -7,6 +7,7 @@ import FormFileInput    from  '../../../src/atoms/FormFileInput/FormFileInput';
 import FormInput        from  '../../../src/atoms/FormInput/FormInput';
 import FormTextarea     from  '../../../src/atoms/FormTextarea/FormTextarea';
 import Hamburger        from  '../../../src/atoms/Hamburger/Hamburger';
+import Progressbar      from  '../../../src/atoms/Progressbar/Progressbar';
 
 import Accordion        from  '../../../src/molecules/Accordion/Accordion';
 import Carousel         from  '../../../src/molecules/Carousel/Carousel';
@@ -32,6 +33,7 @@ const Components = {
   FormInput,
   FormTextarea,
   Hamburger,
+  Progressbar,
 
   Accordion,
   Carousel,

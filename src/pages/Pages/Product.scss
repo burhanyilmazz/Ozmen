@@ -217,9 +217,9 @@
             width: 3px;
             height: rem(30px);
             background: $Tuna;
-            content: '';
+            content: "";
             position: absolute;
-            top:0;
+            top: 0;
             left: -15px;
           }
         }
@@ -305,6 +305,8 @@
         &:first-child {
           width: 100%;
           margin-bottom: -2px;
+          height: rem(776px);
+          object-fit: cover;
         }
       }
 
@@ -312,6 +314,12 @@
         position: absolute;
         right: rem(30px);
         top: rem(30px);
+      }
+
+      .col-md-12 {
+        .p-product-detail-banner__icon {
+          right: rem(153px);
+        }
       }
 
       .no-gutters {
@@ -418,10 +426,10 @@
           z-index: 3;
           font-family: $iconFontName;
           color: $white;
-          margin-left: rem(-30px);
-          margin-bottom: rem(-30px);
-          font-size: rem(60px);
-          transform: translateY(400%);
+          margin-left: rem(-20px);
+          margin-bottom: rem(-20px);
+          font-size: rem(40px);
+          opacity: 0;
         }
 
         &:after {
@@ -433,19 +441,20 @@
           left: 0;
           bottom: 0;
           z-index: 2;
-          transform: translateY(110%);
+          opacity: 0;
+          transition: all 0.5s ease;
         }
 
         &:hover {
-          &:before,
-          &:after {
-            animation-name: bounceInUp;
+          box-shadow: 0 0 0;
+          &:before {
+            animation-name: fadeInDown;
             animation-duration: 0.5s;
             animation-fill-mode: both;
           }
 
-          &:before {
-            animation-duration: 0.7s;
+          &:after {
+            opacity: 1;
           }
         }
 
@@ -504,10 +513,6 @@
         }
 
         .swiper {
-          &-wrapper {
-            padding: rem(60px);
-          }
-
           &-slide {
             @media (max-width: 768px) {
               width: rem(306px);
@@ -588,6 +593,9 @@
             font-size: rem(11px);
           }
         }
+        .m-card-product {
+          box-shadow: 0 0 0 !important;
+        }
       }
     }
   }
@@ -595,6 +603,7 @@
   &-filter {
     padding: rem(234px) 0 rem(100px);
     position: relative;
+    padding-left: rem(76px);
 
     @media screen and (max-width: 1200px) {
       padding-right: rem(107px);

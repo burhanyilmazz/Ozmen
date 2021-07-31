@@ -48,6 +48,7 @@ config.vendors.js = [
   'bower_components/lazysizes/lazysizes.min.js',
   'bower_components/lazysizes/plugins/unveilhooks/ls.unveilhooks.min.js',
   'src/assets/scripts/vendors/lax.js',
+  'bower_components/waypoints/lib/jquery.waypoints.min.js',
 ];
 config.vendors.css = [
   'bower_components/swiper/dist/css/swiper.min.css',

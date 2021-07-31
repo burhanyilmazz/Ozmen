@@ -474,9 +474,51 @@
         margin-bottom: rem(30px);
         overflow: hidden;
         box-shadow: 0px rem(20px) rem(50px) rgba($color: #000000, $alpha: 0.2);
+        position: relative;
+
+        &:before {
+          @extend %icon-plus;
+          position: absolute;
+          left: 50%;
+          bottom: 50%;
+          z-index: 3;
+          font-family: $iconFontName;
+          color: $white;
+          margin-left: rem(-20px);
+          margin-bottom: rem(-20px);
+          font-size: rem(40px);
+          opacity: 0;
+        }
+
+        &:after {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          content: "";
+          background: rgba($color: #000000, $alpha: 0.4);
+          left: 0;
+          bottom: 0;
+          z-index: 2;
+          opacity: 0;
+          transition: all 0.5s ease;
+        }
+
+        &:hover {
+          box-shadow: 0 0 0;
+          &:before {
+            animation-name: fadeInDown;
+            animation-duration: 0.5s;
+            animation-fill-mode: both;
+          }
+
+          &:after {
+            opacity: 1;
+          }
+        }
 
         img {
           width: 100%;
+          z-index: 1;
         }
       }
     }

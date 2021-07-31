@@ -6,6 +6,9 @@
 
     &:last-child {
       width: 12%;
+      ul {
+        line-height: rem(32px);
+      }
     }
   }
 
@@ -34,7 +37,7 @@
     }
 
     a {
-      color: rgba($color: $Tuna, $alpha: .5);
+      color: rgba($color: $Tuna, $alpha: 0.5);
       transition: all 0.5s ease;
 
       &:hover {
