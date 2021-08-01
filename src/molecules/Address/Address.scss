@@ -14,7 +14,7 @@
   }
 
   &--box {
-    background: #F3F4F2;
+    background: #f3f4f2;
     padding: rem(40px);
     height: calc(100% - 33px);
     border-radius: rem(14px);
@@ -26,7 +26,7 @@
       padding: rem(30px);
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       padding: rem(40px);
       height: auto;
     }
@@ -63,14 +63,26 @@
         font-size: rem(14px);
         margin-left: rem(20px);
 
+        @media screen and (max-width: 1440px) {
+          margin-left: rem(10px);
+        }
+
+        @media screen and (max-width: 1366px) {
+          font-size: rem(12px);
+        }
+
         @media screen and (max-width: 768px) {
           font-weight: 500;
         }
       }
 
-      i{
+      i {
         &:before {
           font-size: rem(16px);
+
+          @media screen and (max-width: 1440px) {
+            font-size: rem(12px);
+          }
         }
       }
     }

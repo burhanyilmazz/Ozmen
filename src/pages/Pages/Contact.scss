@@ -32,9 +32,13 @@
       right: 0;
       top: rem(-150px);
 
-      @media screen and (max-width: 990px) {
+      @media screen and (max-width: 1024px) {
         width: rem(247px);
         top: 0;
+      }
+
+      @media screen and (max-width: 480px) {
+        width: rem(150px);
       }
     }
 
@@ -42,9 +46,13 @@
       left: 40%;
       top: rem(180px);
 
-      @media screen and (max-width: 990px) {
+      @media screen and (max-width: 1024px) {
         width: rem(247px);
         left: rem(-50px);
+      }
+
+      @media screen and (max-width: 480px) {
+        width: rem(147px);
       }
     }
 
@@ -83,7 +91,7 @@
       align-items: center;
       color: $white;
 
-      @media screen and (max-width: 1200px) {
+      @media screen and (max-width: 1280px) {
         flex-wrap: wrap;
         width: calc(100% - 300px);
       }
@@ -99,13 +107,22 @@
         flex-direction: column;
         margin-right: rem(60px);
 
-        @media screen and (max-width: 1200px) {
-          width: calc(50% - 60px);
+        @media screen and (max-width: 1440px) {
+          margin-right: rem(50px);
+        }
+
+        @media screen and (max-width: 1366px) {
+          margin-right: rem(40px);
+        }
+
+        @media screen and (max-width: 1280px) {
+          width: calc(50% - 50px);
           margin-top: rem(20px);
         }
 
         @media screen and (max-width: 768px) {
           flex-direction: row;
+          width: 100%;
         }
       }
 
@@ -117,12 +134,9 @@
         margin-top: rem(20px);
 
         @media screen and (max-width: 1440px) {
-          font-size: rem(16px);
-        }
-
-        @media screen and (max-width: 1366px) {
           font-size: rem(15px);
         }
+
 
         @media screen and (max-width: 768px) {
           margin-top: 0;
@@ -152,6 +166,13 @@
 
     @media screen and (max-width: 768px) {
       padding: rem(60px) 0;
+    }
+  }
+
+  &-form {
+    padding-right: rem(120px);
+    @media screen and (max-width: 1024px) {
+      padding-right: 0;
     }
   }
 }

@@ -10,6 +10,10 @@
   width: rem(40px);
   height: rem(230px);
 
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
+
   span {
     font-size: rem(14px);
     font-weight: 600;

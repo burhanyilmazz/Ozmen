@@ -56,6 +56,10 @@
 
       i {
         margin-right: rem(10px);
+        font-weight: 400;
+        &:before {
+          font-size: rem(14px);
+        }
       }
 
       & + span {

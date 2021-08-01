@@ -23,18 +23,26 @@
       right: 0;
       top: rem(-250px);
       animation-name: fadeInDown;
-            animation-duration: 0.5s;
-            animation-fill-mode: both;
+      animation-duration: 0.5s;
+      animation-fill-mode: both;
 
       @media screen and (max-width: 1440px) {
         width: rem(250px);
       }
 
-			@media screen and (max-width: 768px) {
-				top: rem(-50px);
-				width: rem(150px);
-				right: rem(-50px);
-			}
+      @media screen and (max-width: 1024px) {
+        width: rem(200px);
+      }
+
+      @media screen and (max-width: 768px) {
+        top: rem(-50px);
+        width: rem(150px);
+        right: rem(-50px);
+      }
+
+      @media screen and (max-width: 480px) {
+        width: rem(100px);
+      }
     }
 
     &--2 {
@@ -46,9 +54,19 @@
         right: rem(-500px);
       }
 
+      @media screen and (max-width: 1024px) {
+        width: rem(500px);
+        right: rem(-400px);
+      }
+
       @media screen and (max-width: 768px) {
         width: rem(300px);
         right: rem(-220px);
+      }
+
+      @media screen and (max-width: 480px) {
+        width: rem(200px);
+        right: rem(-180px);
       }
     }
 
@@ -60,10 +78,18 @@
         width: rem(550px);
       }
 
-			@media screen and (max-width: 768px) {
+      @media screen and (max-width: 1024px) {
+        width: rem(450px);
+      }
+
+      @media screen and (max-width: 768px) {
         width: rem(300px);
         left: rem(-160px);
-				top: rem(-200px)
+        top: rem(-200px);
+      }
+      @media screen and (max-width: 480px) {
+        width: rem(200px);
+        left: rem(-120px);
       }
     }
 
@@ -76,7 +102,11 @@
         top: rem(10px);
       }
 
-			@media screen and (max-width: 768px) {
+      @media screen and (max-width: 1024px) {
+        top: rem(-100px);
+      }
+
+      @media screen and (max-width: 768px) {
         display: none;
       }
     }
@@ -84,7 +114,7 @@
     &--5 {
       right: rem(70px);
       bottom: 0;
-			@media screen and (max-width: 768px) {
+      @media screen and (max-width: 768px) {
         right: rem(-130px);
       }
     }
@@ -92,7 +122,7 @@
     &--6 {
       right: 0;
       bottom: 0;
-			@media screen and (max-width: 768px) {
+      @media screen and (max-width: 768px) {
         right: rem(-50px);
       }
     }
@@ -105,17 +135,22 @@
         width: rem(250px);
         left: rem(50px);
       }
-			@media screen and (max-width: 768px) {
+      @media screen and (max-width: 768px) {
         left: rem(-50px);
-				width: rem(200px);
-				bottom: rem(-70px)
+        width: rem(200px);
+        bottom: rem(-70px);
+      }
+
+      @media screen and (max-width: 480px) {
+        width: rem(150px);
+        bottom: 0;
       }
     }
 
     &--8 {
       left: rem(-200px);
       top: rem(0px);
-			@media screen and (max-width: 768px) {
+      @media screen and (max-width: 768px) {
         display: none;
       }
     }
@@ -128,7 +163,7 @@
         right: rem(10px);
       }
 
-			@media screen and (max-width: 768px) {
+      @media screen and (max-width: 768px) {
         display: none;
       }
     }
@@ -142,7 +177,12 @@
         right: rem(-400px);
       }
 
-			@media screen and (max-width: 768px) {
+      @media screen and (max-width: 1024px) {
+        width: rem(500px);
+        right: rem(-300px);
+      }
+
+      @media screen and (max-width: 768px) {
         display: none;
       }
     }
@@ -234,7 +274,7 @@
         @media screen and (max-width: 768px) {
           top: rem(100px);
           right: rem(-100px);
-					width: rem(300px);
+          width: rem(300px);
         }
 
         img {
@@ -296,10 +336,9 @@
         top: 50%;
         left: rem(-50px);
 
-				@media screen and (max-width: 768px) {
-					display: none;
-				}
-
+        @media screen and (max-width: 768px) {
+          display: none;
+        }
       }
     }
 
@@ -399,10 +438,10 @@
         bottom: rem(-300px);
         left: rem(0px);
 
-				@media screen and (max-width: 768px) {
-					bottom: auto;
-					top: rem(-100px);
-				}
+        @media screen and (max-width: 768px) {
+          bottom: auto;
+          top: rem(-100px);
+        }
       }
     }
 
@@ -465,9 +504,9 @@
         bottom: rem(-200px);
         right: 0;
 
-				@media screen and (max-width: 768px) {
-					display: none;
-				}
+        @media screen and (max-width: 768px) {
+          display: none;
+        }
       }
     }
 
@@ -547,9 +586,9 @@
         top: rem(650px);
         right: rem(-400px);
 
-				@media screen and (max-width: 768px) {
-					display: none;
-				}
+        @media screen and (max-width: 768px) {
+          display: none;
+        }
       }
     }
 
@@ -682,9 +721,9 @@
         position: absolute;
         top: rem(-150px);
         right: rem(140px);
-				@media screen and (max-width: 768px) {
-					display: none;
-				}
+        @media screen and (max-width: 768px) {
+          display: none;
+        }
       }
     }
   }

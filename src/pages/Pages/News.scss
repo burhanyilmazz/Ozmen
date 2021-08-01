@@ -117,11 +117,7 @@
   &-detail {
     padding: rem(234px) 0 rem(100px);
 
-    @media screen and (max-width: 1200px) {
-      padding-right: rem(107px);
-    }
-
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1024px) {
       padding: rem(34px) 0 rem(60px);
     }
 
@@ -147,7 +143,7 @@
       top: rem(-142px);
       left: rem(395px);
 
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 1024px) {
         position: relative;
         top: auto;
         left: auto;
@@ -312,7 +308,7 @@
     }
 
     &__others {
-      padding: 0 rem(60px);
+      padding-left: rem(60px);
       margin-top: rem(139px);
 
       @media screen and (max-width: 1200px) {

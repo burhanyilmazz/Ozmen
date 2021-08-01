@@ -1,6 +1,9 @@
 .m-left-nav {
   position: sticky;
   top: rem(250px);
+  @media screen and (max-width: 1024px) {
+    top: rem(166px);
+  }
   @media screen and (max-width: 990px) {
     display: none;
   }

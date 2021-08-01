@@ -7,6 +7,10 @@
     h6 {
       font-size: rem(33px);
 
+      @media screen and (max-width: 1366px) {
+        font-size: rem(26px);
+      }
+
       @media screen and (max-width: 990px) {
         font-size: rem(20px);
       }

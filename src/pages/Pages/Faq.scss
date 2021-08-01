@@ -2,11 +2,8 @@
   padding: rem(234px) 0 rem(100px);
   position: relative;
 
-  @media screen and (max-width: 1200px) {
-    padding-right: rem(107px);
-  }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
     padding: rem(34px) 0 rem(60px);
   }
 
@@ -15,7 +12,7 @@
     line-height: rem(78px);
     color: $Tuna;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1024px) {
       font-size: rem(30px);
       line-height: rem(36px);
       margin-top: rem(20px);
@@ -29,7 +26,7 @@
   .m-accordion {
     margin-top: rem(50px);
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1024px) {
       margin-top: rem(30px);
     }
   }
@@ -39,7 +36,7 @@
     top: rem(92px);
     left: rem(495px);
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1024px) {
       position: relative;
       top: auto;
       left: auto;

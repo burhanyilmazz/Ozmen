@@ -3,12 +3,7 @@
   padding-left: rem(76px);
   position: relative;
 
-  @media screen and (max-width: 1200px) {
-    padding-right: rem(107px);
-    padding-left: rem(87px);
-  }
-
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
     padding: rem(34px) 0 rem(60px);
   }
 
@@ -18,7 +13,7 @@
       top: rem(92px);
       left: rem(495px);
 
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 1024px) {
         position: relative;
         top: auto;
         left: auto;
@@ -32,18 +27,46 @@
     color: $Tuna;
     margin-bottom: rem(106px);
 
+    @media screen and (max-width: 1366px) {
+      font-size: rem(40px);
+      line-height: rem(56px);
+    }
+
+    @media screen and (max-width: 1280px) {
+      font-size: rem(34px);
+      line-height: rem(46px);
+      margin-bottom: rem(86px);
+    }
+
+    @media screen and (max-width: 1024px) {
+      margin-top: rem(20px);
+      margin-bottom: rem(50px);
+    }
+
     @media screen and (max-width: 768px) {
       font-size: rem(30px);
       line-height: rem(36px);
-      margin-top: rem(20px);
-      margin-bottom: rem(50px);
+    }
+
+    @media screen and (max-width: 480px) {
+      font-size: rem(24px);
+      line-height: rem(30px);
     }
 
     i {
       font-weight: 400;
       margin-right: rem(20px);
+      @media screen and (max-width: 480px) {
+        display: flex;
+        margin-right: 0;
+        margin-bottom: rem(10px);
+      }
       &:before {
         font-size: rem(60px);
+
+        @media screen and (max-width: 480px) {
+          font-size: rem(40px);
+        }
       }
     }
   }
@@ -99,7 +122,7 @@
       padding-left: rem(87px);
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1024px) {
       padding: rem(34px) 0 rem(60px);
     }
 
@@ -114,6 +137,10 @@
       background-position: center center;
       text-align: center;
       background-repeat: no-repeat;
+
+      @media screen and (max-width: 1024px) {
+        margin-top: rem(30px);
+      }
 
       img {
         max-width: 90%;
@@ -136,6 +163,10 @@
         border-right: 1px solid $Sage;
         padding: 0 rem(40px);
         font-weight: 600;
+
+        @media screen and (max-width: 1366px) {
+          padding: 0 rem(20px);
+        }
 
         @media screen and (max-width: 768px) {
           font-size: rem(40px);
@@ -164,7 +195,7 @@
       flex-direction: column;
       justify-content: space-between;
       height: 100%;
-      padding: 0 rem(67px);
+      padding-left: rem(67px);
 
       @media (max-width: 1200px) {
         padding: rem(60px) 0 0;
@@ -221,6 +252,11 @@
             position: absolute;
             top: 0;
             left: -15px;
+
+            @media screen and (max-width: 768px) {
+              width: 2px;
+              height: rem(20px);
+            }
           }
         }
       }
@@ -301,6 +337,10 @@
     &-banner {
       position: relative;
       padding-left: rem(76px);
+
+      @media (max-width: 1024px) {
+        padding: 0;
+      }
       img {
         &:first-child {
           width: 100%;
@@ -319,6 +359,9 @@
       .col-md-12 {
         .p-product-detail-banner__icon {
           right: rem(153px);
+          @media (max-width: 1024px) {
+            right: rem(46px);
+          }
         }
       }
 
@@ -339,7 +382,7 @@
         height: 100%;
         justify-content: center;
 
-        @media (max-width: 768px) {
+        @media (max-width: 1024px) {
           padding: rem(60px) rem(40px);
         }
 
@@ -363,6 +406,10 @@
 
       @media screen and (max-width: 1200px) {
         padding-left: rem(87px);
+      }
+
+      @media screen and (max-width: 1024px) {
+        padding-left: 0;
       }
 
       @media (max-width: 768px) {
@@ -393,6 +440,10 @@
 
       @media screen and (max-width: 1200px) {
         padding-left: rem(87px);
+      }
+
+      @media screen and (max-width: 1024px) {
+        padding-left: 0;
       }
 
       @media (max-width: 768px) {
@@ -469,6 +520,10 @@
       padding-bottom: rem(80px);
       padding-left: rem(76px);
 
+      @media screen and (max-width: 1024px) {
+        padding-left: 0;
+      }
+
       h2 {
         text-align: center;
         font-size: rem(36px);
@@ -508,10 +563,6 @@
       .m-slider {
         margin-top: rem(30px);
 
-        @media (max-width: 768px) {
-          margin-top: 0;
-        }
-
         .swiper {
           &-slide {
             @media (max-width: 768px) {
@@ -527,6 +578,7 @@
               justify-content: center;
               width: 100%;
               align-items: center;
+              bottom: rem(-40px);
             }
 
             &-bullet {
@@ -605,12 +657,7 @@
     position: relative;
     padding-left: rem(76px);
 
-    @media screen and (max-width: 1200px) {
-      padding-right: rem(107px);
-      padding-left: rem(87px);
-    }
-
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1024px) {
       padding: rem(34px) 0 rem(60px);
     }
 
@@ -620,7 +667,7 @@
         top: rem(92px);
         left: rem(495px);
 
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 1024px) {
           position: relative;
           top: auto;
           left: auto;

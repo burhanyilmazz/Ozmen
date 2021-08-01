@@ -2,7 +2,7 @@
   position: relative;
   padding: rem(250px) 0 rem(150px) 0;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
     padding: rem(40px) 0;
   }
 
@@ -11,7 +11,7 @@
     top: rem(92px);
     left: rem(495px);
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1024px) {
       position: relative;
       top: auto;
       left: auto;
@@ -23,6 +23,10 @@
     align-items: center;
     justify-content: space-between;
 
+    @media screen and (max-width: 1024px) {
+      margin-top: rem(40px);
+    }
+
     h1 {
       font-size: rem(50px);
 
@@ -32,7 +36,6 @@
 
       @media screen and (max-width: 768px) {
         font-size: rem(30px);
-        margin-top: rem(40px);
       }
     }
 
@@ -105,7 +108,7 @@
       right: rem(200px);
       top: rem(-60px);
 
-      @media (max-width: 768px) {
+      @media (max-width: 1024px) {
         display: none;
       }
     }
@@ -118,6 +121,10 @@
     &--3 {
       right: 0;
       top: rem(-60px);
+
+      @media (max-width: 480px) {
+        width: rem(130px);
+      }
     }
 
     &--4 {
@@ -167,11 +174,10 @@
     padding-top: rem(234px);
 
     @media screen and (max-width: 1200px) {
-      padding-right: rem(87px);
       padding-top: rem(170px);
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 1024px) {
       padding-right: 0;
       padding-top: rem(40px);
     }
@@ -195,7 +201,7 @@
       flex-direction: column;
       justify-content: space-between;
       height: 100%;
-      padding: 0 rem(67px);
+      padding-left: rem(67px);
       @media (max-width: 1200px) {
         padding: rem(60px) 0 0;
       }
@@ -305,6 +311,13 @@
           span {
             font-size: rem(14px);
             font-weight: 400;
+
+            @media (max-width: 480px) {
+              font-size: rem(12px);
+              line-height: rem(16px);
+              text-align: center;
+              margin-top: rem(10px);
+            }
           }
         }
       }
@@ -317,7 +330,11 @@
       overflow: hidden;
       margin-top: rem(100px);
 
-      @media (max-width: 768px) {
+      @media screen and (max-width: 1200px) {
+        padding-left: rem(95px);
+      }
+
+      @media (max-width: 1024px) {
         padding: rem(130px) rem(30px) rem(50px);
       }
 
@@ -361,6 +378,10 @@
           @media (max-width: 768px) {
             right: rem(-90px);
             top: rem(-150px);
+          }
+
+          @media (max-width: 480px) {
+            width: rem(280px);
           }
         }
       }
@@ -533,6 +554,10 @@
 
     & + .container-fluid-lp {
       padding-left: rem(107px);
+
+      @media (max-width: 1024px) {
+        padding-left: 0;
+      }
     }
   }
 }

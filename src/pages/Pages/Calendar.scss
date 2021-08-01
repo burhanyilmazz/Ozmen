@@ -29,7 +29,8 @@
       }
 
       @media screen and (max-width: 768px) {
-        min-width: rem(75px);
+        min-width: auto;
+        width: 25%;
       }
     }
   }
