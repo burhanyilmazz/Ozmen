@@ -8,7 +8,7 @@ $(window).scroll(function () {
   const e = getCurrentScroll();
   const windowWidth = $(window).width();
 
-  if ($transparent.length && windowWidth < 769) {
+  if ($transparent.length && windowWidth < 1025) {
     shrinkHeader <= e ?
       $(".o-header").removeClass("o-header--transparent").removeClass("o-header--white") :
       $(".o-header").addClass("o-header--transparent").addClass("o-header--white");

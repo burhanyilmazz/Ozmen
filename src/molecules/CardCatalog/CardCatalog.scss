@@ -6,6 +6,10 @@
   margin-bottom: rem(30px);
   align-items: center;
 
+  @media screen and (max-width: 1366px) {
+    height: rem(350px)
+  }
+
   @media screen and (max-width: 1024px) {
     height: rem(300px);
   }
@@ -19,13 +23,10 @@
   &__content {
     padding: rem(60px) rem(30px) rem(30px) rem(57px);
     width: 70%;
-    @media screen and (max-width: 1366px) {
-      padding-top: rem(90px);
-      padding-left: rem(37px);
-    }
 
     @media screen and (max-width: 1024px) {
-      padding-top: rem(50px);
+      padding: rem(35px);
+      width: 90%;
     }
 
     @media screen and (max-width: 990px) {

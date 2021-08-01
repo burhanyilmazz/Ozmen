@@ -10,6 +10,9 @@
     background: #fff1dd;
   }
 
+  @media screen and (max-width: 1366px) {
+    height: rem(350px)
+  }
 
   @media screen and (max-width: 1024px) {
     height: rem(300px);
@@ -20,25 +23,20 @@
     padding: rem(35px);
     flex-direction: column;
     margin-bottom: 0;
+    align-items: flex-start;
   }
 
   &__content {
     padding: rem(60px) rem(30px) rem(30px) rem(57px);
     width: 70%;
 
-    @media screen and (max-width: 1366px) {
-      padding-top: rem(90px);
-      width: 60%;
-      padding-left: rem(37px);
-    }
-
     @media screen and (max-width: 1024px) {
-      padding-top: rem(50px);
+      padding: rem(35px);
+      width: 90%;
     }
 
     @media screen and (max-width: 990px) {
       padding: 0;
-      width: 80%;
       order: 2;
     }
 

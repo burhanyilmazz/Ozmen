@@ -28,6 +28,10 @@
 
     h4 {
       font-size: rem(40px);
+
+      @media screen and (max-width: 1440px) {
+        font-size: rem(36px);
+      }
       @media screen and (max-width: 1280px) {
         font-size: rem(34px);
       }
@@ -56,6 +60,9 @@
       margin-right: rem(110px);
       transition: all 0.5s ease;
 
+      @media screen and (max-width: 1440px) {
+        margin-right: rem(90px);
+      }
       @media screen and (max-width: 1366px) {
         margin-right: rem(80px);
       }

@@ -22,6 +22,10 @@
       font-size: rem(24px);
       color: $Tumbleweed;
       transition: all 0.5s ease;
+
+      @media screen and (max-width: 1366px) {
+        font-size: rem(20px);
+      }
     }
 
     img {
@@ -29,6 +33,10 @@
       transition: all 0.5s ease;
       position: absolute;
       bottom: rem(70px);
+
+      @media screen and (max-width: 1366px) {
+        bottom: rem(60px);
+      }
     }
   }
 

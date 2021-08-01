@@ -77,7 +77,7 @@ export default class Header {
   onClickHamburger(event) {
     const windowWidth = $(window).width();
 
-    if (windowWidth < 769) {
+    if (windowWidth < 1025) {
       event.preventDefault()
       this.$nav.toggleClass(this.options.nav.toggle);
       this.$searchBar.removeClass(this.options.search.class);

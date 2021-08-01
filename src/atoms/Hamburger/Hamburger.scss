@@ -12,7 +12,7 @@
     font-size: rem(14px);
     margin-top: rem(9px);
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1024px) {
       display: none;
     }
   }
@@ -48,7 +48,7 @@
         width: rem(25px);
       }
 
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 1024px) {
         background: $white;
       }
     }

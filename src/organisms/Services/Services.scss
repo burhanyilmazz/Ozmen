@@ -2,8 +2,14 @@
   padding-left: rem(160px);
   padding-right: rem(107px);
 
+  @media screen and (max-width: 1024px) {
+    padding-left: rem(70px);
+    padding-right: 0;
+  }
+
   @media screen and (max-width: 990px) {
     padding: rem(35px) 0;
+    padding-left: 0;
   }
 
   .row {
@@ -19,17 +25,17 @@
       color: $Tumbleweed;
     }
 
-    @media screen and (max-width: 1366px) {
-      font-size: rem(50px);
-      line-height: rem(60px);
-    }
-    @media screen and (max-width: 1280px) {
-      font-size: rem(46px);
+    @media screen and (max-width: 1440px) {
+      font-size: rem(42px);
       line-height: rem(50px);
+    }
+    @media screen and (max-width: 1366px) {
+      font-size: rem(38px);
+      line-height: rem(44px);
     }
 
     @media screen and (max-width: 1024px) {
-      font-size: rem(36px);
+      font-size: rem(30px);
       line-height: rem(44px);
     }
   }
@@ -41,6 +47,8 @@
     margin-top: rem(34px);
     @media screen and (max-width: 1366px) {
       margin-top: rem(20px);
+      font-size: rem(16px);
+      line-height: rem(22px);
     }
     @media screen and (max-width: 1024px) {
       font-size: rem(16px);
@@ -66,6 +74,18 @@
       &-container {
         height: rem(800px);
 
+        @media screen and (max-width: 1440px) {
+          height: rem(700px)
+        }
+
+        @media screen and (max-width: 1366px) {
+          height: rem(650px)
+        }
+
+        @media screen and (max-width: 1024px) {
+          height: rem(550px)
+        }
+
         @media screen and (max-width: 990px) {
           height: auto !important;
         }
@@ -75,7 +95,7 @@
         padding-right: rem(50px);
 
         @media screen and (max-width: 990px) {
-          padding-left: 0;
+          padding: rem(10px) 0 rem(100px);
         }
       }
       &-slide {
@@ -86,8 +106,7 @@
 
         @media screen and (max-width: 990px) {
           width: 80%;
-          height: 100%;
-          padding-bottom: rem(100px);
+          height: auto !important;
         }
 
         &-prev {
@@ -104,33 +123,18 @@
 
         img {
           max-width: 100%;
-          //height: rem(350px);
           object-fit: cover;
           border-radius: rem(10px);
           transition: all 0.5s ease;
-
-          /* @media screen and (max-width: 1024px) {
-            height: rem(250px);
-          }
-
-          @media screen and (max-width: 990px) {
-            height: 300px !important;
-          } */
         }
 
         &-active {
           img {
-            //height: rem(550px) !important;
             box-shadow: 0px rem(50px) rem(50px)
               rgba($color: $black, $alpha: 0.29);
             border-radius: rem(10px) 0px 0px rem(10px);
 
-            @media screen and (max-width: 1280px) {
-              //height: rem(500px) !important;
-            }
-
             @media screen and (max-width: 990px) {
-              //height: auto !important;
               border-radius: rem(10px) !important;
             }
           }
@@ -213,6 +217,7 @@
       flex-direction: column;
       top: 50%;
       transform: translate(0, -50%);
+      z-index: 3;
 
       @media screen and (max-width: 990px) {
         position: relative;
@@ -223,8 +228,7 @@
         align-items: center;
         width: 100%;
         justify-content: center;
-        margin-top: rem(-20px);
-        margin-bottom: rem(50px);
+        margin: rem(-50px) 0 rem(50px);
       }
     }
   }

@@ -42,7 +42,7 @@ export default class Sidebar {
   windowResize() {
     const windowWidth = $(window).width();
 
-    if (windowWidth < 769) {
+    if (windowWidth < 1025) {
       this.closeAll()
     }
   }
