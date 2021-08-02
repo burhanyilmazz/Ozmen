@@ -2,7 +2,7 @@
   position: relative;
   padding: rem(250px) 0 rem(150px) 0;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
     padding: rem(40px) 0;
   }
 
@@ -11,7 +11,7 @@
     top: rem(92px);
     left: rem(495px);
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1024px) {
       position: relative;
       top: auto;
       left: auto;
@@ -28,11 +28,11 @@
 
       @media screen and (max-width: 1024px) {
         font-size: rem(40px);
+        margin-top: rem(40px);
       }
 
       @media screen and (max-width: 768px) {
         font-size: rem(30px);
-        margin-top: rem(40px);
       }
     }
 
@@ -161,10 +161,18 @@
         line-height: rem(50px);
         width: calc(100% - 140px);
 
+        @media screen and (max-width: 1024px) {
+          margin-top: rem(40px);
+        }
+
         @media screen and (max-width: 768px) {
           font-size: rem(30px);
-          margin-top: rem(40px);
           width: 100%;
+        }
+
+        @media screen and (max-width: 480px) {
+          font-size: rem(24px);
+          line-height: rem(32px);
         }
       }
     }
@@ -317,6 +325,15 @@
         margin-top: rem(50px);
       }
 
+      @media screen and (max-width: 1024px) {
+        display: flex;
+        flex-wrap: wrap;
+
+        .m-right-nav {
+          width: 100%;
+        }
+      }
+
       > h4 {
         margin-top: rem(80px);
         font-size: rem(20px);
@@ -324,10 +341,32 @@
         @media screen and (max-width: 1200px) {
           margin-top: rem(50px);
         }
+
+        @media screen and (max-width: 1024px) {
+          width: 100%;
+        }
       }
 
       .m-card {
         margin-top: rem(34px);
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        @media screen and (max-width: 1024px) {
+          margin-right: rem(30px);
+          width: calc(33% - 30px);
+        }
+
+        @media screen and (max-width: 768px) {
+          width: calc(50% - 30px);
+        }
+
+        @media screen and (max-width: 480px) {
+          width: 100%;
+          margin-right: 0;
+        }
       }
     }
   }

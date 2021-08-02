@@ -1,5 +1,9 @@
 .p-content {
   padding-bottom: rem(100px);
+
+  @media screen and (max-width: 480px) {
+    padding-bottom: 0;
+  }
   .row {
     align-items: stretch;
   }
@@ -18,15 +22,18 @@
 
       @media screen and (max-width: 1440px) {
         font-size: rem(44px);
+        line-height: rem(66px);
       }
 
       @media screen and (max-width: 990px) {
         font-size: rem(40px);
         margin-bottom: rem(10px);
+        line-height: rem(60px);
       }
 
       @media screen and (max-width: 768px) {
         font-size: rem(30px);
+        line-height: rem(42px);
         margin-bottom: 0;
       }
     }
@@ -57,6 +64,7 @@
 
       @media screen and (max-width: 768px) {
         font-size: rem(16px);
+        font-weight: 500;
       }
     }
 
@@ -69,6 +77,10 @@
     display: flex;
     flex-wrap: wrap;
     margin: 0 rem(-15px);
+
+    @media screen and (max-width: 480px) {
+      padding-bottom: rem(60px);
+    }
 
     > a {
       width: calc((100% / 3) - 30px);

@@ -47,6 +47,7 @@
       font-size: rem(18px);
       line-height: rem(22px);
       padding: rem(20px) 0;
+      padding-right: rem(30px);
     }
 
     i {
@@ -57,7 +58,7 @@
     }
 
     &:after {
-      content: '+';
+      content: "+";
       position: absolute;
       right: 0;
     }
@@ -69,7 +70,7 @@
       }
 
       &:after {
-        content: '-';
+        content: "-";
       }
 
       & + .m-accordion__body {

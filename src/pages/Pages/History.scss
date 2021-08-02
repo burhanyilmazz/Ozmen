@@ -8,7 +8,7 @@
   position: relative;
 
   @media screen and (max-width: 768px) {
-    padding: rem(34px) 0 rem(60px);
+    padding: rem(34px) 0 0;
 
     .container {
       max-width: initial;
@@ -676,6 +676,11 @@
           @media screen and (max-width: 768px) {
             font-size: rem(30px);
             line-height: rem(36px);
+          }
+
+          @media screen and (max-width: 480px) {
+            font-size: rem(24px);
+            line-height: rem(30px);
           }
 
           span {

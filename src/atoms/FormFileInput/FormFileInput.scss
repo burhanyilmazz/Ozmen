@@ -30,6 +30,10 @@
         color: #969796;
         margin: 0;
         margin-left: rem(5px);
+
+        @media screen and (max-width: 480px) {
+          display: none;
+        }
       }
     }
   }

@@ -50,6 +50,10 @@
       @media screen and (max-width: 1280px) {
         font-size: rem(30px);
       }
+
+      @media screen and (max-width: 480px) {
+        font-size: rem(24px);
+      }
     }
 
     p {

@@ -71,4 +71,8 @@
   z-index: 12;
   padding-top: 80px;
   content-visibility: auto;
+
+  @media (max-width: 480px) {
+    padding-top: rem(50px);
+  }
 }

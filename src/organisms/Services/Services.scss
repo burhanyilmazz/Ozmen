@@ -12,6 +12,11 @@
     padding-left: 0;
   }
 
+  @media screen and (max-width: 990px) {
+    padding: 0;
+    padding-top: rem(35px);
+  }
+
   .row {
     align-items: center;
   }

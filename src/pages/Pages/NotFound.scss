@@ -56,6 +56,10 @@
     @media screen and (max-width: 1280px) {
       margin-top: rem(-20px);
     }
+
+    @media screen and (max-width: 1024px) {
+      margin-top: rem(50px);
+    }
     @media screen and (max-width: 990px) {
       flex-direction: column;
 			margin-top: 0;

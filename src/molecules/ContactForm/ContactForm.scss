@@ -1,13 +1,10 @@
 .m-contact-form {
   padding: rem(170px) 0;
 
-  /* @media screen and (max-width: 1024px) {
-    margin-top: rem(100px);
+  @media screen and (max-width: 480px) {
+    padding-bottom: 0;
+    padding-top: rem(80px);
   }
-
-  @media screen and (max-width: 768px) {
-    margin-top: rem(55px);
-  } */
 
   h2 {
     color: $Tuna;

@@ -18,6 +18,11 @@
     left: rem(34px);
     bottom: rem(34px);
 
+    @media screen and (max-width: 480px) {
+      left: rem(20px);
+      bottom: rem(20px);
+    }
+
     h3 {
       font-size: rem(24px);
       color: $Tumbleweed;
@@ -25,6 +30,9 @@
 
       @media screen and (max-width: 1366px) {
         font-size: rem(20px);
+      }
+      @media screen and (max-width: 480px) {
+        font-size: rem(16px);
       }
     }
 
@@ -36,6 +44,10 @@
 
       @media screen and (max-width: 1366px) {
         bottom: rem(60px);
+      }
+      @media screen and (max-width: 480px) {
+        height: rem(34px);
+        bottom: rem(44px);
       }
     }
   }
@@ -68,24 +80,26 @@
     }
   }
 
-  &:hover {
-    &:after {
-      width: 100%;
-    }
-
-    .m-card-collection__title {
-      h3 {
-        color: $white;
+  @media screen and (min-width: 1024px) {
+    &:hover {
+      &:after {
+        width: 100%;
       }
 
-      img {
-        filter: brightness(0) invert(1);
-      }
-    }
+      .m-card-collection__title {
+        h3 {
+          color: $white;
+        }
 
-    .a-icon {
-      left: 100%;
-      margin-left: rem(-50px);
+        img {
+          filter: brightness(0) invert(1);
+        }
+      }
+
+      .a-icon {
+        left: 100%;
+        margin-left: rem(-50px);
+      }
     }
   }
 }

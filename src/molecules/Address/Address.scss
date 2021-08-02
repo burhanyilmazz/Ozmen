@@ -11,6 +11,10 @@
     font-size: rem(18px);
     line-height: rem(24px);
     font-weight: 500;
+
+    a {
+      color: $white;
+    }
   }
 
   &--box {

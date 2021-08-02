@@ -8,12 +8,8 @@
   &--product {
     background: $white;
     padding-left: rem(76px);
-    
-    @media screen and (max-width: 1200px) {
-      padding-left: rem(87px);
-    }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1024px) {
       padding-left: 0;
     }
 

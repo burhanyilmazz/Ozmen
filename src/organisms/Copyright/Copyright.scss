@@ -33,7 +33,13 @@
       height: rem(75px);
       background: rgba($color: $Tuna, $alpha: .2);
       right: rem(100px);
-      bottom: rem(67px)
+      bottom: rem(39px)
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    &:after {
+      right: rem(80px);
     }
   }
 }

@@ -112,6 +112,11 @@
       &--3 {
         right: rem(257px);
         top: rem(107px);
+
+        @media screen and (max-width: 1440px) {
+          top: rem(37px);
+        }
+
         @media screen and (max-width: 768px) {
           right: 0;
           width: rem(130px);
