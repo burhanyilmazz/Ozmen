@@ -87,7 +87,6 @@
     justify-content: center;
     padding-bottom: rem(40px);
     border-radius: rem(5px);
-    
 
     span {
       background: $Tuna;
@@ -104,11 +103,13 @@
     }
   }
 
-  &:hover {
-    .m-card-product__foot {
-      animation-name: slideInUp;
-      animation-duration: .5s;
-      animation-fill-mode: both;
+  @media screen and (min-width: 1024px) {
+    &:hover {
+      .m-card-product__foot {
+        animation-name: slideInUp;
+        animation-duration: 0.5s;
+        animation-fill-mode: both;
+      }
     }
   }
 }
