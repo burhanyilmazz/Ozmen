@@ -63,4 +63,9 @@
     right: 0;
     cursor: pointer;
   }
+
+  .parsley-errors-list {
+    position: absolute;
+    bottom: rem(-20px);
+  }
 }

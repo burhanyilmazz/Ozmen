@@ -18,7 +18,7 @@
   appearance: none;
 
   &:after {
-    content: '';
+    content: "";
     width: 100%;
     height: 100%;
     position: absolute;
@@ -34,25 +34,28 @@
     z-index: 2;
   }
 
-  &:hover {
-    background: $Tumbleweed;
+  @media screen and (min-width: 1024px) {
+    &:hover {
+      background: $Tumbleweed;
+    }
   }
 
   &--white {
     background: $Tuna !important;
     color: $white;
-    border: 1px solid #D6D6D6;
+    border: 1px solid #d6d6d6;
 
     span {
-      color: $Tuna
+      color: $Tuna;
     }
+    @media screen and (min-width: 1024px) {
+      &:hover {
+        border: 1px solid transparent;
+        background: $Tuna;
 
-    &:hover {
-      border: 1px solid transparent;
-      background: $Tuna;
-
-      span {
-        color: $white;
+        span {
+          color: $white;
+        }
       }
     }
 
@@ -60,10 +63,9 @@
       background: $white;
     }
 
-    &:before{
-      color: $Tuna
+    &:before {
+      color: $Tuna;
     }
-    
   }
 
   &--black {
@@ -89,6 +91,15 @@
     color: $white;
     transition: all 0.5s ease;
 
+    @media screen and (max-width: 380px) {
+      font-size: rem(14px);
+    }
+
+    @media screen and (max-width: 340px) {
+      padding-left: rem(20px);
+      font-size: rem(11px);
+    }
+
     &::before {
       font-family: $iconFontName;
       font-size: rem(12px);
@@ -108,12 +119,14 @@
       }
     }
 
-    &:hover {
-      transition: all 0.5s ease;
-      &:after {
-        right: 0;
-        width: rem(60px);
+    @media screen and (min-width: 1024px) {
+      &:hover {
         transition: all 0.5s ease;
+        &:after {
+          right: 0;
+          width: rem(60px);
+          transition: all 0.5s ease;
+        }
       }
     }
   }
@@ -169,7 +182,7 @@
     &:before {
       width: rem(50px);
       height: rem(50px);
-      content: '';
+      content: "";
       position: absolute;
       left: rem(20px);
       background: url(../images/loading.svg) center center no-repeat;
