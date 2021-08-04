@@ -6,14 +6,18 @@
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
-  height: -webkit-fit-available;
 
   img {
     width: 100%;
-    height: 100%;
+    height: 100vh;
+    height: -webkit-fit-available;
     object-fit: cover;
+
+    @supports (-webkit-touch-callout: none) {
+      height: calc(100vh - 100px);
+    }
   }
+
 
   &__button {
     position: absolute;

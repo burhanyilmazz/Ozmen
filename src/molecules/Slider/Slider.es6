@@ -7,16 +7,16 @@ export default class Slider extends Swiper {
     let defaults = {
       loop: false,
       on: {
-        slideChangeTransitionEnd: () =>  $el.trigger("slideChangeTransitionEnd"),
-        slideChange: () =>  $el.trigger("slideChange"),
-        init: () =>  $el.trigger("init"),
+        slideChangeTransitionEnd: () => $el.trigger("slideChangeTransitionEnd"),
+        slideChange: () => $el.trigger("slideChange"),
+        init: () => $el.trigger("init"),
         touchEnd: () => $el.trigger("touchEnd"),
         reachEnd: () => $el.trigger("reachEnd"),
         reachBeginning: () => $el.trigger("reachBeginning"),
       }
     };
 
-    if ( options.navigation ) {
+    if (options.navigation) {
       options.nav = {
         nextEl: '> .m-slider__next',
         prevEl: '> .m-slider__prev',
@@ -24,7 +24,7 @@ export default class Slider extends Swiper {
       }
     }
 
-    if ( options.pagination ) {
+    if (options.pagination) {
       options.pagination = {
         el: $el.find('.swiper-pagination'),
         type: 'bullets',
@@ -41,27 +41,27 @@ export default class Slider extends Swiper {
     this.$el = $el;
     this.options = options;
 
-    if ( options.nav ) {
-      this.$nextEl = this.$el.find( this.options.nav.nextEl );
-      this.$prevEl = this.$el.find( this.options.nav.prevEl );
+    if (options.nav) {
+      this.$nextEl = this.$el.find(this.options.nav.nextEl);
+      this.$prevEl = this.$el.find(this.options.nav.prevEl);
 
       this.$el
         .on("click", this.options.nav.nextEl, () => this.slideNext())
         .on("click", this.options.nav.prevEl, () => this.slidePrev())
         .on('slideChange', () => this.onSlideChange());
 
-      if ( !options.loop ) {
-        this.$prevEl.addClass( this.options.nav.disabledClass );
+      if (!options.loop) {
+        this.$prevEl.addClass(this.options.nav.disabledClass);
       }
     }
 
-    if ( options.autoplay ) {
+    if (options.autoplay) {
       $el
         .on("mouseenter", () => this.onMouseEnter())
         .on("mouseleave", () => this.onMouseLeave())
     }
 
-    if ( this.slides.length <= this.params.slidesPerView ) {
+    if (this.slides.length <= this.params.slidesPerView) {
       this.$el.addClass("m-slider--hidden-nav");
     }
 
@@ -70,10 +70,10 @@ export default class Slider extends Swiper {
   }
 
   onClickItem(e) {
-    if ( !$( e.target ).is("a") ) {
-      const target = $( e.currentTarget );
+    if (!$(e.target).is("a")) {
+      const target = $(e.currentTarget);
       const data = target.data();
-      if ( data.locationHref ) {
+      if (data.locationHref) {
         window.location.href = data.locationHref;
       }
     }
@@ -92,55 +92,65 @@ export default class Slider extends Swiper {
   }
 
   onSlideChange() {
-    this.$prevEl.removeClass( this.options.nav.disabledClass );
-    this.$nextEl.removeClass( this.options.nav.disabledClass );
+    this.$prevEl.removeClass(this.options.nav.disabledClass);
+    this.$nextEl.removeClass(this.options.nav.disabledClass);
 
-    const activeItem = $(this.slides[ this.activeIndex ]);
+    const activeItem = $(this.slides[this.activeIndex]);
     const animatedItems = activeItem.find("[data-animation]");
 
     $.each(animatedItems, (i, item) => {
       const className = $(item).data("animation");
-      $(item).removeClass( className );
-      setTimeout(() => { $(item).addClass( className ); }, 1);
+      $(item).removeClass(className);
+      setTimeout(() => {
+        $(item).addClass(className);
+      }, 1);
     });
 
-    if ( this.options.loop ) {
+    if (this.options.loop) {
       return;
     }
 
-    if ( this.isBeginning ) {
-      this.$prevEl.addClass( this.options.nav.disabledClass );
+    if (this.isBeginning) {
+      this.$prevEl.addClass(this.options.nav.disabledClass);
     }
-    if ( this.isEnd ) {
-      this.$nextEl.addClass( this.options.nav.disabledClass );
+    if (this.isEnd) {
+      this.$nextEl.addClass(this.options.nav.disabledClass);
     }
   }
 
   slidePrev() {
     super.slidePrev();
-    this.$prevEl.removeClass( this.options.nav.disabledClass );
-    this.$nextEl.removeClass( this.options.nav.disabledClass );
+    if (this.$prevEl) {
+      this.$prevEl.removeClass(this.options.nav.disabledClass);
+    }
+    if (this.$nextEl) {
+      this.$nextEl.removeClass(this.options.nav.disabledClass);
+    }
 
-    if ( this.options.loop ) {
+    if (this.options.loop) {
       return;
     }
 
-    if ( this.isBeginning ) {
-      this.$prevEl.addClass( this.options.nav.disabledClass );
+    if (this.isBeginning) {
+      this.$prevEl.addClass(this.options.nav.disabledClass);
     }
   }
 
   slideNext() {
     super.slideNext();
-    this.$prevEl.removeClass( this.options.nav.disabledClass );
-    this.$nextEl.removeClass( this.options.nav.disabledClass );
+    if (this.$prevEl) {
+      this.$prevEl.removeClass(this.options.nav.disabledClass);
+    }
+    if (this.$nextEl) {
+      this.$nextEl.removeClass(this.options.nav.disabledClass);
+    }
 
-    if ( this.options.loop ) {
+    if (this.options.loop) {
       return;
     }
 
-    if ( this.isEnd ) {
-      this.$nextEl.addClass( this.options.nav.disabledClass );
+    if (this.isEnd) {
+      this.$nextEl.addClass(this.options.nav.disabledClass);
     }
 
 

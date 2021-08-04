@@ -53,6 +53,18 @@
       line-height: rem(30px);
     }
 
+    img {
+      filter: brightness(0.1);
+      opacity: 0.8;
+      transition: all 0.5s ease;
+      margin-right: rem(20px);
+
+      @media screen and (max-width: 480px) {
+        display: flex;
+        height: rem(40px);
+        margin-bottom: rem(10px);
+      }
+    }
     i {
       font-weight: 400;
       margin-right: rem(20px);
@@ -445,7 +457,7 @@
     }
 
     &-gallery {
-      padding: rem(100px) 0;
+      padding: rem(100px) 0 rem(50px);
       padding-left: rem(76px);
 
       @media screen and (max-width: 1200px) {
@@ -527,6 +539,7 @@
     }
 
     &-others {
+      padding-top: rem(50px);
       padding-bottom: rem(80px);
       padding-left: rem(76px);
 

@@ -215,8 +215,17 @@
   }
 }
 
-%icon-logo {
+%icon-logo-en {
   content: "\EA19";
+}
+.icon-logo-en {
+  &::before {
+    @extend %icon-logo-en;
+  }
+}
+
+%icon-logo {
+  content: "\EA1A";
 }
 .icon-logo {
   &::before {
@@ -225,7 +234,7 @@
 }
 
 %icon-marka {
-  content: "\EA1A";
+  content: "\EA1B";
 }
 .icon-marka {
   &::before {
@@ -234,7 +243,7 @@
 }
 
 %icon-more {
-  content: "\EA1B";
+  content: "\EA1C";
 }
 .icon-more {
   &::before {
@@ -243,7 +252,7 @@
 }
 
 %icon-phone {
-  content: "\EA1C";
+  content: "\EA1D";
 }
 .icon-phone {
   &::before {
@@ -252,7 +261,7 @@
 }
 
 %icon-play {
-  content: "\EA1D";
+  content: "\EA1E";
 }
 .icon-play {
   &::before {
@@ -261,7 +270,7 @@
 }
 
 %icon-plus {
-  content: "\EA1E";
+  content: "\EA1F";
 }
 .icon-plus {
   &::before {
@@ -270,7 +279,7 @@
 }
 
 %icon-product {
-  content: "\EA1F";
+  content: "\EA20";
 }
 .icon-product {
   &::before {
@@ -279,7 +288,7 @@
 }
 
 %icon-right {
-  content: "\EA20";
+  content: "\EA21";
 }
 .icon-right {
   &::before {
@@ -288,7 +297,7 @@
 }
 
 %icon-search {
-  content: "\EA21";
+  content: "\EA22";
 }
 .icon-search {
   &::before {
@@ -297,7 +306,7 @@
 }
 
 %icon-tariff {
-  content: "\EA22";
+  content: "\EA23";
 }
 .icon-tariff {
   &::before {
@@ -306,7 +315,7 @@
 }
 
 %icon-twitter {
-  content: "\EA23";
+  content: "\EA24";
 }
 .icon-twitter {
   &::before {
@@ -315,7 +324,7 @@
 }
 
 %icon-upload {
-  content: "\EA24";
+  content: "\EA25";
 }
 .icon-upload {
   &::before {
@@ -324,7 +333,7 @@
 }
 
 %icon-usta {
-  content: "\EA25";
+  content: "\EA26";
 }
 .icon-usta {
   &::before {
@@ -333,7 +342,7 @@
 }
 
 %icon-youtube {
-  content: "\EA26";
+  content: "\EA27";
 }
 .icon-youtube {
   &::before {
@@ -342,7 +351,7 @@
 }
 
 %icon-zanaatkar {
-  content: "\EA27";
+  content: "\EA28";
 }
 .icon-zanaatkar {
   &::before {

@@ -8,6 +8,10 @@
     margin-top: 100vh;
     z-index: 2;
 
+    @supports (-webkit-touch-callout: none) {
+      margin-top: calc(100vh - 100px);
+    }
+
     .container-fluid {
       position: relative;
       z-index: 2;
