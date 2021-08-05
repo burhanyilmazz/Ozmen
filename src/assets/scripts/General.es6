@@ -52,10 +52,3 @@ window.onload = () => {
 
   window.requestAnimationFrame(updateLax)
 }
-
-$('body').on('touchstart', () => {
-  const videoElement = document.querySelector('.a-video video');
-  if (videoElement) {
-    videoElement.play();
-  }
-});
