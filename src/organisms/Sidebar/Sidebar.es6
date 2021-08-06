@@ -10,7 +10,7 @@ export default class Sidebar {
         self: ".o-sidebar__nav",
         item: "nav > ul > li",
         active: "o-sidebar__nav--active",
-        link: ".o-sidebar__nav--link"
+        link: "nav > ul > li ul > li"
       },
       search: {
         self: ".m-search-bar",

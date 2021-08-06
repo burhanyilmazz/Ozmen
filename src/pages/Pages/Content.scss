@@ -86,18 +86,35 @@
       width: calc((100% / 3) - 30px);
       margin: rem(15px);
       display: block;
+      padding-top: 15%;
+      position: relative;
+      overflow: hidden;
 
       @media screen and (max-width: 768px) {
         width: 100%;
+        padding-top: 56.25%;
       }
 
       > img {
         border-radius: rem(10px);
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
         width: 100%;
+        object-fit: cover;
+        height: 100%;
+        z-index: 1;
       }
 
       &:first-child {
         width: 100%;
+        padding-top: 50%;
+
+        @media screen and (max-width: 768px) {
+          padding-top: 56.25%;
+        }
       }
     }
   }

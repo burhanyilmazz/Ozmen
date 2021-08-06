@@ -267,6 +267,7 @@
         overflow: hidden;
         box-shadow: 0px rem(20px) rem(50px) rgba($color: #000000, $alpha: 0.2);
         position: relative;
+        padding-top: 75%;
 
         &:before {
           @extend %icon-plus;
@@ -309,7 +310,14 @@
         }
 
         img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
           width: 100%;
+          object-fit: cover;
+          height: 100%;
           z-index: 1;
         }
       }

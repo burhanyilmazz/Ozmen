@@ -24,8 +24,10 @@ body {
 }
 
 html {
-  overflow-x: hidden;
   height: -webkit-fill-available;
+  @media screen and (max-width: 768px) {
+    overflow-x: hidden;
+  }
 }
 
 *,

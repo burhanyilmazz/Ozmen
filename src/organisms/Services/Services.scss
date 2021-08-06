@@ -77,7 +77,11 @@
 
     .swiper {
       &-container {
-        height: rem(800px);
+        height: rem(950px);
+
+        @media screen and (max-width: 1680px) {
+          height: rem(800px)
+        }
 
         @media screen and (max-width: 1440px) {
           height: rem(700px)

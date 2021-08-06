@@ -52,3 +52,11 @@ window.onload = () => {
 
   window.requestAnimationFrame(updateLax)
 }
+
+$(document).on('click', '.p-contact-bottom__button a[href^="#"]', (event) => {
+  event.preventDefault();
+
+  $('html, body').animate({
+    scrollTop: $($(event.currentTarget).attr("href")).offset().top
+  }, 500);
+});
