@@ -61,12 +61,12 @@
     }
 
     .a-check-box {
-      width: calc((100% / 8) - 40px);
+      width: calc((100% / 7) - 40px);
       height: rem(130px);
       margin: rem(20px);
 
       @media screen and (max-width: 1366px) {
-        width: calc((100% / 7) - 40px);
+        width: calc((100% / 6) - 40px);
       }
 
       @media screen and (max-width: 1024px) {

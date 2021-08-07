@@ -28,9 +28,10 @@
       }
 
       h3 {
-        font-size: rem(15px);
+        font-size: rem(14px);
         text-align: center;
         line-height: rem(18px);
+        font-weight: 400;
 
         @media screen and (max-width: 768px) {
           font-size: rem(13px);
@@ -46,7 +47,7 @@
         position: absolute;
         left: rem(10px);
         top: rem(10px);
-        opacity: 0;
+        opacity: 1;
         transition: all 0.5s ease;
         z-index: 2;
       }
@@ -71,6 +72,10 @@
         border-color: $black;
 
         &:after {
+          opacity: 1;
+        }
+
+        span {
           opacity: 1;
         }
       }

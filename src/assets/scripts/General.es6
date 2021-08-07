@@ -1,19 +1,4 @@
-const shrinkHeader = 520;
-const $transparent = $(".o-header--transparent");
-
-function getCurrentScroll() {
-  return window.pageYOffset || document.documentElement.scrollTop;
-}
-$(window).scroll(function () {
-  const e = getCurrentScroll();
-  const windowWidth = $(window).width();
-
-  if ($transparent.length && windowWidth < 1025) {
-    shrinkHeader <= e ?
-      $(".o-header").removeClass("o-header--transparent").removeClass("o-header--white") :
-      $(".o-header").addClass("o-header--transparent").addClass("o-header--white");
-  }
-
+$(window).scroll(() => {
   const $historyImg = $(".p-history-block-1__img");
   if ($historyImg.length) {
     const st = $(this).scrollTop();
@@ -60,3 +45,8 @@ $(document).on('click', '.p-contact-bottom__button a[href^="#"]', (event) => {
     scrollTop: $($(event.currentTarget).attr("href")).offset().top
   }, 500);
 });
+
+$('[data-fancybox]').fancybox({
+	toolbar  : false,
+	smallBtn : true,
+})

@@ -42,7 +42,7 @@
       color: #95a585;
       font-size: rem(30px);
       line-height: rem(34px);
-      margin-bottom: rem(20px);
+      margin-bottom: rem(10px);
       @media screen and (max-width: 1440px) {
         font-size: rem(26px);
       }
@@ -106,6 +106,47 @@
         object-fit: cover;
         height: 100%;
         z-index: 1;
+      }
+
+      &:before {
+        @extend %icon-plus;
+        position: absolute;
+        left: 50%;
+        bottom: 50%;
+        z-index: 3;
+        font-family: $iconFontName;
+        color: $white;
+        margin-left: rem(-20px);
+        margin-bottom: rem(-20px);
+        font-size: rem(40px);
+        opacity: 0;
+      }
+
+      &:after {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        content: "";
+        background: rgba($color: #000000, $alpha: 0.4);
+        left: 0;
+        bottom: 0;
+        z-index: 2;
+        opacity: 0;
+        transition: all 0.5s ease;
+        border-radius: rem(10px);
+      }
+
+      &:hover {
+        box-shadow: 0 0 0;
+        &:before {
+          animation-name: fadeInDown;
+          animation-duration: 0.5s;
+          animation-fill-mode: both;
+        }
+
+        &:after {
+          opacity: 1;
+        }
       }
 
       &:first-child {

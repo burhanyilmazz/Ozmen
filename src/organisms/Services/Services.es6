@@ -17,13 +17,14 @@ export default class Services {
       watchSlidesProgress: true,
       slideToClickedSlide: false,
       allowTouchMove: false,
+      autoHeight: true,
       lazy: {
         loadPrevNext: true
       },
       pagination: {
         el: ".o-services .swiper-pagination",
         clickable: true,
-        renderBullet: function (index, className) {
+        renderBullet: (index, className) => {
           return '<span class="' + className + '">' + (index + 1) + "</span>";
         },
       }

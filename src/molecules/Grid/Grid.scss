@@ -197,3 +197,25 @@ $columns: 12;
     }
   }
 }
+
+@media (min-width: 1440px) {
+  .col-xxl {
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+  }
+  .col-xxl-auto {
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: auto;
+    max-width: none;
+  }
+  @for $i from $columns through 1 {
+    .col-xxl-#{$i} {
+      flex: 0 0 ((100 / $columns) * $i) * 1%;
+      max-width: ((100 / $columns) * $i) * 1%;
+    }
+  }
+}

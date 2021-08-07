@@ -88,11 +88,11 @@
       width: calc((100% / 4) - 40px);
       margin: rem(20px);
 
-      @media screen and (max-width: 1280px) {
+      @media screen and (max-width: 1440px) {
         width: calc((100% / 3) - 40px);
       }
 
-      @media screen and (max-width: 990px) {
+      @media screen and (max-width: 1280px) {
         width: calc((100% / 2) - 40px);
       }
 
@@ -126,7 +126,7 @@
       &:before {
         position: absolute;
         right: rem(-30px);
-        top: rem(140px);
+        top: rem(40px);
         content: "";
         width: 1px;
         height: calc(100% - 150px);
@@ -159,7 +159,7 @@
       h1 {
         font-size: rem(40px);
         line-height: rem(50px);
-        width: calc(100% - 140px);
+        width: calc(100% - 270px);
 
         @media screen and (max-width: 1024px) {
           margin-top: rem(40px);
@@ -183,9 +183,11 @@
         align-items: center;
         font-size: rem(12px);
         color: #46484c;
+        margin-bottom: rem(11px);
 
         @media screen and (max-width: 768px) {
           margin-top: rem(20px);
+          margin-bottom: 0;
         }
 
         span {
@@ -229,7 +231,7 @@
         font-size: rem(20px);
         color: $black;
         line-height: rem(34px);
-        margin-bottom: rem(30px);
+        margin-bottom: rem(20px);
 
         @media screen and (max-width: 768px) {
           font-size: rem(17px);
@@ -246,8 +248,8 @@
         color: #95a585;
         font-size: rem(30px);
         line-height: rem(34px);
-        margin-top: rem(50px);
-        margin-bottom: rem(30px);
+        margin-top: rem(40px);
+        margin-bottom: rem(10px);
 
         @media screen and (max-width: 768px) {
           font-size: rem(22px);
@@ -325,7 +327,7 @@
 
     &__others {
       padding-left: rem(60px);
-      margin-top: rem(139px);
+      margin-top: rem(40px);
 
       @media screen and (max-width: 1200px) {
         padding: 0;

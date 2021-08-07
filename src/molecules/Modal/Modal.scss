@@ -338,12 +338,14 @@
 }
 
 .fancybox-close-small {
-  top: rem(10px) !important;
-  right: rem(10px) !important;
+  top: rem(-29px) !important;
+  right: rem(-29px) !important;
   @media screen and (max-width: 640px) {
-    top: -45px !important;
-    right: -16px !important;
+    display: none;
   }
   width: rem(60px);
   height: rem(60px);
+  background: $Green;
+  opacity: 1 !important;
+  border-radius: 100%;
 }

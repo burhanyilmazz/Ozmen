@@ -174,8 +174,8 @@
       }
 
       @media screen and (max-width: 1280px) {
-        font-size: rem(46px);
-        line-height: rem(50px);
+        font-size: rem(44px);
+        line-height: rem(48px);
       }
 
       @media screen and (max-width: 768px) {
@@ -187,12 +187,10 @@
       color: $white;
       font-size: rem(16px);
       font-weight: 300;
-      width: 75%;
       line-height: rem(26px);
-
-      @media screen and (max-width: 1440px) {
-        width: 100%;
-        line-height: rem(26px);
+      @media screen and (max-width: 1280px) {
+        font-size: rem(14px);
+        line-height: rem(22px);
       }
 
       @media screen and (max-width: 768px) {

@@ -14,10 +14,12 @@
     z-index: 3;
     height: 100%;
     width: rem(107px);
-    border-left: 1px solid rgba(179, 186, 204, .3);
+    border-left: 1px solid rgba(179, 186, 204, 0.3);
     background: rgba($color: $white, $alpha: 0.3);
 
-    @supports((-webkit-backdrop-filter: blur(107px)) or (backdrop-filter: blur(107px))) {
+    @supports (
+      (-webkit-backdrop-filter: blur(107px)) or (backdrop-filter: blur(107px))
+    ) {
       background: transparent;
       backdrop-filter: blur(107px);
     }
@@ -105,6 +107,11 @@
 
       @media screen and (max-width: 1280px) {
         padding: rem(87px) rem(80px) rem(20px);
+      }
+
+      @media screen and (max-height: 768px) {
+        padding-top: rem(50px);
+        padding-bottom: rem(50px);
       }
 
       @media screen and (max-width: 1100px) {
@@ -233,6 +240,10 @@
         padding: 0 rem(80px);
       }
 
+      @media screen and (max-height: 768px) {
+        height: rem(130px);
+      }
+
       @media screen and (max-width: 1100px) {
         height: rem(130px);
         padding: 0 rem(50px);
@@ -286,9 +297,14 @@
       padding: rem(86px) rem(80px);
     }
 
+    @media screen and (max-height: 768px) {
+      padding-top: rem(50px);
+      padding-bottom: rem(50px);
+    }
+
     @media screen and (max-width: 1100px) {
       width: calc((100vw - 107px) / 2);
-      padding: rem(50px) rem(50px);
+      padding: rem(50px);
       right: calc((100vw / 2) + 53px);
     }
 
@@ -320,6 +336,10 @@
     &__nav-bottom {
       position: absolute;
       bottom: rem(200px);
+
+      @media screen and (max-height: 768px) {
+        bottom: rem(140px);
+      }
 
       @media screen and (max-width: 1100px) {
         bottom: rem(140px);
@@ -358,6 +378,10 @@
         padding: 0 rem(80px);
       }
 
+      @media screen and (max-height: 768px) {
+        height: rem(130px);
+      }
+
       @media screen and (max-width: 1100px) {
         height: rem(130px);
         padding: 0 rem(50px);
@@ -382,7 +406,7 @@
     .o-sidebar {
       &__main {
         background: $white;
-        border-color: rgba(179, 186, 204, .3);
+        border-color: rgba(179, 186, 204, 0.3);
       }
       &__nav {
         transform: translateX(-100%);

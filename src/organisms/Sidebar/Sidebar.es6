@@ -57,7 +57,13 @@ export default class Sidebar {
     const $target = $(event.currentTarget);
     if ($target.find("ul").length) {
       event.preventDefault();
-      $target.addClass(this.options.nav.active).siblings().removeClass(this.options.nav.active);
+
+      if (!$target.hasClass(this.options.nav.active)) {
+        $(this.options.nav.item).removeClass(this.options.nav.active)
+        $target.addClass(this.options.nav.active)
+      } else {
+        $target.removeClass(this.options.nav.active)
+      }
     }
   }
 

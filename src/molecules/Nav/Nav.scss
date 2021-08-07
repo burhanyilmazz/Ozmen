@@ -4,7 +4,7 @@
   background: #fff;
   padding: rem(35px);
   width: 100%;
-  height: calc(100% - 90px);
+  height: calc(100% - 89px);
   left: 0;
   will-change: transform;
   transition: transform 0.5s ease-in-out;
@@ -20,7 +20,7 @@
   }
 
   &--open {
-    transform: translateY(18px);
+    transform: translateY(17px);
     opacity: 1;
     z-index: 1;
     transition: transform 0.5s ease-in-out;
@@ -30,7 +30,7 @@
     font-size: rem(18px);
     font-weight: 600;
     overflow-y: auto;
-    max-height: calc(100% - 90px);
+    max-height: calc(100% - 89px);
 
     li {
       display: flex;
@@ -169,6 +169,4 @@
       }
     }
   }
-
-
 }

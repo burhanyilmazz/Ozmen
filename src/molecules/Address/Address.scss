@@ -22,10 +22,7 @@
     padding: rem(40px);
     height: calc(100% - 33px);
     border-radius: rem(14px);
-
-    @media screen and (max-width: 1440px) {
-      padding: rem(20px);
-    }
+  
     @media screen and (max-width: 1200px) {
       padding: rem(30px);
     }

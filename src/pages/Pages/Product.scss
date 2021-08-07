@@ -25,7 +25,7 @@
     font-size: rem(50px);
     line-height: rem(78px);
     color: $Tuna;
-    margin-bottom: rem(106px);
+    margin-bottom: rem(30px);
 
     @media screen and (max-width: 1366px) {
       font-size: rem(40px);
@@ -35,12 +35,10 @@
     @media screen and (max-width: 1280px) {
       font-size: rem(34px);
       line-height: rem(46px);
-      margin-bottom: rem(86px);
     }
 
     @media screen and (max-width: 1024px) {
       margin-top: rem(20px);
-      margin-bottom: rem(50px);
     }
 
     @media screen and (max-width: 768px) {
@@ -51,6 +49,10 @@
     @media screen and (max-width: 480px) {
       font-size: rem(24px);
       line-height: rem(30px);
+    }
+
+    & ~ h1 {
+      margin-top: rem(70px);
     }
 
     img {
@@ -104,7 +106,8 @@
       color: #95a585;
       font-size: rem(30px);
       line-height: rem(34px);
-      margin-bottom: rem(20px);
+      margin-bottom: rem(10px);
+    
       @media screen and (max-width: 768px) {
         font-size: rem(24px);
       }
@@ -115,10 +118,19 @@
       font-size: rem(19px);
       line-height: rem(34px);
       font-weight: 300;
+      margin-bottom: rem(20px);
 
       @media screen and (max-width: 768px) {
         font-size: rem(17px);
         font-weight: 500;
+      }
+
+      &:last-child {
+        margin: 0;
+      }
+
+      & + h2 {
+        margin-top: rem(40px);
       }
     }
   }
@@ -606,7 +618,8 @@
         .swiper {
           &-slide {
             @media screen and (max-width: 768px) {
-              width: rem(306px);
+              max-width: rem(306px);
+              width: 70%;
             }
           }
 
