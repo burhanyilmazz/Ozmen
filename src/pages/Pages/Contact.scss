@@ -172,10 +172,8 @@
     }
 
     &__button {
-      @media screen and (max-width: 1280px) {
-        margin-top: rem(60px);
-      }
-      a  {
+      margin-top: rem(60px);
+      a {
         border: 1px solid $white !important;
       }
       @media screen and (max-width: 768px) {

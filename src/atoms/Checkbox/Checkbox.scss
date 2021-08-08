@@ -83,6 +83,7 @@
 
     &:checked {
       & + label {
+        border-color: $black;
         &:after {
           opacity: 1;
           background: $black;
