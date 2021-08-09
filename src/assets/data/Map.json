@@ -1,8 +1,10 @@
 [{
-    "coords": {
-      "lat": "37.1539307",
-      "lng": "37.2792745"
-    },
-    "id": "Gaziantep"
+  "coords": {
+    "lat": "37.1539307",
+    "lng": "37.2792745"
+  },
+  "content": {
+    "address": "Başpınar Mh. 83539 Cd. No:35 27630 Şehitkamil / Gaziantep",
+    "link": "https://goo.gl/maps/xhmW2hNEyutw8VwX9"
   }
-]
+}]

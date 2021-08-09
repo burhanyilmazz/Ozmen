@@ -194,8 +194,26 @@ export default class Map {
       icon: this.options.pin ? this.options.pin : this.defaults.pin,
     });
 
-    marker.addListener('click', function () {
-      $(document).trigger("map.click", props.id);
-    });
+
+    if(props.url) {
+      marker.addListener('click', function () {
+        window.open(props.url, "_blank"); 
+      });
+    }
+
+    if (props.content) {
+      var content = `
+        <p>${props.content.address}</p>
+        <a href="${props.content.link}" target="_blank">Yol tarifi için tıklayın!</a>
+      `;
+
+      var infoWindow = new google.maps.InfoWindow({
+        content: content
+      });
+
+      marker.addListener('click', function () {
+        infoWindow.open(this.map, marker);
+      });
+    }
   }
 }

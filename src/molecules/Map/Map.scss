@@ -22,8 +22,6 @@
 
   .gm-style {
     &-iw {
-      width: rem(253px);
-      height: rem(165px);
       padding: rem(19px) !important;
 
       button {
@@ -31,27 +29,16 @@
         right: 0 !important;
       }
 
-      h1 {
+      p {
         font-size: rem(16px);
-        font-weight: bold;
-        line-height: rem(17px);
-        color: theme(midnight);
-        margin-bottom: rem(15px);
+        color: rgba($color: $Tuna, $alpha: .7);
       }
 
-      ul {
-        li {
-          margin-bottom: rem(8px);
-          font-size: rem(12px);
-          line-height: rem(17px);
-          color: theme(midgray);
-          display: flex;
-        }
-
-        strong {
-          color: theme(midnight);
-          min-width: rem(30px);
-        }
+      a {
+        font-weight: 600;
+        color: $Tuna;
+        margin-top: rem(20px);
+        display: inline-block;
       }
     }
   }
