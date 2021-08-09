@@ -107,7 +107,7 @@
       font-size: rem(30px);
       line-height: rem(34px);
       margin-bottom: rem(10px);
-
+    
       @media screen and (max-width: 768px) {
         font-size: rem(24px);
       }
@@ -624,23 +624,26 @@
           }
 
           &-pagination {
-            display: inline-block;
+            display: none;
 
-           /*  @media screen and (max-width: 768px) {
-              display: inline-block;
+            @media screen and (max-width: 768px) {
+              display: flex;
+              justify-content: center;
+              width: 100%;
+              align-items: center;
               bottom: rem(-40px);
-              height: 10px;
-              overflow: hidden;
             }
 
             &-bullet {
-              width: rem(10px);
-              height: rem(10px);
+              width: rem(6px);
+              height: rem(6px);
               background: #0b0b0b;
               position: relative;
-              margin: 0 rem(10px);
+              margin: 0 10px;
 
               &-active {
+                width: rem(10px);
+                height: rem(10px);
                 background: $Sage;
 
                 &:before {
@@ -654,7 +657,7 @@
                   top: -5px;
                 }
               }
-            } */
+            }
           }
         }
 
