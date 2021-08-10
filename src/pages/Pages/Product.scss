@@ -107,7 +107,7 @@
       font-size: rem(30px);
       line-height: rem(34px);
       margin-bottom: rem(10px);
-    
+
       @media screen and (max-width: 768px) {
         font-size: rem(24px);
       }
@@ -608,7 +608,7 @@
         margin-top: rem(70px);
 
         @media screen and (max-width: 768px) {
-          margin-top: rem(90px);
+          margin-top: rem(40px);
         }
       }
 
@@ -623,23 +623,25 @@
             }
           }
 
-          &-pagination {
-            display: none;
-
+          &-wrapper {
             @media screen and (max-width: 768px) {
-              display: flex;
-              justify-content: center;
-              width: 100%;
-              align-items: center;
-              bottom: rem(-40px);
+              padding-bottom: rem(60px);
             }
+          }
 
+          &-pagination {
+            height: rem(20px);
+            display: none;
+            bottom: 0;
+            @media screen and (max-width: 768px) {
+              display: block;
+            }
             &-bullet {
-              width: rem(6px);
-              height: rem(6px);
+              width: rem(10px);
+              height: rem(10px);
               background: #0b0b0b;
               position: relative;
-              margin: 0 10px;
+              margin: rem(5px) rem(10px) 0;
 
               &-active {
                 width: rem(10px);

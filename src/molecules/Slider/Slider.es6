@@ -29,8 +29,6 @@ export default class Slider extends Swiper {
         options.pagination = {
           el: $el.find('.swiper-pagination'),
           dynamicBullets: true,
-          type: 'bullets',
-          clickable: true,
         }
       } else {
         options.pagination = {
@@ -39,8 +37,6 @@ export default class Slider extends Swiper {
           clickable: true,
         }
       }
-      
-      
     }
 
     options = $.extend({}, defaults, options);

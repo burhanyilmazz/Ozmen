@@ -53,11 +53,14 @@ $ {
       </div>
       </for>
     </div>
+    <if(options.pagination && options.paginationDynamic)>
+      <div class="swiper-pagination"></div>
+    </if>
   </div>
 
   <div class="m-slider__prev" if(options.navigation)></div>
   <div class="m-slider__next" if(options.navigation)></div>
-  <if(options.pagination)>
+  <if(options.pagination && !options.paginationDynamic)>
     <div class="swiper-pagination"></div>
   </if>
 </div>
