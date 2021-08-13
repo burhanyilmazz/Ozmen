@@ -8,6 +8,10 @@
     display: none;
   }
 
+  @media screen and (max-height: 750px) {
+    top: rem(160px);
+  }
+
   h2 {
     font-size: rem(26px);
     line-height: rem(49px);
