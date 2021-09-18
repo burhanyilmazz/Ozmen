@@ -1,7 +1,7 @@
 $(window).scroll(() => {
   const $historyImg = $(".p-history-block-1__img");
   if ($historyImg.length) {
-    const st = $(this).scrollTop();
+    const st = $(window).scrollTop();
     $historyImg.css({
       bottom: st * 0.2
     });

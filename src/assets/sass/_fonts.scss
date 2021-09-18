@@ -9,6 +9,18 @@
 
 @font-face {
   font-family: "Gilmer";
+  src: url("../fonts/gilmer_heavy.eot");
+  src: url("../fonts/gilmer_heavy.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/gilmer_heavy.woff2") format("woff2"),
+    url("../fonts/gilmer_heavy.woff") format("woff"),
+    url("../fonts/gilmer_heavy.ttf") format("truetype"),
+    url("../fonts/gilmer_heavy.svg#gilmerbold") format("svg");
+  font-weight: 100; // H etiketlerinde otomatik olarak algılandığı için 100 yapıldı
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilmer";
   src: url("../fonts/gilmer_bold.eot");
   src: url("../fonts/gilmer_bold.eot?#iefix") format("embedded-opentype"),
     url("../fonts/gilmer_bold.woff2") format("woff2"),

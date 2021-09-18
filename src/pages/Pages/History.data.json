@@ -1,6 +1,5 @@
 {
   "$global": {
-    "transparent": true,
-    "whiteLogo": true
+    "transparent": false
   }
 }
